@@ -1,0 +1,2 @@
+D:\FATEC\Semestre 3\C#\MatriculaFATEC\Matricula\Matricula.exe.config
+G:\FATEC\Semestre 3\C#\MatriculaFATEC\Matricula\Matricula.exe.config
