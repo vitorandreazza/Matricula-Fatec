@@ -15,6 +15,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Syncfusion.Windows.Forms;
+using Syncfusion.Windows.Forms.Tools;
 
 namespace Matricula
 {
@@ -23,11 +24,7 @@ namespace Matricula
         public MatriculaForm()
         {
             InitializeComponent();
-            this.btnConfirmar.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 163, 150);
-        }
-     
-        private void btnConfirmar_Click(object sender, EventArgs e)
-        {
+
             MetroStyleColorTable metroColor = new MetroStyleColorTable();
             metroColor.YesButtonBackColor = Color.FromArgb(0, 191, 177);
             metroColor.NoButtonBackColor = Color.FromArgb(206, 59, 41);
@@ -38,9 +35,12 @@ namespace Matricula
             metroColor.CaptionForeColor = Color.FromArgb(255, 255, 255);
             MessageBoxAdv.MetroColorTable = metroColor;
             MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
-            
-            //DialogResult resultado = MessageBoxAdv.Show("Deseja realmente confirmar a matrícula?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+        }
+     
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            
             if(MessageBoxAdv.Show(this, "Deseja realmente confirmar a matrícula?", "Confirmação", MessageBoxButtons.YesNo) == DialogResult.No)
             {
                 return;
@@ -88,17 +88,17 @@ namespace Matricula
                 cmdInsert.Parameters.AddWithValue("@nomePai", txtNomePai.Text);
                 cmdInsert.Parameters.AddWithValue("@nomeMae", txtNomeMae.Text);
                 cmdInsert.Parameters.AddWithValue("@email", txtEmail.Text);
-                cmdInsert.Parameters.AddWithValue("@cep", txtCep.Text);
+                cmdInsert.Parameters.AddWithValue("@cep", mtxtCEP.Text);
                 cmdInsert.Parameters.AddWithValue("@endereco", txtEndereco.Text);
                 cmdInsert.Parameters.AddWithValue("@numero", txtNumero.Text);
                 cmdInsert.Parameters.AddWithValue("@complemento", txtComplemento.Text);
                 cmdInsert.Parameters.AddWithValue("@bairro", txtBairro.Text);
                 cmdInsert.Parameters.AddWithValue("@municipio", txtMunicipio.Text);
-                cmdInsert.Parameters.AddWithValue("@cpf", txtCpf.Text);
+                cmdInsert.Parameters.AddWithValue("@cpf", mtxtCpf.Text);
                 cmdInsert.Parameters.AddWithValue("@dataEmissaoCpf", dpEmissaoCpf.Value.ToString("yyyy-MM-dd"));
-                cmdInsert.Parameters.AddWithValue("@rg", txtRg.Text);
+                cmdInsert.Parameters.AddWithValue("@rg", mtxtRg.Text);
                 cmdInsert.Parameters.AddWithValue("@dataEmissaoRg", dpEmissaoRg.Value.ToString("yyyy-MM-dd"));
-                cmdInsert.Parameters.AddWithValue("@tituloEleitor", txtTitulo.Text);
+                cmdInsert.Parameters.AddWithValue("@tituloEleitor", mtxtTitulo.Text);
                 cmdInsert.Parameters.AddWithValue("@secao", txtSecaoTitulo.Text);
                 cmdInsert.Parameters.AddWithValue("@zona", txtZonaTitulo.Text);
                 cmdInsert.Parameters.AddWithValue("@escola", txtEscola.Text);
@@ -109,18 +109,71 @@ namespace Matricula
                 cmdInsert.Parameters.AddWithValue("@pontuacao", txtPontuacao.Text);
                 cmdInsert.Parameters.AddWithValue("@curso", cbCurso.Text);
                 cmdInsert.Parameters.AddWithValue("@turno", cbTurno.Text);
-                
+
                 conn.Open();
                 cmdInsert.ExecuteNonQuery();
             }
-            catch(Exception ex)
+            catch (SqlException ex)
             {
-                MessageBox.Show("Erro:" + ex);
+                string str;
+                str = "Source:" + ex.Source;
+                str += "\n" + "Number:" + ex.Number.ToString();
+                str += "\n" + "Message:" + ex.Message;
+                str += "\n" + "Class:" + ex.Class.ToString();
+                str += "\n" + "Procedure:" + ex.Procedure.ToString();
+                str += "\n" + "Line Number:" + ex.LineNumber.ToString();
+                str += "\n" + "Server:" + ex.Server.ToString();
+
+                MessageBox.Show(str, "Database Exception");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex);
             }
             finally
             {
                 conn.Close();
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            if (MessageBoxAdv.Show(this, "Deseja realmente cancelar a matrícula?", "Cancelamento", MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                return;
+            }
+        }
+
+        int countR = 0;
+        private void btnMaisR_Click(object sender, EventArgs e)
+        {
+            countR++;
+            if(countR <= 2)
+            {
+                TextBoxExt txt = novoTextBox();
+                txt.Name = "txtResidencial"+countR;
+                txt.Location = new Point(txtResidencial.Location.X, txtResidencial.Location.Y+26*countR);
+            }
+        }
+
+        int countC = 0;
+        private void btnMainC_Click(object sender, EventArgs e)
+        {
+            countC++;
+            if(countC <= 2)
+            {
+                TextBoxExt txt = novoTextBox();
+                txt.Name = "txtCelular" + countC;
+                txt.Location = new Point(txtCelular.Location.X, txtCelular.Location.Y + 26 * countC);
+            }
+        }
+
+        private TextBoxExt novoTextBox()
+        {
+            TextBoxExt txt = new TextBoxExt();
+            this.tabResidencial.Controls.Add(txt);
+            txt.Size = new Size(txtResidencial.Size.Width, txtResidencial.Size.Height);
+            return txt;
         }
     }
 }

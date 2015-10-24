@@ -71,9 +71,11 @@ namespace Matricula
             this.txtNome = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel2 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.tabResidencial = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.textBoxExt17 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.btnMainC = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.btnMaisR = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.txtCelular = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel23 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.textBoxExt16 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.txtResidencial = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel22 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.txtMunicipio = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel21 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
@@ -85,7 +87,6 @@ namespace Matricula
             this.autoLabel18 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.txtEndereco = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel17 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.txtCep = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel16 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.tabDocumentos = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
             this.dpEmissaoRg = new Syncfusion.Windows.Forms.Tools.DateTimePickerAdv();
@@ -94,15 +95,12 @@ namespace Matricula
             this.autoLabel31 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.txtSecaoTitulo = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel30 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.txtTitulo = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel29 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.txtExpedidoRg = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel28 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.autoLabel26 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.txtRg = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel27 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.autoLabel25 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.txtCpf = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel24 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.tabAcademico = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
             this.dpConclusaoEscola = new Syncfusion.Windows.Forms.Tools.DateTimePickerAdv();
@@ -125,8 +123,10 @@ namespace Matricula
             this.btnAjuda = new Syncfusion.Windows.Forms.ButtonAdv();
             this.btnConfirmar = new Syncfusion.Windows.Forms.ButtonAdv();
             this.btnCancelar = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.buttonAdv3 = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.mtxtCEP = new Syncfusion.Windows.Forms.Tools.MaskedEditBox();
+            this.mtxtCpf = new Syncfusion.Windows.Forms.Tools.MaskedEditBox();
+            this.mtxtRg = new Syncfusion.Windows.Forms.Tools.MaskedEditBox();
+            this.mtxtTitulo = new Syncfusion.Windows.Forms.Tools.MaskedEditBox();
             ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv1)).BeginInit();
             this.tabControlAdv1.SuspendLayout();
             this.tabPessoal.SuspendLayout();
@@ -147,14 +147,13 @@ namespace Matricula
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNome)).BeginInit();
             this.tabResidencial.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxExt17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxExt16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCelular)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtResidencial)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMunicipio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBairro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtComplemento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNumero)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEndereco)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCep)).BeginInit();
             this.tabDocumentos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dpEmissaoRg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpEmissaoRg.Calendar)).BeginInit();
@@ -162,10 +161,7 @@ namespace Matricula
             ((System.ComponentModel.ISupportInitialize)(this.dpEmissaoCpf.Calendar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtZonaTitulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSecaoTitulo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTitulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtExpedidoRg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCpf)).BeginInit();
             this.tabAcademico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dpConclusaoEscola)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpConclusaoEscola.Calendar)).BeginInit();
@@ -177,6 +173,10 @@ namespace Matricula
             ((System.ComponentModel.ISupportInitialize)(this.txtCidadeEscola)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEscola)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mtxtCEP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mtxtCpf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mtxtRg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mtxtTitulo)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlAdv1
@@ -345,7 +345,7 @@ namespace Matricula
             this.dpNascimento.DropDownImage = null;
             this.dpNascimento.DropDownNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.dpNascimento.DropDownPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.dpNascimento.DropDownSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.dpNascimento.DropDownSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(251)))), ((int)(((byte)(232)))));
             this.dpNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dpNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dpNascimento.Location = new System.Drawing.Point(377, 34);
@@ -365,7 +365,7 @@ namespace Matricula
             // 
             // txtEmail
             // 
-            this.txtEmail.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtEmail.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.Location = new System.Drawing.Point(12, 242);
             this.txtEmail.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -386,7 +386,7 @@ namespace Matricula
             // 
             // txtNomeMae
             // 
-            this.txtNomeMae.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtNomeMae.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtNomeMae.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNomeMae.Location = new System.Drawing.Point(272, 201);
             this.txtNomeMae.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -407,7 +407,7 @@ namespace Matricula
             // 
             // txtNomePai
             // 
-            this.txtNomePai.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtNomePai.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtNomePai.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNomePai.Location = new System.Drawing.Point(12, 201);
             this.txtNomePai.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -576,7 +576,7 @@ namespace Matricula
             // 
             // txtNaturalidade
             // 
-            this.txtNaturalidade.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtNaturalidade.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtNaturalidade.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNaturalidade.Location = new System.Drawing.Point(176, 118);
             this.txtNaturalidade.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -597,7 +597,7 @@ namespace Matricula
             // 
             // txtCor
             // 
-            this.txtCor.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtCor.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtCor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCor.Location = new System.Drawing.Point(12, 118);
             this.txtCor.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -620,8 +620,10 @@ namespace Matricula
             // 
             this.cbEstadoCivil.BackColor = System.Drawing.Color.White;
             this.cbEstadoCivil.BeforeTouchSize = new System.Drawing.Size(167, 21);
+            this.cbEstadoCivil.FlatBorderColor = System.Drawing.SystemColors.ControlDark;
             this.cbEstadoCivil.FlatStyle = Syncfusion.Windows.Forms.Tools.ComboFlatStyle.Flat;
             this.cbEstadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEstadoCivil.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cbEstadoCivil.Items.AddRange(new object[] {
             "Solteiro(a)",
             "Casado(a)",
@@ -651,7 +653,7 @@ namespace Matricula
             // 
             // txtNacionalidade
             // 
-            this.txtNacionalidade.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtNacionalidade.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtNacionalidade.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNacionalidade.Location = new System.Drawing.Point(176, 76);
             this.txtNacionalidade.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -718,7 +720,7 @@ namespace Matricula
             // 
             // txtNome
             // 
-            this.txtNome.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtNome.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtNome.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNome.Location = new System.Drawing.Point(12, 34);
             this.txtNome.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -739,11 +741,12 @@ namespace Matricula
             // 
             // tabResidencial
             // 
-            this.tabResidencial.Controls.Add(this.buttonAdv1);
-            this.tabResidencial.Controls.Add(this.buttonAdv3);
-            this.tabResidencial.Controls.Add(this.textBoxExt17);
+            this.tabResidencial.Controls.Add(this.mtxtCEP);
+            this.tabResidencial.Controls.Add(this.btnMainC);
+            this.tabResidencial.Controls.Add(this.btnMaisR);
+            this.tabResidencial.Controls.Add(this.txtCelular);
             this.tabResidencial.Controls.Add(this.autoLabel23);
-            this.tabResidencial.Controls.Add(this.textBoxExt16);
+            this.tabResidencial.Controls.Add(this.txtResidencial);
             this.tabResidencial.Controls.Add(this.autoLabel22);
             this.tabResidencial.Controls.Add(this.txtMunicipio);
             this.tabResidencial.Controls.Add(this.autoLabel21);
@@ -755,7 +758,6 @@ namespace Matricula
             this.tabResidencial.Controls.Add(this.autoLabel18);
             this.tabResidencial.Controls.Add(this.txtEndereco);
             this.tabResidencial.Controls.Add(this.autoLabel17);
-            this.tabResidencial.Controls.Add(this.txtCep);
             this.tabResidencial.Controls.Add(this.autoLabel16);
             this.tabResidencial.Image = null;
             this.tabResidencial.ImageSize = new System.Drawing.Size(16, 16);
@@ -768,16 +770,66 @@ namespace Matricula
             this.tabResidencial.Text = "Dados Residenciais";
             this.tabResidencial.ThemesEnabled = false;
             // 
-            // textBoxExt17
+            // btnMainC
             // 
-            this.textBoxExt17.BeforeTouchSize = new System.Drawing.Size(526, 20);
-            this.textBoxExt17.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxExt17.Location = new System.Drawing.Point(259, 197);
-            this.textBoxExt17.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.textBoxExt17.Name = "textBoxExt17";
-            this.textBoxExt17.Size = new System.Drawing.Size(197, 20);
-            this.textBoxExt17.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.textBoxExt17.TabIndex = 18;
+            this.btnMainC.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.btnMainC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnMainC.BeforeTouchSize = new System.Drawing.Size(38, 20);
+            this.btnMainC.FlatAppearance.BorderSize = 0;
+            this.btnMainC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnMainC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(165)))), ((int)(((byte)(150)))));
+            this.btnMainC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMainC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMainC.ForeColor = System.Drawing.Color.White;
+            this.btnMainC.IsBackStageButton = false;
+            this.btnMainC.Location = new System.Drawing.Point(462, 197);
+            this.btnMainC.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnMainC.Name = "btnMainC";
+            this.btnMainC.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnMainC.Size = new System.Drawing.Size(38, 20);
+            this.btnMainC.TabIndex = 24;
+            this.btnMainC.Text = "+";
+            this.btnMainC.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMainC.UseCompatibleTextRendering = true;
+            this.btnMainC.UseVisualStyle = false;
+            this.btnMainC.UseVisualStyleBackColor = false;
+            this.btnMainC.Click += new System.EventHandler(this.btnMainC_Click);
+            // 
+            // btnMaisR
+            // 
+            this.btnMaisR.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.btnMaisR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnMaisR.BeforeTouchSize = new System.Drawing.Size(38, 20);
+            this.btnMaisR.FlatAppearance.BorderSize = 0;
+            this.btnMaisR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnMaisR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(165)))), ((int)(((byte)(150)))));
+            this.btnMaisR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaisR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaisR.ForeColor = System.Drawing.Color.White;
+            this.btnMaisR.IsBackStageButton = false;
+            this.btnMaisR.Location = new System.Drawing.Point(215, 197);
+            this.btnMaisR.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnMaisR.Name = "btnMaisR";
+            this.btnMaisR.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnMaisR.Size = new System.Drawing.Size(38, 20);
+            this.btnMaisR.TabIndex = 23;
+            this.btnMaisR.Text = "+";
+            this.btnMaisR.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMaisR.UseCompatibleTextRendering = true;
+            this.btnMaisR.UseVisualStyle = false;
+            this.btnMaisR.UseVisualStyleBackColor = false;
+            this.btnMaisR.Click += new System.EventHandler(this.btnMaisR_Click);
+            // 
+            // txtCelular
+            // 
+            this.txtCelular.BeforeTouchSize = new System.Drawing.Size(222, 20);
+            this.txtCelular.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCelular.Location = new System.Drawing.Point(259, 197);
+            this.txtCelular.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtCelular.Name = "txtCelular";
+            this.txtCelular.Size = new System.Drawing.Size(197, 20);
+            this.txtCelular.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.txtCelular.TabIndex = 18;
             // 
             // autoLabel23
             // 
@@ -789,16 +841,16 @@ namespace Matricula
             this.autoLabel23.TabIndex = 17;
             this.autoLabel23.Text = "Telefone Celular";
             // 
-            // textBoxExt16
+            // txtResidencial
             // 
-            this.textBoxExt16.BeforeTouchSize = new System.Drawing.Size(526, 20);
-            this.textBoxExt16.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxExt16.Location = new System.Drawing.Point(12, 197);
-            this.textBoxExt16.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.textBoxExt16.Name = "textBoxExt16";
-            this.textBoxExt16.Size = new System.Drawing.Size(197, 20);
-            this.textBoxExt16.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.textBoxExt16.TabIndex = 15;
+            this.txtResidencial.BeforeTouchSize = new System.Drawing.Size(222, 20);
+            this.txtResidencial.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtResidencial.Location = new System.Drawing.Point(12, 197);
+            this.txtResidencial.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtResidencial.Name = "txtResidencial";
+            this.txtResidencial.Size = new System.Drawing.Size(197, 20);
+            this.txtResidencial.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.txtResidencial.TabIndex = 15;
             // 
             // autoLabel22
             // 
@@ -812,7 +864,7 @@ namespace Matricula
             // 
             // txtMunicipio
             // 
-            this.txtMunicipio.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtMunicipio.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtMunicipio.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMunicipio.Location = new System.Drawing.Point(12, 156);
             this.txtMunicipio.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -833,7 +885,7 @@ namespace Matricula
             // 
             // txtBairro
             // 
-            this.txtBairro.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtBairro.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtBairro.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBairro.Location = new System.Drawing.Point(259, 115);
             this.txtBairro.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -854,7 +906,7 @@ namespace Matricula
             // 
             // txtComplemento
             // 
-            this.txtComplemento.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtComplemento.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtComplemento.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtComplemento.Location = new System.Drawing.Point(12, 115);
             this.txtComplemento.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -875,7 +927,7 @@ namespace Matricula
             // 
             // txtNumero
             // 
-            this.txtNumero.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtNumero.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtNumero.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNumero.Location = new System.Drawing.Point(418, 74);
             this.txtNumero.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -896,7 +948,7 @@ namespace Matricula
             // 
             // txtEndereco
             // 
-            this.txtEndereco.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtEndereco.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtEndereco.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEndereco.Location = new System.Drawing.Point(12, 74);
             this.txtEndereco.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -915,17 +967,6 @@ namespace Matricula
             this.autoLabel17.TabIndex = 4;
             this.autoLabel17.Text = "Endereço(Rua, Avenida, etc)";
             // 
-            // txtCep
-            // 
-            this.txtCep.BeforeTouchSize = new System.Drawing.Size(526, 20);
-            this.txtCep.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCep.Location = new System.Drawing.Point(12, 33);
-            this.txtCep.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(138, 20);
-            this.txtCep.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtCep.TabIndex = 3;
-            // 
             // autoLabel16
             // 
             this.autoLabel16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -938,21 +979,21 @@ namespace Matricula
             // 
             // tabDocumentos
             // 
+            this.tabDocumentos.Controls.Add(this.mtxtTitulo);
+            this.tabDocumentos.Controls.Add(this.mtxtRg);
+            this.tabDocumentos.Controls.Add(this.mtxtCpf);
             this.tabDocumentos.Controls.Add(this.dpEmissaoRg);
             this.tabDocumentos.Controls.Add(this.dpEmissaoCpf);
             this.tabDocumentos.Controls.Add(this.txtZonaTitulo);
             this.tabDocumentos.Controls.Add(this.autoLabel31);
             this.tabDocumentos.Controls.Add(this.txtSecaoTitulo);
             this.tabDocumentos.Controls.Add(this.autoLabel30);
-            this.tabDocumentos.Controls.Add(this.txtTitulo);
             this.tabDocumentos.Controls.Add(this.autoLabel29);
             this.tabDocumentos.Controls.Add(this.txtExpedidoRg);
             this.tabDocumentos.Controls.Add(this.autoLabel28);
             this.tabDocumentos.Controls.Add(this.autoLabel26);
-            this.tabDocumentos.Controls.Add(this.txtRg);
             this.tabDocumentos.Controls.Add(this.autoLabel27);
             this.tabDocumentos.Controls.Add(this.autoLabel25);
-            this.tabDocumentos.Controls.Add(this.txtCpf);
             this.tabDocumentos.Controls.Add(this.autoLabel24);
             this.tabDocumentos.Image = null;
             this.tabDocumentos.ImageSize = new System.Drawing.Size(16, 16);
@@ -1151,7 +1192,7 @@ namespace Matricula
             // 
             // txtZonaTitulo
             // 
-            this.txtZonaTitulo.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtZonaTitulo.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtZonaTitulo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtZonaTitulo.Location = new System.Drawing.Point(413, 133);
             this.txtZonaTitulo.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -1172,7 +1213,7 @@ namespace Matricula
             // 
             // txtSecaoTitulo
             // 
-            this.txtSecaoTitulo.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtSecaoTitulo.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtSecaoTitulo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSecaoTitulo.Location = new System.Drawing.Point(240, 133);
             this.txtSecaoTitulo.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -1191,17 +1232,6 @@ namespace Matricula
             this.autoLabel30.TabIndex = 15;
             this.autoLabel30.Text = "Seção";
             // 
-            // txtTitulo
-            // 
-            this.txtTitulo.BeforeTouchSize = new System.Drawing.Size(526, 20);
-            this.txtTitulo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTitulo.Location = new System.Drawing.Point(12, 133);
-            this.txtTitulo.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(222, 20);
-            this.txtTitulo.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtTitulo.TabIndex = 14;
-            // 
             // autoLabel29
             // 
             this.autoLabel29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1214,7 +1244,7 @@ namespace Matricula
             // 
             // txtExpedidoRg
             // 
-            this.txtExpedidoRg.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtExpedidoRg.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtExpedidoRg.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtExpedidoRg.Location = new System.Drawing.Point(413, 82);
             this.txtExpedidoRg.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -1243,17 +1273,6 @@ namespace Matricula
             this.autoLabel26.TabIndex = 9;
             this.autoLabel26.Text = "Data Emissão";
             // 
-            // txtRg
-            // 
-            this.txtRg.BeforeTouchSize = new System.Drawing.Size(526, 20);
-            this.txtRg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtRg.Location = new System.Drawing.Point(12, 82);
-            this.txtRg.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.txtRg.Name = "txtRg";
-            this.txtRg.Size = new System.Drawing.Size(222, 20);
-            this.txtRg.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtRg.TabIndex = 8;
-            // 
             // autoLabel27
             // 
             this.autoLabel27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1273,17 +1292,6 @@ namespace Matricula
             this.autoLabel25.Size = new System.Drawing.Size(96, 15);
             this.autoLabel25.TabIndex = 5;
             this.autoLabel25.Text = "Data Emissão";
-            // 
-            // txtCpf
-            // 
-            this.txtCpf.BeforeTouchSize = new System.Drawing.Size(526, 20);
-            this.txtCpf.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCpf.Location = new System.Drawing.Point(12, 34);
-            this.txtCpf.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(222, 20);
-            this.txtCpf.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtCpf.TabIndex = 4;
             // 
             // autoLabel24
             // 
@@ -1415,7 +1423,7 @@ namespace Matricula
             // cbTurno
             // 
             this.cbTurno.BackColor = System.Drawing.Color.White;
-            this.cbTurno.BeforeTouchSize = new System.Drawing.Size(194, 19);
+            this.cbTurno.BeforeTouchSize = new System.Drawing.Size(194, 21);
             this.cbTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTurno.Items.AddRange(new object[] {
             "Manhã",
@@ -1428,7 +1436,7 @@ namespace Matricula
             this.cbTurno.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbTurno.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbTurno.Name = "cbTurno";
-            this.cbTurno.Size = new System.Drawing.Size(194, 19);
+            this.cbTurno.Size = new System.Drawing.Size(194, 21);
             this.cbTurno.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbTurno.TabIndex = 23;
             // 
@@ -1445,16 +1453,24 @@ namespace Matricula
             // cbCurso
             // 
             this.cbCurso.BackColor = System.Drawing.Color.White;
-            this.cbCurso.BeforeTouchSize = new System.Drawing.Size(327, 19);
+            this.cbCurso.BeforeTouchSize = new System.Drawing.Size(327, 21);
             this.cbCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCurso.Items.AddRange(new object[] {
-            "Análise e Desenvolvimento de Sistemas"});
+            "Análise e Desenvolvimento de Sistemas",
+            "Eventos",
+            "Gestão Tecnologia da Informação",
+            "Gestão Empresarial(EAD)",
+            "Mecatrônica Industrial"});
             this.cbCurso.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbCurso, "Análise e Desenvolvimento de Sistemas"));
+            this.cbCurso.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbCurso, "Eventos"));
+            this.cbCurso.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbCurso, "Gestão Tecnologia da Informação"));
+            this.cbCurso.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbCurso, "Gestão Empresarial(EAD)"));
+            this.cbCurso.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbCurso, "Mecatrônica Industrial"));
             this.cbCurso.Location = new System.Drawing.Point(12, 193);
             this.cbCurso.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbCurso.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbCurso.Name = "cbCurso";
-            this.cbCurso.Size = new System.Drawing.Size(327, 19);
+            this.cbCurso.Size = new System.Drawing.Size(327, 21);
             this.cbCurso.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbCurso.TabIndex = 21;
             // 
@@ -1470,7 +1486,7 @@ namespace Matricula
             // 
             // txtPontuacao
             // 
-            this.txtPontuacao.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtPontuacao.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtPontuacao.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPontuacao.Location = new System.Drawing.Point(185, 151);
             this.txtPontuacao.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -1491,7 +1507,7 @@ namespace Matricula
             // 
             // txtClassificacao
             // 
-            this.txtClassificacao.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtClassificacao.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtClassificacao.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtClassificacao.Location = new System.Drawing.Point(12, 152);
             this.txtClassificacao.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -1523,7 +1539,7 @@ namespace Matricula
             // cbEstadoEscola
             // 
             this.cbEstadoEscola.BackColor = System.Drawing.Color.White;
-            this.cbEstadoEscola.BeforeTouchSize = new System.Drawing.Size(84, 19);
+            this.cbEstadoEscola.BeforeTouchSize = new System.Drawing.Size(84, 21);
             this.cbEstadoEscola.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEstadoEscola.Items.AddRange(new object[] {
             "AC",
@@ -1584,7 +1600,7 @@ namespace Matricula
             this.cbEstadoEscola.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbEstadoEscola.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbEstadoEscola.Name = "cbEstadoEscola";
-            this.cbEstadoEscola.Size = new System.Drawing.Size(84, 19);
+            this.cbEstadoEscola.Size = new System.Drawing.Size(84, 21);
             this.cbEstadoEscola.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbEstadoEscola.TabIndex = 13;
             // 
@@ -1600,7 +1616,7 @@ namespace Matricula
             // 
             // txtCidadeEscola
             // 
-            this.txtCidadeEscola.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtCidadeEscola.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtCidadeEscola.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCidadeEscola.Location = new System.Drawing.Point(12, 76);
             this.txtCidadeEscola.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -1621,7 +1637,7 @@ namespace Matricula
             // 
             // txtEscola
             // 
-            this.txtEscola.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtEscola.BeforeTouchSize = new System.Drawing.Size(222, 20);
             this.txtEscola.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEscola.Location = new System.Drawing.Point(12, 34);
             this.txtEscola.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
@@ -1711,54 +1727,58 @@ namespace Matricula
             this.btnCancelar.TabIndex = 20;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyle = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // buttonAdv3
+            // mtxtCEP
             // 
-            this.buttonAdv3.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
-            this.buttonAdv3.BeforeTouchSize = new System.Drawing.Size(38, 20);
-            this.buttonAdv3.FlatAppearance.BorderSize = 0;
-            this.buttonAdv3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
-            this.buttonAdv3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(165)))), ((int)(((byte)(150)))));
-            this.buttonAdv3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdv3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdv3.ForeColor = System.Drawing.Color.White;
-            this.buttonAdv3.IsBackStageButton = false;
-            this.buttonAdv3.Location = new System.Drawing.Point(215, 197);
-            this.buttonAdv3.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
-            this.buttonAdv3.Name = "buttonAdv3";
-            this.buttonAdv3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonAdv3.Size = new System.Drawing.Size(38, 20);
-            this.buttonAdv3.TabIndex = 23;
-            this.buttonAdv3.Text = "+";
-            this.buttonAdv3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonAdv3.UseCompatibleTextRendering = true;
-            this.buttonAdv3.UseVisualStyle = false;
-            this.buttonAdv3.UseVisualStyleBackColor = false;
+            this.mtxtCEP.BeforeTouchSize = new System.Drawing.Size(222, 20);
+            this.mtxtCEP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.mtxtCEP.Location = new System.Drawing.Point(12, 33);
+            this.mtxtCEP.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.mtxtCEP.Name = "mtxtCEP";
+            this.mtxtCEP.Size = new System.Drawing.Size(138, 20);
+            this.mtxtCEP.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.mtxtCEP.TabIndex = 25;
             // 
-            // buttonAdv1
+            // mtxtCpf
             // 
-            this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
-            this.buttonAdv1.BeforeTouchSize = new System.Drawing.Size(38, 20);
-            this.buttonAdv1.FlatAppearance.BorderSize = 0;
-            this.buttonAdv1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
-            this.buttonAdv1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(165)))), ((int)(((byte)(150)))));
-            this.buttonAdv1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdv1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdv1.ForeColor = System.Drawing.Color.White;
-            this.buttonAdv1.IsBackStageButton = false;
-            this.buttonAdv1.Location = new System.Drawing.Point(462, 197);
-            this.buttonAdv1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
-            this.buttonAdv1.Name = "buttonAdv1";
-            this.buttonAdv1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonAdv1.Size = new System.Drawing.Size(38, 20);
-            this.buttonAdv1.TabIndex = 24;
-            this.buttonAdv1.Text = "+";
-            this.buttonAdv1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonAdv1.UseCompatibleTextRendering = true;
-            this.buttonAdv1.UseVisualStyle = false;
-            this.buttonAdv1.UseVisualStyleBackColor = false;
+            this.mtxtCpf.BackColor = System.Drawing.Color.White;
+            this.mtxtCpf.BeforeTouchSize = new System.Drawing.Size(222, 20);
+            this.mtxtCpf.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.mtxtCpf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mtxtCpf.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.mtxtCpf.Location = new System.Drawing.Point(12, 34);
+            this.mtxtCpf.Mask = "###.###.###-##";
+            this.mtxtCpf.MaxLength = 14;
+            this.mtxtCpf.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.mtxtCpf.Name = "mtxtCpf";
+            this.mtxtCpf.PositionAt = Syncfusion.Windows.Forms.Tools.SpecialCursorPosition.FirstMaskPosition;
+            this.mtxtCpf.Size = new System.Drawing.Size(222, 20);
+            this.mtxtCpf.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.mtxtCpf.TabIndex = 35;
+            this.mtxtCpf.UsageMode = Syncfusion.Windows.Forms.Tools.MaskedUsageMode.Numeric;
+            // 
+            // mtxtRg
+            // 
+            this.mtxtRg.BeforeTouchSize = new System.Drawing.Size(222, 20);
+            this.mtxtRg.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.mtxtRg.Location = new System.Drawing.Point(12, 82);
+            this.mtxtRg.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.mtxtRg.Name = "mtxtRg";
+            this.mtxtRg.Size = new System.Drawing.Size(222, 20);
+            this.mtxtRg.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.mtxtRg.TabIndex = 36;
+            // 
+            // mtxtTitulo
+            // 
+            this.mtxtTitulo.BeforeTouchSize = new System.Drawing.Size(222, 20);
+            this.mtxtTitulo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.mtxtTitulo.Location = new System.Drawing.Point(12, 133);
+            this.mtxtTitulo.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.mtxtTitulo.Name = "mtxtTitulo";
+            this.mtxtTitulo.Size = new System.Drawing.Size(222, 20);
+            this.mtxtTitulo.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.mtxtTitulo.TabIndex = 37;
             // 
             // MatriculaForm
             // 
@@ -1816,14 +1836,13 @@ namespace Matricula
             ((System.ComponentModel.ISupportInitialize)(this.txtNome)).EndInit();
             this.tabResidencial.ResumeLayout(false);
             this.tabResidencial.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxExt17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxExt16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCelular)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtResidencial)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMunicipio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBairro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtComplemento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNumero)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEndereco)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCep)).EndInit();
             this.tabDocumentos.ResumeLayout(false);
             this.tabDocumentos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dpEmissaoRg.Calendar)).EndInit();
@@ -1832,10 +1851,7 @@ namespace Matricula
             ((System.ComponentModel.ISupportInitialize)(this.dpEmissaoCpf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtZonaTitulo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSecaoTitulo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTitulo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtExpedidoRg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCpf)).EndInit();
             this.tabAcademico.ResumeLayout(false);
             this.tabAcademico.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dpConclusaoEscola.Calendar)).EndInit();
@@ -1848,6 +1864,10 @@ namespace Matricula
             ((System.ComponentModel.ISupportInitialize)(this.txtCidadeEscola)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEscola)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mtxtCEP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mtxtCpf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mtxtRg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mtxtTitulo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1886,7 +1906,6 @@ namespace Matricula
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel13;
         private Syncfusion.Windows.Forms.Tools.TextBoxExt txtEmail;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel15;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtCep;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel16;
         private Syncfusion.Windows.Forms.Tools.TextBoxExt txtEndereco;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel17;
@@ -1896,25 +1915,22 @@ namespace Matricula
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel19;
         private Syncfusion.Windows.Forms.Tools.TextBoxExt txtNumero;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel18;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt16;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtResidencial;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel22;
         private Syncfusion.Windows.Forms.Tools.TextBoxExt txtMunicipio;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel21;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt17;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtCelular;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel23;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel25;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtCpf;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel24;
         private Syncfusion.Windows.Forms.Tools.TextBoxExt txtZonaTitulo;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel31;
         private Syncfusion.Windows.Forms.Tools.TextBoxExt txtSecaoTitulo;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel30;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtTitulo;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel29;
         private Syncfusion.Windows.Forms.Tools.TextBoxExt txtExpedidoRg;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel28;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel26;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtRg;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel27;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel35;
         private Syncfusion.Windows.Forms.Tools.ComboBoxAdv cbEstadoEscola;
@@ -1940,8 +1956,12 @@ namespace Matricula
         private Syncfusion.Windows.Forms.Tools.DateTimePickerAdv dpEmissaoCpf;
         private Syncfusion.Windows.Forms.Tools.ComboBoxAdv cbReligiao;
         private Syncfusion.Windows.Forms.Tools.DateTimePickerAdv dpConclusaoEscola;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv1;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv3;
+        private Syncfusion.Windows.Forms.ButtonAdv btnMainC;
+        private Syncfusion.Windows.Forms.ButtonAdv btnMaisR;
+        private Syncfusion.Windows.Forms.Tools.MaskedEditBox mtxtCEP;
+        private Syncfusion.Windows.Forms.Tools.MaskedEditBox mtxtTitulo;
+        private Syncfusion.Windows.Forms.Tools.MaskedEditBox mtxtRg;
+        private Syncfusion.Windows.Forms.Tools.MaskedEditBox mtxtCpf;
 
 
     }
