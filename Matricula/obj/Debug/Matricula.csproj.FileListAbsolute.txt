@@ -1,2 +1,15 @@
 D:\FATEC\Semestre 3\C#\MatriculaFATEC\Matricula\Matricula.exe.config
 G:\FATEC\Semestre 3\C#\MatriculaFATEC\Matricula\Matricula.exe.config
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\Matricula.exe.config
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.csprojResolveAssemblyReference.cache
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.MainForm.resources
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.MatriculaForm.resources
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.LoginForm.resources
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.Properties.Resources.resources
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.csproj.GenerateResource.Cache
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\Matricula.mdf
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\Matricula_log.ldf
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.exe
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.pdb
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\Matricula.exe
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\Matricula.pdb

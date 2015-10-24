@@ -14,6 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Syncfusion.Windows.Forms;
 
 namespace Matricula
 {
@@ -22,10 +23,29 @@ namespace Matricula
         public MatriculaForm()
         {
             InitializeComponent();
+            this.btnConfirmar.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 163, 150);
         }
-
+     
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
+            MetroStyleColorTable metroColor = new MetroStyleColorTable();
+            metroColor.YesButtonBackColor = Color.FromArgb(0, 191, 177);
+            metroColor.NoButtonBackColor = Color.FromArgb(206, 59, 41);
+            metroColor.BackColor = Color.FromArgb(245, 245, 245);
+            metroColor.ForeColor = Color.FromArgb(105, 105, 105);
+            metroColor.BorderColor = Color.FromArgb(0, 191, 177);
+            metroColor.CaptionBarColor = Color.FromArgb(0, 191, 177);
+            metroColor.CaptionForeColor = Color.FromArgb(255, 255, 255);
+            MessageBoxAdv.MetroColorTable = metroColor;
+            MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
+            
+            //DialogResult resultado = MessageBoxAdv.Show("Deseja realmente confirmar a matrícula?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if(MessageBoxAdv.Show(this, "Deseja realmente confirmar a matrícula?", "Confirmação", MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                return;
+            }
+
             string strConn = Matricula.Properties.Settings.Default.ConnMatricula;
             SqlConnection conn = new SqlConnection(strConn);
 
@@ -40,14 +60,16 @@ namespace Matricula
             "@bairro, @municipio, @cpf, @dataEmissaoCpf, @rg, @dataEmissaoRg, @tituloEleitor, @secao, @zona, @escola," +
             "@cidadeEscola, @estadoEscola, @anoConclusao, @classificacao, @pontuacao, @curso, @turno)";
 
-            //Se o cb index == 0(Feminino) sexo = F senão sexo = M
-            string sexo = cbSexo.SelectedIndex == 0 ? "F" : "M";
-            //string estadoCivil = cbEstadoCivil.SelectedIndex == -1 ? null : cbEstadoCivil.SelectedItem.ToString();
-            //string estado = cbEstado.SelectedIndex == -1 ? null : cbEstado.SelectedItem.ToString();
-            //string religiao = cbReligiao.SelectedIndex == -1 ? null : cbReligiao.SelectedItem.ToString();
-            //string sanguineo = cbSanguineo.SelectedIndex == -1 ? null : cbSanguineo.SelectedItem.ToString();
-            //string rh = cbRH.SelectedIndex == -1 ? null : cbRH.SelectedItem.ToString();
-            //string estadoEscola = cbEstadoEscola.SelectedIndex == -1 ? null : cbEstadoEscola.SelectedItem.ToString();
+            char sexo = '\0';
+
+            if(cbSexo.Text == "Masculino")
+            {
+                sexo = 'M';
+            }
+            else if (cbSexo.Text == "Feminino")
+            {
+                sexo = 'F';
+            }
 
             try
             {
@@ -58,11 +80,11 @@ namespace Matricula
                 cmdInsert.Parameters.AddWithValue("@sexo", sexo);
                 cmdInsert.Parameters.AddWithValue("@nacionalidade", txtNacionalidade.Text);
                 cmdInsert.Parameters.AddWithValue("@naturalidade", txtNaturalidade.Text);
-                cmdInsert.Parameters.AddWithValue("@estadoCivil", cbEstadoCivil.SelectedItem.ToString());
-                cmdInsert.Parameters.AddWithValue("@estado", cbEstado.SelectedItem.ToString());
-                cmdInsert.Parameters.AddWithValue("@religiao", cbReligiao.SelectedItem.ToString());
-                cmdInsert.Parameters.AddWithValue("@tipoSanguineo", cbSanguineo.SelectedItem.ToString());
-                cmdInsert.Parameters.AddWithValue("@rh", cbRH.SelectedItem.ToString());
+                cmdInsert.Parameters.AddWithValue("@estadoCivil", cbEstadoCivil.Text);
+                cmdInsert.Parameters.AddWithValue("@estado", cbEstado.Text);
+                cmdInsert.Parameters.AddWithValue("@religiao", cbReligiao.Text);
+                cmdInsert.Parameters.AddWithValue("@tipoSanguineo", cbSanguineo.Text);
+                cmdInsert.Parameters.AddWithValue("@rh", cbRH.Text);
                 cmdInsert.Parameters.AddWithValue("@nomePai", txtNomePai.Text);
                 cmdInsert.Parameters.AddWithValue("@nomeMae", txtNomeMae.Text);
                 cmdInsert.Parameters.AddWithValue("@email", txtEmail.Text);
@@ -81,12 +103,12 @@ namespace Matricula
                 cmdInsert.Parameters.AddWithValue("@zona", txtZonaTitulo.Text);
                 cmdInsert.Parameters.AddWithValue("@escola", txtEscola.Text);
                 cmdInsert.Parameters.AddWithValue("@cidadeEscola", txtCidadeEscola.Text);
-                cmdInsert.Parameters.AddWithValue("@estadoEscola", cbEstadoEscola.SelectedItem.ToString());
+                cmdInsert.Parameters.AddWithValue("@estadoEscola", cbEstadoEscola.Text);
                 cmdInsert.Parameters.AddWithValue("@anoConclusao", dpConclusaoEscola.Value.ToString("yyyy-MM-dd"));
                 cmdInsert.Parameters.AddWithValue("@classificacao", txtClassificacao.Text);
                 cmdInsert.Parameters.AddWithValue("@pontuacao", txtPontuacao.Text);
-                cmdInsert.Parameters.AddWithValue("@curso", cbCurso.SelectedItem.ToString());
-                cmdInsert.Parameters.AddWithValue("@turno", cbTurno.SelectedItem.ToString());
+                cmdInsert.Parameters.AddWithValue("@curso", cbCurso.Text);
+                cmdInsert.Parameters.AddWithValue("@turno", cbTurno.Text);
                 
                 conn.Open();
                 cmdInsert.ExecuteNonQuery();
