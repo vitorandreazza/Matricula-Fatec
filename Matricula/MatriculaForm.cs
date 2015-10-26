@@ -28,20 +28,28 @@ namespace Matricula
             MetroStyleColorTable metroColor = new MetroStyleColorTable();
             metroColor.YesButtonBackColor = Color.FromArgb(0, 191, 177);
             metroColor.NoButtonBackColor = Color.FromArgb(206, 59, 41);
+            metroColor.OKButtonBackColor = Color.FromArgb(0, 191, 177);
             metroColor.BackColor = Color.FromArgb(245, 245, 245);
-            metroColor.ForeColor = Color.FromArgb(105, 105, 105);
+            metroColor.ForeColor = Color.FromArgb(105, 105, 105);//Cor da fonte
             metroColor.BorderColor = Color.FromArgb(0, 191, 177);
-            metroColor.CaptionBarColor = Color.FromArgb(0, 191, 177);
-            metroColor.CaptionForeColor = Color.FromArgb(255, 255, 255);
+            metroColor.CloseButtonColor = Color.FromArgb(255, 255, 255);
+            metroColor.CloseButtonHoverColor = Color.FromArgb(255, 255, 255);//Cor do botão com o mouse em cima
+            metroColor.CaptionBarColor = Color.FromArgb(0, 191, 177);//Cor da barra
+            metroColor.CaptionForeColor = Color.FromArgb(255, 255, 255);//Cor da fonte da barra
             MessageBoxAdv.MetroColorTable = metroColor;
             MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
-
         }
-     
+
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            
-            if(MessageBoxAdv.Show(this, "Deseja realmente confirmar a matrícula?", "Confirmação", MessageBoxButtons.YesNo) == DialogResult.No)
+
+            if (!(ValidaCpf.validaCpf(mtxtCpf.Text)))
+            {
+                MessageBoxAdv.Show(this, "O CPF é inválido", "Erro");
+                return;
+            }
+
+            if (MessageBoxAdv.Show(this, "Deseja realmente confirmar a matrícula?", "Confirmação", MessageBoxButtons.YesNo) == DialogResult.No)
             {
                 return;
             }
@@ -60,9 +68,9 @@ namespace Matricula
             "@bairro, @municipio, @cpf, @dataEmissaoCpf, @rg, @dataEmissaoRg, @tituloEleitor, @secao, @zona, @escola," +
             "@cidadeEscola, @estadoEscola, @anoConclusao, @classificacao, @pontuacao, @curso, @turno)";
 
-            char sexo = '\0';
+            char sexo = '\0';//Atribui NULL a um char
 
-            if(cbSexo.Text == "Masculino")
+            if (cbSexo.Text == "Masculino")
             {
                 sexo = 'M';
             }
@@ -148,11 +156,13 @@ namespace Matricula
         private void btnMaisR_Click(object sender, EventArgs e)
         {
             countR++;
-            if(countR <= 2)
+            if (countR <= 2)
             {
                 TextBoxExt txt = novoTextBox();
-                txt.Name = "txtResidencial"+countR;
-                txt.Location = new Point(txtResidencial.Location.X, txtResidencial.Location.Y+26*countR);
+                //Nomeia o textbox de acordo com o número
+                txt.Name = "txtResidencial" + countR;
+                //Atribui a localização do textbox baseado no primeiro
+                txt.Location = new Point(txtResidencial.Location.X, txtResidencial.Location.Y + 26 * countR);
             }
         }
 
@@ -160,14 +170,17 @@ namespace Matricula
         private void btnMainC_Click(object sender, EventArgs e)
         {
             countC++;
-            if(countC <= 2)
+            if (countC <= 2)
             {
                 TextBoxExt txt = novoTextBox();
+                //Nomeia o textbox de acordo com o número
                 txt.Name = "txtCelular" + countC;
+                //Atribui a localização do textbox baseado no primeiro
                 txt.Location = new Point(txtCelular.Location.X, txtCelular.Location.Y + 26 * countC);
             }
         }
 
+        //Cria um novo TextBoxExt
         private TextBoxExt novoTextBox()
         {
             TextBoxExt txt = new TextBoxExt();
@@ -175,5 +188,6 @@ namespace Matricula
             txt.Size = new Size(txtResidencial.Size.Width, txtResidencial.Size.Height);
             return txt;
         }
+               
     }
 }
