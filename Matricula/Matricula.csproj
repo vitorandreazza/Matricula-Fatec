@@ -47,6 +47,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Recursos\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Recursos\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
@@ -154,10 +162,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Matricula.mdf</DependentUpon>
     </Content>
-    <Content Include="Recursos\fatec.png" />
-    <Content Include="Recursos\login.png" />
-    <Content Include="Recursos\logo.png" />
-    <Content Include="Recursos\principal.png" />
+    <Content Include="Recursos\AForge.Video.DirectShow.dll" />
+    <Content Include="Recursos\AForge.Video.dll" />
+    <Content Include="Recursos\Fotos\fatec.png" />
+    <Content Include="Recursos\Fotos\login.png" />
+    <Content Include="Recursos\Fotos\logo.png" />
+    <Content Include="Recursos\Fotos\principal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

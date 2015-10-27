@@ -16,11 +16,16 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using Syncfusion.Windows.Forms;
 using Syncfusion.Windows.Forms.Tools;
+using AForge.Video.DirectShow;
+using AForge.Video;
 
 namespace Matricula
 {
     public partial class MatriculaForm : Syncfusion.Windows.Forms.MetroForm
     {
+        private int countC = 0, countR = 0;
+        private VideoCaptureDevice videoDevice;
+
         public MatriculaForm()
         {
             InitializeComponent();
@@ -152,7 +157,6 @@ namespace Matricula
             }
         }
 
-        int countR = 0;
         private void btnMaisR_Click(object sender, EventArgs e)
         {
             countR++;
@@ -166,7 +170,6 @@ namespace Matricula
             }
         }
 
-        int countC = 0;
         private void btnMainC_Click(object sender, EventArgs e)
         {
             countC++;
@@ -188,6 +191,78 @@ namespace Matricula
             txt.Size = new Size(txtResidencial.Size.Width, txtResidencial.Size.Height);
             return txt;
         }
-               
+
+        private void btnConectar_Click(object sender, EventArgs e)
+        {
+            FilterInfoCollection videoDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+
+            if (videoDevices.Count != 0)
+            {
+                videoDevice = new VideoCaptureDevice(videoDevices[0].MonikerString);
+
+                int videoMenor = videoDevice.VideoCapabilities[0].FrameSize.Height;
+                int videoIndice = 0;
+                for (int i = 0; i < videoDevice.VideoCapabilities.Length; i++)
+                {
+                    if (videoMenor > videoDevice.VideoCapabilities[i].FrameSize.Height &&
+                        videoDevice.VideoCapabilities[i].FrameSize.Height >= 120)
+                    {
+                        videoMenor = videoDevice.VideoCapabilities[i].FrameSize.Height;
+                        videoIndice = i;
+                    }
+                }
+
+                int snapMenor = videoDevice.VideoCapabilities[0].FrameSize.Height;
+                int snapIndice = 0;
+                for (int i = 0; i < videoDevice.SnapshotCapabilities.Length; i++)
+                {
+                    if (snapMenor > videoDevice.SnapshotCapabilities[i].FrameSize.Height &&
+                        videoDevice.SnapshotCapabilities[i].FrameSize.Height >= 120)
+                    {
+                        snapMenor = videoDevice.SnapshotCapabilities[i].FrameSize.Height;
+                        snapIndice = i;
+                    }
+                }
+
+                Console.Write(videoIndice);
+                Console.Write(snapIndice);
+                videoDevice.VideoResolution = videoDevice.VideoCapabilities[videoIndice];
+                videoDevice.SnapshotResolution = videoDevice.SnapshotCapabilities[snapIndice];
+                videoDevice.NewFrame += (s, en) => ptFotoPes.Image = (Bitmap)en.Frame.Clone();
+                videoDevice.Start();
+            }
+        }
+
+        private void btnCapturar_Click(object sender, EventArgs e)
+        {
+            int altura = 120, largura = 120, x = 0, y = 0;
+            Bitmap source = new Bitmap(ptFotoPes.Image);
+            //x = (source.Width - largura) / 2;
+            //y = (source.Height - altura) / 2;
+            Rectangle area = new Rectangle(new Point(x, y), new Size(largura, altura));
+
+            Bitmap imagemCortada = CortaImagem(source, area);
+            ptFotoPes.Image = imagemCortada;
+
+            if(videoDevice != null)
+            {
+                videoDevice.SignalToStop();
+                videoDevice.WaitForStop();
+                videoDevice = null;
+            }
+        }
+
+        public Bitmap CortaImagem(Bitmap source, Rectangle area)
+        {
+            // Bitmap vazia para a nova imagem
+            Bitmap bmp = new Bitmap(area.Width, area.Height);
+
+            Graphics g = Graphics.FromImage(bmp);
+            //Desenha na area da area especificada
+            // na localização 0,0 do bitmap vazio
+            g.DrawImage(source, 0, 0, area, GraphicsUnit.Pixel);
+
+            return bmp;
+        }
     }
 }

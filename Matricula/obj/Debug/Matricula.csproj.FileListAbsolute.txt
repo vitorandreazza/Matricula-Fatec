@@ -13,3 +13,6 @@ C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.exe
 C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.pdb
 C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\Matricula.exe
 C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\Matricula.pdb
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.Captura.resources
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\AForge.Video.DirectShow.dll
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\AForge.Video.dll

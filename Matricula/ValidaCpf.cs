@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Matricula
 {
-    class ValidaCpf
+    abstract class ValidaCpf
     {
         public static bool validaCpf(String cpf)
         {

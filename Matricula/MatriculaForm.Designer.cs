@@ -41,6 +41,9 @@ namespace Matricula
             Syncfusion.Windows.Forms.CaptionImage captionImage2 = new Syncfusion.Windows.Forms.CaptionImage();
             this.tabControlAdv1 = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
             this.tabPessoal = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.btnCapturar = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.btnConectar = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.ptFotoPes = new System.Windows.Forms.PictureBox();
             this.cbReligiao = new Syncfusion.Windows.Forms.Tools.ComboBoxAdv();
             this.dpNascimento = new Syncfusion.Windows.Forms.Tools.DateTimePickerAdv();
             this.txtEmail = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
@@ -67,7 +70,6 @@ namespace Matricula
             this.cbSexo = new Syncfusion.Windows.Forms.Tools.ComboBoxAdv();
             this.autoLabel4 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.autoLabel3 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtNome = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel2 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.tabResidencial = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
@@ -130,6 +132,7 @@ namespace Matricula
             ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv1)).BeginInit();
             this.tabControlAdv1.SuspendLayout();
             this.tabPessoal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptFotoPes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbReligiao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpNascimento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpNascimento.Calendar)).BeginInit();
@@ -144,7 +147,6 @@ namespace Matricula
             ((System.ComponentModel.ISupportInitialize)(this.cbEstadoCivil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNacionalidade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbSexo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNome)).BeginInit();
             this.tabResidencial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mtxtCEP)).BeginInit();
@@ -185,7 +187,7 @@ namespace Matricula
             this.tabControlAdv1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControlAdv1.BeforeTouchSize = new System.Drawing.Size(658, 379);
+            this.tabControlAdv1.BeforeTouchSize = new System.Drawing.Size(684, 379);
             this.tabControlAdv1.Controls.Add(this.tabPessoal);
             this.tabControlAdv1.Controls.Add(this.tabResidencial);
             this.tabControlAdv1.Controls.Add(this.tabDocumentos);
@@ -194,13 +196,16 @@ namespace Matricula
             this.tabControlAdv1.InactiveTabColor = System.Drawing.Color.WhiteSmoke;
             this.tabControlAdv1.Location = new System.Drawing.Point(-1, 3);
             this.tabControlAdv1.Name = "tabControlAdv1";
-            this.tabControlAdv1.Size = new System.Drawing.Size(658, 379);
+            this.tabControlAdv1.Size = new System.Drawing.Size(684, 379);
             this.tabControlAdv1.TabIndex = 0;
             this.tabControlAdv1.TabPanelBackColor = System.Drawing.Color.WhiteSmoke;
             this.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererMetro);
             // 
             // tabPessoal
             // 
+            this.tabPessoal.Controls.Add(this.btnCapturar);
+            this.tabPessoal.Controls.Add(this.btnConectar);
+            this.tabPessoal.Controls.Add(this.ptFotoPes);
             this.tabPessoal.Controls.Add(this.cbReligiao);
             this.tabPessoal.Controls.Add(this.dpNascimento);
             this.tabPessoal.Controls.Add(this.txtEmail);
@@ -227,7 +232,6 @@ namespace Matricula
             this.tabPessoal.Controls.Add(this.cbSexo);
             this.tabPessoal.Controls.Add(this.autoLabel4);
             this.tabPessoal.Controls.Add(this.autoLabel3);
-            this.tabPessoal.Controls.Add(this.pictureBox1);
             this.tabPessoal.Controls.Add(this.txtNome);
             this.tabPessoal.Controls.Add(this.autoLabel2);
             this.tabPessoal.Image = null;
@@ -235,11 +239,68 @@ namespace Matricula
             this.tabPessoal.Location = new System.Drawing.Point(1, 22);
             this.tabPessoal.Name = "tabPessoal";
             this.tabPessoal.ShowCloseButton = true;
-            this.tabPessoal.Size = new System.Drawing.Size(655, 355);
+            this.tabPessoal.Size = new System.Drawing.Size(681, 355);
             this.tabPessoal.TabForeColor = System.Drawing.Color.Gray;
             this.tabPessoal.TabIndex = 1;
             this.tabPessoal.Text = "Dados Pessoais";
             this.tabPessoal.ThemesEnabled = false;
+            // 
+            // btnCapturar
+            // 
+            this.btnCapturar.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.btnCapturar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnCapturar.BeforeTouchSize = new System.Drawing.Size(120, 23);
+            this.btnCapturar.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.None;
+            this.btnCapturar.ComboEditBackColor = System.Drawing.Color.Transparent;
+            this.btnCapturar.CustomManagedColor = System.Drawing.Color.Transparent;
+            this.btnCapturar.FlatAppearance.BorderSize = 0;
+            this.btnCapturar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnCapturar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(165)))), ((int)(((byte)(150)))));
+            this.btnCapturar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCapturar.ForeColor = System.Drawing.Color.White;
+            this.btnCapturar.IsBackStageButton = false;
+            this.btnCapturar.Location = new System.Drawing.Point(550, 189);
+            this.btnCapturar.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnCapturar.Name = "btnCapturar";
+            this.btnCapturar.Size = new System.Drawing.Size(120, 23);
+            this.btnCapturar.TabIndex = 35;
+            this.btnCapturar.Text = "Capturar";
+            this.btnCapturar.UseVisualStyle = false;
+            this.btnCapturar.UseVisualStyleBackColor = false;
+            this.btnCapturar.Click += new System.EventHandler(this.btnCapturar_Click);
+            // 
+            // btnConectar
+            // 
+            this.btnConectar.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.btnConectar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnConectar.BeforeTouchSize = new System.Drawing.Size(120, 23);
+            this.btnConectar.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.None;
+            this.btnConectar.ComboEditBackColor = System.Drawing.Color.Transparent;
+            this.btnConectar.CustomManagedColor = System.Drawing.Color.Transparent;
+            this.btnConectar.FlatAppearance.BorderSize = 0;
+            this.btnConectar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnConectar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(165)))), ((int)(((byte)(150)))));
+            this.btnConectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConectar.ForeColor = System.Drawing.Color.White;
+            this.btnConectar.IsBackStageButton = false;
+            this.btnConectar.Location = new System.Drawing.Point(550, 160);
+            this.btnConectar.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnConectar.Name = "btnConectar";
+            this.btnConectar.Size = new System.Drawing.Size(120, 23);
+            this.btnConectar.TabIndex = 23;
+            this.btnConectar.Text = "Conectar";
+            this.btnConectar.UseVisualStyle = false;
+            this.btnConectar.UseVisualStyleBackColor = false;
+            this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
+            // 
+            // ptFotoPes
+            // 
+            this.ptFotoPes.BackColor = System.Drawing.Color.LightGray;
+            this.ptFotoPes.Location = new System.Drawing.Point(550, 34);
+            this.ptFotoPes.Name = "ptFotoPes";
+            this.ptFotoPes.Size = new System.Drawing.Size(120, 120);
+            this.ptFotoPes.TabIndex = 34;
+            this.ptFotoPes.TabStop = false;
             // 
             // cbReligiao
             // 
@@ -710,14 +771,6 @@ namespace Matricula
             this.autoLabel3.TabIndex = 6;
             this.autoLabel3.Text = "Dt. Nascimento";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(477, -87);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 59);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // txtNome
             // 
             this.txtNome.BeforeTouchSize = new System.Drawing.Size(526, 20);
@@ -764,7 +817,7 @@ namespace Matricula
             this.tabResidencial.Location = new System.Drawing.Point(1, 22);
             this.tabResidencial.Name = "tabResidencial";
             this.tabResidencial.ShowCloseButton = true;
-            this.tabResidencial.Size = new System.Drawing.Size(655, 355);
+            this.tabResidencial.Size = new System.Drawing.Size(681, 355);
             this.tabResidencial.TabForeColor = System.Drawing.Color.DimGray;
             this.tabResidencial.TabIndex = 2;
             this.tabResidencial.Text = "Dados Residenciais";
@@ -1011,7 +1064,7 @@ namespace Matricula
             this.tabDocumentos.Location = new System.Drawing.Point(1, 22);
             this.tabDocumentos.Name = "tabDocumentos";
             this.tabDocumentos.ShowCloseButton = true;
-            this.tabDocumentos.Size = new System.Drawing.Size(655, 355);
+            this.tabDocumentos.Size = new System.Drawing.Size(681, 355);
             this.tabDocumentos.TabForeColor = System.Drawing.Color.DimGray;
             this.tabDocumentos.TabIndex = 3;
             this.tabDocumentos.Text = "Documentos";
@@ -1378,7 +1431,7 @@ namespace Matricula
             this.tabAcademico.Location = new System.Drawing.Point(1, 22);
             this.tabAcademico.Name = "tabAcademico";
             this.tabAcademico.ShowCloseButton = true;
-            this.tabAcademico.Size = new System.Drawing.Size(655, 355);
+            this.tabAcademico.Size = new System.Drawing.Size(681, 355);
             this.tabAcademico.TabForeColor = System.Drawing.Color.DimGray;
             this.tabAcademico.TabIndex = 4;
             this.tabAcademico.Text = "Dados Acadêmicos";
@@ -1715,7 +1768,7 @@ namespace Matricula
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Location = new System.Drawing.Point(-1, 382);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(656, 36);
+            this.panel1.Size = new System.Drawing.Size(680, 36);
             this.panel1.TabIndex = 1;
             // 
             // btnAjuda
@@ -1751,7 +1804,7 @@ namespace Matricula
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar.ForeColor = System.Drawing.Color.White;
             this.btnConfirmar.IsBackStageButton = false;
-            this.btnConfirmar.Location = new System.Drawing.Point(489, 6);
+            this.btnConfirmar.Location = new System.Drawing.Point(521, 6);
             this.btnConfirmar.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
@@ -1772,7 +1825,7 @@ namespace Matricula
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.IsBackStageButton = false;
-            this.btnCancelar.Location = new System.Drawing.Point(570, 6);
+            this.btnCancelar.Location = new System.Drawing.Point(602, 6);
             this.btnCancelar.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(59)))), ((int)(((byte)(41)))));
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
@@ -1805,7 +1858,7 @@ namespace Matricula
             captionImage2.Size = new System.Drawing.Size(217, 28);
             this.CaptionImages.Add(captionImage1);
             this.CaptionImages.Add(captionImage2);
-            this.ClientSize = new System.Drawing.Size(656, 413);
+            this.ClientSize = new System.Drawing.Size(682, 413);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControlAdv1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -1819,6 +1872,7 @@ namespace Matricula
             this.tabControlAdv1.ResumeLayout(false);
             this.tabPessoal.ResumeLayout(false);
             this.tabPessoal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptFotoPes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbReligiao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpNascimento.Calendar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dpNascimento)).EndInit();
@@ -1833,7 +1887,6 @@ namespace Matricula
             ((System.ComponentModel.ISupportInitialize)(this.cbEstadoCivil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNacionalidade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbSexo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNome)).EndInit();
             this.tabResidencial.ResumeLayout(false);
             this.tabResidencial.PerformLayout();
@@ -1882,7 +1935,6 @@ namespace Matricula
         private Syncfusion.Windows.Forms.Tools.TabPageAdv tabAcademico;
         private Syncfusion.Windows.Forms.Tools.TextBoxExt txtNome;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel3;
         private Syncfusion.Windows.Forms.Tools.ComboBoxAdv cbSexo;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel4;
@@ -1963,6 +2015,9 @@ namespace Matricula
         private Syncfusion.Windows.Forms.Tools.MaskedEditBox mtxtTitulo;
         private Syncfusion.Windows.Forms.Tools.MaskedEditBox mtxtRg;
         private Syncfusion.Windows.Forms.Tools.MaskedEditBox mtxtCpf;
+        private System.Windows.Forms.PictureBox ptFotoPes;
+        private Syncfusion.Windows.Forms.ButtonAdv btnConectar;
+        private Syncfusion.Windows.Forms.ButtonAdv btnCapturar;
 
 
     }
