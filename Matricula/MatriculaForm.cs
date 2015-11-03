@@ -45,6 +45,8 @@ namespace Matricula
             metroColor.CaptionForeColor = Color.FromArgb(255, 255, 255);//Cor da fonte da barra
             MessageBoxAdv.MetroColorTable = metroColor;
             MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
+        
+            Console.Write(dpConclusaoEscola.Value.ToString("yyyy-01-01"));
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
@@ -125,7 +127,7 @@ namespace Matricula
                 cmdInsert.Parameters.AddWithValue("@escola", txtEscola.Text);
                 cmdInsert.Parameters.AddWithValue("@cidadeEscola", txtCidadeEscola.Text);
                 cmdInsert.Parameters.AddWithValue("@estadoEscola", cbEstadoEscola.Text);
-                cmdInsert.Parameters.AddWithValue("@anoConclusao", dpConclusaoEscola.Value.ToString("yyyy-MM-dd"));
+                cmdInsert.Parameters.AddWithValue("@anoConclusao", dpConclusaoEscola.Value.ToString("yyyy-01-01"));
                 cmdInsert.Parameters.AddWithValue("@classificacao", txtClassificacao.Text);
                 cmdInsert.Parameters.AddWithValue("@pontuacao", txtPontuacao.Text);
                 cmdInsert.Parameters.AddWithValue("@curso", cbCurso.Text);
@@ -227,7 +229,7 @@ namespace Matricula
                 }
 
                 //Encontra a menor resolução de foto disponivel que seja >= 120p de altura
-                int snapMenor = videoDevice.VideoCapabilities[0].FrameSize.Height;
+                int snapMenor = videoDevice.SnapshotCapabilities[0].FrameSize.Height;
                 int snapIndice = 0;
                 for (int i = 0; i < videoDevice.SnapshotCapabilities.Length; i++)
                 {
