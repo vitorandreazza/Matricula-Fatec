@@ -79,9 +79,7 @@ namespace Matricula
             this.btnMenosR = new Syncfusion.Windows.Forms.ButtonAdv();
             this.btnMainC = new Syncfusion.Windows.Forms.ButtonAdv();
             this.btnMaisR = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.txtCelular = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel23 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.txtResidencial = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel22 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.txtMunicipio = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
             this.autoLabel21 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
@@ -152,8 +150,6 @@ namespace Matricula
             ((System.ComponentModel.ISupportInitialize)(this.txtNome)).BeginInit();
             this.tabResidencial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mtxtCep)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCelular)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtResidencial)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMunicipio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBairro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtComplemento)).BeginInit();
@@ -813,9 +809,7 @@ namespace Matricula
             this.tabResidencial.Controls.Add(this.btnMenosR);
             this.tabResidencial.Controls.Add(this.btnMainC);
             this.tabResidencial.Controls.Add(this.btnMaisR);
-            this.tabResidencial.Controls.Add(this.txtCelular);
             this.tabResidencial.Controls.Add(this.autoLabel23);
-            this.tabResidencial.Controls.Add(this.txtResidencial);
             this.tabResidencial.Controls.Add(this.autoLabel22);
             this.tabResidencial.Controls.Add(this.txtMunicipio);
             this.tabResidencial.Controls.Add(this.autoLabel21);
@@ -960,17 +954,6 @@ namespace Matricula
             this.btnMaisR.UseVisualStyleBackColor = false;
             this.btnMaisR.Click += new System.EventHandler(this.btnMaisR_Click);
             // 
-            // txtCelular
-            // 
-            this.txtCelular.BeforeTouchSize = new System.Drawing.Size(526, 20);
-            this.txtCelular.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCelular.Location = new System.Drawing.Point(259, 197);
-            this.txtCelular.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(197, 20);
-            this.txtCelular.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtCelular.TabIndex = 18;
-            // 
             // autoLabel23
             // 
             this.autoLabel23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -980,17 +963,6 @@ namespace Matricula
             this.autoLabel23.Size = new System.Drawing.Size(113, 15);
             this.autoLabel23.TabIndex = 17;
             this.autoLabel23.Text = "Telefone Celular";
-            // 
-            // txtResidencial
-            // 
-            this.txtResidencial.BeforeTouchSize = new System.Drawing.Size(526, 20);
-            this.txtResidencial.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtResidencial.Location = new System.Drawing.Point(12, 197);
-            this.txtResidencial.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.txtResidencial.Name = "txtResidencial";
-            this.txtResidencial.Size = new System.Drawing.Size(197, 20);
-            this.txtResidencial.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtResidencial.TabIndex = 15;
             // 
             // autoLabel22
             // 
@@ -1612,7 +1584,7 @@ namespace Matricula
             // cbTurno
             // 
             this.cbTurno.BackColor = System.Drawing.Color.White;
-            this.cbTurno.BeforeTouchSize = new System.Drawing.Size(194, 21);
+            this.cbTurno.BeforeTouchSize = new System.Drawing.Size(194, 19);
             this.cbTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTurno.Items.AddRange(new object[] {
             "Manhã",
@@ -1625,7 +1597,7 @@ namespace Matricula
             this.cbTurno.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbTurno.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbTurno.Name = "cbTurno";
-            this.cbTurno.Size = new System.Drawing.Size(194, 21);
+            this.cbTurno.Size = new System.Drawing.Size(194, 19);
             this.cbTurno.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbTurno.TabIndex = 23;
             // 
@@ -1642,7 +1614,7 @@ namespace Matricula
             // cbCurso
             // 
             this.cbCurso.BackColor = System.Drawing.Color.White;
-            this.cbCurso.BeforeTouchSize = new System.Drawing.Size(327, 21);
+            this.cbCurso.BeforeTouchSize = new System.Drawing.Size(327, 19);
             this.cbCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCurso.Items.AddRange(new object[] {
             "Análise e Desenvolvimento de Sistemas",
@@ -1659,7 +1631,7 @@ namespace Matricula
             this.cbCurso.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbCurso.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbCurso.Name = "cbCurso";
-            this.cbCurso.Size = new System.Drawing.Size(327, 21);
+            this.cbCurso.Size = new System.Drawing.Size(327, 19);
             this.cbCurso.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbCurso.TabIndex = 21;
             // 
@@ -1728,7 +1700,7 @@ namespace Matricula
             // cbEstadoEscola
             // 
             this.cbEstadoEscola.BackColor = System.Drawing.Color.White;
-            this.cbEstadoEscola.BeforeTouchSize = new System.Drawing.Size(84, 21);
+            this.cbEstadoEscola.BeforeTouchSize = new System.Drawing.Size(84, 19);
             this.cbEstadoEscola.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEstadoEscola.Items.AddRange(new object[] {
             "AC",
@@ -1789,7 +1761,7 @@ namespace Matricula
             this.cbEstadoEscola.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbEstadoEscola.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbEstadoEscola.Name = "cbEstadoEscola";
-            this.cbEstadoEscola.Size = new System.Drawing.Size(84, 21);
+            this.cbEstadoEscola.Size = new System.Drawing.Size(84, 19);
             this.cbEstadoEscola.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbEstadoEscola.TabIndex = 13;
             // 
@@ -1927,6 +1899,7 @@ namespace Matricula
             this.Controls.Add(this.tabControlAdv1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "MatriculaForm";
             this.ShowIcon = false;
             this.ShowMaximizeBox = false;
@@ -1955,8 +1928,6 @@ namespace Matricula
             this.tabResidencial.ResumeLayout(false);
             this.tabResidencial.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mtxtCep)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCelular)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtResidencial)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMunicipio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBairro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtComplemento)).EndInit();
@@ -2032,11 +2003,9 @@ namespace Matricula
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel19;
         private Syncfusion.Windows.Forms.Tools.TextBoxExt txtNumero;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel18;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtResidencial;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel22;
         private Syncfusion.Windows.Forms.Tools.TextBoxExt txtMunicipio;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel21;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtCelular;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel23;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel25;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel24;

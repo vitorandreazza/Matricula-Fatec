@@ -25,7 +25,7 @@ namespace Matricula
     public partial class MatriculaForm : Syncfusion.Windows.Forms.MetroForm
     {
         private int countC = 0, countR = 0;
-        private TextBox[] txtRArray = new TextBox[2], txtCArray = new TextBox[2];
+        private TextBox[] txtRArray = new TextBox[3], txtCArray = new TextBox[3];
         private VideoCaptureDevice videoDevice;
 
         public MatriculaForm()
@@ -45,14 +45,15 @@ namespace Matricula
             metroColor.CaptionForeColor = Color.FromArgb(255, 255, 255);//Cor da fonte da barra
             MessageBoxAdv.MetroColorTable = metroColor;
             MessageBoxAdv.MessageBoxStyle = MessageBoxAdv.Style.Metro;
-        
-            Console.Write(dpConclusaoEscola.Value.ToString("yyyy-01-01"));
+
+            btnMaisR_Click(btnMaisR, new EventArgs());
+            btnMainC_Click(btnMainC, new EventArgs());
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
 
-            if (!(ValidaCpf.validaCpf(mtxtCpf.Text)))
+            if (!(ValidaCpf.validaCpf(mtxtCpf.Text)) && mtxtCpf.Text != "   .   .   -  ")
             {
                 MessageBoxAdv.Show(this, "O CPF é inválido", "Erro");
                 return;
@@ -62,27 +63,34 @@ namespace Matricula
             {
                 return;
             }
-            //Stream do array
-            MemoryStream stream = new MemoryStream();
-            //salva a imagem no stream
-            ptFotoPes.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
-            //transferir o stream para o array de bytes
-            byte[] imgArray = stream.ToArray();
+
+            byte[] imgArray = null;
+
+            if(ptFotoPes != null && ptFotoPes.Image != null)
+            {
+                //Stream do array
+                MemoryStream stream = new MemoryStream();
+                //salva a imagem no stream
+                ptFotoPes.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+                //transferir o stream para o array de bytes
+                imgArray = stream.ToArray();
+            }
 
             string strConn = Matricula.Properties.Settings.Default.ConnMatricula;
             SqlConnection conn = new SqlConnection(strConn);
 
-            string insertAluno = "INSERT INTO Matriculas" +
+            string insertMatricula = "INSERT INTO Matriculas" +
             "(nome, dtNasc, sexo, nacionalidade, naturalidade, estadoCivil, estado, religiao," +
             "tipoSanguineo, rh, nomePai, nomeMae, email, cep, endereco, numero, complemento," +
             "bairro, municipio, cpf, dataEmissaoCpf, rg, dataEmissaoRg, tituloEleitor, secao, zona, escola," +
-            "cidadeEscola, estadoEscola, anoConclusao, classificacao, pontuacao, curso, turno, foto)" +
+            "cidadeEscola, estadoEscola, anoConclusao, classificacao, pontuacao, curso, turno)" +
             "VALUES" +
             "(@nome, @dtNasc, @sexo, @nacionalidade, @naturalidade, @estadoCivil, @estado, @religiao," +
             "@tipoSanguineo, @rh, @nomePai, @nomeMae, @email, @cep, @endereco, @numero, @complemento," +
             "@bairro, @municipio, @cpf, @dataEmissaoCpf, @rg, @dataEmissaoRg, @tituloEleitor, @secao, @zona, @escola," +
-            "@cidadeEscola, @estadoEscola, @anoConclusao, @classificacao, @pontuacao, @curso, @turno, @foto)";
-
+            "@cidadeEscola, @estadoEscola, @anoConclusao, @classificacao, @pontuacao, @curso, @turno); SELECT SCOPE_IDENTITY()";
+            //SELECT SCOPE_IDENTITY() -> Retorna o último valor de identidade inserido em uma coluna de identidade no mesmo escopo
+            
             char sexo = '\0';//Atribui NULL a um char
 
             if (cbSexo.Text == "Masculino")
@@ -96,46 +104,73 @@ namespace Matricula
 
             try
             {
-                SqlCommand cmdInsert = new SqlCommand(insertAluno, conn);
+                SqlCommand cmdInsertMatricula = new SqlCommand(insertMatricula, conn);
 
-                cmdInsert.Parameters.AddWithValue("@nome", txtNome.Text);
-                cmdInsert.Parameters.AddWithValue("@dtNasc", dpNascimento.Value.ToString("yyyy-MM-dd"));
-                cmdInsert.Parameters.AddWithValue("@sexo", sexo);
-                cmdInsert.Parameters.AddWithValue("@nacionalidade", txtNacionalidade.Text);
-                cmdInsert.Parameters.AddWithValue("@naturalidade", txtNaturalidade.Text);
-                cmdInsert.Parameters.AddWithValue("@estadoCivil", cbEstadoCivil.Text);
-                cmdInsert.Parameters.AddWithValue("@estado", cbEstado.Text);
-                cmdInsert.Parameters.AddWithValue("@religiao", cbReligiao.Text);
-                cmdInsert.Parameters.AddWithValue("@tipoSanguineo", cbSanguineo.Text);
-                cmdInsert.Parameters.AddWithValue("@rh", cbRH.Text);
-                cmdInsert.Parameters.AddWithValue("@nomePai", txtNomePai.Text);
-                cmdInsert.Parameters.AddWithValue("@nomeMae", txtNomeMae.Text);
-                cmdInsert.Parameters.AddWithValue("@email", txtEmail.Text);
-                cmdInsert.Parameters.AddWithValue("@cep", mtxtCep.Text.Replace("-", ""));
-                cmdInsert.Parameters.AddWithValue("@endereco", txtEndereco.Text);
-                cmdInsert.Parameters.AddWithValue("@numero", txtNumero.Text);
-                cmdInsert.Parameters.AddWithValue("@complemento", txtComplemento.Text);
-                cmdInsert.Parameters.AddWithValue("@bairro", txtBairro.Text);
-                cmdInsert.Parameters.AddWithValue("@municipio", txtMunicipio.Text);
-                cmdInsert.Parameters.AddWithValue("@cpf", mtxtCpf.Text.Replace(".", "").Replace("-", ""));
-                cmdInsert.Parameters.AddWithValue("@dataEmissaoCpf", dpEmissaoCpf.Value.ToString("yyyy-MM-dd"));
-                cmdInsert.Parameters.AddWithValue("@rg", mtxtRg.Text.Replace(".", "").Replace("-", ""));
-                cmdInsert.Parameters.AddWithValue("@dataEmissaoRg", dpEmissaoRg.Value.ToString("yyyy-MM-dd"));
-                cmdInsert.Parameters.AddWithValue("@tituloEleitor", txtTitulo.Text);
-                cmdInsert.Parameters.AddWithValue("@secao", txtSecaoTitulo.Text);
-                cmdInsert.Parameters.AddWithValue("@zona", txtZonaTitulo.Text);
-                cmdInsert.Parameters.AddWithValue("@escola", txtEscola.Text);
-                cmdInsert.Parameters.AddWithValue("@cidadeEscola", txtCidadeEscola.Text);
-                cmdInsert.Parameters.AddWithValue("@estadoEscola", cbEstadoEscola.Text);
-                cmdInsert.Parameters.AddWithValue("@anoConclusao", dpConclusaoEscola.Value.ToString("yyyy-01-01"));
-                cmdInsert.Parameters.AddWithValue("@classificacao", txtClassificacao.Text);
-                cmdInsert.Parameters.AddWithValue("@pontuacao", txtPontuacao.Text);
-                cmdInsert.Parameters.AddWithValue("@curso", cbCurso.Text);
-                cmdInsert.Parameters.AddWithValue("@turno", cbTurno.Text);
-                cmdInsert.Parameters.AddWithValue("@foto", imgArray);
+                cmdInsertMatricula.Parameters.AddWithValue("@nome", txtNome.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@dtNasc", dpNascimento.Value.ToString("yyyy-MM-dd"));
+                cmdInsertMatricula.Parameters.AddWithValue("@sexo", sexo);
+                cmdInsertMatricula.Parameters.AddWithValue("@nacionalidade", txtNacionalidade.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@naturalidade", txtNaturalidade.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@estadoCivil", cbEstadoCivil.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@estado", cbEstado.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@religiao", cbReligiao.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@tipoSanguineo", cbSanguineo.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@rh", cbRH.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@nomePai", txtNomePai.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@nomeMae", txtNomeMae.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@email", txtEmail.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@cep", mtxtCep.Text.Replace("-", ""));
+                cmdInsertMatricula.Parameters.AddWithValue("@endereco", txtEndereco.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@numero", txtNumero.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@complemento", txtComplemento.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@bairro", txtBairro.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@municipio", txtMunicipio.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@cpf", mtxtCpf.Text.Replace(".", "").Replace("-", ""));
+                cmdInsertMatricula.Parameters.AddWithValue("@dataEmissaoCpf", dpEmissaoCpf.Value.ToString("yyyy-MM-dd"));
+                cmdInsertMatricula.Parameters.AddWithValue("@rg", mtxtRg.Text.Replace(".", "").Replace("-", ""));
+                cmdInsertMatricula.Parameters.AddWithValue("@dataEmissaoRg", dpEmissaoRg.Value.ToString("yyyy-MM-dd"));
+                cmdInsertMatricula.Parameters.AddWithValue("@tituloEleitor", txtTitulo.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@secao", txtSecaoTitulo.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@zona", txtZonaTitulo.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@escola", txtEscola.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@cidadeEscola", txtCidadeEscola.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@estadoEscola", cbEstadoEscola.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@anoConclusao", dpConclusaoEscola.Value.ToString("yyyy-01-01"));
+                cmdInsertMatricula.Parameters.AddWithValue("@classificacao", txtClassificacao.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@pontuacao", txtPontuacao.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@curso", cbCurso.Text);
+                cmdInsertMatricula.Parameters.AddWithValue("@turno", cbTurno.Text);
+                //cmdInsert.Parameters.AddWithValue("@foto", imgArray == null ? (object) DBNull.Value : imgArray);
 
                 conn.Open();
-                cmdInsert.ExecuteNonQuery();
+                //Armazena a ultima chave primaria inserida
+                int matriculaId = Convert.ToInt32(cmdInsertMatricula.ExecuteScalar());
+                //Faz os inserts de acordo com a quantidade de telefones informados
+                if (txtRArray[0].Text != "")
+                {
+                    string insertFixo = "INSERT INTO Fixos (telefone, codMatricula) VALUES (@telefone, @codMatricula)";
+
+                    for (int i = 0; i < countR; i++)
+                    {
+                        SqlCommand cmdInsertFixo = new SqlCommand(insertFixo, conn);
+                        cmdInsertFixo.Parameters.AddWithValue("@telefone", txtRArray[i].Text);
+                        cmdInsertFixo.Parameters.AddWithValue("@codMatricula", matriculaId);
+                        cmdInsertFixo.ExecuteNonQuery();
+                    }
+                }
+
+                if (txtCArray[0].Text != "")
+                {
+                    string insertCelular = "INSERT INTO Celulares (celular, codMatricula) VALUES (@celular, @codMatricula)";
+
+                    for (int i = 0; i < countC; i++)
+                    {
+                        SqlCommand cmdInsertCel = new SqlCommand(insertCelular, conn);
+                        cmdInsertCel.Parameters.AddWithValue("@celular", txtCArray[i].Text);
+                        cmdInsertCel.Parameters.AddWithValue("@codMatricula", matriculaId);
+                        cmdInsertCel.ExecuteNonQuery();
+                    }
+                }
             }
             catch (SqlException ex)
             {
@@ -170,13 +205,13 @@ namespace Matricula
 
         private void btnMaisR_Click(object sender, EventArgs e)
         {
-            if (countR < 2)
+            if (countR < 3)
             {
                 txtRArray[countR] = novoTextBox();
                 //Nomeia o textbox de acordo com o número
-                txtRArray[countR].Name = "txtResidencial" + (countR+1);
+                //txtRArray[countR].Name = "txtResidencial" + countR;
                 //Atribui a localização do textbox baseado no primeiro
-                txtRArray[countR].Location = new Point(txtResidencial.Location.X, txtResidencial.Location.Y + 26 * (countR+1));
+                txtRArray[countR].Location = new Point(12, 197 + 26 * countR);
                 countR++;
             }            
             btnMenosR.Visible = true;
@@ -184,13 +219,13 @@ namespace Matricula
 
         private void btnMainC_Click(object sender, EventArgs e)
         {
-            if (countC < 2)
+            if (countC < 3)
             {
                 txtCArray[countC] = novoTextBox();
                 //Nomeia o textbox de acordo com o número
-                txtCArray[countC].Name = "txtCelular" + (countC+1);
+                //txtCArray[countC].Name = "txtCelular" + countC;
                 //Atribui a localização do textbox baseado no primeiro
-                txtCArray[countC].Location = new Point(txtCelular.Location.X, txtCelular.Location.Y + 26 * (countC+1));
+                txtCArray[countC].Location = new Point(259, 197 + 26 * countC);
                 countC++;
             }
             btnMenosC.Visible = true;
@@ -201,64 +236,71 @@ namespace Matricula
         {
             TextBoxExt txt = new TextBoxExt();
             this.tabResidencial.Controls.Add(txt);
-            txt.Size = new Size(txtResidencial.Size.Width, txtResidencial.Size.Height);
+            txt.Size = new Size(197, 20);
             return txt;
         }
 
         private void btnConectar_Click(object sender, EventArgs e)
         {
-            //filtra as webcams
-            FilterInfoCollection videoDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-
-            if (videoDevices.Count != 0)
+            try
             {
-                //Seleciona a primeira webcam
-                videoDevice = new VideoCaptureDevice(videoDevices[0].MonikerString);
+                //filtra as webcams
+                FilterInfoCollection videoDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
 
-                //Encontra a menor resolução de video disponivel que seja >= 120p de altura 
-                int videoMenor = videoDevice.VideoCapabilities[0].FrameSize.Height;
-                int videoIndice = 0;
-                for (int i = 0; i < videoDevice.VideoCapabilities.Length; i++)
+                if (videoDevices.Count != 0)
                 {
-                    if (videoMenor > videoDevice.VideoCapabilities[i].FrameSize.Height &&
-                        videoDevice.VideoCapabilities[i].FrameSize.Height >= 120)
-                    {
-                        videoMenor = videoDevice.VideoCapabilities[i].FrameSize.Height;
-                        videoIndice = i;
-                    }
-                }
+                    //Seleciona a primeira webcam
+                    videoDevice = new VideoCaptureDevice(videoDevices[0].MonikerString);
 
-                //Encontra a menor resolução de foto disponivel que seja >= 120p de altura
-                int snapMenor = videoDevice.SnapshotCapabilities[0].FrameSize.Height;
-                int snapIndice = 0;
-                for (int i = 0; i < videoDevice.SnapshotCapabilities.Length; i++)
+                    //Encontra a menor resolução de video disponivel que seja >= 120p de altura 
+                    int videoMenor = videoDevice.VideoCapabilities[0].FrameSize.Height;
+                    int videoIndice = 0;
+                    for (int i = 0; i < videoDevice.VideoCapabilities.Length; i++)
+                    {
+                        if (videoMenor > videoDevice.VideoCapabilities[i].FrameSize.Height &&
+                            videoDevice.VideoCapabilities[i].FrameSize.Height >= 120)
+                        {
+                            videoMenor = videoDevice.VideoCapabilities[i].FrameSize.Height;
+                            videoIndice = i;
+                        }
+                    }
+
+                    //Encontra a menor resolução de foto disponivel que seja >= 120p de altura
+                    int snapMenor = videoDevice.SnapshotCapabilities[0].FrameSize.Height;
+                    int snapIndice = 0;
+                    for (int i = 0; i < videoDevice.SnapshotCapabilities.Length; i++)
+                    {
+                        if (snapMenor > videoDevice.SnapshotCapabilities[i].FrameSize.Height &&
+                            videoDevice.SnapshotCapabilities[i].FrameSize.Height >= 120)
+                        {
+                            snapMenor = videoDevice.SnapshotCapabilities[i].FrameSize.Height;
+                            snapIndice = i;
+                        }
+                    }
+
+                    Console.Write(videoIndice);
+                    Console.Write(snapIndice);
+                    //define a resolução do video
+                    videoDevice.VideoResolution = videoDevice.VideoCapabilities[videoIndice];
+                    //define a resolução da foto
+                    videoDevice.SnapshotResolution = videoDevice.SnapshotCapabilities[snapIndice];
+                    //atualiza os frames no picturebox
+                    videoDevice.NewFrame += (s, en) => ptFotoPes.Image = (Bitmap)en.Frame.Clone();
+                    videoDevice.Start();
+
+                    btnConectar.Enabled = false;
+                    btnConectar.BackColor = Color.Silver;
+                    btnCapturar.Enabled = true;
+                    btnCapturar.BackColor = Color.FromArgb(0, 191, 177);
+                }
+                else
                 {
-                    if (snapMenor > videoDevice.SnapshotCapabilities[i].FrameSize.Height &&
-                        videoDevice.SnapshotCapabilities[i].FrameSize.Height >= 120)
-                    {
-                        snapMenor = videoDevice.SnapshotCapabilities[i].FrameSize.Height;
-                        snapIndice = i;
-                    }
+                    MessageBoxAdv.Show(this, "Não há webcam conectada.", "Erro");
                 }
-
-                Console.Write(videoIndice);
-                Console.Write(snapIndice);
-                //define a resolução do video
-                videoDevice.VideoResolution = videoDevice.VideoCapabilities[videoIndice];
-                //define a resolução da foto
-                videoDevice.SnapshotResolution = videoDevice.SnapshotCapabilities[snapIndice];
-                //atualiza os frames no picturebox
-                videoDevice.NewFrame += (s, en) => ptFotoPes.Image = (Bitmap)en.Frame.Clone();
-                videoDevice.Start();
-
-                btnConectar.Enabled = false;
-                btnConectar.BackColor = Color.Silver;
-                btnCapturar.Enabled = true;
-                btnCapturar.BackColor = Color.FromArgb(0, 191, 177);
             }
-            else
+            catch(Exception ex)
             {
-                MessageBoxAdv.Show(this, "Não há webcam conectada.", "Erro");
+                MessageBoxAdv.Show(this, "Erro: " + ex, "Erro");
             }
         }
 
@@ -303,7 +345,7 @@ namespace Matricula
 
         private void btnMenosR_Click(object sender, EventArgs e)
         {
-            if(countR == 1)
+            if(countR == 2)
             {
                 btnMenosR.Visible = false;
             }
@@ -314,7 +356,7 @@ namespace Matricula
 
         private void btnMenosC_Click(object sender, EventArgs e)
         {
-            if (countC == 1)
+            if (countC == 2)
             {
                 btnMenosC.Visible = false;
             }
