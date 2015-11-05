@@ -273,7 +273,7 @@ namespace Matricula
             this.btnCapturar.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
             this.btnCapturar.Name = "btnCapturar";
             this.btnCapturar.Size = new System.Drawing.Size(120, 23);
-            this.btnCapturar.TabIndex = 35;
+            this.btnCapturar.TabIndex = 15;
             this.btnCapturar.Text = "Capturar";
             this.btnCapturar.UseVisualStyle = false;
             this.btnCapturar.UseVisualStyleBackColor = false;
@@ -297,7 +297,7 @@ namespace Matricula
             this.btnConectar.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
             this.btnConectar.Name = "btnConectar";
             this.btnConectar.Size = new System.Drawing.Size(120, 23);
-            this.btnConectar.TabIndex = 23;
+            this.btnConectar.TabIndex = 14;
             this.btnConectar.Text = "Conectar";
             this.btnConectar.UseVisualStyle = false;
             this.btnConectar.UseVisualStyleBackColor = false;
@@ -316,8 +316,10 @@ namespace Matricula
             // 
             this.cbReligiao.BackColor = System.Drawing.Color.White;
             this.cbReligiao.BeforeTouchSize = new System.Drawing.Size(254, 21);
+            this.cbReligiao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbReligiao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbReligiao.Items.AddRange(new object[] {
+            "",
             "Budismo",
             "Cristianismo",
             "Espiritismo",
@@ -326,6 +328,7 @@ namespace Matricula
             "Sem Religião",
             "Testemunha de Jeová",
             "Outra..."});
+            this.cbReligiao.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbReligiao, ""));
             this.cbReligiao.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbReligiao, "Budismo"));
             this.cbReligiao.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbReligiao, "Cristianismo"));
             this.cbReligiao.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbReligiao, "Espiritismo"));
@@ -340,7 +343,7 @@ namespace Matricula
             this.cbReligiao.Name = "cbReligiao";
             this.cbReligiao.Size = new System.Drawing.Size(254, 21);
             this.cbReligiao.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
-            this.cbReligiao.TabIndex = 33;
+            this.cbReligiao.TabIndex = 8;
             // 
             // dpNascimento
             // 
@@ -431,7 +434,7 @@ namespace Matricula
             this.dpNascimento.ShowCheckBox = false;
             this.dpNascimento.Size = new System.Drawing.Size(167, 20);
             this.dpNascimento.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
-            this.dpNascimento.TabIndex = 32;
+            this.dpNascimento.TabIndex = 1;
             this.dpNascimento.Value = new System.DateTime(2015, 10, 17, 22, 7, 16, 932);
             // 
             // txtEmail
@@ -443,7 +446,7 @@ namespace Matricula
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(532, 20);
             this.txtEmail.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtEmail.TabIndex = 31;
+            this.txtEmail.TabIndex = 13;
             // 
             // autoLabel15
             // 
@@ -464,7 +467,7 @@ namespace Matricula
             this.txtNomeMae.Name = "txtNomeMae";
             this.txtNomeMae.Size = new System.Drawing.Size(272, 20);
             this.txtNomeMae.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtNomeMae.TabIndex = 29;
+            this.txtNomeMae.TabIndex = 12;
             // 
             // autoLabel14
             // 
@@ -485,7 +488,7 @@ namespace Matricula
             this.txtNomePai.Name = "txtNomePai";
             this.txtNomePai.Size = new System.Drawing.Size(254, 20);
             this.txtNomePai.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtNomePai.TabIndex = 27;
+            this.txtNomePai.TabIndex = 11;
             // 
             // autoLabel13
             // 
@@ -501,10 +504,13 @@ namespace Matricula
             // 
             this.cbRH.BackColor = System.Drawing.Color.White;
             this.cbRH.BeforeTouchSize = new System.Drawing.Size(118, 21);
+            this.cbRH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRH.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRH.Items.AddRange(new object[] {
+            "",
             "+",
             "-"});
+            this.cbRH.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbRH, ""));
             this.cbRH.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbRH, "+"));
             this.cbRH.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbRH, "-"));
             this.cbRH.Location = new System.Drawing.Point(426, 159);
@@ -513,7 +519,7 @@ namespace Matricula
             this.cbRH.Name = "cbRH";
             this.cbRH.Size = new System.Drawing.Size(118, 21);
             this.cbRH.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
-            this.cbRH.TabIndex = 25;
+            this.cbRH.TabIndex = 10;
             // 
             // autoLabel12
             // 
@@ -529,12 +535,15 @@ namespace Matricula
             // 
             this.cbSanguineo.BackColor = System.Drawing.Color.White;
             this.cbSanguineo.BeforeTouchSize = new System.Drawing.Size(148, 21);
+            this.cbSanguineo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSanguineo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSanguineo.Items.AddRange(new object[] {
+            "",
             "O",
             "A",
             "B",
             "AB"});
+            this.cbSanguineo.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbSanguineo, ""));
             this.cbSanguineo.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbSanguineo, "O"));
             this.cbSanguineo.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbSanguineo, "A"));
             this.cbSanguineo.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbSanguineo, "B"));
@@ -545,7 +554,7 @@ namespace Matricula
             this.cbSanguineo.Name = "cbSanguineo";
             this.cbSanguineo.Size = new System.Drawing.Size(148, 21);
             this.cbSanguineo.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
-            this.cbSanguineo.TabIndex = 22;
+            this.cbSanguineo.TabIndex = 9;
             // 
             // autoLabel11
             // 
@@ -571,8 +580,10 @@ namespace Matricula
             // 
             this.cbEstado.BackColor = System.Drawing.Color.White;
             this.cbEstado.BeforeTouchSize = new System.Drawing.Size(167, 21);
+            this.cbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEstado.Items.AddRange(new object[] {
+            "",
             "AC",
             "AL",
             "AP",
@@ -600,6 +611,7 @@ namespace Matricula
             "SP",
             "SE",
             "TO"});
+            this.cbEstado.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbEstado, ""));
             this.cbEstado.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbEstado, "AC"));
             this.cbEstado.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbEstado, "AL"));
             this.cbEstado.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbEstado, "AP"));
@@ -633,7 +645,7 @@ namespace Matricula
             this.cbEstado.Name = "cbEstado";
             this.cbEstado.Size = new System.Drawing.Size(167, 21);
             this.cbEstado.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
-            this.cbEstado.TabIndex = 18;
+            this.cbEstado.TabIndex = 7;
             // 
             // autoLabel9
             // 
@@ -654,7 +666,7 @@ namespace Matricula
             this.txtNaturalidade.Name = "txtNaturalidade";
             this.txtNaturalidade.Size = new System.Drawing.Size(194, 20);
             this.txtNaturalidade.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtNaturalidade.TabIndex = 16;
+            this.txtNaturalidade.TabIndex = 6;
             // 
             // autoLabel8
             // 
@@ -675,7 +687,7 @@ namespace Matricula
             this.txtCor.Name = "txtCor";
             this.txtCor.Size = new System.Drawing.Size(158, 20);
             this.txtCor.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtCor.TabIndex = 14;
+            this.txtCor.TabIndex = 5;
             // 
             // autoLabel7
             // 
@@ -691,15 +703,18 @@ namespace Matricula
             // 
             this.cbEstadoCivil.BackColor = System.Drawing.Color.White;
             this.cbEstadoCivil.BeforeTouchSize = new System.Drawing.Size(167, 21);
+            this.cbEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEstadoCivil.FlatBorderColor = System.Drawing.SystemColors.ControlDark;
             this.cbEstadoCivil.FlatStyle = Syncfusion.Windows.Forms.Tools.ComboFlatStyle.Flat;
             this.cbEstadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEstadoCivil.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cbEstadoCivil.Items.AddRange(new object[] {
+            "",
             "Solteiro(a)",
             "Casado(a)",
             "Divorciado(a)",
             "Viúvo(a)"});
+            this.cbEstadoCivil.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbEstadoCivil, ""));
             this.cbEstadoCivil.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbEstadoCivil, "Solteiro(a)"));
             this.cbEstadoCivil.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbEstadoCivil, "Casado(a)"));
             this.cbEstadoCivil.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbEstadoCivil, "Divorciado(a)"));
@@ -710,7 +725,7 @@ namespace Matricula
             this.cbEstadoCivil.Name = "cbEstadoCivil";
             this.cbEstadoCivil.Size = new System.Drawing.Size(167, 21);
             this.cbEstadoCivil.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
-            this.cbEstadoCivil.TabIndex = 12;
+            this.cbEstadoCivil.TabIndex = 4;
             // 
             // autoLabel6
             // 
@@ -731,7 +746,7 @@ namespace Matricula
             this.txtNacionalidade.Name = "txtNacionalidade";
             this.txtNacionalidade.Size = new System.Drawing.Size(194, 20);
             this.txtNacionalidade.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtNacionalidade.TabIndex = 10;
+            this.txtNacionalidade.TabIndex = 3;
             // 
             // autoLabel5
             // 
@@ -747,10 +762,13 @@ namespace Matricula
             // 
             this.cbSexo.BackColor = System.Drawing.Color.White;
             this.cbSexo.BeforeTouchSize = new System.Drawing.Size(158, 21);
+            this.cbSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSexo.Items.AddRange(new object[] {
+            "",
             "Feminino",
             "Masculino"});
+            this.cbSexo.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbSexo, ""));
             this.cbSexo.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbSexo, "Feminino"));
             this.cbSexo.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbSexo, "Masculino"));
             this.cbSexo.Location = new System.Drawing.Point(12, 76);
@@ -759,7 +777,7 @@ namespace Matricula
             this.cbSexo.Name = "cbSexo";
             this.cbSexo.Size = new System.Drawing.Size(158, 21);
             this.cbSexo.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
-            this.cbSexo.TabIndex = 8;
+            this.cbSexo.TabIndex = 2;
             // 
             // autoLabel4
             // 
@@ -790,7 +808,7 @@ namespace Matricula
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(358, 20);
             this.txtNome.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtNome.TabIndex = 3;
+            this.txtNome.TabIndex = 0;
             // 
             // autoLabel2
             // 
@@ -849,7 +867,7 @@ namespace Matricula
             this.mtxtCep.PositionAt = Syncfusion.Windows.Forms.Tools.SpecialCursorPosition.FirstMaskPosition;
             this.mtxtCep.Size = new System.Drawing.Size(143, 20);
             this.mtxtCep.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.mtxtCep.TabIndex = 39;
+            this.mtxtCep.TabIndex = 0;
             this.mtxtCep.UsageMode = Syncfusion.Windows.Forms.Tools.MaskedUsageMode.Numeric;
             // 
             // btnMenosC
@@ -983,7 +1001,7 @@ namespace Matricula
             this.txtMunicipio.Name = "txtMunicipio";
             this.txtMunicipio.Size = new System.Drawing.Size(488, 20);
             this.txtMunicipio.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtMunicipio.TabIndex = 13;
+            this.txtMunicipio.TabIndex = 5;
             // 
             // autoLabel21
             // 
@@ -1004,7 +1022,7 @@ namespace Matricula
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(241, 20);
             this.txtBairro.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtBairro.TabIndex = 11;
+            this.txtBairro.TabIndex = 4;
             // 
             // autoLabel20
             // 
@@ -1025,7 +1043,7 @@ namespace Matricula
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(241, 20);
             this.txtComplemento.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtComplemento.TabIndex = 9;
+            this.txtComplemento.TabIndex = 3;
             // 
             // autoLabel19
             // 
@@ -1046,7 +1064,7 @@ namespace Matricula
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(82, 20);
             this.txtNumero.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtNumero.TabIndex = 7;
+            this.txtNumero.TabIndex = 2;
             // 
             // autoLabel18
             // 
@@ -1067,7 +1085,7 @@ namespace Matricula
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(400, 20);
             this.txtEndereco.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtEndereco.TabIndex = 5;
+            this.txtEndereco.TabIndex = 1;
             // 
             // autoLabel17
             // 
@@ -1127,7 +1145,7 @@ namespace Matricula
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(222, 20);
             this.txtTitulo.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtTitulo.TabIndex = 39;
+            this.txtTitulo.TabIndex = 5;
             // 
             // mtxtRg
             // 
@@ -1145,7 +1163,7 @@ namespace Matricula
             this.mtxtRg.PositionAt = Syncfusion.Windows.Forms.Tools.SpecialCursorPosition.FirstMaskPosition;
             this.mtxtRg.Size = new System.Drawing.Size(222, 20);
             this.mtxtRg.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.mtxtRg.TabIndex = 38;
+            this.mtxtRg.TabIndex = 2;
             this.mtxtRg.UsageMode = Syncfusion.Windows.Forms.Tools.MaskedUsageMode.Numeric;
             // 
             // mtxtCpf
@@ -1164,7 +1182,7 @@ namespace Matricula
             this.mtxtCpf.PositionAt = Syncfusion.Windows.Forms.Tools.SpecialCursorPosition.FirstMaskPosition;
             this.mtxtCpf.Size = new System.Drawing.Size(222, 20);
             this.mtxtCpf.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.mtxtCpf.TabIndex = 35;
+            this.mtxtCpf.TabIndex = 0;
             this.mtxtCpf.UsageMode = Syncfusion.Windows.Forms.Tools.MaskedUsageMode.Numeric;
             // 
             // dpEmissaoRg
@@ -1256,7 +1274,7 @@ namespace Matricula
             this.dpEmissaoRg.ShowCheckBox = false;
             this.dpEmissaoRg.Size = new System.Drawing.Size(167, 20);
             this.dpEmissaoRg.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
-            this.dpEmissaoRg.TabIndex = 34;
+            this.dpEmissaoRg.TabIndex = 3;
             this.dpEmissaoRg.Value = new System.DateTime(2015, 10, 17, 22, 7, 16, 932);
             // 
             // dpEmissaoCpf
@@ -1348,7 +1366,7 @@ namespace Matricula
             this.dpEmissaoCpf.ShowCheckBox = false;
             this.dpEmissaoCpf.Size = new System.Drawing.Size(167, 20);
             this.dpEmissaoCpf.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
-            this.dpEmissaoCpf.TabIndex = 33;
+            this.dpEmissaoCpf.TabIndex = 1;
             this.dpEmissaoCpf.Value = new System.DateTime(2015, 10, 17, 22, 7, 16, 932);
             // 
             // txtZonaTitulo
@@ -1360,7 +1378,7 @@ namespace Matricula
             this.txtZonaTitulo.Name = "txtZonaTitulo";
             this.txtZonaTitulo.Size = new System.Drawing.Size(137, 20);
             this.txtZonaTitulo.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtZonaTitulo.TabIndex = 18;
+            this.txtZonaTitulo.TabIndex = 7;
             // 
             // autoLabel31
             // 
@@ -1381,7 +1399,7 @@ namespace Matricula
             this.txtSecaoTitulo.Name = "txtSecaoTitulo";
             this.txtSecaoTitulo.Size = new System.Drawing.Size(167, 20);
             this.txtSecaoTitulo.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtSecaoTitulo.TabIndex = 16;
+            this.txtSecaoTitulo.TabIndex = 6;
             // 
             // autoLabel30
             // 
@@ -1412,7 +1430,7 @@ namespace Matricula
             this.txtExpedidoRg.Name = "txtExpedidoRg";
             this.txtExpedidoRg.Size = new System.Drawing.Size(137, 20);
             this.txtExpedidoRg.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtExpedidoRg.TabIndex = 12;
+            this.txtExpedidoRg.TabIndex = 4;
             // 
             // autoLabel28
             // 
@@ -1578,18 +1596,21 @@ namespace Matricula
             this.dpConclusaoEscola.ShowCheckBox = false;
             this.dpConclusaoEscola.Size = new System.Drawing.Size(120, 20);
             this.dpConclusaoEscola.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
-            this.dpConclusaoEscola.TabIndex = 33;
+            this.dpConclusaoEscola.TabIndex = 3;
             this.dpConclusaoEscola.Value = new System.DateTime(2015, 10, 17, 22, 7, 16, 932);
             // 
             // cbTurno
             // 
             this.cbTurno.BackColor = System.Drawing.Color.White;
-            this.cbTurno.BeforeTouchSize = new System.Drawing.Size(194, 19);
+            this.cbTurno.BeforeTouchSize = new System.Drawing.Size(194, 21);
+            this.cbTurno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTurno.Items.AddRange(new object[] {
+            "",
             "Manhã",
             "Tarde",
             "Noturno"});
+            this.cbTurno.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbTurno, ""));
             this.cbTurno.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbTurno, "Manhã"));
             this.cbTurno.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbTurno, "Tarde"));
             this.cbTurno.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbTurno, "Noturno"));
@@ -1597,9 +1618,9 @@ namespace Matricula
             this.cbTurno.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbTurno.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbTurno.Name = "cbTurno";
-            this.cbTurno.Size = new System.Drawing.Size(194, 19);
+            this.cbTurno.Size = new System.Drawing.Size(194, 21);
             this.cbTurno.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
-            this.cbTurno.TabIndex = 23;
+            this.cbTurno.TabIndex = 7;
             // 
             // autoLabel39
             // 
@@ -1614,14 +1635,17 @@ namespace Matricula
             // cbCurso
             // 
             this.cbCurso.BackColor = System.Drawing.Color.White;
-            this.cbCurso.BeforeTouchSize = new System.Drawing.Size(327, 19);
+            this.cbCurso.BeforeTouchSize = new System.Drawing.Size(327, 21);
+            this.cbCurso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCurso.Items.AddRange(new object[] {
+            "",
             "Análise e Desenvolvimento de Sistemas",
             "Eventos",
             "Gestão Tecnologia da Informação",
             "Gestão Empresarial(EAD)",
             "Mecatrônica Industrial"});
+            this.cbCurso.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbCurso, ""));
             this.cbCurso.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbCurso, "Análise e Desenvolvimento de Sistemas"));
             this.cbCurso.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbCurso, "Eventos"));
             this.cbCurso.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbCurso, "Gestão Tecnologia da Informação"));
@@ -1631,9 +1655,9 @@ namespace Matricula
             this.cbCurso.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbCurso.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbCurso.Name = "cbCurso";
-            this.cbCurso.Size = new System.Drawing.Size(327, 19);
+            this.cbCurso.Size = new System.Drawing.Size(327, 21);
             this.cbCurso.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
-            this.cbCurso.TabIndex = 21;
+            this.cbCurso.TabIndex = 6;
             // 
             // autoLabel38
             // 
@@ -1654,7 +1678,7 @@ namespace Matricula
             this.txtPontuacao.Name = "txtPontuacao";
             this.txtPontuacao.Size = new System.Drawing.Size(154, 20);
             this.txtPontuacao.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtPontuacao.TabIndex = 19;
+            this.txtPontuacao.TabIndex = 5;
             // 
             // autoLabel37
             // 
@@ -1675,7 +1699,7 @@ namespace Matricula
             this.txtClassificacao.Name = "txtClassificacao";
             this.txtClassificacao.Size = new System.Drawing.Size(167, 20);
             this.txtClassificacao.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtClassificacao.TabIndex = 17;
+            this.txtClassificacao.TabIndex = 4;
             // 
             // autoLabel36
             // 
@@ -1700,9 +1724,11 @@ namespace Matricula
             // cbEstadoEscola
             // 
             this.cbEstadoEscola.BackColor = System.Drawing.Color.White;
-            this.cbEstadoEscola.BeforeTouchSize = new System.Drawing.Size(84, 19);
+            this.cbEstadoEscola.BeforeTouchSize = new System.Drawing.Size(84, 21);
+            this.cbEstadoEscola.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEstadoEscola.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEstadoEscola.Items.AddRange(new object[] {
+            "",
             "AC",
             "AL",
             "AP",
@@ -1730,6 +1756,7 @@ namespace Matricula
             "SP",
             "SE",
             "TO"});
+            this.cbEstadoEscola.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbEstadoEscola, ""));
             this.cbEstadoEscola.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbEstadoEscola, "AC"));
             this.cbEstadoEscola.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbEstadoEscola, "AL"));
             this.cbEstadoEscola.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbEstadoEscola, "AP"));
@@ -1761,9 +1788,9 @@ namespace Matricula
             this.cbEstadoEscola.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbEstadoEscola.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbEstadoEscola.Name = "cbEstadoEscola";
-            this.cbEstadoEscola.Size = new System.Drawing.Size(84, 19);
+            this.cbEstadoEscola.Size = new System.Drawing.Size(84, 21);
             this.cbEstadoEscola.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
-            this.cbEstadoEscola.TabIndex = 13;
+            this.cbEstadoEscola.TabIndex = 2;
             // 
             // autoLabel34
             // 
@@ -1784,7 +1811,7 @@ namespace Matricula
             this.txtCidadeEscola.Name = "txtCidadeEscola";
             this.txtCidadeEscola.Size = new System.Drawing.Size(311, 20);
             this.txtCidadeEscola.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtCidadeEscola.TabIndex = 7;
+            this.txtCidadeEscola.TabIndex = 1;
             // 
             // autoLabel33
             // 
@@ -1805,7 +1832,7 @@ namespace Matricula
             this.txtEscola.Name = "txtEscola";
             this.txtEscola.Size = new System.Drawing.Size(526, 20);
             this.txtEscola.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.txtEscola.TabIndex = 5;
+            this.txtEscola.TabIndex = 0;
             // 
             // autoLabel32
             // 
@@ -1844,7 +1871,7 @@ namespace Matricula
             this.btnConfirmar.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
-            this.btnConfirmar.TabIndex = 21;
+            this.btnConfirmar.TabIndex = 0;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyle = false;
             this.btnConfirmar.UseVisualStyleBackColor = false;
@@ -1865,7 +1892,7 @@ namespace Matricula
             this.btnCancelar.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(59)))), ((int)(((byte)(41)))));
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 20;
+            this.btnCancelar.TabIndex = 1;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyle = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
