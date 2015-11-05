@@ -86,6 +86,7 @@ namespace Matricula
                     matricula.Sexo = 'F';
                 }
 
+                matricula.Nome = txtNome.Text;
                 matricula.Nascimento = mtxtNascimento.Text.Replace("_", "").Replace("/", "");
                 matricula.Nacionalidade = txtNacionalidade.Text;
                 matricula.Naturalidade = txtNaturalidade.Text;
