@@ -44,12 +44,13 @@ namespace Matricula
             //Coloca os primeiros textbox de telefone
             btnMaisR_Click(btnMaisR, new EventArgs());
             btnMainC_Click(btnMainC, new EventArgs());
+
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
 
-            if (!(MatriculaModel.validarCpf(mtxtCpf.Text)) && mtxtCpf.Text.Replace(" ", "").Replace(".", "").Replace("-", "") != "")
+            if (!(MatriculaModel.validarCpf(mtxtCpf.Text)) && mtxtCpf.Text.Replace("_", "").Replace(".", "").Replace("-", "") != "")
             {
                 MessageBoxAdv.Show(this, "O CPF é inválido", "Erro");
                 return;
@@ -86,7 +87,7 @@ namespace Matricula
                 }
 
                 matricula.Nome = txtNome.Text;
-                matricula.Nascimento = dpNascimento.Value.ToString("yyyy-MM-dd");
+                matricula.Nascimento = mtxtNascimento.Text.Replace("_", "").Replace("/", "");
                 matricula.Nacionalidade = txtNacionalidade.Text;
                 matricula.Naturalidade = txtNaturalidade.Text;
                 matricula.EstadoCivil = cbEstadoCivil.Text;
@@ -104,16 +105,16 @@ namespace Matricula
                 matricula.Bairro = txtBairro.Text;
                 matricula.Municipio = txtMunicipio.Text;
                 matricula.Cpf = mtxtCpf.Text.Replace(".", "").Replace("-", "");
-                matricula.EmissaoCpf = dpEmissaoCpf.Value.ToString("yyyy-MM-dd");
+                matricula.EmissaoCpf = mtxtEmissaoCpf.Text.Replace("_", "").Replace("/", "");
                 matricula.Rg = mtxtRg.Text.Replace(".", "").Replace("-", "");
-                matricula.EmissaoRg = dpEmissaoRg.Value.ToString("yyyy-MM-dd");
+                matricula.EmissaoRg = mtxtEmissaoRg.Text.Replace("_", "").Replace("/", "");
                 matricula.Titulo = txtTitulo.Text;
                 matricula.SecaoTitulo = txtSecaoTitulo.Text;
                 matricula.ZonaTitulo = txtZonaTitulo.Text;
                 matricula.Escola = txtEscola.Text;
                 matricula.CidadeEscola = txtCidadeEscola.Text;
                 matricula.EstadoEscola = cbEstadoEscola.Text;
-                matricula.ConclusaoEscola = dpConclusaoEscola.Value.ToString("yyyy-01-01");
+                matricula.ConclusaoEscola = mtxtConclusaoEscola.Text.Replace("_", "").Replace("/", "");
                 matricula.Classificacao = txtClassificacao.Text;
                 matricula.Pontuacao = txtPontuacao.Text;
                 matricula.Curso = cbCurso.Text;
