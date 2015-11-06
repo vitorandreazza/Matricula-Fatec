@@ -20,12 +20,12 @@ namespace Matricula.Controller
             "(nome, dtNasc, sexo, nacionalidade, naturalidade, estadoCivil, estado, religiao," +
             "tipoSanguineo, rh, nomePai, nomeMae, email, cep, endereco, numero, complemento," +
             "bairro, municipio, cpf, dataEmissaoCpf, rg, dataEmissaoRg, tituloEleitor, secao, zona, escola," +
-            "cidadeEscola, estadoEscola, anoConclusao, classificacao, pontuacao, curso, turno)" +
+            "cidadeEscola, estadoEscola, anoConclusao, classificacao, pontuacao, curso, turno, foto)" +
             "VALUES" +
             "(@nome, @dtNasc, @sexo, @nacionalidade, @naturalidade, @estadoCivil, @estado, @religiao," +
             "@tipoSanguineo, @rh, @nomePai, @nomeMae, @email, @cep, @endereco, @numero, @complemento," +
             "@bairro, @municipio, @cpf, @dataEmissaoCpf, @rg, @dataEmissaoRg, @tituloEleitor, @secao, @zona, @escola," +
-            "@cidadeEscola, @estadoEscola, @anoConclusao, @classificacao, @pontuacao, @curso, @turno); SELECT SCOPE_IDENTITY()";
+            "@cidadeEscola, @estadoEscola, @anoConclusao, @classificacao, @pontuacao, @curso, @turno, @foto); SELECT SCOPE_IDENTITY()";
             //SELECT SCOPE_IDENTITY() -> Retorna o último valor de identidade inserido em uma coluna de identidade no mesmo escopo
             
             try
@@ -66,7 +66,8 @@ namespace Matricula.Controller
                 cmdInsertMatricula.Parameters.AddWithValue("@pontuacao", matricula.Pontuacao);
                 cmdInsertMatricula.Parameters.AddWithValue("@curso", matricula.Curso);
                 cmdInsertMatricula.Parameters.AddWithValue("@turno", matricula.Turno);
-
+                cmdInsertMatricula.Parameters.AddWithValue("@foto", matricula.Foto == null ? new byte[0] : matricula.Foto);
+                
                 conn.Open();
                 //Armazena a ultima chave primaria inserida
                 matricula.CodMatricula = Convert.ToInt32(cmdInsertMatricula.ExecuteScalar());

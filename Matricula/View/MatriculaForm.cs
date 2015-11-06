@@ -31,9 +31,9 @@ namespace Matricula
     {
         private MatriculaController matriculaController = new MatriculaController();
         private TelefonesController telefoneController = new TelefonesController();
-
+        
         private int countC = 0, countR = 0;
-        private TextBox[] txtRArray = new TextBox[3], txtCArray = new TextBox[3];
+        private MaskedEditBox[] mtxtRArray = new MaskedEditBox[3], mtxtCArray = new MaskedEditBox[3];
         private VideoCaptureDevice videoDevice;
 
         public MatriculaForm()
@@ -45,12 +45,15 @@ namespace Matricula
             btnMaisR_Click(btnMaisR, new EventArgs());
             btnMainC_Click(btnMainC, new EventArgs());
 
+            //Console.WriteLine(replaceAll(mtxtCpf.Text));
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
 
-            if (!(MatriculaModel.validarCpf(mtxtCpf.Text)) && mtxtCpf.Text.Replace("_", "").Replace(".", "").Replace("-", "") != "")
+            if (!(ValidaCpf.validaCpf(mtxtCpf.Text)) &&
+                replaceAll(mtxtCpf.Text) != "")
+                //mtxtCpf.Text.Replace("_", "").Replace(".", "").Replace("-", "").Replace(" ", "") != "")
             {
                 MessageBoxAdv.Show(this, "O CPF é inválido", "Erro");
                 return;
@@ -65,6 +68,7 @@ namespace Matricula
 
             if(ptFotoPes != null && ptFotoPes.Image != null)
             {
+                Console.WriteLine("entrou aqui");
                 //Stream do array
                 MemoryStream stream = new MemoryStream();
                 //salva a imagem no stream
@@ -87,7 +91,7 @@ namespace Matricula
                 }
 
                 matricula.Nome = txtNome.Text;
-                matricula.Nascimento = mtxtNascimento.Text.Replace("_", "").Replace("/", "");
+                matricula.Nascimento = formatarData(mtxtNascimento.Text);
                 matricula.Nacionalidade = txtNacionalidade.Text;
                 matricula.Naturalidade = txtNaturalidade.Text;
                 matricula.EstadoCivil = cbEstadoCivil.Text;
@@ -98,46 +102,46 @@ namespace Matricula
                 matricula.NomePai = txtNomePai.Text;
                 matricula.NomeMae = txtNomeMae.Text;
                 matricula.Email = txtEmail.Text;
-                matricula.Cep = mtxtCep.Text.Replace("-", "");
+                matricula.Cep = replaceAll(mtxtCep.Text);
                 matricula.Endreco = txtEndereco.Text;
                 matricula.Numero = txtNumero.Text;
                 matricula.Complemento = txtComplemento.Text;
                 matricula.Bairro = txtBairro.Text;
                 matricula.Municipio = txtMunicipio.Text;
-                matricula.Cpf = mtxtCpf.Text.Replace(".", "").Replace("-", "");
-                matricula.EmissaoCpf = mtxtEmissaoCpf.Text.Replace("_", "").Replace("/", "");
-                matricula.Rg = mtxtRg.Text.Replace(".", "").Replace("-", "");
-                matricula.EmissaoRg = mtxtEmissaoRg.Text.Replace("_", "").Replace("/", "");
+                matricula.Cpf = replaceAll(mtxtCpf.Text);
+                matricula.EmissaoCpf = formatarData(mtxtEmissaoCpf.Text);
+                matricula.Rg = replaceAll(mtxtRg.Text);
+                matricula.EmissaoRg = formatarData(mtxtEmissaoRg.Text);
                 matricula.Titulo = txtTitulo.Text;
                 matricula.SecaoTitulo = txtSecaoTitulo.Text;
                 matricula.ZonaTitulo = txtZonaTitulo.Text;
                 matricula.Escola = txtEscola.Text;
                 matricula.CidadeEscola = txtCidadeEscola.Text;
                 matricula.EstadoEscola = cbEstadoEscola.Text;
-                matricula.ConclusaoEscola = mtxtConclusaoEscola.Text.Replace("_", "").Replace("/", "");
+                matricula.ConclusaoEscola = replaceAll(mtxtConclusaoEscola.Text) == "" ? "" : formatarData("01/01/" + mtxtConclusaoEscola.Text);
                 matricula.Classificacao = txtClassificacao.Text;
                 matricula.Pontuacao = txtPontuacao.Text;
                 matricula.Curso = cbCurso.Text;
                 matricula.Turno = cbTurno.Text;
-                //cmdInsert.Parameters.AddWithValue("@foto", imgArray == null ? (object) DBNull.Value : imgArray);
+                matricula.Foto = imgArray;
 
                 matriculaController.inserir(matricula);
                 
                 //Faz os inserts de acordo com a quantidade de telefones informados
-                if (txtRArray[0].Text != "")
+                if (replaceAll(mtxtRArray[0].Text) != "")
                 {
                     for(int i = 0; i < countR; i++)
                     {
-                        string fixo = txtRArray[i].Text.Replace("(", "").Replace(")", "").Replace("-", "");
+                        string fixo = replaceAll(mtxtRArray[i].Text);
                         telefoneController.inserirFixo(fixo, matricula.CodMatricula);
                     }
                 }
 
-                if (txtCArray[0].Text != "")
+                if (replaceAll(mtxtCArray[0].Text) != "")
                 {
                     for (int i = 0; i < countC; i++)
                     {
-                        string celular = txtCArray[i].Text.Replace("(", "").Replace(")", "").Replace("-", "");
+                        string celular = replaceAll(mtxtCArray[i].Text);
                         telefoneController.inserirCelular(celular, matricula.CodMatricula);
                     }    
                 }
@@ -146,6 +150,27 @@ namespace Matricula
             {
                 MessageBox.Show("Error:" + ex);
             }
+        }
+
+        private string formatarData(string data)
+        {
+            string resultado;
+
+            if(replaceAll(data) == "")
+            {
+                resultado = "";
+            }
+            else
+            {
+                resultado = Convert.ToDateTime(data).ToString("yyyy-MM-dd");
+            }
+
+            return resultado;
+        }
+
+        private string replaceAll(string str)
+        {
+            return str.Replace(" ", "").Replace(".", "").Replace("-", "").Replace("_", "").Replace("(", "").Replace(")", "").Replace("/", "");
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -157,11 +182,14 @@ namespace Matricula
         }
 
         //Cria um novo TextBoxExt
-        private TextBoxExt novoTextBox()
+        private MaskedEditBox novoTextBox()
         {
-            TextBoxExt txt = new TextBoxExt();
+            MaskedEditBox txt = new MaskedEditBox();
             this.tabResidencial.Controls.Add(txt);
             txt.Size = new Size(197, 20);
+            txt.PassivePromptCharacter = '_';
+            txt.PromptCharacter = '_';
+            txt.PositionAt = SpecialCursorPosition.FirstMaskPosition;
             return txt;
         }
 
@@ -169,9 +197,10 @@ namespace Matricula
         {
             if (countR < 3)
             {
-                txtRArray[countR] = novoTextBox();
+                mtxtRArray[countR] = novoTextBox();
+                mtxtRArray[countR].Mask = "(##)####-####";
                 //Atribui a localização do textbox baseado no primeiro
-                txtRArray[countR].Location = new Point(12, 197 + 26 * countR);
+                mtxtRArray[countR].Location = new Point(12, 197 + 26 * countR);
                 countR++;
             }        
     
@@ -183,9 +212,10 @@ namespace Matricula
         {
             if (countC < 3)
             {
-                txtCArray[countC] = novoTextBox();
+                mtxtCArray[countC] = novoTextBox();
+                mtxtCArray[countC].Mask = "(##)#####-####";
                 //Atribui a localização do textbox baseado no primeiro
-                txtCArray[countC].Location = new Point(259, 197 + 26 * countC);
+                mtxtCArray[countC].Location = new Point(259, 197 + 26 * countC);
                 countC++;
             }
 
@@ -199,8 +229,8 @@ namespace Matricula
             {
                 btnMenosR.Visible = false;
             }
-            this.tabResidencial.Controls.Remove(txtRArray[countR - 1]);
-            txtRArray[countR - 1].Dispose();
+            this.tabResidencial.Controls.Remove(mtxtRArray[countR - 1]);
+            mtxtRArray[countR - 1].Dispose();
             countR--;
         }
 
@@ -210,8 +240,8 @@ namespace Matricula
             {
                 btnMenosC.Visible = false;
             }
-            this.tabResidencial.Controls.Remove(txtCArray[countC - 1]);
-            txtCArray[countC - 1].Dispose();
+            this.tabResidencial.Controls.Remove(mtxtCArray[countC - 1]);
+            mtxtCArray[countC - 1].Dispose();
             countC--;
         }
 
@@ -303,7 +333,7 @@ namespace Matricula
             btnCapturar.BackColor = Color.Silver;
         }
 
-        public Bitmap CortaImagem(Bitmap source, Rectangle area)
+        private Bitmap CortaImagem(Bitmap source, Rectangle area)
         {
             // Bitmap vazia para a nova imagem
             Bitmap bmp = new Bitmap(area.Width, area.Height);

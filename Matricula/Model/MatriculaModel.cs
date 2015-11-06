@@ -15,16 +15,18 @@ namespace Matricula.Model
 
         private int codMatricula;
         private char sexo;
+        private byte[] foto;
+
+        public byte[] Foto
+        {
+            get { return foto; }
+            set { foto = value; }
+        }
 
         public int CodMatricula
         {
             get { return codMatricula; }
             set { codMatricula = value; }
-        }
-
-        public static bool validarCpf(string cpf)
-        {
-            return ValidaCpf.validaCpf(cpf);
         }
 
         public string Turno

@@ -52,11 +52,13 @@ namespace Matricula.Controller
         {
             try
             {
-                string insertCelular = "INSERT INTO Celulares (celulares, codMatricula) VALUES (@celulares, @codMatricula)";
+                string insertCelular = "INSERT INTO Celulares (celular, codMatricula) VALUES (@celular, @codMatricula)";
 
                 SqlCommand cmdInsertFixo = new SqlCommand(insertCelular, conn);
-                cmdInsertFixo.Parameters.AddWithValue("@telefone", telefone);
+                cmdInsertFixo.Parameters.AddWithValue("@celular", telefone);
                 cmdInsertFixo.Parameters.AddWithValue("@codMatricula", matriculaId);
+
+                conn.Open();
                 cmdInsertFixo.ExecuteNonQuery();
             }
             catch (SqlException sqlEx)
