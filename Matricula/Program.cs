@@ -16,7 +16,7 @@ namespace Matricula
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MatriculaForm());
+            Application.Run(new Matricula.View.QuestionarioForm());
         }
     }
 }

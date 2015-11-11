@@ -182,6 +182,7 @@ namespace Matricula
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControlAdv1.BeforeTouchSize = new System.Drawing.Size(684, 379);
+            this.tabControlAdv1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tabControlAdv1.Controls.Add(this.tabPessoal);
             this.tabControlAdv1.Controls.Add(this.tabResidencial);
             this.tabControlAdv1.Controls.Add(this.tabDocumentos);
@@ -231,10 +232,10 @@ namespace Matricula
             this.tabPessoal.Controls.Add(this.autoLabel2);
             this.tabPessoal.Image = null;
             this.tabPessoal.ImageSize = new System.Drawing.Size(16, 16);
-            this.tabPessoal.Location = new System.Drawing.Point(1, 22);
+            this.tabPessoal.Location = new System.Drawing.Point(0, 21);
             this.tabPessoal.Name = "tabPessoal";
             this.tabPessoal.ShowCloseButton = true;
-            this.tabPessoal.Size = new System.Drawing.Size(681, 355);
+            this.tabPessoal.Size = new System.Drawing.Size(684, 358);
             this.tabPessoal.TabForeColor = System.Drawing.Color.Gray;
             this.tabPessoal.TabIndex = 1;
             this.tabPessoal.Text = "Dados Pessoais";
@@ -765,10 +766,10 @@ namespace Matricula
             this.tabResidencial.Controls.Add(this.autoLabel16);
             this.tabResidencial.Image = null;
             this.tabResidencial.ImageSize = new System.Drawing.Size(16, 16);
-            this.tabResidencial.Location = new System.Drawing.Point(1, 22);
+            this.tabResidencial.Location = new System.Drawing.Point(0, 21);
             this.tabResidencial.Name = "tabResidencial";
             this.tabResidencial.ShowCloseButton = true;
-            this.tabResidencial.Size = new System.Drawing.Size(681, 355);
+            this.tabResidencial.Size = new System.Drawing.Size(684, 358);
             this.tabResidencial.TabForeColor = System.Drawing.Color.DimGray;
             this.tabResidencial.TabIndex = 2;
             this.tabResidencial.Text = "Dados Residenciais";
@@ -1050,10 +1051,10 @@ namespace Matricula
             this.tabDocumentos.Controls.Add(this.autoLabel24);
             this.tabDocumentos.Image = null;
             this.tabDocumentos.ImageSize = new System.Drawing.Size(16, 16);
-            this.tabDocumentos.Location = new System.Drawing.Point(1, 22);
+            this.tabDocumentos.Location = new System.Drawing.Point(0, 21);
             this.tabDocumentos.Name = "tabDocumentos";
             this.tabDocumentos.ShowCloseButton = true;
-            this.tabDocumentos.Size = new System.Drawing.Size(681, 355);
+            this.tabDocumentos.Size = new System.Drawing.Size(684, 358);
             this.tabDocumentos.TabForeColor = System.Drawing.Color.DimGray;
             this.tabDocumentos.TabIndex = 3;
             this.tabDocumentos.Text = "Documentos";
@@ -1279,10 +1280,10 @@ namespace Matricula
             this.tabAcademico.Controls.Add(this.autoLabel32);
             this.tabAcademico.Image = null;
             this.tabAcademico.ImageSize = new System.Drawing.Size(16, 16);
-            this.tabAcademico.Location = new System.Drawing.Point(1, 22);
+            this.tabAcademico.Location = new System.Drawing.Point(0, 21);
             this.tabAcademico.Name = "tabAcademico";
             this.tabAcademico.ShowCloseButton = true;
-            this.tabAcademico.Size = new System.Drawing.Size(681, 355);
+            this.tabAcademico.Size = new System.Drawing.Size(684, 358);
             this.tabAcademico.TabForeColor = System.Drawing.Color.DimGray;
             this.tabAcademico.TabIndex = 4;
             this.tabAcademico.Text = "Dados Acadêmicos";
@@ -1310,7 +1311,7 @@ namespace Matricula
             // cbTurno
             // 
             this.cbTurno.BackColor = System.Drawing.Color.White;
-            this.cbTurno.BeforeTouchSize = new System.Drawing.Size(194, 21);
+            this.cbTurno.BeforeTouchSize = new System.Drawing.Size(194, 19);
             this.cbTurno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTurno.Items.AddRange(new object[] {
@@ -1326,7 +1327,7 @@ namespace Matricula
             this.cbTurno.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbTurno.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbTurno.Name = "cbTurno";
-            this.cbTurno.Size = new System.Drawing.Size(194, 21);
+            this.cbTurno.Size = new System.Drawing.Size(194, 19);
             this.cbTurno.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbTurno.TabIndex = 7;
             // 
@@ -1343,7 +1344,7 @@ namespace Matricula
             // cbCurso
             // 
             this.cbCurso.BackColor = System.Drawing.Color.White;
-            this.cbCurso.BeforeTouchSize = new System.Drawing.Size(327, 21);
+            this.cbCurso.BeforeTouchSize = new System.Drawing.Size(327, 19);
             this.cbCurso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCurso.Items.AddRange(new object[] {
@@ -1363,7 +1364,7 @@ namespace Matricula
             this.cbCurso.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbCurso.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbCurso.Name = "cbCurso";
-            this.cbCurso.Size = new System.Drawing.Size(327, 21);
+            this.cbCurso.Size = new System.Drawing.Size(327, 19);
             this.cbCurso.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbCurso.TabIndex = 6;
             // 
@@ -1432,7 +1433,7 @@ namespace Matricula
             // cbEstadoEscola
             // 
             this.cbEstadoEscola.BackColor = System.Drawing.Color.White;
-            this.cbEstadoEscola.BeforeTouchSize = new System.Drawing.Size(84, 21);
+            this.cbEstadoEscola.BeforeTouchSize = new System.Drawing.Size(84, 19);
             this.cbEstadoEscola.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEstadoEscola.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEstadoEscola.Items.AddRange(new object[] {
@@ -1496,7 +1497,7 @@ namespace Matricula
             this.cbEstadoEscola.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbEstadoEscola.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbEstadoEscola.Name = "cbEstadoEscola";
-            this.cbEstadoEscola.Size = new System.Drawing.Size(84, 21);
+            this.cbEstadoEscola.Size = new System.Drawing.Size(84, 19);
             this.cbEstadoEscola.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbEstadoEscola.TabIndex = 2;
             // 

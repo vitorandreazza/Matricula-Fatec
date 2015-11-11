@@ -15,6 +15,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using System.Drawing.Text;
 //Imports bibliotecas
 using Syncfusion.Windows.Forms;
 using Syncfusion.Windows.Forms.Tools;
@@ -40,6 +41,9 @@ namespace Matricula
         {
             InitializeComponent();
             //Aparencia do messagebox            
+            //PrivateFontCollection privateFonts = new PrivateFontCollection();
+            //privateFonts.AddFontFile(@"C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\Recursos\Font\Nexa.ttf");
+            //autoLabel2.Font = new Font(privateFonts.Families[0], 9f);
             MessageBoxApparence.getMessageBoxApparence();
             //Coloca os primeiros textbox de telefone
             btnMaisR_Click(btnMaisR, new EventArgs());
@@ -345,5 +349,35 @@ namespace Matricula
 
             return bmp;
         }
+
+        //private void MatriculaForm_Load(object sender, EventArgs e)
+        //{
+        //    PrivateFontCollection privateFonts = new PrivateFontCollection();
+        //    privateFonts.AddFontFile(@"C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\Recursos\Font\Nexa.ttf");
+
+        //    List<Control> allControls = GetAllControls(this);
+        //    allControls.ForEach(k => k.Font = new Font(privateFonts.Families[0], 8.25f, FontStyle.Bold));
+            
+        //    //autoLabel2.Font = new Font(privateFonts.Families[0], 9f);
+        //}
+
+        //private List<Control> GetAllControls(Control container, List<Control> list)
+        //{
+        //    foreach (Control c in container.Controls)
+        //    {
+
+        //        if (c.Controls.Count > 0)
+        //            list = GetAllControls(c, list);
+        //        else
+        //            list.Add(c);
+        //    }
+
+        //    return list;
+        //}
+
+        //private List<Control> GetAllControls(Control container)
+        //{
+        //    return GetAllControls(container, new List<Control>());
+        //}
     }
 }
