@@ -53,5 +53,20 @@ namespace Matricula.View
         {
 
         }
+
+        private void radioButtonAdv1_CheckChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButtonAdv86_CheckChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
