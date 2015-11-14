@@ -37,1553 +37,671 @@ namespace Matricula.View
         {
             this.components = new System.ComponentModel.Container();
             Syncfusion.Windows.Forms.MetroColorTable metroColorTable1 = new Syncfusion.Windows.Forms.MetroColorTable();
+            Syncfusion.Windows.Forms.MetroColorTable metroColorTable2 = new Syncfusion.Windows.Forms.MetroColorTable();
             Syncfusion.Windows.Forms.CaptionImage captionImage1 = new Syncfusion.Windows.Forms.CaptionImage();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuestionarioForm));
             Syncfusion.Windows.Forms.CaptionImage captionImage2 = new Syncfusion.Windows.Forms.CaptionImage();
-            this.autoLabel1 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv2 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv1 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv3 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv4 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv5 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv6 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.tabControlAdv1 = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
+            this.tabControl = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
             this.tab1 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.pnPrincipal = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv54 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv42 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel5 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv39 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv40 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv41 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.autoLabel4 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv21 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv20 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv19 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv18 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.autoLabel7 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv43 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv44 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv45 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv48 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv52 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv47 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel9 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv49 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv50 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv51 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv53 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv23 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv22 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv17 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel6 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv25 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv26 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv27 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv28 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv29 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv30 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv46 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel10 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv56 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv57 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv24 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv31 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv32 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv33 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv34 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv35 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv36 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv37 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv38 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel8 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.autoLabel3 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv16 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv15 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv14 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv13 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv12 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.autoLabel2 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv11 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv10 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv9 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv8 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv7 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.sfPrincipal = new Syncfusion.Windows.Forms.ScrollersFrame(this.components);
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv55 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv58 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel11 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv59 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv60 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv61 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv63 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv64 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel12 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv65 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv66 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv62 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv67 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb136 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb135 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb134 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb133 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.autoLabel13 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv68 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv69 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv70 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv71 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv74 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel14 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv76 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv77 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv75 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb131 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb132 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.rb124 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb123 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel12 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb121 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb122 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.rb115 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb114 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb113 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel11 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb111 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb112 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.rb105 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb104 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel5 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb102 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb103 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb101 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel09 = new System.Windows.Forms.Panel();
+            this.rb096 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb095 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel9 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb092 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb093 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb091 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb094 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel06 = new System.Windows.Forms.Panel();
+            this.rb068 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb069 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb067 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb063 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb064 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb062 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb066 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb061 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb065 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel8 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.panel01 = new System.Windows.Forms.Panel();
+            this.autoLabel1 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb013 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb014 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb012 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb016 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb011 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb015 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel02 = new System.Windows.Forms.Panel();
+            this.autoLabel2 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb023 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb024 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb022 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb021 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb025 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel05 = new System.Windows.Forms.Panel();
+            this.rb058 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb059 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb057 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel6 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb053 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb054 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb052 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb056 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb051 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb055 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel08 = new System.Windows.Forms.Panel();
+            this.rb083 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel10 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb082 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb081 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel07 = new System.Windows.Forms.Panel();
+            this.autoLabel7 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb072 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb073 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb071 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb074 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel04 = new System.Windows.Forms.Panel();
+            this.autoLabel4 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb043 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb044 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb042 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb041 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel03 = new System.Windows.Forms.Panel();
+            this.autoLabel3 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb033 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb034 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb032 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb031 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb035 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.tab2 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.rb265 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb264 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb263 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb262 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel26 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb261 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.rb256 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb255 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb254 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb253 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb252 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel25 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb251 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv72 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv73 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb154 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb152 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb153 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.autoLabel15 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv79 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv78 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb151 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.rb143 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb144 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel14 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb141 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb142 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv80 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv81 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv82 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel16 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv83 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv84 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv85 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv86 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv87 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv89 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel17 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv91 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv88 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv90 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv92 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv93 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv94 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel18 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv96 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.autoLabel19 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv95 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv97 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv98 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv99 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv100 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv101 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv102 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv103 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv104 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv105 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel20 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv106 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv107 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv108 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv109 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv110 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb165 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb164 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb163 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb162 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb161 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.autoLabel21 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv112 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv113 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv114 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel22 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv115 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv116 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv111 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv117 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv118 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel23 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv120 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv119 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.radioButtonAdv121 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv122 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv123 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv124 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb245 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb244 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb243 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb242 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb241 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.autoLabel24 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.radioButtonAdv125 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv1)).BeginInit();
-            this.tabControlAdv1.SuspendLayout();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.rb215 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb214 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb213 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb212 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb211 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel20 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.rb235 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb234 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb233 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb232 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel23 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb231 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.rb205 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb204 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb203 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb202 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb201 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel19 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.rb195 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb194 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb193 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb192 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel18 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb191 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.rb185 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb184 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb183 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb182 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel17 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb181 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.rb176 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb175 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb174 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb173 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel16 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb171 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb172 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.rb225 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb224 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb223 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel22 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb221 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb222 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.sfTab1 = new Syncfusion.Windows.Forms.ScrollersFrame(this.components);
+            this.sfTab2 = new Syncfusion.Windows.Forms.ScrollersFrame(this.components);
+            this.btnEnviar = new Syncfusion.Windows.Forms.ButtonAdv();
+            ((System.ComponentModel.ISupportInitialize)(this.tabControl)).BeginInit();
+            this.tabControl.SuspendLayout();
             this.tab1.SuspendLayout();
-            this.pnPrincipal.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv54)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv41)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv18)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv48)).BeginInit();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv52)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv49)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv50)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv53)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv30)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv46)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv56)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv57)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv38)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv12)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv7)).BeginInit();
-            this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv55)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv58)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv59)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv60)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv61)).BeginInit();
-            this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv63)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv64)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv65)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv66)).BeginInit();
             this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv62)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv67)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv68)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv69)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv70)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv71)).BeginInit();
-            this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv74)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv76)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv77)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv75)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb136)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb135)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb134)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb133)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb131)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb132)).BeginInit();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb124)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb123)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb121)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb122)).BeginInit();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb115)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb114)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb113)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb111)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb112)).BeginInit();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb105)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb104)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb102)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb103)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb101)).BeginInit();
+            this.panel09.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb096)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb095)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb092)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb093)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb091)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb094)).BeginInit();
+            this.panel06.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb068)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb069)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb067)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb063)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb064)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb062)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb066)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb061)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb065)).BeginInit();
+            this.panel01.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb013)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb014)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb012)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb016)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb011)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb015)).BeginInit();
+            this.panel02.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb023)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb024)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb022)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb021)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb025)).BeginInit();
+            this.panel05.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb058)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb059)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb057)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb053)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb054)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb052)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb056)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb051)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb055)).BeginInit();
+            this.panel08.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb083)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb082)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb081)).BeginInit();
+            this.panel07.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb072)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb073)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb071)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb074)).BeginInit();
+            this.panel04.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb043)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb044)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb042)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb041)).BeginInit();
+            this.panel03.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb033)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb034)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb032)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb031)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb035)).BeginInit();
+            this.tab2.SuspendLayout();
+            this.panel26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb265)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb264)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb263)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb262)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb261)).BeginInit();
+            this.panel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb256)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb255)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb254)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb253)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb252)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb251)).BeginInit();
             this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv72)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv73)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv79)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv78)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb154)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb152)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb153)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb151)).BeginInit();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb143)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb144)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb141)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb142)).BeginInit();
             this.panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv80)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv81)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv82)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv83)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv84)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv85)).BeginInit();
-            this.panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv86)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv87)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv89)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv91)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv88)).BeginInit();
-            this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv90)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv92)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv93)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv94)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv96)).BeginInit();
-            this.panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv95)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv97)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv98)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv99)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv100)).BeginInit();
-            this.panel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv101)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv102)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv103)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv104)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv105)).BeginInit();
-            this.panel21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv106)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv107)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv108)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv109)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv110)).BeginInit();
-            this.panel22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv112)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv113)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv114)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv115)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv116)).BeginInit();
-            this.panel23.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv111)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv117)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv118)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv120)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv119)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb165)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb164)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb163)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb162)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb161)).BeginInit();
             this.panel24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv121)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv122)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv123)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv124)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv125)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb245)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb244)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb243)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb242)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb241)).BeginInit();
+            this.panel21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb215)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb214)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb213)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb212)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb211)).BeginInit();
+            this.panel23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb235)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb234)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb233)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb232)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb231)).BeginInit();
+            this.panel20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb205)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb204)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb203)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb202)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb201)).BeginInit();
+            this.panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb195)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb194)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb193)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb192)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb191)).BeginInit();
+            this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb185)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb184)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb183)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb182)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb181)).BeginInit();
+            this.panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb176)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb175)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb174)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb173)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb171)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb172)).BeginInit();
+            this.panel22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb225)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb224)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb223)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb221)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb222)).BeginInit();
             this.SuspendLayout();
             // 
-            // autoLabel1
+            // tabControl
             // 
-            this.autoLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel1.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel1.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel1.Name = "autoLabel1";
-            this.autoLabel1.Size = new System.Drawing.Size(145, 15);
-            this.autoLabel1.TabIndex = 0;
-            this.autoLabel1.Text = "1 - Qual a sua idade?";
-            this.autoLabel1.Click += new System.EventHandler(this.autoLabel1_Click);
-            // 
-            // radioButtonAdv2
-            // 
-            this.radioButtonAdv2.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv2.DrawFocusRectangle = false;
-            this.radioButtonAdv2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv2.Location = new System.Drawing.Point(3, 18);
-            this.radioButtonAdv2.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv2.Name = "radioButtonAdv2";
-            this.radioButtonAdv2.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv2.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv2.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv2.TabIndex = 2;
-            this.radioButtonAdv2.Text = "Menor que 18 anos";
-            this.radioButtonAdv2.ThemesEnabled = false;
-            // 
-            // radioButtonAdv1
-            // 
-            this.radioButtonAdv1.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv1.DrawFocusRectangle = false;
-            this.radioButtonAdv1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv1.Location = new System.Drawing.Point(3, 45);
-            this.radioButtonAdv1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv1.Name = "radioButtonAdv1";
-            this.radioButtonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv1.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv1.TabIndex = 3;
-            this.radioButtonAdv1.Text = "Entre 18 a 25 anos";
-            this.radioButtonAdv1.ThemesEnabled = false;
-            this.radioButtonAdv1.CheckChanged += new System.EventHandler(this.radioButtonAdv1_CheckChanged);
-            // 
-            // radioButtonAdv3
-            // 
-            this.radioButtonAdv3.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv3.DrawFocusRectangle = false;
-            this.radioButtonAdv3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv3.Location = new System.Drawing.Point(3, 72);
-            this.radioButtonAdv3.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv3.Name = "radioButtonAdv3";
-            this.radioButtonAdv3.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv3.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv3.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv3.TabIndex = 4;
-            this.radioButtonAdv3.Text = "Entre 26 a 30 anos";
-            this.radioButtonAdv3.ThemesEnabled = false;
-            // 
-            // radioButtonAdv4
-            // 
-            this.radioButtonAdv4.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv4.DrawFocusRectangle = false;
-            this.radioButtonAdv4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv4.Location = new System.Drawing.Point(3, 99);
-            this.radioButtonAdv4.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv4.Name = "radioButtonAdv4";
-            this.radioButtonAdv4.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv4.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv4.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv4.TabIndex = 5;
-            this.radioButtonAdv4.Text = "Entre 31 a 35 anos";
-            this.radioButtonAdv4.ThemesEnabled = false;
-            // 
-            // radioButtonAdv5
-            // 
-            this.radioButtonAdv5.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv5.DrawFocusRectangle = false;
-            this.radioButtonAdv5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv5.Location = new System.Drawing.Point(3, 153);
-            this.radioButtonAdv5.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv5.Name = "radioButtonAdv5";
-            this.radioButtonAdv5.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv5.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv5.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv5.TabIndex = 6;
-            this.radioButtonAdv5.Text = "Maior que 40 anos";
-            this.radioButtonAdv5.ThemesEnabled = false;
-            // 
-            // radioButtonAdv6
-            // 
-            this.radioButtonAdv6.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv6.DrawFocusRectangle = false;
-            this.radioButtonAdv6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv6.Location = new System.Drawing.Point(3, 126);
-            this.radioButtonAdv6.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv6.Name = "radioButtonAdv6";
-            this.radioButtonAdv6.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv6.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv6.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv6.TabIndex = 7;
-            this.radioButtonAdv6.Text = "Entre 36 a 40 anos";
-            this.radioButtonAdv6.ThemesEnabled = false;
-            // 
-            // tabControlAdv1
-            // 
-            this.tabControlAdv1.ActiveTabColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
-            this.tabControlAdv1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabControl.ActiveTabColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControlAdv1.BeforeTouchSize = new System.Drawing.Size(1357, 719);
-            this.tabControlAdv1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tabControlAdv1.Controls.Add(this.tab1);
-            this.tabControlAdv1.FocusOnTabClick = false;
-            this.tabControlAdv1.InactiveTabColor = System.Drawing.Color.WhiteSmoke;
-            this.tabControlAdv1.Location = new System.Drawing.Point(5, 3);
-            this.tabControlAdv1.Name = "tabControlAdv1";
-            this.tabControlAdv1.Size = new System.Drawing.Size(1357, 719);
-            this.tabControlAdv1.TabIndex = 29;
-            this.tabControlAdv1.TabPanelBackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererMetro);
+            this.tabControl.BeforeTouchSize = new System.Drawing.Size(1357, 690);
+            this.tabControl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tabControl.Controls.Add(this.tab1);
+            this.tabControl.Controls.Add(this.tab2);
+            this.tabControl.FocusOnTabClick = false;
+            this.tabControl.InactiveTabColor = System.Drawing.Color.WhiteSmoke;
+            this.tabControl.Location = new System.Drawing.Point(5, 3);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.Size = new System.Drawing.Size(1357, 690);
+            this.tabControl.TabIndex = 29;
+            this.tabControl.TabPanelBackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabControl.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererMetro);
             // 
             // tab1
             // 
             this.tab1.AutoScroll = true;
-            this.tab1.Controls.Add(this.pnPrincipal);
+            this.tab1.Controls.Add(this.panel13);
+            this.tab1.Controls.Add(this.panel12);
+            this.tab1.Controls.Add(this.panel11);
+            this.tab1.Controls.Add(this.panel10);
+            this.tab1.Controls.Add(this.panel09);
+            this.tab1.Controls.Add(this.panel06);
+            this.tab1.Controls.Add(this.panel01);
+            this.tab1.Controls.Add(this.panel02);
+            this.tab1.Controls.Add(this.panel05);
+            this.tab1.Controls.Add(this.panel08);
+            this.tab1.Controls.Add(this.panel07);
+            this.tab1.Controls.Add(this.panel04);
+            this.tab1.Controls.Add(this.panel03);
             this.tab1.Image = null;
             this.tab1.ImageSize = new System.Drawing.Size(16, 16);
             this.tab1.Location = new System.Drawing.Point(0, 21);
             this.tab1.Name = "tab1";
             this.tab1.ShowCloseButton = false;
-            this.tab1.Size = new System.Drawing.Size(1357, 698);
+            this.tab1.Size = new System.Drawing.Size(1357, 669);
             this.tab1.TabForeColor = System.Drawing.Color.Gray;
             this.tab1.TabIndex = 1;
-            this.tab1.Text = "Questionário";
+            this.tab1.Text = "1 -- 13";
             this.tab1.ThemesEnabled = false;
             // 
-            // pnPrincipal
-            // 
-            this.pnPrincipal.AutoScroll = true;
-            this.pnPrincipal.Controls.Add(this.panel24);
-            this.pnPrincipal.Controls.Add(this.panel23);
-            this.pnPrincipal.Controls.Add(this.panel22);
-            this.pnPrincipal.Controls.Add(this.panel21);
-            this.pnPrincipal.Controls.Add(this.panel20);
-            this.pnPrincipal.Controls.Add(this.panel19);
-            this.pnPrincipal.Controls.Add(this.panel18);
-            this.pnPrincipal.Controls.Add(this.panel17);
-            this.pnPrincipal.Controls.Add(this.panel16);
-            this.pnPrincipal.Controls.Add(this.panel15);
-            this.pnPrincipal.Controls.Add(this.panel14);
-            this.pnPrincipal.Controls.Add(this.panel13);
-            this.pnPrincipal.Controls.Add(this.panel12);
-            this.pnPrincipal.Controls.Add(this.panel11);
-            this.pnPrincipal.Controls.Add(this.panel9);
-            this.pnPrincipal.Controls.Add(this.panel6);
-            this.pnPrincipal.Controls.Add(this.panel1);
-            this.pnPrincipal.Controls.Add(this.panel10);
-            this.pnPrincipal.Controls.Add(this.panel2);
-            this.pnPrincipal.Controls.Add(this.panel8);
-            this.pnPrincipal.Controls.Add(this.panel7);
-            this.pnPrincipal.Controls.Add(this.panel4);
-            this.pnPrincipal.Controls.Add(this.panel3);
-            this.pnPrincipal.Controls.Add(this.panel5);
-            this.pnPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnPrincipal.Location = new System.Drawing.Point(0, 0);
-            this.pnPrincipal.Name = "pnPrincipal";
-            this.pnPrincipal.Size = new System.Drawing.Size(1357, 698);
-            this.pnPrincipal.TabIndex = 33;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.radioButtonAdv54);
-            this.panel10.Controls.Add(this.radioButtonAdv42);
-            this.panel10.Controls.Add(this.autoLabel5);
-            this.panel10.Controls.Add(this.radioButtonAdv39);
-            this.panel10.Controls.Add(this.radioButtonAdv40);
-            this.panel10.Controls.Add(this.radioButtonAdv41);
-            this.panel10.Location = new System.Drawing.Point(250, 716);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(287, 163);
-            this.panel10.TabIndex = 32;
-            // 
-            // radioButtonAdv54
-            // 
-            this.radioButtonAdv54.BeforeTouchSize = new System.Drawing.Size(155, 21);
-            this.radioButtonAdv54.DrawFocusRectangle = false;
-            this.radioButtonAdv54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv54.Location = new System.Drawing.Point(3, 142);
-            this.radioButtonAdv54.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv54.Name = "radioButtonAdv54";
-            this.radioButtonAdv54.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv54.Size = new System.Drawing.Size(155, 21);
-            this.radioButtonAdv54.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv54.TabIndex = 26;
-            this.radioButtonAdv54.Text = "Sim, por mais de um ano";
-            this.radioButtonAdv54.ThemesEnabled = false;
-            // 
-            // radioButtonAdv42
-            // 
-            this.radioButtonAdv42.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv42.DrawFocusRectangle = false;
-            this.radioButtonAdv42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv42.Location = new System.Drawing.Point(3, 115);
-            this.radioButtonAdv42.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv42.Name = "radioButtonAdv42";
-            this.radioButtonAdv42.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv42.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv42.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv42.TabIndex = 25;
-            this.radioButtonAdv42.Text = "Sim, por um ano";
-            this.radioButtonAdv42.ThemesEnabled = false;
-            // 
-            // autoLabel5
-            // 
-            this.autoLabel5.AutoSize = false;
-            this.autoLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel5.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel5.Location = new System.Drawing.Point(0, 0);
-            this.autoLabel5.Name = "autoLabel5";
-            this.autoLabel5.Size = new System.Drawing.Size(284, 31);
-            this.autoLabel5.TabIndex = 20;
-            this.autoLabel5.Text = "10 - Você frequentou cursinho preparatório para ingressar na FATEC Itu?";
-            // 
-            // radioButtonAdv39
-            // 
-            this.radioButtonAdv39.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv39.DrawFocusRectangle = false;
-            this.radioButtonAdv39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv39.Location = new System.Drawing.Point(3, 61);
-            this.radioButtonAdv39.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv39.Name = "radioButtonAdv39";
-            this.radioButtonAdv39.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv39.Size = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv39.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv39.TabIndex = 23;
-            this.radioButtonAdv39.Text = "Sim, menos de um semestre";
-            this.radioButtonAdv39.ThemesEnabled = false;
-            // 
-            // radioButtonAdv40
-            // 
-            this.radioButtonAdv40.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv40.DrawFocusRectangle = false;
-            this.radioButtonAdv40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv40.Location = new System.Drawing.Point(3, 88);
-            this.radioButtonAdv40.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv40.Name = "radioButtonAdv40";
-            this.radioButtonAdv40.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv40.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv40.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv40.TabIndex = 24;
-            this.radioButtonAdv40.Text = "Sim, um semestre";
-            this.radioButtonAdv40.ThemesEnabled = false;
-            // 
-            // radioButtonAdv41
-            // 
-            this.radioButtonAdv41.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv41.DrawFocusRectangle = false;
-            this.radioButtonAdv41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv41.Location = new System.Drawing.Point(3, 34);
-            this.radioButtonAdv41.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv41.Name = "radioButtonAdv41";
-            this.radioButtonAdv41.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv41.Size = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv41.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv41.TabIndex = 22;
-            this.radioButtonAdv41.Text = "Não";
-            this.radioButtonAdv41.ThemesEnabled = false;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.autoLabel4);
-            this.panel4.Controls.Add(this.radioButtonAdv21);
-            this.panel4.Controls.Add(this.radioButtonAdv20);
-            this.panel4.Controls.Add(this.radioButtonAdv19);
-            this.panel4.Controls.Add(this.radioButtonAdv18);
-            this.panel4.Location = new System.Drawing.Point(4, 509);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 117);
-            this.panel4.TabIndex = 28;
-            // 
-            // autoLabel4
-            // 
-            this.autoLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel4.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel4.Location = new System.Drawing.Point(6, 0);
-            this.autoLabel4.Name = "autoLabel4";
-            this.autoLabel4.Size = new System.Drawing.Size(181, 15);
-            this.autoLabel4.TabIndex = 20;
-            this.autoLabel4.Text = "4 - Qual o seu estado civil?";
-            // 
-            // radioButtonAdv21
-            // 
-            this.radioButtonAdv21.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv21.DrawFocusRectangle = false;
-            this.radioButtonAdv21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv21.Location = new System.Drawing.Point(6, 72);
-            this.radioButtonAdv21.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv21.Name = "radioButtonAdv21";
-            this.radioButtonAdv21.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv21.Size = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv21.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv21.TabIndex = 23;
-            this.radioButtonAdv21.Text = "Separado/divorciado/desquitado";
-            this.radioButtonAdv21.ThemesEnabled = false;
-            // 
-            // radioButtonAdv20
-            // 
-            this.radioButtonAdv20.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv20.DrawFocusRectangle = false;
-            this.radioButtonAdv20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv20.Location = new System.Drawing.Point(6, 99);
-            this.radioButtonAdv20.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv20.Name = "radioButtonAdv20";
-            this.radioButtonAdv20.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv20.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv20.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv20.TabIndex = 24;
-            this.radioButtonAdv20.Text = "Viúvo";
-            this.radioButtonAdv20.ThemesEnabled = false;
-            // 
-            // radioButtonAdv19
-            // 
-            this.radioButtonAdv19.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv19.DrawFocusRectangle = false;
-            this.radioButtonAdv19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv19.Location = new System.Drawing.Point(6, 45);
-            this.radioButtonAdv19.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv19.Name = "radioButtonAdv19";
-            this.radioButtonAdv19.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv19.Size = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv19.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv19.TabIndex = 22;
-            this.radioButtonAdv19.Text = "Casado/moracom o companheiro";
-            this.radioButtonAdv19.ThemesEnabled = false;
-            // 
-            // radioButtonAdv18
-            // 
-            this.radioButtonAdv18.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv18.DrawFocusRectangle = false;
-            this.radioButtonAdv18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv18.Location = new System.Drawing.Point(6, 18);
-            this.radioButtonAdv18.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv18.Name = "radioButtonAdv18";
-            this.radioButtonAdv18.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv18.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv18.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv18.TabIndex = 21;
-            this.radioButtonAdv18.Text = "Solteiro";
-            this.radioButtonAdv18.ThemesEnabled = false;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.autoLabel7);
-            this.panel7.Controls.Add(this.radioButtonAdv43);
-            this.panel7.Controls.Add(this.radioButtonAdv44);
-            this.panel7.Controls.Add(this.radioButtonAdv45);
-            this.panel7.Controls.Add(this.radioButtonAdv48);
-            this.panel7.Location = new System.Drawing.Point(250, 273);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 137);
-            this.panel7.TabIndex = 29;
-            // 
-            // autoLabel7
-            // 
-            this.autoLabel7.AutoSize = false;
-            this.autoLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel7.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel7.Gap = 5;
-            this.autoLabel7.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel7.Name = "autoLabel7";
-            this.autoLabel7.Size = new System.Drawing.Size(197, 31);
-            this.autoLabel7.TabIndex = 0;
-            this.autoLabel7.Text = "7 - Quantos idiomas além do Português você domina?";
-            // 
-            // radioButtonAdv43
-            // 
-            this.radioButtonAdv43.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv43.DrawFocusRectangle = false;
-            this.radioButtonAdv43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv43.Location = new System.Drawing.Point(3, 61);
-            this.radioButtonAdv43.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv43.Name = "radioButtonAdv43";
-            this.radioButtonAdv43.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv43.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv43.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv43.TabIndex = 4;
-            this.radioButtonAdv43.Text = "1";
-            this.radioButtonAdv43.ThemesEnabled = false;
-            // 
-            // radioButtonAdv44
-            // 
-            this.radioButtonAdv44.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv44.DrawFocusRectangle = false;
-            this.radioButtonAdv44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv44.Location = new System.Drawing.Point(3, 88);
-            this.radioButtonAdv44.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv44.Name = "radioButtonAdv44";
-            this.radioButtonAdv44.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv44.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv44.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv44.TabIndex = 5;
-            this.radioButtonAdv44.Text = "2";
-            this.radioButtonAdv44.ThemesEnabled = false;
-            // 
-            // radioButtonAdv45
-            // 
-            this.radioButtonAdv45.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv45.DrawFocusRectangle = false;
-            this.radioButtonAdv45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv45.Location = new System.Drawing.Point(3, 34);
-            this.radioButtonAdv45.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv45.Name = "radioButtonAdv45";
-            this.radioButtonAdv45.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv45.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv45.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv45.TabIndex = 3;
-            this.radioButtonAdv45.Text = "0";
-            this.radioButtonAdv45.ThemesEnabled = false;
-            // 
-            // radioButtonAdv48
-            // 
-            this.radioButtonAdv48.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv48.DrawFocusRectangle = false;
-            this.radioButtonAdv48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv48.Location = new System.Drawing.Point(3, 115);
-            this.radioButtonAdv48.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv48.Name = "radioButtonAdv48";
-            this.radioButtonAdv48.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv48.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv48.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv48.TabIndex = 7;
-            this.radioButtonAdv48.Text = "3 ou mais";
-            this.radioButtonAdv48.ThemesEnabled = false;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.radioButtonAdv52);
-            this.panel9.Controls.Add(this.radioButtonAdv47);
-            this.panel9.Controls.Add(this.autoLabel9);
-            this.panel9.Controls.Add(this.radioButtonAdv49);
-            this.panel9.Controls.Add(this.radioButtonAdv50);
-            this.panel9.Controls.Add(this.radioButtonAdv51);
-            this.panel9.Controls.Add(this.radioButtonAdv53);
-            this.panel9.Location = new System.Drawing.Point(250, 527);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(269, 175);
-            this.panel9.TabIndex = 31;
-            // 
-            // radioButtonAdv52
-            // 
-            this.radioButtonAdv52.BeforeTouchSize = new System.Drawing.Size(245, 21);
-            this.radioButtonAdv52.DrawFocusRectangle = false;
-            this.radioButtonAdv52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv52.Location = new System.Drawing.Point(3, 153);
-            this.radioButtonAdv52.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv52.Name = "radioButtonAdv52";
-            this.radioButtonAdv52.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv52.Size = new System.Drawing.Size(245, 21);
-            this.radioButtonAdv52.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv52.TabIndex = 21;
-            this.radioButtonAdv52.Text = "Maior parte dos anos em escola conveniada";
-            this.radioButtonAdv52.ThemesEnabled = false;
-            // 
-            // radioButtonAdv47
-            // 
-            this.radioButtonAdv47.BeforeTouchSize = new System.Drawing.Size(235, 21);
-            this.radioButtonAdv47.DrawFocusRectangle = false;
-            this.radioButtonAdv47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv47.Location = new System.Drawing.Point(3, 126);
-            this.radioButtonAdv47.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv47.Name = "radioButtonAdv47";
-            this.radioButtonAdv47.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv47.Size = new System.Drawing.Size(235, 21);
-            this.radioButtonAdv47.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv47.TabIndex = 20;
-            this.radioButtonAdv47.Text = "Somente em escola conveniada";
-            this.radioButtonAdv47.ThemesEnabled = false;
-            // 
-            // autoLabel9
-            // 
-            this.autoLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel9.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel9.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel9.Name = "autoLabel9";
-            this.autoLabel9.Size = new System.Drawing.Size(267, 15);
-            this.autoLabel9.TabIndex = 14;
-            this.autoLabel9.Text = "9 - Em que tipo de escola você estudou?";
-            // 
-            // radioButtonAdv49
-            // 
-            this.radioButtonAdv49.BeforeTouchSize = new System.Drawing.Size(226, 21);
-            this.radioButtonAdv49.DrawFocusRectangle = false;
-            this.radioButtonAdv49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv49.Location = new System.Drawing.Point(3, 45);
-            this.radioButtonAdv49.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv49.Name = "radioButtonAdv49";
-            this.radioButtonAdv49.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv49.Size = new System.Drawing.Size(226, 21);
-            this.radioButtonAdv49.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv49.TabIndex = 17;
-            this.radioButtonAdv49.Text = "Maior parte dos anos em escola pública";
-            this.radioButtonAdv49.ThemesEnabled = false;
-            // 
-            // radioButtonAdv50
-            // 
-            this.radioButtonAdv50.BeforeTouchSize = new System.Drawing.Size(197, 21);
-            this.radioButtonAdv50.DrawFocusRectangle = false;
-            this.radioButtonAdv50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv50.Location = new System.Drawing.Point(3, 72);
-            this.radioButtonAdv50.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv50.Name = "radioButtonAdv50";
-            this.radioButtonAdv50.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv50.Size = new System.Drawing.Size(197, 21);
-            this.radioButtonAdv50.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv50.TabIndex = 18;
-            this.radioButtonAdv50.Text = "Somente em escola particular";
-            this.radioButtonAdv50.ThemesEnabled = false;
-            // 
-            // radioButtonAdv51
-            // 
-            this.radioButtonAdv51.BeforeTouchSize = new System.Drawing.Size(176, 21);
-            this.radioButtonAdv51.DrawFocusRectangle = false;
-            this.radioButtonAdv51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv51.Location = new System.Drawing.Point(3, 18);
-            this.radioButtonAdv51.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv51.Name = "radioButtonAdv51";
-            this.radioButtonAdv51.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv51.Size = new System.Drawing.Size(176, 21);
-            this.radioButtonAdv51.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv51.TabIndex = 16;
-            this.radioButtonAdv51.Text = "Somente em escola pública";
-            this.radioButtonAdv51.ThemesEnabled = false;
-            // 
-            // radioButtonAdv53
-            // 
-            this.radioButtonAdv53.BeforeTouchSize = new System.Drawing.Size(235, 21);
-            this.radioButtonAdv53.DrawFocusRectangle = false;
-            this.radioButtonAdv53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv53.Location = new System.Drawing.Point(3, 99);
-            this.radioButtonAdv53.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv53.Name = "radioButtonAdv53";
-            this.radioButtonAdv53.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv53.Size = new System.Drawing.Size(235, 21);
-            this.radioButtonAdv53.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv53.TabIndex = 19;
-            this.radioButtonAdv53.Text = "Maior parte dos anos em escola particular";
-            this.radioButtonAdv53.ThemesEnabled = false;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.radioButtonAdv23);
-            this.panel5.Controls.Add(this.radioButtonAdv22);
-            this.panel5.Controls.Add(this.radioButtonAdv17);
-            this.panel5.Controls.Add(this.autoLabel6);
-            this.panel5.Controls.Add(this.radioButtonAdv25);
-            this.panel5.Controls.Add(this.radioButtonAdv26);
-            this.panel5.Controls.Add(this.radioButtonAdv27);
-            this.panel5.Controls.Add(this.radioButtonAdv28);
-            this.panel5.Controls.Add(this.radioButtonAdv29);
-            this.panel5.Controls.Add(this.radioButtonAdv30);
-            this.panel5.Location = new System.Drawing.Point(4, 644);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(240, 261);
-            this.panel5.TabIndex = 29;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
-            // 
-            // radioButtonAdv23
-            // 
-            this.radioButtonAdv23.BeforeTouchSize = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv23.DrawFocusRectangle = false;
-            this.radioButtonAdv23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv23.Location = new System.Drawing.Point(3, 207);
-            this.radioButtonAdv23.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv23.Name = "radioButtonAdv23";
-            this.radioButtonAdv23.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv23.Size = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv23.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv23.TabIndex = 10;
-            this.radioButtonAdv23.Text = "Pós-graduação";
-            this.radioButtonAdv23.ThemesEnabled = false;
-            // 
-            // radioButtonAdv22
-            // 
-            this.radioButtonAdv22.BeforeTouchSize = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv22.DrawFocusRectangle = false;
-            this.radioButtonAdv22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv22.Location = new System.Drawing.Point(3, 234);
-            this.radioButtonAdv22.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv22.Name = "radioButtonAdv22";
-            this.radioButtonAdv22.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv22.Size = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv22.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv22.TabIndex = 9;
-            this.radioButtonAdv22.Text = "Não sei";
-            this.radioButtonAdv22.ThemesEnabled = false;
-            // 
-            // radioButtonAdv17
-            // 
-            this.radioButtonAdv17.BeforeTouchSize = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv17.DrawFocusRectangle = false;
-            this.radioButtonAdv17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv17.Location = new System.Drawing.Point(3, 180);
-            this.radioButtonAdv17.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv17.Name = "radioButtonAdv17";
-            this.radioButtonAdv17.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv17.Size = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv17.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv17.TabIndex = 8;
-            this.radioButtonAdv17.Text = "Ensino Superior - completo";
-            this.radioButtonAdv17.ThemesEnabled = false;
-            // 
-            // autoLabel6
-            // 
-            this.autoLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel6.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel6.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel6.Name = "autoLabel6";
-            this.autoLabel6.Size = new System.Drawing.Size(236, 15);
-            this.autoLabel6.TabIndex = 0;
-            this.autoLabel6.Text = "5 - Qual a escolaridade do seu pai?";
-            // 
-            // radioButtonAdv25
-            // 
-            this.radioButtonAdv25.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv25.DrawFocusRectangle = false;
-            this.radioButtonAdv25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv25.Location = new System.Drawing.Point(3, 72);
-            this.radioButtonAdv25.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv25.Name = "radioButtonAdv25";
-            this.radioButtonAdv25.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv25.Size = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv25.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv25.TabIndex = 4;
-            this.radioButtonAdv25.Text = "Ensino Fundamental - completo";
-            this.radioButtonAdv25.ThemesEnabled = false;
-            // 
-            // radioButtonAdv26
-            // 
-            this.radioButtonAdv26.BeforeTouchSize = new System.Drawing.Size(158, 21);
-            this.radioButtonAdv26.DrawFocusRectangle = false;
-            this.radioButtonAdv26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv26.Location = new System.Drawing.Point(3, 99);
-            this.radioButtonAdv26.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv26.Name = "radioButtonAdv26";
-            this.radioButtonAdv26.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv26.Size = new System.Drawing.Size(158, 21);
-            this.radioButtonAdv26.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv26.TabIndex = 5;
-            this.radioButtonAdv26.Text = "Ensino Médio - incompleto";
-            this.radioButtonAdv26.ThemesEnabled = false;
-            // 
-            // radioButtonAdv27
-            // 
-            this.radioButtonAdv27.BeforeTouchSize = new System.Drawing.Size(194, 21);
-            this.radioButtonAdv27.DrawFocusRectangle = false;
-            this.radioButtonAdv27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv27.Location = new System.Drawing.Point(3, 45);
-            this.radioButtonAdv27.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv27.Name = "radioButtonAdv27";
-            this.radioButtonAdv27.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv27.Size = new System.Drawing.Size(194, 21);
-            this.radioButtonAdv27.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv27.TabIndex = 3;
-            this.radioButtonAdv27.Text = "Ensino Fundamental - incompleto";
-            this.radioButtonAdv27.ThemesEnabled = false;
-            // 
-            // radioButtonAdv28
-            // 
-            this.radioButtonAdv28.BeforeTouchSize = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv28.DrawFocusRectangle = false;
-            this.radioButtonAdv28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv28.Location = new System.Drawing.Point(3, 153);
-            this.radioButtonAdv28.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv28.Name = "radioButtonAdv28";
-            this.radioButtonAdv28.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv28.Size = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv28.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv28.TabIndex = 6;
-            this.radioButtonAdv28.Text = "Ensino Superior - incompleto";
-            this.radioButtonAdv28.ThemesEnabled = false;
-            // 
-            // radioButtonAdv29
-            // 
-            this.radioButtonAdv29.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv29.DrawFocusRectangle = false;
-            this.radioButtonAdv29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv29.Location = new System.Drawing.Point(3, 18);
-            this.radioButtonAdv29.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv29.Name = "radioButtonAdv29";
-            this.radioButtonAdv29.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv29.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv29.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv29.TabIndex = 2;
-            this.radioButtonAdv29.Text = "Não estudou";
-            this.radioButtonAdv29.ThemesEnabled = false;
-            // 
-            // radioButtonAdv30
-            // 
-            this.radioButtonAdv30.BeforeTouchSize = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv30.DrawFocusRectangle = false;
-            this.radioButtonAdv30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv30.Location = new System.Drawing.Point(3, 126);
-            this.radioButtonAdv30.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv30.Name = "radioButtonAdv30";
-            this.radioButtonAdv30.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv30.Size = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv30.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv30.TabIndex = 7;
-            this.radioButtonAdv30.Text = "Ensino Médio - completo";
-            this.radioButtonAdv30.ThemesEnabled = false;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.radioButtonAdv46);
-            this.panel8.Controls.Add(this.autoLabel10);
-            this.panel8.Controls.Add(this.radioButtonAdv56);
-            this.panel8.Controls.Add(this.radioButtonAdv57);
-            this.panel8.Location = new System.Drawing.Point(250, 421);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(200, 96);
-            this.panel8.TabIndex = 30;
-            // 
-            // radioButtonAdv46
-            // 
-            this.radioButtonAdv46.BeforeTouchSize = new System.Drawing.Size(176, 21);
-            this.radioButtonAdv46.DrawFocusRectangle = false;
-            this.radioButtonAdv46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv46.Location = new System.Drawing.Point(3, 72);
-            this.radioButtonAdv46.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv46.Name = "radioButtonAdv46";
-            this.radioButtonAdv46.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv46.Size = new System.Drawing.Size(176, 21);
-            this.radioButtonAdv46.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv46.TabIndex = 11;
-            this.radioButtonAdv46.Text = "Ensino Superior - completo";
-            this.radioButtonAdv46.ThemesEnabled = false;
-            // 
-            // autoLabel10
-            // 
-            this.autoLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel10.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel10.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel10.Name = "autoLabel10";
-            this.autoLabel10.Size = new System.Drawing.Size(192, 15);
-            this.autoLabel10.TabIndex = 8;
-            this.autoLabel10.Text = "8 - Qual a sua escolaridade?";
-            // 
-            // radioButtonAdv56
-            // 
-            this.radioButtonAdv56.BeforeTouchSize = new System.Drawing.Size(176, 21);
-            this.radioButtonAdv56.DrawFocusRectangle = false;
-            this.radioButtonAdv56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv56.Location = new System.Drawing.Point(3, 45);
-            this.radioButtonAdv56.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv56.Name = "radioButtonAdv56";
-            this.radioButtonAdv56.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv56.Size = new System.Drawing.Size(176, 21);
-            this.radioButtonAdv56.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv56.TabIndex = 10;
-            this.radioButtonAdv56.Text = "Ensino Superior - incompleto";
-            this.radioButtonAdv56.ThemesEnabled = false;
-            // 
-            // radioButtonAdv57
-            // 
-            this.radioButtonAdv57.BeforeTouchSize = new System.Drawing.Size(184, 21);
-            this.radioButtonAdv57.DrawFocusRectangle = false;
-            this.radioButtonAdv57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv57.Location = new System.Drawing.Point(3, 18);
-            this.radioButtonAdv57.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv57.Name = "radioButtonAdv57";
-            this.radioButtonAdv57.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv57.Size = new System.Drawing.Size(184, 21);
-            this.radioButtonAdv57.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv57.TabIndex = 9;
-            this.radioButtonAdv57.Text = "Ensino Médio - completo";
-            this.radioButtonAdv57.ThemesEnabled = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.autoLabel1);
-            this.panel1.Controls.Add(this.radioButtonAdv3);
-            this.panel1.Controls.Add(this.radioButtonAdv4);
-            this.panel1.Controls.Add(this.radioButtonAdv1);
-            this.panel1.Controls.Add(this.radioButtonAdv5);
-            this.panel1.Controls.Add(this.radioButtonAdv2);
-            this.panel1.Controls.Add(this.radioButtonAdv6);
-            this.panel1.Location = new System.Drawing.Point(4, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 174);
-            this.panel1.TabIndex = 25;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.radioButtonAdv24);
-            this.panel6.Controls.Add(this.radioButtonAdv31);
-            this.panel6.Controls.Add(this.radioButtonAdv32);
-            this.panel6.Controls.Add(this.radioButtonAdv33);
-            this.panel6.Controls.Add(this.radioButtonAdv34);
-            this.panel6.Controls.Add(this.radioButtonAdv35);
-            this.panel6.Controls.Add(this.radioButtonAdv36);
-            this.panel6.Controls.Add(this.radioButtonAdv37);
-            this.panel6.Controls.Add(this.radioButtonAdv38);
-            this.panel6.Controls.Add(this.autoLabel8);
-            this.panel6.Location = new System.Drawing.Point(250, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(248, 255);
-            this.panel6.TabIndex = 30;
-            // 
-            // radioButtonAdv24
-            // 
-            this.radioButtonAdv24.BeforeTouchSize = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv24.DrawFocusRectangle = false;
-            this.radioButtonAdv24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv24.Location = new System.Drawing.Point(3, 207);
-            this.radioButtonAdv24.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv24.Name = "radioButtonAdv24";
-            this.radioButtonAdv24.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv24.Size = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv24.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv24.TabIndex = 19;
-            this.radioButtonAdv24.Text = "Pós-graduação";
-            this.radioButtonAdv24.ThemesEnabled = false;
-            // 
-            // radioButtonAdv31
-            // 
-            this.radioButtonAdv31.BeforeTouchSize = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv31.DrawFocusRectangle = false;
-            this.radioButtonAdv31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv31.Location = new System.Drawing.Point(3, 234);
-            this.radioButtonAdv31.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv31.Name = "radioButtonAdv31";
-            this.radioButtonAdv31.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv31.Size = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv31.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv31.TabIndex = 18;
-            this.radioButtonAdv31.Text = "Não sei";
-            this.radioButtonAdv31.ThemesEnabled = false;
-            // 
-            // radioButtonAdv32
-            // 
-            this.radioButtonAdv32.BeforeTouchSize = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv32.DrawFocusRectangle = false;
-            this.radioButtonAdv32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv32.Location = new System.Drawing.Point(3, 180);
-            this.radioButtonAdv32.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv32.Name = "radioButtonAdv32";
-            this.radioButtonAdv32.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv32.Size = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv32.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv32.TabIndex = 17;
-            this.radioButtonAdv32.Text = "Ensino Superior - completo";
-            this.radioButtonAdv32.ThemesEnabled = false;
-            // 
-            // radioButtonAdv33
-            // 
-            this.radioButtonAdv33.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv33.DrawFocusRectangle = false;
-            this.radioButtonAdv33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv33.Location = new System.Drawing.Point(3, 72);
-            this.radioButtonAdv33.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv33.Name = "radioButtonAdv33";
-            this.radioButtonAdv33.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv33.Size = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv33.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv33.TabIndex = 13;
-            this.radioButtonAdv33.Text = "Ensino Fundamental - completo";
-            this.radioButtonAdv33.ThemesEnabled = false;
-            // 
-            // radioButtonAdv34
-            // 
-            this.radioButtonAdv34.BeforeTouchSize = new System.Drawing.Size(158, 21);
-            this.radioButtonAdv34.DrawFocusRectangle = false;
-            this.radioButtonAdv34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv34.Location = new System.Drawing.Point(3, 99);
-            this.radioButtonAdv34.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv34.Name = "radioButtonAdv34";
-            this.radioButtonAdv34.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv34.Size = new System.Drawing.Size(158, 21);
-            this.radioButtonAdv34.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv34.TabIndex = 14;
-            this.radioButtonAdv34.Text = "Ensino Médio - incompleto";
-            this.radioButtonAdv34.ThemesEnabled = false;
-            // 
-            // radioButtonAdv35
-            // 
-            this.radioButtonAdv35.BeforeTouchSize = new System.Drawing.Size(194, 21);
-            this.radioButtonAdv35.DrawFocusRectangle = false;
-            this.radioButtonAdv35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv35.Location = new System.Drawing.Point(3, 45);
-            this.radioButtonAdv35.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv35.Name = "radioButtonAdv35";
-            this.radioButtonAdv35.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv35.Size = new System.Drawing.Size(194, 21);
-            this.radioButtonAdv35.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv35.TabIndex = 12;
-            this.radioButtonAdv35.Text = "Ensino Fundamental - incompleto";
-            this.radioButtonAdv35.ThemesEnabled = false;
-            // 
-            // radioButtonAdv36
-            // 
-            this.radioButtonAdv36.BeforeTouchSize = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv36.DrawFocusRectangle = false;
-            this.radioButtonAdv36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv36.Location = new System.Drawing.Point(3, 153);
-            this.radioButtonAdv36.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv36.Name = "radioButtonAdv36";
-            this.radioButtonAdv36.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv36.Size = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv36.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv36.TabIndex = 15;
-            this.radioButtonAdv36.Text = "Ensino Superior - incompleto";
-            this.radioButtonAdv36.ThemesEnabled = false;
-            // 
-            // radioButtonAdv37
-            // 
-            this.radioButtonAdv37.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv37.DrawFocusRectangle = false;
-            this.radioButtonAdv37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv37.Location = new System.Drawing.Point(3, 18);
-            this.radioButtonAdv37.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv37.Name = "radioButtonAdv37";
-            this.radioButtonAdv37.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv37.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv37.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv37.TabIndex = 11;
-            this.radioButtonAdv37.Text = "Não estudou";
-            this.radioButtonAdv37.ThemesEnabled = false;
-            // 
-            // radioButtonAdv38
-            // 
-            this.radioButtonAdv38.BeforeTouchSize = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv38.DrawFocusRectangle = false;
-            this.radioButtonAdv38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv38.Location = new System.Drawing.Point(3, 126);
-            this.radioButtonAdv38.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv38.Name = "radioButtonAdv38";
-            this.radioButtonAdv38.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv38.Size = new System.Drawing.Size(181, 21);
-            this.radioButtonAdv38.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv38.TabIndex = 16;
-            this.radioButtonAdv38.Text = "Ensino Médio - completo";
-            this.radioButtonAdv38.ThemesEnabled = false;
-            // 
-            // autoLabel8
-            // 
-            this.autoLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel8.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel8.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel8.Name = "autoLabel8";
-            this.autoLabel8.Size = new System.Drawing.Size(244, 15);
-            this.autoLabel8.TabIndex = 8;
-            this.autoLabel8.Text = "6 - Qual a escolaridade da sua mãe?";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.autoLabel3);
-            this.panel3.Controls.Add(this.radioButtonAdv16);
-            this.panel3.Controls.Add(this.radioButtonAdv15);
-            this.panel3.Controls.Add(this.radioButtonAdv14);
-            this.panel3.Controls.Add(this.radioButtonAdv13);
-            this.panel3.Controls.Add(this.radioButtonAdv12);
-            this.panel3.Location = new System.Drawing.Point(4, 348);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 144);
-            this.panel3.TabIndex = 27;
-            // 
-            // autoLabel3
-            // 
-            this.autoLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel3.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel3.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel3.Name = "autoLabel3";
-            this.autoLabel3.Size = new System.Drawing.Size(192, 15);
-            this.autoLabel3.TabIndex = 14;
-            this.autoLabel3.Text = "3 - Como você se considera?";
-            // 
-            // radioButtonAdv16
-            // 
-            this.radioButtonAdv16.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv16.DrawFocusRectangle = false;
-            this.radioButtonAdv16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv16.Location = new System.Drawing.Point(3, 72);
-            this.radioButtonAdv16.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv16.Name = "radioButtonAdv16";
-            this.radioButtonAdv16.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv16.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv16.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv16.TabIndex = 17;
-            this.radioButtonAdv16.Text = "Preto";
-            this.radioButtonAdv16.ThemesEnabled = false;
-            // 
-            // radioButtonAdv15
-            // 
-            this.radioButtonAdv15.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv15.DrawFocusRectangle = false;
-            this.radioButtonAdv15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv15.Location = new System.Drawing.Point(3, 99);
-            this.radioButtonAdv15.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv15.Name = "radioButtonAdv15";
-            this.radioButtonAdv15.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv15.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv15.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv15.TabIndex = 18;
-            this.radioButtonAdv15.Text = "Amarelo";
-            this.radioButtonAdv15.ThemesEnabled = false;
-            // 
-            // radioButtonAdv14
-            // 
-            this.radioButtonAdv14.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv14.DrawFocusRectangle = false;
-            this.radioButtonAdv14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv14.Location = new System.Drawing.Point(3, 45);
-            this.radioButtonAdv14.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv14.Name = "radioButtonAdv14";
-            this.radioButtonAdv14.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv14.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv14.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv14.TabIndex = 16;
-            this.radioButtonAdv14.Text = "Pardo";
-            this.radioButtonAdv14.ThemesEnabled = false;
-            // 
-            // radioButtonAdv13
-            // 
-            this.radioButtonAdv13.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv13.DrawFocusRectangle = false;
-            this.radioButtonAdv13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv13.Location = new System.Drawing.Point(3, 18);
-            this.radioButtonAdv13.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv13.Name = "radioButtonAdv13";
-            this.radioButtonAdv13.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv13.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv13.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv13.TabIndex = 15;
-            this.radioButtonAdv13.Text = "Branco";
-            this.radioButtonAdv13.ThemesEnabled = false;
-            // 
-            // radioButtonAdv12
-            // 
-            this.radioButtonAdv12.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv12.DrawFocusRectangle = false;
-            this.radioButtonAdv12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv12.Location = new System.Drawing.Point(3, 126);
-            this.radioButtonAdv12.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv12.Name = "radioButtonAdv12";
-            this.radioButtonAdv12.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv12.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv12.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv12.TabIndex = 19;
-            this.radioButtonAdv12.Text = "Indígena";
-            this.radioButtonAdv12.ThemesEnabled = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.autoLabel2);
-            this.panel2.Controls.Add(this.radioButtonAdv11);
-            this.panel2.Controls.Add(this.radioButtonAdv10);
-            this.panel2.Controls.Add(this.radioButtonAdv9);
-            this.panel2.Controls.Add(this.radioButtonAdv8);
-            this.panel2.Controls.Add(this.radioButtonAdv7);
-            this.panel2.Location = new System.Drawing.Point(4, 189);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 144);
-            this.panel2.TabIndex = 26;
-            // 
-            // autoLabel2
-            // 
-            this.autoLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel2.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel2.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel2.Name = "autoLabel2";
-            this.autoLabel2.Size = new System.Drawing.Size(158, 15);
-            this.autoLabel2.TabIndex = 8;
-            this.autoLabel2.Text = "2 - Qual a sua religião?";
-            // 
-            // radioButtonAdv11
-            // 
-            this.radioButtonAdv11.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv11.DrawFocusRectangle = false;
-            this.radioButtonAdv11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv11.Location = new System.Drawing.Point(3, 72);
-            this.radioButtonAdv11.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv11.Name = "radioButtonAdv11";
-            this.radioButtonAdv11.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv11.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv11.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv11.TabIndex = 11;
-            this.radioButtonAdv11.Text = "Evangélica";
-            this.radioButtonAdv11.ThemesEnabled = false;
-            // 
-            // radioButtonAdv10
-            // 
-            this.radioButtonAdv10.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv10.DrawFocusRectangle = false;
-            this.radioButtonAdv10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv10.Location = new System.Drawing.Point(3, 99);
-            this.radioButtonAdv10.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv10.Name = "radioButtonAdv10";
-            this.radioButtonAdv10.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv10.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv10.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv10.TabIndex = 12;
-            this.radioButtonAdv10.Text = "Outras";
-            this.radioButtonAdv10.ThemesEnabled = false;
-            // 
-            // radioButtonAdv9
-            // 
-            this.radioButtonAdv9.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv9.DrawFocusRectangle = false;
-            this.radioButtonAdv9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv9.Location = new System.Drawing.Point(3, 45);
-            this.radioButtonAdv9.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv9.Name = "radioButtonAdv9";
-            this.radioButtonAdv9.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv9.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv9.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv9.TabIndex = 10;
-            this.radioButtonAdv9.Text = "Espírita";
-            this.radioButtonAdv9.ThemesEnabled = false;
-            // 
-            // radioButtonAdv8
-            // 
-            this.radioButtonAdv8.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv8.DrawFocusRectangle = false;
-            this.radioButtonAdv8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv8.Location = new System.Drawing.Point(3, 18);
-            this.radioButtonAdv8.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv8.Name = "radioButtonAdv8";
-            this.radioButtonAdv8.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv8.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv8.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv8.TabIndex = 9;
-            this.radioButtonAdv8.Text = "Católica";
-            this.radioButtonAdv8.ThemesEnabled = false;
-            // 
-            // radioButtonAdv7
-            // 
-            this.radioButtonAdv7.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv7.DrawFocusRectangle = false;
-            this.radioButtonAdv7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv7.Location = new System.Drawing.Point(3, 126);
-            this.radioButtonAdv7.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv7.Name = "radioButtonAdv7";
-            this.radioButtonAdv7.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv7.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv7.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv7.TabIndex = 13;
-            this.radioButtonAdv7.Text = "Nenhuma";
-            this.radioButtonAdv7.ThemesEnabled = false;
-            // 
-            // sfPrincipal
-            // 
-            this.sfPrincipal.CustomRender = null;
-            this.sfPrincipal.MetroColorScheme = Syncfusion.Windows.Forms.MetroColorScheme.Managed;
-            this.sfPrincipal.MetroThumbSize = new System.Drawing.Size(0, 0);
-            metroColorTable1.ArrowChecked = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(149)))), ((int)(((byte)(152)))));
-            metroColorTable1.ArrowInActive = System.Drawing.Color.White;
-            metroColorTable1.ArrowNormal = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
-            metroColorTable1.ArrowNormalBackGround = System.Drawing.Color.Empty;
-            metroColorTable1.ArrowPushed = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(89)))), ((int)(((byte)(90)))));
-            metroColorTable1.ArrowPushedBackGround = System.Drawing.Color.Empty;
-            metroColorTable1.ScrollerBackground = System.Drawing.Color.White;
-            metroColorTable1.ThumbChecked = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(149)))), ((int)(((byte)(152)))));
-            metroColorTable1.ThumbInActive = System.Drawing.Color.White;
-            metroColorTable1.ThumbNormal = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
-            metroColorTable1.ThumbPushed = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(89)))), ((int)(((byte)(90)))));
-            metroColorTable1.ThumbPushedBorder = System.Drawing.Color.Empty;
-            this.sfPrincipal.ScrollMetroColorTable = metroColorTable1;
-            this.sfPrincipal.ShowMetroArrowButton = true;
-            this.sfPrincipal.SizeGripperVisibility = Syncfusion.Windows.Forms.SizeGripperVisibility.Auto;
-            this.sfPrincipal.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawStyles.Metro;
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.rb136);
+            this.panel13.Controls.Add(this.rb135);
+            this.panel13.Controls.Add(this.rb134);
+            this.panel13.Controls.Add(this.rb133);
+            this.panel13.Controls.Add(this.autoLabel13);
+            this.panel13.Controls.Add(this.rb131);
+            this.panel13.Controls.Add(this.rb132);
+            this.panel13.Location = new System.Drawing.Point(1026, 349);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(287, 175);
+            this.panel13.TabIndex = 48;
+            // 
+            // rb136
+            // 
+            this.rb136.BeforeTouchSize = new System.Drawing.Size(155, 21);
+            this.rb136.DrawFocusRectangle = false;
+            this.rb136.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb136.Location = new System.Drawing.Point(3, 153);
+            this.rb136.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb136.Name = "rb136";
+            this.rb136.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb136.Size = new System.Drawing.Size(155, 21);
+            this.rb136.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb136.TabIndex = 28;
+            this.rb136.Text = "Aposentado";
+            this.rb136.ThemesEnabled = false;
+            // 
+            // rb135
+            // 
+            this.rb135.BeforeTouchSize = new System.Drawing.Size(155, 21);
+            this.rb135.DrawFocusRectangle = false;
+            this.rb135.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb135.Location = new System.Drawing.Point(3, 126);
+            this.rb135.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb135.Name = "rb135";
+            this.rb135.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb135.Size = new System.Drawing.Size(155, 21);
+            this.rb135.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb135.TabIndex = 27;
+            this.rb135.Text = "Trabalhador autônomo";
+            this.rb135.ThemesEnabled = false;
+            // 
+            // rb134
+            // 
+            this.rb134.BeforeTouchSize = new System.Drawing.Size(155, 21);
+            this.rb134.DrawFocusRectangle = false;
+            this.rb134.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb134.Location = new System.Drawing.Point(3, 99);
+            this.rb134.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb134.Name = "rb134";
+            this.rb134.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb134.Size = new System.Drawing.Size(155, 21);
+            this.rb134.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb134.TabIndex = 26;
+            this.rb134.Text = "Servidor público";
+            this.rb134.ThemesEnabled = false;
+            // 
+            // rb133
+            // 
+            this.rb133.BeforeTouchSize = new System.Drawing.Size(267, 21);
+            this.rb133.DrawFocusRectangle = false;
+            this.rb133.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb133.Location = new System.Drawing.Point(3, 72);
+            this.rb133.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb133.Name = "rb133";
+            this.rb133.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb133.Size = new System.Drawing.Size(267, 21);
+            this.rb133.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb133.TabIndex = 25;
+            this.rb133.Text = "Contratado com carteira de trabalho assinada";
+            this.rb133.ThemesEnabled = false;
+            // 
+            // autoLabel13
+            // 
+            this.autoLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel13.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel13.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel13.Name = "autoLabel13";
+            this.autoLabel13.Size = new System.Drawing.Size(179, 15);
+            this.autoLabel13.TabIndex = 20;
+            this.autoLabel13.Text = "13 - Qual a sua ocupação?";
+            // 
+            // rb131
+            // 
+            this.rb131.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb131.DrawFocusRectangle = false;
+            this.rb131.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb131.Location = new System.Drawing.Point(3, 18);
+            this.rb131.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb131.Name = "rb131";
+            this.rb131.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb131.Size = new System.Drawing.Size(192, 21);
+            this.rb131.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb131.TabIndex = 23;
+            this.rb131.Text = "Estudante";
+            this.rb131.ThemesEnabled = false;
+            // 
+            // rb132
+            // 
+            this.rb132.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb132.DrawFocusRectangle = false;
+            this.rb132.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb132.Location = new System.Drawing.Point(3, 45);
+            this.rb132.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb132.Name = "rb132";
+            this.rb132.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb132.Size = new System.Drawing.Size(145, 21);
+            this.rb132.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb132.TabIndex = 24;
+            this.rb132.Text = "Desempregado";
+            this.rb132.ThemesEnabled = false;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.rb124);
+            this.panel12.Controls.Add(this.rb123);
+            this.panel12.Controls.Add(this.autoLabel12);
+            this.panel12.Controls.Add(this.rb121);
+            this.panel12.Controls.Add(this.rb122);
+            this.panel12.Location = new System.Drawing.Point(1026, 199);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(287, 126);
+            this.panel12.TabIndex = 47;
+            // 
+            // rb124
+            // 
+            this.rb124.BeforeTouchSize = new System.Drawing.Size(155, 21);
+            this.rb124.DrawFocusRectangle = false;
+            this.rb124.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb124.Location = new System.Drawing.Point(3, 99);
+            this.rb124.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb124.Name = "rb124";
+            this.rb124.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb124.Size = new System.Drawing.Size(155, 21);
+            this.rb124.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb124.TabIndex = 26;
+            this.rb124.Text = "Sim, mas já conclui";
+            this.rb124.ThemesEnabled = false;
+            // 
+            // rb123
+            // 
+            this.rb123.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb123.DrawFocusRectangle = false;
+            this.rb123.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb123.Location = new System.Drawing.Point(3, 72);
+            this.rb123.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb123.Name = "rb123";
+            this.rb123.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb123.Size = new System.Drawing.Size(145, 21);
+            this.rb123.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb123.TabIndex = 25;
+            this.rb123.Text = "Sim, estou cursando";
+            this.rb123.ThemesEnabled = false;
+            // 
+            // autoLabel12
+            // 
+            this.autoLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel12.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel12.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel12.Name = "autoLabel12";
+            this.autoLabel12.Size = new System.Drawing.Size(278, 15);
+            this.autoLabel12.TabIndex = 20;
+            this.autoLabel12.Text = "12 - Você já iniciou algum curso superior?";
+            // 
+            // rb121
+            // 
+            this.rb121.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb121.DrawFocusRectangle = false;
+            this.rb121.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb121.Location = new System.Drawing.Point(3, 18);
+            this.rb121.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb121.Name = "rb121";
+            this.rb121.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb121.Size = new System.Drawing.Size(192, 21);
+            this.rb121.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb121.TabIndex = 23;
+            this.rb121.Text = "Não";
+            this.rb121.ThemesEnabled = false;
+            // 
+            // rb122
+            // 
+            this.rb122.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb122.DrawFocusRectangle = false;
+            this.rb122.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb122.Location = new System.Drawing.Point(3, 45);
+            this.rb122.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb122.Name = "rb122";
+            this.rb122.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb122.Size = new System.Drawing.Size(145, 21);
+            this.rb122.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb122.TabIndex = 24;
+            this.rb122.Text = "Sim, mas abandonei";
+            this.rb122.ThemesEnabled = false;
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.radioButtonAdv61);
-            this.panel11.Controls.Add(this.radioButtonAdv55);
-            this.panel11.Controls.Add(this.radioButtonAdv58);
+            this.panel11.Controls.Add(this.rb115);
+            this.panel11.Controls.Add(this.rb114);
+            this.panel11.Controls.Add(this.rb113);
             this.panel11.Controls.Add(this.autoLabel11);
-            this.panel11.Controls.Add(this.radioButtonAdv59);
-            this.panel11.Controls.Add(this.radioButtonAdv60);
-            this.panel11.Location = new System.Drawing.Point(543, 3);
+            this.panel11.Controls.Add(this.rb111);
+            this.panel11.Controls.Add(this.rb112);
+            this.panel11.Location = new System.Drawing.Point(1026, 15);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(287, 161);
-            this.panel11.TabIndex = 33;
+            this.panel11.TabIndex = 46;
             // 
-            // radioButtonAdv55
+            // rb115
             // 
-            this.radioButtonAdv55.BeforeTouchSize = new System.Drawing.Size(155, 21);
-            this.radioButtonAdv55.DrawFocusRectangle = false;
-            this.radioButtonAdv55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv55.Location = new System.Drawing.Point(3, 114);
-            this.radioButtonAdv55.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv55.Name = "radioButtonAdv55";
-            this.radioButtonAdv55.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv55.Size = new System.Drawing.Size(155, 21);
-            this.radioButtonAdv55.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv55.TabIndex = 26;
-            this.radioButtonAdv55.Text = "Três vezes";
-            this.radioButtonAdv55.ThemesEnabled = false;
+            this.rb115.BeforeTouchSize = new System.Drawing.Size(155, 21);
+            this.rb115.DrawFocusRectangle = false;
+            this.rb115.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb115.Location = new System.Drawing.Point(3, 141);
+            this.rb115.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb115.Name = "rb115";
+            this.rb115.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb115.Size = new System.Drawing.Size(155, 21);
+            this.rb115.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb115.TabIndex = 27;
+            this.rb115.Text = "Mais de três vezes";
+            this.rb115.ThemesEnabled = false;
             // 
-            // radioButtonAdv58
+            // rb114
             // 
-            this.radioButtonAdv58.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv58.DrawFocusRectangle = false;
-            this.radioButtonAdv58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv58.Location = new System.Drawing.Point(3, 87);
-            this.radioButtonAdv58.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv58.Name = "radioButtonAdv58";
-            this.radioButtonAdv58.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv58.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv58.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv58.TabIndex = 25;
-            this.radioButtonAdv58.Text = "Duas vezes";
-            this.radioButtonAdv58.ThemesEnabled = false;
+            this.rb114.BeforeTouchSize = new System.Drawing.Size(155, 21);
+            this.rb114.DrawFocusRectangle = false;
+            this.rb114.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb114.Location = new System.Drawing.Point(3, 114);
+            this.rb114.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb114.Name = "rb114";
+            this.rb114.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb114.Size = new System.Drawing.Size(155, 21);
+            this.rb114.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb114.TabIndex = 26;
+            this.rb114.Text = "Três vezes";
+            this.rb114.ThemesEnabled = false;
+            // 
+            // rb113
+            // 
+            this.rb113.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb113.DrawFocusRectangle = false;
+            this.rb113.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb113.Location = new System.Drawing.Point(3, 87);
+            this.rb113.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb113.Name = "rb113";
+            this.rb113.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb113.Size = new System.Drawing.Size(145, 21);
+            this.rb113.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb113.TabIndex = 25;
+            this.rb113.Text = "Duas vezes";
+            this.rb113.ThemesEnabled = false;
             // 
             // autoLabel11
             // 
@@ -1597,739 +715,2007 @@ namespace Matricula.View
             this.autoLabel11.Text = "11 - Quantas vezes você prestou o processo de acesso para o vestibular na FATEC I" +
     "tu?";
             // 
-            // radioButtonAdv59
+            // rb111
             // 
-            this.radioButtonAdv59.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv59.DrawFocusRectangle = false;
-            this.radioButtonAdv59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv59.Location = new System.Drawing.Point(3, 33);
-            this.radioButtonAdv59.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv59.Name = "radioButtonAdv59";
-            this.radioButtonAdv59.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv59.Size = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv59.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv59.TabIndex = 23;
-            this.radioButtonAdv59.Text = "Nenhuma";
-            this.radioButtonAdv59.ThemesEnabled = false;
+            this.rb111.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb111.DrawFocusRectangle = false;
+            this.rb111.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb111.Location = new System.Drawing.Point(3, 33);
+            this.rb111.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb111.Name = "rb111";
+            this.rb111.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb111.Size = new System.Drawing.Size(192, 21);
+            this.rb111.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb111.TabIndex = 23;
+            this.rb111.Text = "Nenhuma";
+            this.rb111.ThemesEnabled = false;
             // 
-            // radioButtonAdv60
+            // rb112
             // 
-            this.radioButtonAdv60.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv60.DrawFocusRectangle = false;
-            this.radioButtonAdv60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv60.Location = new System.Drawing.Point(3, 60);
-            this.radioButtonAdv60.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv60.Name = "radioButtonAdv60";
-            this.radioButtonAdv60.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv60.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv60.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv60.TabIndex = 24;
-            this.radioButtonAdv60.Text = "Uma vez";
-            this.radioButtonAdv60.ThemesEnabled = false;
+            this.rb112.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb112.DrawFocusRectangle = false;
+            this.rb112.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb112.Location = new System.Drawing.Point(3, 60);
+            this.rb112.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb112.Name = "rb112";
+            this.rb112.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb112.Size = new System.Drawing.Size(145, 21);
+            this.rb112.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb112.TabIndex = 24;
+            this.rb112.Text = "Uma vez";
+            this.rb112.ThemesEnabled = false;
             // 
-            // radioButtonAdv61
+            // panel10
             // 
-            this.radioButtonAdv61.BeforeTouchSize = new System.Drawing.Size(155, 21);
-            this.radioButtonAdv61.DrawFocusRectangle = false;
-            this.radioButtonAdv61.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv61.Location = new System.Drawing.Point(3, 141);
-            this.radioButtonAdv61.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv61.Name = "radioButtonAdv61";
-            this.radioButtonAdv61.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv61.Size = new System.Drawing.Size(155, 21);
-            this.radioButtonAdv61.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv61.TabIndex = 27;
-            this.radioButtonAdv61.Text = "Mais de três vezes";
-            this.radioButtonAdv61.ThemesEnabled = false;
+            this.panel10.Controls.Add(this.rb105);
+            this.panel10.Controls.Add(this.rb104);
+            this.panel10.Controls.Add(this.autoLabel5);
+            this.panel10.Controls.Add(this.rb102);
+            this.panel10.Controls.Add(this.rb103);
+            this.panel10.Controls.Add(this.rb101);
+            this.panel10.Location = new System.Drawing.Point(649, 440);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(287, 163);
+            this.panel10.TabIndex = 45;
             // 
-            // panel12
+            // rb105
             // 
-            this.panel12.Controls.Add(this.radioButtonAdv63);
-            this.panel12.Controls.Add(this.radioButtonAdv64);
-            this.panel12.Controls.Add(this.autoLabel12);
-            this.panel12.Controls.Add(this.radioButtonAdv65);
-            this.panel12.Controls.Add(this.radioButtonAdv66);
-            this.panel12.Location = new System.Drawing.Point(543, 171);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(287, 126);
-            this.panel12.TabIndex = 34;
+            this.rb105.BeforeTouchSize = new System.Drawing.Size(155, 21);
+            this.rb105.DrawFocusRectangle = false;
+            this.rb105.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb105.Location = new System.Drawing.Point(3, 142);
+            this.rb105.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb105.Name = "rb105";
+            this.rb105.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb105.Size = new System.Drawing.Size(155, 21);
+            this.rb105.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb105.TabIndex = 26;
+            this.rb105.Text = "Sim, por mais de um ano";
+            this.rb105.ThemesEnabled = false;
             // 
-            // radioButtonAdv63
+            // rb104
             // 
-            this.radioButtonAdv63.BeforeTouchSize = new System.Drawing.Size(155, 21);
-            this.radioButtonAdv63.DrawFocusRectangle = false;
-            this.radioButtonAdv63.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv63.Location = new System.Drawing.Point(3, 99);
-            this.radioButtonAdv63.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv63.Name = "radioButtonAdv63";
-            this.radioButtonAdv63.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv63.Size = new System.Drawing.Size(155, 21);
-            this.radioButtonAdv63.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv63.TabIndex = 26;
-            this.radioButtonAdv63.Text = "Sim, mas já conclui";
-            this.radioButtonAdv63.ThemesEnabled = false;
+            this.rb104.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb104.DrawFocusRectangle = false;
+            this.rb104.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb104.Location = new System.Drawing.Point(3, 115);
+            this.rb104.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb104.Name = "rb104";
+            this.rb104.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb104.Size = new System.Drawing.Size(145, 21);
+            this.rb104.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb104.TabIndex = 25;
+            this.rb104.Text = "Sim, por um ano";
+            this.rb104.ThemesEnabled = false;
             // 
-            // radioButtonAdv64
+            // autoLabel5
             // 
-            this.radioButtonAdv64.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv64.DrawFocusRectangle = false;
-            this.radioButtonAdv64.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv64.Location = new System.Drawing.Point(3, 72);
-            this.radioButtonAdv64.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv64.Name = "radioButtonAdv64";
-            this.radioButtonAdv64.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv64.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv64.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv64.TabIndex = 25;
-            this.radioButtonAdv64.Text = "Sim, estou cursando";
-            this.radioButtonAdv64.ThemesEnabled = false;
+            this.autoLabel5.AutoSize = false;
+            this.autoLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel5.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel5.Location = new System.Drawing.Point(0, 0);
+            this.autoLabel5.Name = "autoLabel5";
+            this.autoLabel5.Size = new System.Drawing.Size(284, 31);
+            this.autoLabel5.TabIndex = 20;
+            this.autoLabel5.Text = "10 - Você frequentou cursinho preparatório para ingressar na FATEC Itu?";
             // 
-            // autoLabel12
+            // rb102
             // 
-            this.autoLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel12.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel12.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel12.Name = "autoLabel12";
-            this.autoLabel12.Size = new System.Drawing.Size(278, 15);
-            this.autoLabel12.TabIndex = 20;
-            this.autoLabel12.Text = "12 - Você já iniciou algum curso superior?";
+            this.rb102.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb102.DrawFocusRectangle = false;
+            this.rb102.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb102.Location = new System.Drawing.Point(3, 61);
+            this.rb102.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb102.Name = "rb102";
+            this.rb102.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb102.Size = new System.Drawing.Size(192, 21);
+            this.rb102.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb102.TabIndex = 23;
+            this.rb102.Text = "Sim, menos de um semestre";
+            this.rb102.ThemesEnabled = false;
             // 
-            // radioButtonAdv65
+            // rb103
             // 
-            this.radioButtonAdv65.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv65.DrawFocusRectangle = false;
-            this.radioButtonAdv65.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv65.Location = new System.Drawing.Point(3, 18);
-            this.radioButtonAdv65.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv65.Name = "radioButtonAdv65";
-            this.radioButtonAdv65.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv65.Size = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv65.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv65.TabIndex = 23;
-            this.radioButtonAdv65.Text = "Não";
-            this.radioButtonAdv65.ThemesEnabled = false;
+            this.rb103.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb103.DrawFocusRectangle = false;
+            this.rb103.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb103.Location = new System.Drawing.Point(3, 88);
+            this.rb103.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb103.Name = "rb103";
+            this.rb103.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb103.Size = new System.Drawing.Size(145, 21);
+            this.rb103.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb103.TabIndex = 24;
+            this.rb103.Text = "Sim, um semestre";
+            this.rb103.ThemesEnabled = false;
             // 
-            // radioButtonAdv66
+            // rb101
             // 
-            this.radioButtonAdv66.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv66.DrawFocusRectangle = false;
-            this.radioButtonAdv66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv66.Location = new System.Drawing.Point(3, 45);
-            this.radioButtonAdv66.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv66.Name = "radioButtonAdv66";
-            this.radioButtonAdv66.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv66.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv66.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv66.TabIndex = 24;
-            this.radioButtonAdv66.Text = "Sim, mas abandonei";
-            this.radioButtonAdv66.ThemesEnabled = false;
+            this.rb101.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb101.DrawFocusRectangle = false;
+            this.rb101.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb101.Location = new System.Drawing.Point(3, 34);
+            this.rb101.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb101.Name = "rb101";
+            this.rb101.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb101.Size = new System.Drawing.Size(192, 21);
+            this.rb101.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb101.TabIndex = 22;
+            this.rb101.Text = "Não";
+            this.rb101.ThemesEnabled = false;
             // 
-            // panel13
+            // panel09
             // 
-            this.panel13.Controls.Add(this.radioButtonAdv71);
-            this.panel13.Controls.Add(this.radioButtonAdv70);
-            this.panel13.Controls.Add(this.radioButtonAdv62);
-            this.panel13.Controls.Add(this.radioButtonAdv67);
-            this.panel13.Controls.Add(this.autoLabel13);
-            this.panel13.Controls.Add(this.radioButtonAdv68);
-            this.panel13.Controls.Add(this.radioButtonAdv69);
-            this.panel13.Location = new System.Drawing.Point(543, 303);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(287, 175);
-            this.panel13.TabIndex = 35;
+            this.panel09.Controls.Add(this.rb096);
+            this.panel09.Controls.Add(this.rb095);
+            this.panel09.Controls.Add(this.autoLabel9);
+            this.panel09.Controls.Add(this.rb092);
+            this.panel09.Controls.Add(this.rb093);
+            this.panel09.Controls.Add(this.rb091);
+            this.panel09.Controls.Add(this.rb094);
+            this.panel09.Location = new System.Drawing.Point(649, 259);
+            this.panel09.Name = "panel09";
+            this.panel09.Size = new System.Drawing.Size(269, 175);
+            this.panel09.TabIndex = 44;
             // 
-            // radioButtonAdv62
+            // rb096
             // 
-            this.radioButtonAdv62.BeforeTouchSize = new System.Drawing.Size(155, 21);
-            this.radioButtonAdv62.DrawFocusRectangle = false;
-            this.radioButtonAdv62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv62.Location = new System.Drawing.Point(3, 99);
-            this.radioButtonAdv62.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv62.Name = "radioButtonAdv62";
-            this.radioButtonAdv62.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv62.Size = new System.Drawing.Size(155, 21);
-            this.radioButtonAdv62.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv62.TabIndex = 26;
-            this.radioButtonAdv62.Text = "Servidor público";
-            this.radioButtonAdv62.ThemesEnabled = false;
+            this.rb096.BeforeTouchSize = new System.Drawing.Size(245, 21);
+            this.rb096.DrawFocusRectangle = false;
+            this.rb096.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb096.Location = new System.Drawing.Point(3, 153);
+            this.rb096.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb096.Name = "rb096";
+            this.rb096.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb096.Size = new System.Drawing.Size(245, 21);
+            this.rb096.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb096.TabIndex = 21;
+            this.rb096.Text = "Maior parte dos anos em escola conveniada";
+            this.rb096.ThemesEnabled = false;
             // 
-            // radioButtonAdv67
+            // rb095
             // 
-            this.radioButtonAdv67.BeforeTouchSize = new System.Drawing.Size(267, 21);
-            this.radioButtonAdv67.DrawFocusRectangle = false;
-            this.radioButtonAdv67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv67.Location = new System.Drawing.Point(3, 72);
-            this.radioButtonAdv67.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv67.Name = "radioButtonAdv67";
-            this.radioButtonAdv67.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv67.Size = new System.Drawing.Size(267, 21);
-            this.radioButtonAdv67.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv67.TabIndex = 25;
-            this.radioButtonAdv67.Text = "Contratado com carteira de trabalho assinada";
-            this.radioButtonAdv67.ThemesEnabled = false;
+            this.rb095.BeforeTouchSize = new System.Drawing.Size(235, 21);
+            this.rb095.DrawFocusRectangle = false;
+            this.rb095.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb095.Location = new System.Drawing.Point(3, 126);
+            this.rb095.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb095.Name = "rb095";
+            this.rb095.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb095.Size = new System.Drawing.Size(235, 21);
+            this.rb095.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb095.TabIndex = 20;
+            this.rb095.Text = "Somente em escola conveniada";
+            this.rb095.ThemesEnabled = false;
             // 
-            // autoLabel13
+            // autoLabel9
             // 
-            this.autoLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel13.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel13.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel13.Name = "autoLabel13";
-            this.autoLabel13.Size = new System.Drawing.Size(179, 15);
-            this.autoLabel13.TabIndex = 20;
-            this.autoLabel13.Text = "13 - Qual a sua ocupação?";
+            this.autoLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel9.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel9.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel9.Name = "autoLabel9";
+            this.autoLabel9.Size = new System.Drawing.Size(267, 15);
+            this.autoLabel9.TabIndex = 14;
+            this.autoLabel9.Text = "9 - Em que tipo de escola você estudou?";
             // 
-            // radioButtonAdv68
+            // rb092
             // 
-            this.radioButtonAdv68.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv68.DrawFocusRectangle = false;
-            this.radioButtonAdv68.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv68.Location = new System.Drawing.Point(3, 18);
-            this.radioButtonAdv68.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv68.Name = "radioButtonAdv68";
-            this.radioButtonAdv68.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv68.Size = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv68.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv68.TabIndex = 23;
-            this.radioButtonAdv68.Text = "Estudante";
-            this.radioButtonAdv68.ThemesEnabled = false;
+            this.rb092.BeforeTouchSize = new System.Drawing.Size(226, 21);
+            this.rb092.DrawFocusRectangle = false;
+            this.rb092.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb092.Location = new System.Drawing.Point(3, 45);
+            this.rb092.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb092.Name = "rb092";
+            this.rb092.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb092.Size = new System.Drawing.Size(226, 21);
+            this.rb092.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb092.TabIndex = 17;
+            this.rb092.Text = "Maior parte dos anos em escola pública";
+            this.rb092.ThemesEnabled = false;
             // 
-            // radioButtonAdv69
+            // rb093
             // 
-            this.radioButtonAdv69.BeforeTouchSize = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv69.DrawFocusRectangle = false;
-            this.radioButtonAdv69.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv69.Location = new System.Drawing.Point(3, 45);
-            this.radioButtonAdv69.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv69.Name = "radioButtonAdv69";
-            this.radioButtonAdv69.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv69.Size = new System.Drawing.Size(145, 21);
-            this.radioButtonAdv69.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv69.TabIndex = 24;
-            this.radioButtonAdv69.Text = "Desempregado";
-            this.radioButtonAdv69.ThemesEnabled = false;
+            this.rb093.BeforeTouchSize = new System.Drawing.Size(197, 21);
+            this.rb093.DrawFocusRectangle = false;
+            this.rb093.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb093.Location = new System.Drawing.Point(3, 72);
+            this.rb093.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb093.Name = "rb093";
+            this.rb093.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb093.Size = new System.Drawing.Size(197, 21);
+            this.rb093.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb093.TabIndex = 18;
+            this.rb093.Text = "Somente em escola particular";
+            this.rb093.ThemesEnabled = false;
             // 
-            // radioButtonAdv70
+            // rb091
             // 
-            this.radioButtonAdv70.BeforeTouchSize = new System.Drawing.Size(155, 21);
-            this.radioButtonAdv70.DrawFocusRectangle = false;
-            this.radioButtonAdv70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv70.Location = new System.Drawing.Point(3, 126);
-            this.radioButtonAdv70.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv70.Name = "radioButtonAdv70";
-            this.radioButtonAdv70.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv70.Size = new System.Drawing.Size(155, 21);
-            this.radioButtonAdv70.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv70.TabIndex = 27;
-            this.radioButtonAdv70.Text = "Trabalhador autônomo";
-            this.radioButtonAdv70.ThemesEnabled = false;
+            this.rb091.BeforeTouchSize = new System.Drawing.Size(176, 21);
+            this.rb091.DrawFocusRectangle = false;
+            this.rb091.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb091.Location = new System.Drawing.Point(3, 18);
+            this.rb091.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb091.Name = "rb091";
+            this.rb091.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb091.Size = new System.Drawing.Size(176, 21);
+            this.rb091.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb091.TabIndex = 16;
+            this.rb091.Text = "Somente em escola pública";
+            this.rb091.ThemesEnabled = false;
             // 
-            // radioButtonAdv71
+            // rb094
             // 
-            this.radioButtonAdv71.BeforeTouchSize = new System.Drawing.Size(155, 21);
-            this.radioButtonAdv71.DrawFocusRectangle = false;
-            this.radioButtonAdv71.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv71.Location = new System.Drawing.Point(3, 153);
-            this.radioButtonAdv71.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv71.Name = "radioButtonAdv71";
-            this.radioButtonAdv71.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv71.Size = new System.Drawing.Size(155, 21);
-            this.radioButtonAdv71.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv71.TabIndex = 28;
-            this.radioButtonAdv71.Text = "Aposentado";
-            this.radioButtonAdv71.ThemesEnabled = false;
+            this.rb094.BeforeTouchSize = new System.Drawing.Size(235, 21);
+            this.rb094.DrawFocusRectangle = false;
+            this.rb094.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb094.Location = new System.Drawing.Point(3, 99);
+            this.rb094.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb094.Name = "rb094";
+            this.rb094.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb094.Size = new System.Drawing.Size(235, 21);
+            this.rb094.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb094.TabIndex = 19;
+            this.rb094.Text = "Maior parte dos anos em escola particular";
+            this.rb094.ThemesEnabled = false;
             // 
-            // panel14
+            // panel06
             // 
-            this.panel14.Controls.Add(this.radioButtonAdv75);
-            this.panel14.Controls.Add(this.radioButtonAdv74);
-            this.panel14.Controls.Add(this.autoLabel14);
-            this.panel14.Controls.Add(this.radioButtonAdv76);
-            this.panel14.Controls.Add(this.radioButtonAdv77);
-            this.panel14.Location = new System.Drawing.Point(543, 484);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(287, 124);
-            this.panel14.TabIndex = 36;
+            this.panel06.Controls.Add(this.rb068);
+            this.panel06.Controls.Add(this.rb069);
+            this.panel06.Controls.Add(this.rb067);
+            this.panel06.Controls.Add(this.rb063);
+            this.panel06.Controls.Add(this.rb064);
+            this.panel06.Controls.Add(this.rb062);
+            this.panel06.Controls.Add(this.rb066);
+            this.panel06.Controls.Add(this.rb061);
+            this.panel06.Controls.Add(this.rb065);
+            this.panel06.Controls.Add(this.autoLabel8);
+            this.panel06.Location = new System.Drawing.Point(319, 321);
+            this.panel06.Name = "panel06";
+            this.panel06.Size = new System.Drawing.Size(248, 255);
+            this.panel06.TabIndex = 42;
             // 
-            // radioButtonAdv74
+            // rb068
             // 
-            this.radioButtonAdv74.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv74.DrawFocusRectangle = false;
-            this.radioButtonAdv74.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv74.Location = new System.Drawing.Point(3, 99);
-            this.radioButtonAdv74.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv74.Name = "radioButtonAdv74";
-            this.radioButtonAdv74.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv74.Size = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv74.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv74.TabIndex = 26;
-            this.radioButtonAdv74.Text = "Sim, trabalho eventualmente";
-            this.radioButtonAdv74.ThemesEnabled = false;
+            this.rb068.BeforeTouchSize = new System.Drawing.Size(181, 21);
+            this.rb068.DrawFocusRectangle = false;
+            this.rb068.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb068.Location = new System.Drawing.Point(3, 207);
+            this.rb068.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb068.Name = "rb068";
+            this.rb068.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb068.Size = new System.Drawing.Size(181, 21);
+            this.rb068.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb068.TabIndex = 19;
+            this.rb068.Text = "Pós-graduação";
+            this.rb068.ThemesEnabled = false;
             // 
-            // autoLabel14
+            // rb069
             // 
-            this.autoLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel14.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel14.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel14.Name = "autoLabel14";
-            this.autoLabel14.Size = new System.Drawing.Size(266, 15);
-            this.autoLabel14.TabIndex = 20;
-            this.autoLabel14.Text = "14 - Você exerce atividade remunerada?";
+            this.rb069.BeforeTouchSize = new System.Drawing.Size(181, 21);
+            this.rb069.DrawFocusRectangle = false;
+            this.rb069.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb069.Location = new System.Drawing.Point(3, 234);
+            this.rb069.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb069.Name = "rb069";
+            this.rb069.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb069.Size = new System.Drawing.Size(181, 21);
+            this.rb069.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb069.TabIndex = 18;
+            this.rb069.Text = "Não sei";
+            this.rb069.ThemesEnabled = false;
             // 
-            // radioButtonAdv76
+            // rb067
             // 
-            this.radioButtonAdv76.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv76.DrawFocusRectangle = false;
-            this.radioButtonAdv76.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv76.Location = new System.Drawing.Point(3, 18);
-            this.radioButtonAdv76.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv76.Name = "radioButtonAdv76";
-            this.radioButtonAdv76.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv76.Size = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv76.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv76.TabIndex = 23;
-            this.radioButtonAdv76.Text = "Não";
-            this.radioButtonAdv76.ThemesEnabled = false;
+            this.rb067.BeforeTouchSize = new System.Drawing.Size(181, 21);
+            this.rb067.DrawFocusRectangle = false;
+            this.rb067.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb067.Location = new System.Drawing.Point(3, 180);
+            this.rb067.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb067.Name = "rb067";
+            this.rb067.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb067.Size = new System.Drawing.Size(181, 21);
+            this.rb067.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb067.TabIndex = 17;
+            this.rb067.Text = "Ensino Superior - completo";
+            this.rb067.ThemesEnabled = false;
             // 
-            // radioButtonAdv77
+            // rb063
             // 
-            this.radioButtonAdv77.BeforeTouchSize = new System.Drawing.Size(267, 21);
-            this.radioButtonAdv77.DrawFocusRectangle = false;
-            this.radioButtonAdv77.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv77.Location = new System.Drawing.Point(3, 45);
-            this.radioButtonAdv77.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv77.Name = "radioButtonAdv77";
-            this.radioButtonAdv77.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv77.Size = new System.Drawing.Size(267, 21);
-            this.radioButtonAdv77.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv77.TabIndex = 24;
-            this.radioButtonAdv77.Text = "Sim, em tempo parcial (até 30 horas semanais)";
-            this.radioButtonAdv77.ThemesEnabled = false;
+            this.rb063.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb063.DrawFocusRectangle = false;
+            this.rb063.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb063.Location = new System.Drawing.Point(3, 72);
+            this.rb063.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb063.Name = "rb063";
+            this.rb063.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb063.Size = new System.Drawing.Size(192, 21);
+            this.rb063.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb063.TabIndex = 13;
+            this.rb063.Text = "Ensino Fundamental - completo";
+            this.rb063.ThemesEnabled = false;
             // 
-            // radioButtonAdv75
+            // rb064
             // 
-            this.radioButtonAdv75.BeforeTouchSize = new System.Drawing.Size(292, 21);
-            this.radioButtonAdv75.DrawFocusRectangle = false;
-            this.radioButtonAdv75.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv75.Location = new System.Drawing.Point(3, 72);
-            this.radioButtonAdv75.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv75.Name = "radioButtonAdv75";
-            this.radioButtonAdv75.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv75.Size = new System.Drawing.Size(292, 21);
-            this.radioButtonAdv75.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv75.TabIndex = 29;
-            this.radioButtonAdv75.Text = "Sim, em tempo integral (mais de 30 horas semanais)";
-            this.radioButtonAdv75.ThemesEnabled = false;
+            this.rb064.BeforeTouchSize = new System.Drawing.Size(158, 21);
+            this.rb064.DrawFocusRectangle = false;
+            this.rb064.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb064.Location = new System.Drawing.Point(3, 99);
+            this.rb064.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb064.Name = "rb064";
+            this.rb064.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb064.Size = new System.Drawing.Size(158, 21);
+            this.rb064.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb064.TabIndex = 14;
+            this.rb064.Text = "Ensino Médio - incompleto";
+            this.rb064.ThemesEnabled = false;
+            // 
+            // rb062
+            // 
+            this.rb062.BeforeTouchSize = new System.Drawing.Size(194, 21);
+            this.rb062.DrawFocusRectangle = false;
+            this.rb062.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb062.Location = new System.Drawing.Point(3, 45);
+            this.rb062.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb062.Name = "rb062";
+            this.rb062.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb062.Size = new System.Drawing.Size(194, 21);
+            this.rb062.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb062.TabIndex = 12;
+            this.rb062.Text = "Ensino Fundamental - incompleto";
+            this.rb062.ThemesEnabled = false;
+            // 
+            // rb066
+            // 
+            this.rb066.BeforeTouchSize = new System.Drawing.Size(181, 21);
+            this.rb066.DrawFocusRectangle = false;
+            this.rb066.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb066.Location = new System.Drawing.Point(3, 153);
+            this.rb066.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb066.Name = "rb066";
+            this.rb066.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb066.Size = new System.Drawing.Size(181, 21);
+            this.rb066.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb066.TabIndex = 15;
+            this.rb066.Text = "Ensino Superior - incompleto";
+            this.rb066.ThemesEnabled = false;
+            // 
+            // rb061
+            // 
+            this.rb061.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb061.DrawFocusRectangle = false;
+            this.rb061.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb061.Location = new System.Drawing.Point(3, 18);
+            this.rb061.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb061.Name = "rb061";
+            this.rb061.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb061.Size = new System.Drawing.Size(145, 21);
+            this.rb061.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb061.TabIndex = 11;
+            this.rb061.Text = "Não estudou";
+            this.rb061.ThemesEnabled = false;
+            // 
+            // rb065
+            // 
+            this.rb065.BeforeTouchSize = new System.Drawing.Size(181, 21);
+            this.rb065.DrawFocusRectangle = false;
+            this.rb065.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb065.Location = new System.Drawing.Point(3, 126);
+            this.rb065.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb065.Name = "rb065";
+            this.rb065.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb065.Size = new System.Drawing.Size(181, 21);
+            this.rb065.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb065.TabIndex = 16;
+            this.rb065.Text = "Ensino Médio - completo";
+            this.rb065.ThemesEnabled = false;
+            // 
+            // autoLabel8
+            // 
+            this.autoLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel8.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel8.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel8.Name = "autoLabel8";
+            this.autoLabel8.Size = new System.Drawing.Size(244, 15);
+            this.autoLabel8.TabIndex = 8;
+            this.autoLabel8.Text = "6 - Qual a escolaridade da sua mãe?";
+            // 
+            // panel01
+            // 
+            this.panel01.Controls.Add(this.autoLabel1);
+            this.panel01.Controls.Add(this.rb013);
+            this.panel01.Controls.Add(this.rb014);
+            this.panel01.Controls.Add(this.rb012);
+            this.panel01.Controls.Add(this.rb016);
+            this.panel01.Controls.Add(this.rb011);
+            this.panel01.Controls.Add(this.rb015);
+            this.panel01.Location = new System.Drawing.Point(44, 13);
+            this.panel01.Name = "panel01";
+            this.panel01.Size = new System.Drawing.Size(200, 174);
+            this.panel01.TabIndex = 36;
+            // 
+            // autoLabel1
+            // 
+            this.autoLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel1.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel1.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel1.Name = "autoLabel1";
+            this.autoLabel1.Size = new System.Drawing.Size(145, 15);
+            this.autoLabel1.TabIndex = 0;
+            this.autoLabel1.Text = "1 - Qual a sua idade?";
+            // 
+            // rb013
+            // 
+            this.rb013.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb013.DrawFocusRectangle = false;
+            this.rb013.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb013.Location = new System.Drawing.Point(3, 72);
+            this.rb013.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb013.Name = "rb013";
+            this.rb013.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb013.Size = new System.Drawing.Size(145, 21);
+            this.rb013.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb013.TabIndex = 4;
+            this.rb013.Text = "Entre 26 a 30 anos";
+            this.rb013.ThemesEnabled = false;
+            // 
+            // rb014
+            // 
+            this.rb014.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb014.DrawFocusRectangle = false;
+            this.rb014.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb014.Location = new System.Drawing.Point(3, 99);
+            this.rb014.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb014.Name = "rb014";
+            this.rb014.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb014.Size = new System.Drawing.Size(145, 21);
+            this.rb014.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb014.TabIndex = 5;
+            this.rb014.Text = "Entre 31 a 35 anos";
+            this.rb014.ThemesEnabled = false;
+            // 
+            // rb012
+            // 
+            this.rb012.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb012.DrawFocusRectangle = false;
+            this.rb012.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb012.Location = new System.Drawing.Point(3, 45);
+            this.rb012.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb012.Name = "rb012";
+            this.rb012.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb012.Size = new System.Drawing.Size(145, 21);
+            this.rb012.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb012.TabIndex = 3;
+            this.rb012.Text = "Entre 18 a 25 anos";
+            this.rb012.ThemesEnabled = false;
+            // 
+            // rb016
+            // 
+            this.rb016.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb016.DrawFocusRectangle = false;
+            this.rb016.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb016.Location = new System.Drawing.Point(3, 153);
+            this.rb016.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb016.Name = "rb016";
+            this.rb016.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb016.Size = new System.Drawing.Size(145, 21);
+            this.rb016.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb016.TabIndex = 6;
+            this.rb016.Text = "Maior que 40 anos";
+            this.rb016.ThemesEnabled = false;
+            // 
+            // rb011
+            // 
+            this.rb011.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb011.DrawFocusRectangle = false;
+            this.rb011.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb011.Location = new System.Drawing.Point(3, 18);
+            this.rb011.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb011.Name = "rb011";
+            this.rb011.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb011.Size = new System.Drawing.Size(145, 21);
+            this.rb011.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb011.TabIndex = 2;
+            this.rb011.Text = "Menor que 18 anos";
+            this.rb011.ThemesEnabled = false;
+            // 
+            // rb015
+            // 
+            this.rb015.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb015.DrawFocusRectangle = false;
+            this.rb015.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb015.Location = new System.Drawing.Point(3, 126);
+            this.rb015.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb015.Name = "rb015";
+            this.rb015.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb015.Size = new System.Drawing.Size(145, 21);
+            this.rb015.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb015.TabIndex = 7;
+            this.rb015.Text = "Entre 36 a 40 anos";
+            this.rb015.ThemesEnabled = false;
+            // 
+            // panel02
+            // 
+            this.panel02.Controls.Add(this.autoLabel2);
+            this.panel02.Controls.Add(this.rb023);
+            this.panel02.Controls.Add(this.rb024);
+            this.panel02.Controls.Add(this.rb022);
+            this.panel02.Controls.Add(this.rb021);
+            this.panel02.Controls.Add(this.rb025);
+            this.panel02.Location = new System.Drawing.Point(44, 199);
+            this.panel02.Name = "panel02";
+            this.panel02.Size = new System.Drawing.Size(200, 144);
+            this.panel02.TabIndex = 37;
+            // 
+            // autoLabel2
+            // 
+            this.autoLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel2.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel2.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel2.Name = "autoLabel2";
+            this.autoLabel2.Size = new System.Drawing.Size(158, 15);
+            this.autoLabel2.TabIndex = 8;
+            this.autoLabel2.Text = "2 - Qual a sua religião?";
+            // 
+            // rb023
+            // 
+            this.rb023.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb023.DrawFocusRectangle = false;
+            this.rb023.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb023.Location = new System.Drawing.Point(3, 72);
+            this.rb023.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb023.Name = "rb023";
+            this.rb023.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb023.Size = new System.Drawing.Size(145, 21);
+            this.rb023.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb023.TabIndex = 11;
+            this.rb023.Text = "Evangélica";
+            this.rb023.ThemesEnabled = false;
+            // 
+            // rb024
+            // 
+            this.rb024.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb024.DrawFocusRectangle = false;
+            this.rb024.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb024.Location = new System.Drawing.Point(3, 99);
+            this.rb024.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb024.Name = "rb024";
+            this.rb024.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb024.Size = new System.Drawing.Size(145, 21);
+            this.rb024.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb024.TabIndex = 12;
+            this.rb024.Text = "Outras";
+            this.rb024.ThemesEnabled = false;
+            // 
+            // rb022
+            // 
+            this.rb022.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb022.DrawFocusRectangle = false;
+            this.rb022.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb022.Location = new System.Drawing.Point(3, 45);
+            this.rb022.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb022.Name = "rb022";
+            this.rb022.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb022.Size = new System.Drawing.Size(145, 21);
+            this.rb022.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb022.TabIndex = 10;
+            this.rb022.Text = "Espírita";
+            this.rb022.ThemesEnabled = false;
+            // 
+            // rb021
+            // 
+            this.rb021.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb021.DrawFocusRectangle = false;
+            this.rb021.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb021.Location = new System.Drawing.Point(3, 18);
+            this.rb021.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb021.Name = "rb021";
+            this.rb021.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb021.Size = new System.Drawing.Size(145, 21);
+            this.rb021.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb021.TabIndex = 9;
+            this.rb021.Text = "Católica";
+            this.rb021.ThemesEnabled = false;
+            // 
+            // rb025
+            // 
+            this.rb025.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb025.DrawFocusRectangle = false;
+            this.rb025.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb025.Location = new System.Drawing.Point(3, 126);
+            this.rb025.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb025.Name = "rb025";
+            this.rb025.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb025.Size = new System.Drawing.Size(145, 21);
+            this.rb025.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb025.TabIndex = 13;
+            this.rb025.Text = "Nenhuma";
+            this.rb025.ThemesEnabled = false;
+            // 
+            // panel05
+            // 
+            this.panel05.Controls.Add(this.rb058);
+            this.panel05.Controls.Add(this.rb059);
+            this.panel05.Controls.Add(this.rb057);
+            this.panel05.Controls.Add(this.autoLabel6);
+            this.panel05.Controls.Add(this.rb053);
+            this.panel05.Controls.Add(this.rb054);
+            this.panel05.Controls.Add(this.rb052);
+            this.panel05.Controls.Add(this.rb056);
+            this.panel05.Controls.Add(this.rb051);
+            this.panel05.Controls.Add(this.rb055);
+            this.panel05.Location = new System.Drawing.Point(319, 15);
+            this.panel05.Name = "panel05";
+            this.panel05.Size = new System.Drawing.Size(240, 261);
+            this.panel05.TabIndex = 40;
+            // 
+            // rb058
+            // 
+            this.rb058.BeforeTouchSize = new System.Drawing.Size(181, 21);
+            this.rb058.DrawFocusRectangle = false;
+            this.rb058.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb058.Location = new System.Drawing.Point(3, 207);
+            this.rb058.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb058.Name = "rb058";
+            this.rb058.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb058.Size = new System.Drawing.Size(181, 21);
+            this.rb058.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb058.TabIndex = 10;
+            this.rb058.Text = "Pós-graduação";
+            this.rb058.ThemesEnabled = false;
+            // 
+            // rb059
+            // 
+            this.rb059.BeforeTouchSize = new System.Drawing.Size(181, 21);
+            this.rb059.DrawFocusRectangle = false;
+            this.rb059.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb059.Location = new System.Drawing.Point(3, 234);
+            this.rb059.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb059.Name = "rb059";
+            this.rb059.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb059.Size = new System.Drawing.Size(181, 21);
+            this.rb059.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb059.TabIndex = 9;
+            this.rb059.Text = "Não sei";
+            this.rb059.ThemesEnabled = false;
+            // 
+            // rb057
+            // 
+            this.rb057.BeforeTouchSize = new System.Drawing.Size(181, 21);
+            this.rb057.DrawFocusRectangle = false;
+            this.rb057.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb057.Location = new System.Drawing.Point(3, 180);
+            this.rb057.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb057.Name = "rb057";
+            this.rb057.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb057.Size = new System.Drawing.Size(181, 21);
+            this.rb057.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb057.TabIndex = 8;
+            this.rb057.Text = "Ensino Superior - completo";
+            this.rb057.ThemesEnabled = false;
+            // 
+            // autoLabel6
+            // 
+            this.autoLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel6.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel6.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel6.Name = "autoLabel6";
+            this.autoLabel6.Size = new System.Drawing.Size(236, 15);
+            this.autoLabel6.TabIndex = 0;
+            this.autoLabel6.Text = "5 - Qual a escolaridade do seu pai?";
+            // 
+            // rb053
+            // 
+            this.rb053.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb053.DrawFocusRectangle = false;
+            this.rb053.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb053.Location = new System.Drawing.Point(3, 72);
+            this.rb053.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb053.Name = "rb053";
+            this.rb053.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb053.Size = new System.Drawing.Size(192, 21);
+            this.rb053.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb053.TabIndex = 4;
+            this.rb053.Text = "Ensino Fundamental - completo";
+            this.rb053.ThemesEnabled = false;
+            // 
+            // rb054
+            // 
+            this.rb054.BeforeTouchSize = new System.Drawing.Size(158, 21);
+            this.rb054.DrawFocusRectangle = false;
+            this.rb054.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb054.Location = new System.Drawing.Point(3, 99);
+            this.rb054.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb054.Name = "rb054";
+            this.rb054.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb054.Size = new System.Drawing.Size(158, 21);
+            this.rb054.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb054.TabIndex = 5;
+            this.rb054.Text = "Ensino Médio - incompleto";
+            this.rb054.ThemesEnabled = false;
+            // 
+            // rb052
+            // 
+            this.rb052.BeforeTouchSize = new System.Drawing.Size(194, 21);
+            this.rb052.DrawFocusRectangle = false;
+            this.rb052.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb052.Location = new System.Drawing.Point(3, 45);
+            this.rb052.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb052.Name = "rb052";
+            this.rb052.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb052.Size = new System.Drawing.Size(194, 21);
+            this.rb052.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb052.TabIndex = 3;
+            this.rb052.Text = "Ensino Fundamental - incompleto";
+            this.rb052.ThemesEnabled = false;
+            // 
+            // rb056
+            // 
+            this.rb056.BeforeTouchSize = new System.Drawing.Size(181, 21);
+            this.rb056.DrawFocusRectangle = false;
+            this.rb056.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb056.Location = new System.Drawing.Point(3, 153);
+            this.rb056.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb056.Name = "rb056";
+            this.rb056.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb056.Size = new System.Drawing.Size(181, 21);
+            this.rb056.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb056.TabIndex = 6;
+            this.rb056.Text = "Ensino Superior - incompleto";
+            this.rb056.ThemesEnabled = false;
+            // 
+            // rb051
+            // 
+            this.rb051.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb051.DrawFocusRectangle = false;
+            this.rb051.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb051.Location = new System.Drawing.Point(3, 18);
+            this.rb051.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb051.Name = "rb051";
+            this.rb051.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb051.Size = new System.Drawing.Size(145, 21);
+            this.rb051.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb051.TabIndex = 2;
+            this.rb051.Text = "Não estudou";
+            this.rb051.ThemesEnabled = false;
+            // 
+            // rb055
+            // 
+            this.rb055.BeforeTouchSize = new System.Drawing.Size(181, 21);
+            this.rb055.DrawFocusRectangle = false;
+            this.rb055.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb055.Location = new System.Drawing.Point(3, 126);
+            this.rb055.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb055.Name = "rb055";
+            this.rb055.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb055.Size = new System.Drawing.Size(181, 21);
+            this.rb055.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb055.TabIndex = 7;
+            this.rb055.Text = "Ensino Médio - completo";
+            this.rb055.ThemesEnabled = false;
+            // 
+            // panel08
+            // 
+            this.panel08.Controls.Add(this.rb083);
+            this.panel08.Controls.Add(this.autoLabel10);
+            this.panel08.Controls.Add(this.rb082);
+            this.panel08.Controls.Add(this.rb081);
+            this.panel08.Location = new System.Drawing.Point(649, 157);
+            this.panel08.Name = "panel08";
+            this.panel08.Size = new System.Drawing.Size(200, 96);
+            this.panel08.TabIndex = 43;
+            // 
+            // rb083
+            // 
+            this.rb083.BeforeTouchSize = new System.Drawing.Size(176, 21);
+            this.rb083.DrawFocusRectangle = false;
+            this.rb083.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb083.Location = new System.Drawing.Point(3, 72);
+            this.rb083.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb083.Name = "rb083";
+            this.rb083.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb083.Size = new System.Drawing.Size(176, 21);
+            this.rb083.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb083.TabIndex = 11;
+            this.rb083.Text = "Ensino Superior - completo";
+            this.rb083.ThemesEnabled = false;
+            // 
+            // autoLabel10
+            // 
+            this.autoLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel10.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel10.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel10.Name = "autoLabel10";
+            this.autoLabel10.Size = new System.Drawing.Size(192, 15);
+            this.autoLabel10.TabIndex = 8;
+            this.autoLabel10.Text = "8 - Qual a sua escolaridade?";
+            // 
+            // rb082
+            // 
+            this.rb082.BeforeTouchSize = new System.Drawing.Size(176, 21);
+            this.rb082.DrawFocusRectangle = false;
+            this.rb082.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb082.Location = new System.Drawing.Point(3, 45);
+            this.rb082.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb082.Name = "rb082";
+            this.rb082.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb082.Size = new System.Drawing.Size(176, 21);
+            this.rb082.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb082.TabIndex = 10;
+            this.rb082.Text = "Ensino Superior - incompleto";
+            this.rb082.ThemesEnabled = false;
+            // 
+            // rb081
+            // 
+            this.rb081.BeforeTouchSize = new System.Drawing.Size(184, 21);
+            this.rb081.DrawFocusRectangle = false;
+            this.rb081.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb081.Location = new System.Drawing.Point(3, 18);
+            this.rb081.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb081.Name = "rb081";
+            this.rb081.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb081.Size = new System.Drawing.Size(184, 21);
+            this.rb081.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb081.TabIndex = 9;
+            this.rb081.Text = "Ensino Médio - completo";
+            this.rb081.ThemesEnabled = false;
+            // 
+            // panel07
+            // 
+            this.panel07.Controls.Add(this.autoLabel7);
+            this.panel07.Controls.Add(this.rb072);
+            this.panel07.Controls.Add(this.rb073);
+            this.panel07.Controls.Add(this.rb071);
+            this.panel07.Controls.Add(this.rb074);
+            this.panel07.Location = new System.Drawing.Point(649, 15);
+            this.panel07.Name = "panel07";
+            this.panel07.Size = new System.Drawing.Size(311, 137);
+            this.panel07.TabIndex = 41;
+            // 
+            // autoLabel7
+            // 
+            this.autoLabel7.AutoSize = false;
+            this.autoLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel7.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel7.Gap = 5;
+            this.autoLabel7.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel7.Name = "autoLabel7";
+            this.autoLabel7.Size = new System.Drawing.Size(284, 31);
+            this.autoLabel7.TabIndex = 0;
+            this.autoLabel7.Text = "7 - Quantos idiomas além do Português você domina?";
+            // 
+            // rb072
+            // 
+            this.rb072.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb072.DrawFocusRectangle = false;
+            this.rb072.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb072.Location = new System.Drawing.Point(3, 61);
+            this.rb072.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb072.Name = "rb072";
+            this.rb072.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb072.Size = new System.Drawing.Size(145, 21);
+            this.rb072.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb072.TabIndex = 4;
+            this.rb072.Text = "1";
+            this.rb072.ThemesEnabled = false;
+            // 
+            // rb073
+            // 
+            this.rb073.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb073.DrawFocusRectangle = false;
+            this.rb073.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb073.Location = new System.Drawing.Point(3, 88);
+            this.rb073.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb073.Name = "rb073";
+            this.rb073.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb073.Size = new System.Drawing.Size(145, 21);
+            this.rb073.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb073.TabIndex = 5;
+            this.rb073.Text = "2";
+            this.rb073.ThemesEnabled = false;
+            // 
+            // rb071
+            // 
+            this.rb071.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb071.DrawFocusRectangle = false;
+            this.rb071.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb071.Location = new System.Drawing.Point(3, 34);
+            this.rb071.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb071.Name = "rb071";
+            this.rb071.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb071.Size = new System.Drawing.Size(145, 21);
+            this.rb071.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb071.TabIndex = 3;
+            this.rb071.Text = "0";
+            this.rb071.ThemesEnabled = false;
+            // 
+            // rb074
+            // 
+            this.rb074.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb074.DrawFocusRectangle = false;
+            this.rb074.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb074.Location = new System.Drawing.Point(3, 115);
+            this.rb074.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb074.Name = "rb074";
+            this.rb074.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb074.Size = new System.Drawing.Size(145, 21);
+            this.rb074.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb074.TabIndex = 7;
+            this.rb074.Text = "3 ou mais";
+            this.rb074.ThemesEnabled = false;
+            // 
+            // panel04
+            // 
+            this.panel04.Controls.Add(this.autoLabel4);
+            this.panel04.Controls.Add(this.rb043);
+            this.panel04.Controls.Add(this.rb044);
+            this.panel04.Controls.Add(this.rb042);
+            this.panel04.Controls.Add(this.rb041);
+            this.panel04.Location = new System.Drawing.Point(44, 519);
+            this.panel04.Name = "panel04";
+            this.panel04.Size = new System.Drawing.Size(200, 117);
+            this.panel04.TabIndex = 39;
+            // 
+            // autoLabel4
+            // 
+            this.autoLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel4.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel4.Location = new System.Drawing.Point(6, 0);
+            this.autoLabel4.Name = "autoLabel4";
+            this.autoLabel4.Size = new System.Drawing.Size(181, 15);
+            this.autoLabel4.TabIndex = 20;
+            this.autoLabel4.Text = "4 - Qual o seu estado civil?";
+            // 
+            // rb043
+            // 
+            this.rb043.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb043.DrawFocusRectangle = false;
+            this.rb043.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb043.Location = new System.Drawing.Point(6, 72);
+            this.rb043.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb043.Name = "rb043";
+            this.rb043.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb043.Size = new System.Drawing.Size(192, 21);
+            this.rb043.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb043.TabIndex = 23;
+            this.rb043.Text = "Separado/divorciado/desquitado";
+            this.rb043.ThemesEnabled = false;
+            // 
+            // rb044
+            // 
+            this.rb044.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb044.DrawFocusRectangle = false;
+            this.rb044.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb044.Location = new System.Drawing.Point(6, 99);
+            this.rb044.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb044.Name = "rb044";
+            this.rb044.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb044.Size = new System.Drawing.Size(145, 21);
+            this.rb044.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb044.TabIndex = 24;
+            this.rb044.Text = "Viúvo";
+            this.rb044.ThemesEnabled = false;
+            // 
+            // rb042
+            // 
+            this.rb042.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb042.DrawFocusRectangle = false;
+            this.rb042.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb042.Location = new System.Drawing.Point(6, 45);
+            this.rb042.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb042.Name = "rb042";
+            this.rb042.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb042.Size = new System.Drawing.Size(192, 21);
+            this.rb042.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb042.TabIndex = 22;
+            this.rb042.Text = "Casado/moracom o companheiro";
+            this.rb042.ThemesEnabled = false;
+            // 
+            // rb041
+            // 
+            this.rb041.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb041.DrawFocusRectangle = false;
+            this.rb041.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb041.Location = new System.Drawing.Point(6, 18);
+            this.rb041.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb041.Name = "rb041";
+            this.rb041.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb041.Size = new System.Drawing.Size(145, 21);
+            this.rb041.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb041.TabIndex = 21;
+            this.rb041.Text = "Solteiro";
+            this.rb041.ThemesEnabled = false;
+            // 
+            // panel03
+            // 
+            this.panel03.Controls.Add(this.autoLabel3);
+            this.panel03.Controls.Add(this.rb033);
+            this.panel03.Controls.Add(this.rb034);
+            this.panel03.Controls.Add(this.rb032);
+            this.panel03.Controls.Add(this.rb031);
+            this.panel03.Controls.Add(this.rb035);
+            this.panel03.Location = new System.Drawing.Point(44, 358);
+            this.panel03.Name = "panel03";
+            this.panel03.Size = new System.Drawing.Size(200, 144);
+            this.panel03.TabIndex = 38;
+            // 
+            // autoLabel3
+            // 
+            this.autoLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel3.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel3.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel3.Name = "autoLabel3";
+            this.autoLabel3.Size = new System.Drawing.Size(192, 15);
+            this.autoLabel3.TabIndex = 14;
+            this.autoLabel3.Text = "3 - Como você se considera?";
+            // 
+            // rb033
+            // 
+            this.rb033.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb033.DrawFocusRectangle = false;
+            this.rb033.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb033.Location = new System.Drawing.Point(3, 72);
+            this.rb033.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb033.Name = "rb033";
+            this.rb033.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb033.Size = new System.Drawing.Size(145, 21);
+            this.rb033.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb033.TabIndex = 17;
+            this.rb033.Text = "Preto";
+            this.rb033.ThemesEnabled = false;
+            // 
+            // rb034
+            // 
+            this.rb034.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb034.DrawFocusRectangle = false;
+            this.rb034.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb034.Location = new System.Drawing.Point(3, 99);
+            this.rb034.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb034.Name = "rb034";
+            this.rb034.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb034.Size = new System.Drawing.Size(145, 21);
+            this.rb034.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb034.TabIndex = 18;
+            this.rb034.Text = "Amarelo";
+            this.rb034.ThemesEnabled = false;
+            // 
+            // rb032
+            // 
+            this.rb032.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb032.DrawFocusRectangle = false;
+            this.rb032.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb032.Location = new System.Drawing.Point(3, 45);
+            this.rb032.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb032.Name = "rb032";
+            this.rb032.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb032.Size = new System.Drawing.Size(145, 21);
+            this.rb032.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb032.TabIndex = 16;
+            this.rb032.Text = "Pardo";
+            this.rb032.ThemesEnabled = false;
+            // 
+            // rb031
+            // 
+            this.rb031.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb031.DrawFocusRectangle = false;
+            this.rb031.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb031.Location = new System.Drawing.Point(3, 18);
+            this.rb031.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb031.Name = "rb031";
+            this.rb031.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb031.Size = new System.Drawing.Size(145, 21);
+            this.rb031.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb031.TabIndex = 15;
+            this.rb031.Text = "Branco";
+            this.rb031.ThemesEnabled = false;
+            // 
+            // rb035
+            // 
+            this.rb035.BeforeTouchSize = new System.Drawing.Size(145, 21);
+            this.rb035.DrawFocusRectangle = false;
+            this.rb035.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb035.Location = new System.Drawing.Point(3, 126);
+            this.rb035.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb035.Name = "rb035";
+            this.rb035.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb035.Size = new System.Drawing.Size(145, 21);
+            this.rb035.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb035.TabIndex = 19;
+            this.rb035.Text = "Indígena";
+            this.rb035.ThemesEnabled = false;
+            // 
+            // tab2
+            // 
+            this.tab2.AutoScroll = true;
+            this.tab2.Controls.Add(this.panel26);
+            this.tab2.Controls.Add(this.panel25);
+            this.tab2.Controls.Add(this.panel15);
+            this.tab2.Controls.Add(this.panel14);
+            this.tab2.Controls.Add(this.panel16);
+            this.tab2.Controls.Add(this.panel24);
+            this.tab2.Controls.Add(this.panel21);
+            this.tab2.Controls.Add(this.panel23);
+            this.tab2.Controls.Add(this.panel20);
+            this.tab2.Controls.Add(this.panel19);
+            this.tab2.Controls.Add(this.panel18);
+            this.tab2.Controls.Add(this.panel17);
+            this.tab2.Controls.Add(this.panel22);
+            this.tab2.Image = null;
+            this.tab2.ImageSize = new System.Drawing.Size(16, 16);
+            this.tab2.Location = new System.Drawing.Point(0, 21);
+            this.tab2.Name = "tab2";
+            this.tab2.ShowCloseButton = true;
+            this.tab2.Size = new System.Drawing.Size(1357, 669);
+            this.tab2.TabForeColor = System.Drawing.Color.Gray;
+            this.tab2.TabIndex = 2;
+            this.tab2.Text = "14 -- 26";
+            this.tab2.ThemesEnabled = false;
+            // 
+            // panel26
+            // 
+            this.panel26.Controls.Add(this.rb265);
+            this.panel26.Controls.Add(this.rb264);
+            this.panel26.Controls.Add(this.rb263);
+            this.panel26.Controls.Add(this.rb262);
+            this.panel26.Controls.Add(this.autoLabel26);
+            this.panel26.Controls.Add(this.rb261);
+            this.panel26.Location = new System.Drawing.Point(1076, 451);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(273, 180);
+            this.panel26.TabIndex = 42;
+            // 
+            // rb265
+            // 
+            this.rb265.BeforeTouchSize = new System.Drawing.Size(211, 21);
+            this.rb265.DrawFocusRectangle = false;
+            this.rb265.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb265.Location = new System.Drawing.Point(3, 142);
+            this.rb265.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb265.Name = "rb265";
+            this.rb265.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb265.Size = new System.Drawing.Size(211, 21);
+            this.rb265.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb265.TabIndex = 28;
+            this.rb265.Text = "Amigos, vizinhos ou parentes";
+            this.rb265.ThemesEnabled = false;
+            // 
+            // rb264
+            // 
+            this.rb264.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb264.DrawFocusRectangle = false;
+            this.rb264.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb264.Location = new System.Drawing.Point(3, 115);
+            this.rb264.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb264.Name = "rb264";
+            this.rb264.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb264.Size = new System.Drawing.Size(192, 21);
+            this.rb264.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb264.TabIndex = 27;
+            this.rb264.Text = "Escola de ensino médio/cursinho";
+            this.rb264.ThemesEnabled = false;
+            // 
+            // rb263
+            // 
+            this.rb263.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb263.DrawFocusRectangle = false;
+            this.rb263.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb263.Location = new System.Drawing.Point(3, 88);
+            this.rb263.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb263.Name = "rb263";
+            this.rb263.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb263.Size = new System.Drawing.Size(166, 21);
+            this.rb263.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb263.TabIndex = 26;
+            this.rb263.Text = "Televisão/Rádio";
+            this.rb263.ThemesEnabled = false;
+            // 
+            // rb262
+            // 
+            this.rb262.BeforeTouchSize = new System.Drawing.Size(205, 21);
+            this.rb262.DrawFocusRectangle = false;
+            this.rb262.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb262.Location = new System.Drawing.Point(3, 61);
+            this.rb262.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb262.Name = "rb262";
+            this.rb262.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb262.Size = new System.Drawing.Size(205, 21);
+            this.rb262.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb262.TabIndex = 25;
+            this.rb262.Text = "Material gráfico (cartazes/panfletos)";
+            this.rb262.ThemesEnabled = false;
+            // 
+            // autoLabel26
+            // 
+            this.autoLabel26.AutoSize = false;
+            this.autoLabel26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel26.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel26.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel26.Name = "autoLabel26";
+            this.autoLabel26.Size = new System.Drawing.Size(270, 31);
+            this.autoLabel26.TabIndex = 20;
+            this.autoLabel26.Text = "26 - Como você tomou conhecimento do processo seletivo da FATEC Itu?";
+            // 
+            // rb261
+            // 
+            this.rb261.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb261.DrawFocusRectangle = false;
+            this.rb261.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb261.Location = new System.Drawing.Point(3, 34);
+            this.rb261.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb261.Name = "rb261";
+            this.rb261.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb261.Size = new System.Drawing.Size(166, 21);
+            this.rb261.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb261.TabIndex = 24;
+            this.rb261.Text = "Jornais/Internet";
+            this.rb261.ThemesEnabled = false;
+            // 
+            // panel25
+            // 
+            this.panel25.Controls.Add(this.rb256);
+            this.panel25.Controls.Add(this.rb255);
+            this.panel25.Controls.Add(this.rb254);
+            this.panel25.Controls.Add(this.rb253);
+            this.panel25.Controls.Add(this.rb252);
+            this.panel25.Controls.Add(this.autoLabel25);
+            this.panel25.Controls.Add(this.rb251);
+            this.panel25.Location = new System.Drawing.Point(1076, 236);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(263, 198);
+            this.panel25.TabIndex = 37;
+            // 
+            // rb256
+            // 
+            this.rb256.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb256.DrawFocusRectangle = false;
+            this.rb256.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb256.Location = new System.Drawing.Point(3, 169);
+            this.rb256.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb256.Name = "rb256";
+            this.rb256.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb256.Size = new System.Drawing.Size(166, 21);
+            this.rb256.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb256.TabIndex = 29;
+            this.rb256.Text = "Van";
+            this.rb256.ThemesEnabled = false;
+            // 
+            // rb255
+            // 
+            this.rb255.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb255.DrawFocusRectangle = false;
+            this.rb255.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb255.Location = new System.Drawing.Point(3, 142);
+            this.rb255.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb255.Name = "rb255";
+            this.rb255.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb255.Size = new System.Drawing.Size(166, 21);
+            this.rb255.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb255.TabIndex = 28;
+            this.rb255.Text = "Moto própria";
+            this.rb255.ThemesEnabled = false;
+            // 
+            // rb254
+            // 
+            this.rb254.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb254.DrawFocusRectangle = false;
+            this.rb254.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb254.Location = new System.Drawing.Point(3, 115);
+            this.rb254.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb254.Name = "rb254";
+            this.rb254.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb254.Size = new System.Drawing.Size(166, 21);
+            this.rb254.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb254.TabIndex = 27;
+            this.rb254.Text = "Carro próprio";
+            this.rb254.ThemesEnabled = false;
+            // 
+            // rb253
+            // 
+            this.rb253.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb253.DrawFocusRectangle = false;
+            this.rb253.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb253.Location = new System.Drawing.Point(3, 88);
+            this.rb253.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb253.Name = "rb253";
+            this.rb253.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb253.Size = new System.Drawing.Size(166, 21);
+            this.rb253.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb253.TabIndex = 26;
+            this.rb253.Text = "Bicicleta/ à pé";
+            this.rb253.ThemesEnabled = false;
+            // 
+            // rb252
+            // 
+            this.rb252.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb252.DrawFocusRectangle = false;
+            this.rb252.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb252.Location = new System.Drawing.Point(3, 61);
+            this.rb252.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb252.Name = "rb252";
+            this.rb252.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb252.Size = new System.Drawing.Size(166, 21);
+            this.rb252.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb252.TabIndex = 25;
+            this.rb252.Text = "Ônibus interurbano";
+            this.rb252.ThemesEnabled = false;
+            // 
+            // autoLabel25
+            // 
+            this.autoLabel25.AutoSize = false;
+            this.autoLabel25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel25.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel25.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel25.Name = "autoLabel25";
+            this.autoLabel25.Size = new System.Drawing.Size(275, 31);
+            this.autoLabel25.TabIndex = 20;
+            this.autoLabel25.Text = "25 - Qual o meio de transporte utilizado para ir à FATEC Itu?";
+            // 
+            // rb251
+            // 
+            this.rb251.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb251.DrawFocusRectangle = false;
+            this.rb251.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb251.Location = new System.Drawing.Point(3, 34);
+            this.rb251.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb251.Name = "rb251";
+            this.rb251.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb251.Size = new System.Drawing.Size(166, 21);
+            this.rb251.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb251.TabIndex = 24;
+            this.rb251.Text = "Ônibus urbano";
+            this.rb251.ThemesEnabled = false;
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.radioButtonAdv78);
-            this.panel15.Controls.Add(this.radioButtonAdv72);
-            this.panel15.Controls.Add(this.radioButtonAdv73);
+            this.panel15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel15.Controls.Add(this.rb154);
+            this.panel15.Controls.Add(this.rb152);
+            this.panel15.Controls.Add(this.rb153);
             this.panel15.Controls.Add(this.autoLabel15);
-            this.panel15.Controls.Add(this.radioButtonAdv79);
-            this.panel15.Location = new System.Drawing.Point(543, 614);
+            this.panel15.Controls.Add(this.rb151);
+            this.panel15.Location = new System.Drawing.Point(28, 148);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(287, 137);
-            this.panel15.TabIndex = 37;
+            this.panel15.TabIndex = 47;
             // 
-            // radioButtonAdv72
+            // rb154
             // 
-            this.radioButtonAdv72.BeforeTouchSize = new System.Drawing.Size(240, 21);
-            this.radioButtonAdv72.DrawFocusRectangle = false;
-            this.radioButtonAdv72.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv72.Location = new System.Drawing.Point(3, 61);
-            this.radioButtonAdv72.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv72.Name = "radioButtonAdv72";
-            this.radioButtonAdv72.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv72.Size = new System.Drawing.Size(240, 21);
-            this.radioButtonAdv72.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv72.TabIndex = 29;
-            this.radioButtonAdv72.Text = "Sim, apenas em estágios";
-            this.radioButtonAdv72.ThemesEnabled = false;
+            this.rb154.BeforeTouchSize = new System.Drawing.Size(222, 21);
+            this.rb154.DrawFocusRectangle = false;
+            this.rb154.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb154.Location = new System.Drawing.Point(0, 115);
+            this.rb154.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb154.Name = "rb154";
+            this.rb154.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb154.Size = new System.Drawing.Size(222, 21);
+            this.rb154.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb154.TabIndex = 30;
+            this.rb154.Text = "Sim, desde o 1º ano em tempo integral";
+            this.rb154.ThemesEnabled = false;
             // 
-            // radioButtonAdv73
+            // rb152
             // 
-            this.radioButtonAdv73.BeforeTouchSize = new System.Drawing.Size(222, 21);
-            this.radioButtonAdv73.DrawFocusRectangle = false;
-            this.radioButtonAdv73.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv73.Location = new System.Drawing.Point(3, 88);
-            this.radioButtonAdv73.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv73.Name = "radioButtonAdv73";
-            this.radioButtonAdv73.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv73.Size = new System.Drawing.Size(222, 21);
-            this.radioButtonAdv73.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv73.TabIndex = 26;
-            this.radioButtonAdv73.Text = "Sim, desde o 1º ano em tempo parcial";
-            this.radioButtonAdv73.ThemesEnabled = false;
+            this.rb152.BeforeTouchSize = new System.Drawing.Size(240, 21);
+            this.rb152.DrawFocusRectangle = false;
+            this.rb152.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb152.Location = new System.Drawing.Point(0, 61);
+            this.rb152.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb152.Name = "rb152";
+            this.rb152.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb152.Size = new System.Drawing.Size(240, 21);
+            this.rb152.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb152.TabIndex = 29;
+            this.rb152.Text = "Sim, apenas em estágios";
+            this.rb152.ThemesEnabled = false;
+            // 
+            // rb153
+            // 
+            this.rb153.BeforeTouchSize = new System.Drawing.Size(222, 21);
+            this.rb153.DrawFocusRectangle = false;
+            this.rb153.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb153.Location = new System.Drawing.Point(0, 88);
+            this.rb153.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb153.Name = "rb153";
+            this.rb153.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb153.Size = new System.Drawing.Size(222, 21);
+            this.rb153.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb153.TabIndex = 26;
+            this.rb153.Text = "Sim, desde o 1º ano em tempo parcial";
+            this.rb153.ThemesEnabled = false;
             // 
             // autoLabel15
             // 
             this.autoLabel15.AutoSize = false;
             this.autoLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.autoLabel15.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel15.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel15.Location = new System.Drawing.Point(0, 0);
             this.autoLabel15.Name = "autoLabel15";
             this.autoLabel15.Size = new System.Drawing.Size(284, 31);
             this.autoLabel15.TabIndex = 20;
             this.autoLabel15.Text = "15 - Você pretende trabalhar enquanto faz o curso?";
             // 
-            // radioButtonAdv79
+            // rb151
             // 
-            this.radioButtonAdv79.BeforeTouchSize = new System.Drawing.Size(267, 21);
-            this.radioButtonAdv79.DrawFocusRectangle = false;
-            this.radioButtonAdv79.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv79.Location = new System.Drawing.Point(3, 34);
-            this.radioButtonAdv79.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv79.Name = "radioButtonAdv79";
-            this.radioButtonAdv79.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv79.Size = new System.Drawing.Size(267, 21);
-            this.radioButtonAdv79.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv79.TabIndex = 24;
-            this.radioButtonAdv79.Text = "Não";
-            this.radioButtonAdv79.ThemesEnabled = false;
+            this.rb151.BeforeTouchSize = new System.Drawing.Size(267, 21);
+            this.rb151.DrawFocusRectangle = false;
+            this.rb151.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb151.Location = new System.Drawing.Point(0, 34);
+            this.rb151.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb151.Name = "rb151";
+            this.rb151.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb151.Size = new System.Drawing.Size(267, 21);
+            this.rb151.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb151.TabIndex = 24;
+            this.rb151.Text = "Não";
+            this.rb151.ThemesEnabled = false;
             // 
-            // radioButtonAdv78
+            // panel14
             // 
-            this.radioButtonAdv78.BeforeTouchSize = new System.Drawing.Size(222, 21);
-            this.radioButtonAdv78.DrawFocusRectangle = false;
-            this.radioButtonAdv78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv78.Location = new System.Drawing.Point(3, 115);
-            this.radioButtonAdv78.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv78.Name = "radioButtonAdv78";
-            this.radioButtonAdv78.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv78.Size = new System.Drawing.Size(222, 21);
-            this.radioButtonAdv78.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv78.TabIndex = 30;
-            this.radioButtonAdv78.Text = "Sim, desde o 1º ano em tempo integral";
-            this.radioButtonAdv78.ThemesEnabled = false;
+            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel14.Controls.Add(this.rb143);
+            this.panel14.Controls.Add(this.rb144);
+            this.panel14.Controls.Add(this.autoLabel14);
+            this.panel14.Controls.Add(this.rb141);
+            this.panel14.Controls.Add(this.rb142);
+            this.panel14.Location = new System.Drawing.Point(28, 9);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(287, 124);
+            this.panel14.TabIndex = 46;
+            // 
+            // rb143
+            // 
+            this.rb143.BeforeTouchSize = new System.Drawing.Size(292, 21);
+            this.rb143.DrawFocusRectangle = false;
+            this.rb143.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb143.Location = new System.Drawing.Point(0, 72);
+            this.rb143.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb143.Name = "rb143";
+            this.rb143.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb143.Size = new System.Drawing.Size(292, 21);
+            this.rb143.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb143.TabIndex = 29;
+            this.rb143.Text = "Sim, em tempo integral (mais de 30 horas semanais)";
+            this.rb143.ThemesEnabled = false;
+            // 
+            // rb144
+            // 
+            this.rb144.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb144.DrawFocusRectangle = false;
+            this.rb144.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb144.Location = new System.Drawing.Point(0, 99);
+            this.rb144.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb144.Name = "rb144";
+            this.rb144.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb144.Size = new System.Drawing.Size(192, 21);
+            this.rb144.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb144.TabIndex = 26;
+            this.rb144.Text = "Sim, trabalho eventualmente";
+            this.rb144.ThemesEnabled = false;
+            // 
+            // autoLabel14
+            // 
+            this.autoLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel14.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel14.Location = new System.Drawing.Point(0, 0);
+            this.autoLabel14.Name = "autoLabel14";
+            this.autoLabel14.Size = new System.Drawing.Size(266, 15);
+            this.autoLabel14.TabIndex = 20;
+            this.autoLabel14.Text = "14 - Você exerce atividade remunerada?";
+            // 
+            // rb141
+            // 
+            this.rb141.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb141.DrawFocusRectangle = false;
+            this.rb141.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb141.Location = new System.Drawing.Point(0, 18);
+            this.rb141.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb141.Name = "rb141";
+            this.rb141.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb141.Size = new System.Drawing.Size(192, 21);
+            this.rb141.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb141.TabIndex = 23;
+            this.rb141.Text = "Não";
+            this.rb141.ThemesEnabled = false;
+            // 
+            // rb142
+            // 
+            this.rb142.BeforeTouchSize = new System.Drawing.Size(267, 21);
+            this.rb142.DrawFocusRectangle = false;
+            this.rb142.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb142.Location = new System.Drawing.Point(0, 45);
+            this.rb142.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb142.Name = "rb142";
+            this.rb142.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb142.Size = new System.Drawing.Size(267, 21);
+            this.rb142.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb142.TabIndex = 24;
+            this.rb142.Text = "Sim, em tempo parcial (até 30 horas semanais)";
+            this.rb142.ThemesEnabled = false;
             // 
             // panel16
             // 
-            this.panel16.Controls.Add(this.radioButtonAdv85);
-            this.panel16.Controls.Add(this.radioButtonAdv80);
-            this.panel16.Controls.Add(this.radioButtonAdv81);
-            this.panel16.Controls.Add(this.radioButtonAdv82);
-            this.panel16.Controls.Add(this.autoLabel16);
-            this.panel16.Controls.Add(this.radioButtonAdv83);
-            this.panel16.Controls.Add(this.radioButtonAdv84);
-            this.panel16.Location = new System.Drawing.Point(836, 3);
+            this.panel16.Controls.Add(this.rb165);
+            this.panel16.Controls.Add(this.rb164);
+            this.panel16.Controls.Add(this.rb163);
+            this.panel16.Controls.Add(this.rb162);
+            this.panel16.Controls.Add(this.rb161);
+            this.panel16.Controls.Add(this.autoLabel21);
+            this.panel16.Location = new System.Drawing.Point(35, 297);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(249, 174);
-            this.panel16.TabIndex = 34;
+            this.panel16.Size = new System.Drawing.Size(249, 149);
+            this.panel16.TabIndex = 45;
             // 
-            // radioButtonAdv80
+            // rb165
             // 
-            this.radioButtonAdv80.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv80.DrawFocusRectangle = false;
-            this.radioButtonAdv80.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv80.Location = new System.Drawing.Point(3, 126);
-            this.radioButtonAdv80.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv80.Name = "radioButtonAdv80";
-            this.radioButtonAdv80.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv80.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv80.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv80.TabIndex = 27;
-            this.radioButtonAdv80.Text = "De 6 a 10 salários mínimos";
-            this.radioButtonAdv80.ThemesEnabled = false;
+            this.rb165.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb165.DrawFocusRectangle = false;
+            this.rb165.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb165.Location = new System.Drawing.Point(0, 129);
+            this.rb165.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb165.Name = "rb165";
+            this.rb165.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb165.Size = new System.Drawing.Size(166, 21);
+            this.rb165.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb165.TabIndex = 33;
+            this.rb165.Text = "Outros";
+            this.rb165.ThemesEnabled = false;
             // 
-            // radioButtonAdv81
+            // rb164
             // 
-            this.radioButtonAdv81.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv81.DrawFocusRectangle = false;
-            this.radioButtonAdv81.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv81.Location = new System.Drawing.Point(3, 99);
-            this.radioButtonAdv81.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv81.Name = "radioButtonAdv81";
-            this.radioButtonAdv81.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv81.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv81.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv81.TabIndex = 26;
-            this.radioButtonAdv81.Text = "De 3 a 6 salários mínimos";
-            this.radioButtonAdv81.ThemesEnabled = false;
+            this.rb164.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb164.DrawFocusRectangle = false;
+            this.rb164.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb164.Location = new System.Drawing.Point(0, 102);
+            this.rb164.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb164.Name = "rb164";
+            this.rb164.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb164.Size = new System.Drawing.Size(166, 21);
+            this.rb164.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb164.TabIndex = 32;
+            this.rb164.Text = "Comércio";
+            this.rb164.ThemesEnabled = false;
             // 
-            // radioButtonAdv82
+            // rb163
             // 
-            this.radioButtonAdv82.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv82.DrawFocusRectangle = false;
-            this.radioButtonAdv82.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv82.Location = new System.Drawing.Point(3, 72);
-            this.radioButtonAdv82.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv82.Name = "radioButtonAdv82";
-            this.radioButtonAdv82.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv82.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv82.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv82.TabIndex = 25;
-            this.radioButtonAdv82.Text = "De 1 a 3 salários mínimos";
-            this.radioButtonAdv82.ThemesEnabled = false;
+            this.rb163.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb163.DrawFocusRectangle = false;
+            this.rb163.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb163.Location = new System.Drawing.Point(0, 75);
+            this.rb163.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb163.Name = "rb163";
+            this.rb163.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb163.Size = new System.Drawing.Size(166, 21);
+            this.rb163.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb163.TabIndex = 31;
+            this.rb163.Text = "Indústrias";
+            this.rb163.ThemesEnabled = false;
             // 
-            // autoLabel16
+            // rb162
             // 
-            this.autoLabel16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel16.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel16.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel16.Name = "autoLabel16";
-            this.autoLabel16.Size = new System.Drawing.Size(205, 15);
-            this.autoLabel16.TabIndex = 20;
-            this.autoLabel16.Text = "17 - Qual a sua renda mensal?";
+            this.rb162.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb162.DrawFocusRectangle = false;
+            this.rb162.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb162.Location = new System.Drawing.Point(0, 48);
+            this.rb162.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb162.Name = "rb162";
+            this.rb162.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb162.Size = new System.Drawing.Size(166, 21);
+            this.rb162.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb162.TabIndex = 30;
+            this.rb162.Text = "Educação";
+            this.rb162.ThemesEnabled = false;
             // 
-            // radioButtonAdv83
+            // rb161
             // 
-            this.radioButtonAdv83.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv83.DrawFocusRectangle = false;
-            this.radioButtonAdv83.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv83.Location = new System.Drawing.Point(3, 18);
-            this.radioButtonAdv83.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv83.Name = "radioButtonAdv83";
-            this.radioButtonAdv83.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv83.Size = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv83.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv83.TabIndex = 23;
-            this.radioButtonAdv83.Text = "Não tenho";
-            this.radioButtonAdv83.ThemesEnabled = false;
+            this.rb161.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb161.DrawFocusRectangle = false;
+            this.rb161.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb161.Location = new System.Drawing.Point(0, 21);
+            this.rb161.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb161.Name = "rb161";
+            this.rb161.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb161.Size = new System.Drawing.Size(166, 21);
+            this.rb161.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb161.TabIndex = 29;
+            this.rb161.Text = "Saúde";
+            this.rb161.ThemesEnabled = false;
             // 
-            // radioButtonAdv84
+            // autoLabel21
             // 
-            this.radioButtonAdv84.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv84.DrawFocusRectangle = false;
-            this.radioButtonAdv84.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv84.Location = new System.Drawing.Point(3, 45);
-            this.radioButtonAdv84.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv84.Name = "radioButtonAdv84";
-            this.radioButtonAdv84.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv84.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv84.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv84.TabIndex = 24;
-            this.radioButtonAdv84.Text = "Menos de 1 salário mínimo";
-            this.radioButtonAdv84.ThemesEnabled = false;
+            this.autoLabel21.AutoSize = false;
+            this.autoLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel21.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel21.Location = new System.Drawing.Point(0, 0);
+            this.autoLabel21.Name = "autoLabel21";
+            this.autoLabel21.Size = new System.Drawing.Size(246, 13);
+            this.autoLabel21.TabIndex = 20;
+            this.autoLabel21.Text = "16 - Qual é o seu ramo de atividade?";
             // 
-            // radioButtonAdv85
+            // panel24
             // 
-            this.radioButtonAdv85.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv85.DrawFocusRectangle = false;
-            this.radioButtonAdv85.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv85.Location = new System.Drawing.Point(3, 153);
-            this.radioButtonAdv85.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv85.Name = "radioButtonAdv85";
-            this.radioButtonAdv85.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv85.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv85.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv85.TabIndex = 28;
-            this.radioButtonAdv85.Text = "Mais de 10 salários mínimos";
-            this.radioButtonAdv85.ThemesEnabled = false;
+            this.panel24.Controls.Add(this.rb245);
+            this.panel24.Controls.Add(this.rb244);
+            this.panel24.Controls.Add(this.rb243);
+            this.panel24.Controls.Add(this.rb242);
+            this.panel24.Controls.Add(this.rb241);
+            this.panel24.Controls.Add(this.autoLabel24);
+            this.panel24.Location = new System.Drawing.Point(1076, 9);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(249, 192);
+            this.panel24.TabIndex = 43;
             // 
-            // panel17
+            // rb245
             // 
-            this.panel17.Controls.Add(this.radioButtonAdv88);
-            this.panel17.Controls.Add(this.radioButtonAdv86);
-            this.panel17.Controls.Add(this.radioButtonAdv87);
-            this.panel17.Controls.Add(this.radioButtonAdv89);
-            this.panel17.Controls.Add(this.autoLabel17);
-            this.panel17.Controls.Add(this.radioButtonAdv91);
-            this.panel17.Location = new System.Drawing.Point(836, 183);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(249, 210);
-            this.panel17.TabIndex = 35;
+            this.rb245.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb245.DrawFocusRectangle = false;
+            this.rb245.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb245.Location = new System.Drawing.Point(3, 157);
+            this.rb245.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb245.Name = "rb245";
+            this.rb245.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb245.Size = new System.Drawing.Size(166, 21);
+            this.rb245.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb245.TabIndex = 29;
+            this.rb245.Text = "Outros";
+            this.rb245.ThemesEnabled = false;
             // 
-            // radioButtonAdv86
+            // rb244
             // 
-            this.radioButtonAdv86.BeforeTouchSize = new System.Drawing.Size(256, 42);
-            this.radioButtonAdv86.DrawFocusRectangle = false;
-            this.radioButtonAdv86.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv86.Location = new System.Drawing.Point(3, 132);
-            this.radioButtonAdv86.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv86.Name = "radioButtonAdv86";
-            this.radioButtonAdv86.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv86.Size = new System.Drawing.Size(256, 42);
-            this.radioButtonAdv86.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv86.TabIndex = 28;
-            this.radioButtonAdv86.Text = "Trabalha, e é o responsável pelo seu próprio sustento, e contribui parcialmente p" +
-    "ara o sustento de outras pessoas";
-            this.radioButtonAdv86.ThemesEnabled = false;
-            this.radioButtonAdv86.CheckChanged += new System.EventHandler(this.radioButtonAdv86_CheckChanged);
+            this.rb244.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb244.DrawFocusRectangle = false;
+            this.rb244.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb244.Location = new System.Drawing.Point(3, 130);
+            this.rb244.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb244.Name = "rb244";
+            this.rb244.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb244.Size = new System.Drawing.Size(166, 21);
+            this.rb244.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb244.TabIndex = 28;
+            this.rb244.Text = "Internet";
+            this.rb244.ThemesEnabled = false;
             // 
-            // radioButtonAdv87
+            // rb243
             // 
-            this.radioButtonAdv87.BeforeTouchSize = new System.Drawing.Size(262, 29);
-            this.radioButtonAdv87.DrawFocusRectangle = false;
-            this.radioButtonAdv87.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv87.Location = new System.Drawing.Point(3, 97);
-            this.radioButtonAdv87.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv87.Name = "radioButtonAdv87";
-            this.radioButtonAdv87.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv87.Size = new System.Drawing.Size(262, 29);
-            this.radioButtonAdv87.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv87.TabIndex = 27;
-            this.radioButtonAdv87.Text = "Trabalha, e é responsável pelo seu próprio sustento, não recebendo ajuda financei" +
-    "ra";
-            this.radioButtonAdv87.ThemesEnabled = false;
+            this.rb243.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb243.DrawFocusRectangle = false;
+            this.rb243.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb243.Location = new System.Drawing.Point(3, 103);
+            this.rb243.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb243.Name = "rb243";
+            this.rb243.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb243.Size = new System.Drawing.Size(166, 21);
+            this.rb243.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb243.TabIndex = 27;
+            this.rb243.Text = "Rádio";
+            this.rb243.ThemesEnabled = false;
             // 
-            // radioButtonAdv89
+            // rb242
             // 
-            this.radioButtonAdv89.BeforeTouchSize = new System.Drawing.Size(235, 32);
-            this.radioButtonAdv89.DrawFocusRectangle = false;
-            this.radioButtonAdv89.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv89.Location = new System.Drawing.Point(3, 61);
-            this.radioButtonAdv89.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv89.Name = "radioButtonAdv89";
-            this.radioButtonAdv89.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv89.Size = new System.Drawing.Size(235, 32);
-            this.radioButtonAdv89.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv89.TabIndex = 25;
-            this.radioButtonAdv89.Text = "Trabalha, mas recebe ajuda financeira da família ou de outras pessoas";
-            this.radioButtonAdv89.ThemesEnabled = false;
+            this.rb242.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb242.DrawFocusRectangle = false;
+            this.rb242.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb242.Location = new System.Drawing.Point(3, 76);
+            this.rb242.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb242.Name = "rb242";
+            this.rb242.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb242.Size = new System.Drawing.Size(166, 21);
+            this.rb242.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb242.TabIndex = 26;
+            this.rb242.Text = "Televisão";
+            this.rb242.ThemesEnabled = false;
             // 
-            // autoLabel17
+            // rb241
             // 
-            this.autoLabel17.AutoSize = false;
-            this.autoLabel17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel17.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel17.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel17.Name = "autoLabel17";
-            this.autoLabel17.Size = new System.Drawing.Size(235, 31);
-            this.autoLabel17.TabIndex = 20;
-            this.autoLabel17.Text = "18 - Qual a sua participação na vida econômica da sua famália?";
+            this.rb241.BeforeTouchSize = new System.Drawing.Size(205, 21);
+            this.rb241.DrawFocusRectangle = false;
+            this.rb241.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb241.Location = new System.Drawing.Point(3, 49);
+            this.rb241.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb241.Name = "rb241";
+            this.rb241.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb241.Size = new System.Drawing.Size(205, 21);
+            this.rb241.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb241.TabIndex = 25;
+            this.rb241.Text = "Jornal escrito/revista";
+            this.rb241.ThemesEnabled = false;
             // 
-            // radioButtonAdv91
+            // autoLabel24
             // 
-            this.radioButtonAdv91.BeforeTouchSize = new System.Drawing.Size(256, 17);
-            this.radioButtonAdv91.DrawFocusRectangle = false;
-            this.radioButtonAdv91.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv91.Location = new System.Drawing.Point(3, 34);
-            this.radioButtonAdv91.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv91.Name = "radioButtonAdv91";
-            this.radioButtonAdv91.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv91.Size = new System.Drawing.Size(256, 17);
-            this.radioButtonAdv91.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv91.TabIndex = 24;
-            this.radioButtonAdv91.Text = "Financiado pela família ou por outras pessoas";
-            this.radioButtonAdv91.ThemesEnabled = false;
+            this.autoLabel24.AutoSize = false;
+            this.autoLabel24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel24.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel24.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel24.Name = "autoLabel24";
+            this.autoLabel24.Size = new System.Drawing.Size(243, 46);
+            this.autoLabel24.TabIndex = 20;
+            this.autoLabel24.Text = "24 - Qual é o meio de comunicação que você mais utiliza para se manter informado?" +
+    "";
             // 
-            // radioButtonAdv88
+            // panel21
             // 
-            this.radioButtonAdv88.BeforeTouchSize = new System.Drawing.Size(235, 28);
-            this.radioButtonAdv88.DrawFocusRectangle = false;
-            this.radioButtonAdv88.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv88.Location = new System.Drawing.Point(3, 180);
-            this.radioButtonAdv88.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv88.Name = "radioButtonAdv88";
-            this.radioButtonAdv88.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv88.Size = new System.Drawing.Size(235, 28);
-            this.radioButtonAdv88.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv88.TabIndex = 29;
-            this.radioButtonAdv88.Text = "Trabalha, e é o responsável pelo sustento da família";
-            this.radioButtonAdv88.ThemesEnabled = false;
+            this.panel21.Controls.Add(this.rb215);
+            this.panel21.Controls.Add(this.rb214);
+            this.panel21.Controls.Add(this.rb213);
+            this.panel21.Controls.Add(this.rb212);
+            this.panel21.Controls.Add(this.rb211);
+            this.panel21.Controls.Add(this.autoLabel20);
+            this.panel21.Location = new System.Drawing.Point(741, 9);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(264, 167);
+            this.panel21.TabIndex = 44;
             // 
-            // panel18
+            // rb215
             // 
-            this.panel18.Controls.Add(this.radioButtonAdv90);
-            this.panel18.Controls.Add(this.radioButtonAdv92);
-            this.panel18.Controls.Add(this.radioButtonAdv93);
-            this.panel18.Controls.Add(this.radioButtonAdv94);
-            this.panel18.Controls.Add(this.autoLabel18);
-            this.panel18.Controls.Add(this.radioButtonAdv96);
-            this.panel18.Location = new System.Drawing.Point(836, 399);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(249, 167);
-            this.panel18.TabIndex = 35;
+            this.rb215.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb215.DrawFocusRectangle = false;
+            this.rb215.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb215.Location = new System.Drawing.Point(3, 144);
+            this.rb215.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb215.Name = "rb215";
+            this.rb215.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb215.Size = new System.Drawing.Size(166, 21);
+            this.rb215.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb215.TabIndex = 33;
+            this.rb215.Text = "Mais de 10 salários mínimos";
+            this.rb215.ThemesEnabled = false;
             // 
-            // radioButtonAdv90
+            // rb214
             // 
-            this.radioButtonAdv90.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv90.DrawFocusRectangle = false;
-            this.radioButtonAdv90.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv90.Location = new System.Drawing.Point(3, 144);
-            this.radioButtonAdv90.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv90.Name = "radioButtonAdv90";
-            this.radioButtonAdv90.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv90.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv90.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv90.TabIndex = 28;
-            this.radioButtonAdv90.Text = "Mais de 10 pessoas";
-            this.radioButtonAdv90.ThemesEnabled = false;
+            this.rb214.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb214.DrawFocusRectangle = false;
+            this.rb214.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb214.Location = new System.Drawing.Point(3, 117);
+            this.rb214.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb214.Name = "rb214";
+            this.rb214.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb214.Size = new System.Drawing.Size(166, 21);
+            this.rb214.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb214.TabIndex = 32;
+            this.rb214.Text = "De 6 a 10 salários mínimos";
+            this.rb214.ThemesEnabled = false;
             // 
-            // radioButtonAdv92
+            // rb213
             // 
-            this.radioButtonAdv92.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv92.DrawFocusRectangle = false;
-            this.radioButtonAdv92.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv92.Location = new System.Drawing.Point(3, 117);
-            this.radioButtonAdv92.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv92.Name = "radioButtonAdv92";
-            this.radioButtonAdv92.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv92.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv92.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv92.TabIndex = 27;
-            this.radioButtonAdv92.Text = "De 6 a 10 pessoas";
-            this.radioButtonAdv92.ThemesEnabled = false;
+            this.rb213.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb213.DrawFocusRectangle = false;
+            this.rb213.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb213.Location = new System.Drawing.Point(3, 90);
+            this.rb213.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb213.Name = "rb213";
+            this.rb213.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb213.Size = new System.Drawing.Size(166, 21);
+            this.rb213.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb213.TabIndex = 31;
+            this.rb213.Text = "De 3 a 6 salários mínimos";
+            this.rb213.ThemesEnabled = false;
             // 
-            // radioButtonAdv93
+            // rb212
             // 
-            this.radioButtonAdv93.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv93.DrawFocusRectangle = false;
-            this.radioButtonAdv93.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv93.Location = new System.Drawing.Point(3, 90);
-            this.radioButtonAdv93.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv93.Name = "radioButtonAdv93";
-            this.radioButtonAdv93.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv93.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv93.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv93.TabIndex = 26;
-            this.radioButtonAdv93.Text = "5 ou 6 pessoas";
-            this.radioButtonAdv93.ThemesEnabled = false;
+            this.rb212.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb212.DrawFocusRectangle = false;
+            this.rb212.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb212.Location = new System.Drawing.Point(3, 63);
+            this.rb212.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb212.Name = "rb212";
+            this.rb212.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb212.Size = new System.Drawing.Size(166, 21);
+            this.rb212.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb212.TabIndex = 30;
+            this.rb212.Text = "De 1 a 3 salários mínimos";
+            this.rb212.ThemesEnabled = false;
             // 
-            // radioButtonAdv94
+            // rb211
             // 
-            this.radioButtonAdv94.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv94.DrawFocusRectangle = false;
-            this.radioButtonAdv94.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv94.Location = new System.Drawing.Point(3, 63);
-            this.radioButtonAdv94.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv94.Name = "radioButtonAdv94";
-            this.radioButtonAdv94.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv94.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv94.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv94.TabIndex = 25;
-            this.radioButtonAdv94.Text = "3 ou 4 pessoas";
-            this.radioButtonAdv94.ThemesEnabled = false;
+            this.rb211.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb211.DrawFocusRectangle = false;
+            this.rb211.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb211.Location = new System.Drawing.Point(3, 36);
+            this.rb211.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb211.Name = "rb211";
+            this.rb211.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb211.Size = new System.Drawing.Size(166, 21);
+            this.rb211.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb211.TabIndex = 29;
+            this.rb211.Text = "Menos de 1 salário mínimo";
+            this.rb211.ThemesEnabled = false;
             // 
-            // autoLabel18
+            // autoLabel20
             // 
-            this.autoLabel18.AutoSize = false;
-            this.autoLabel18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel18.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel18.Location = new System.Drawing.Point(3, 2);
-            this.autoLabel18.Name = "autoLabel18";
-            this.autoLabel18.Size = new System.Drawing.Size(235, 31);
-            this.autoLabel18.TabIndex = 20;
-            this.autoLabel18.Text = "19 - Quantas pessoas compõem sua família?";
+            this.autoLabel20.AutoSize = false;
+            this.autoLabel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel20.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel20.Location = new System.Drawing.Point(3, 2);
+            this.autoLabel20.Name = "autoLabel20";
+            this.autoLabel20.Size = new System.Drawing.Size(266, 31);
+            this.autoLabel20.TabIndex = 20;
+            this.autoLabel20.Text = "21 - Qual motivo o levou a escolher um curso da FATEC Itu?";
             // 
-            // radioButtonAdv96
+            // panel23
             // 
-            this.radioButtonAdv96.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv96.DrawFocusRectangle = false;
-            this.radioButtonAdv96.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv96.Location = new System.Drawing.Point(3, 36);
-            this.radioButtonAdv96.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv96.Name = "radioButtonAdv96";
-            this.radioButtonAdv96.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv96.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv96.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv96.TabIndex = 24;
-            this.radioButtonAdv96.Text = "1 ou 2 pessoas";
-            this.radioButtonAdv96.ThemesEnabled = false;
+            this.panel23.Controls.Add(this.rb235);
+            this.panel23.Controls.Add(this.rb234);
+            this.panel23.Controls.Add(this.rb233);
+            this.panel23.Controls.Add(this.rb232);
+            this.panel23.Controls.Add(this.autoLabel23);
+            this.panel23.Controls.Add(this.rb231);
+            this.panel23.Location = new System.Drawing.Point(741, 451);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(264, 180);
+            this.panel23.TabIndex = 41;
             // 
-            // panel19
+            // rb235
             // 
-            this.panel19.Controls.Add(this.radioButtonAdv95);
-            this.panel19.Controls.Add(this.radioButtonAdv97);
-            this.panel19.Controls.Add(this.radioButtonAdv98);
-            this.panel19.Controls.Add(this.radioButtonAdv99);
-            this.panel19.Controls.Add(this.radioButtonAdv100);
-            this.panel19.Controls.Add(this.autoLabel19);
-            this.panel19.Location = new System.Drawing.Point(836, 572);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(249, 170);
-            this.panel19.TabIndex = 36;
+            this.rb235.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb235.DrawFocusRectangle = false;
+            this.rb235.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb235.Location = new System.Drawing.Point(3, 142);
+            this.rb235.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb235.Name = "rb235";
+            this.rb235.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb235.Size = new System.Drawing.Size(166, 21);
+            this.rb235.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb235.TabIndex = 28;
+            this.rb235.Text = "Outros";
+            this.rb235.ThemesEnabled = false;
+            // 
+            // rb234
+            // 
+            this.rb234.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb234.DrawFocusRectangle = false;
+            this.rb234.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb234.Location = new System.Drawing.Point(3, 115);
+            this.rb234.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb234.Name = "rb234";
+            this.rb234.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb234.Size = new System.Drawing.Size(166, 21);
+            this.rb234.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb234.TabIndex = 27;
+            this.rb234.Text = "Esportiva";
+            this.rb234.ThemesEnabled = false;
+            // 
+            // rb233
+            // 
+            this.rb233.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb233.DrawFocusRectangle = false;
+            this.rb233.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb233.Location = new System.Drawing.Point(3, 88);
+            this.rb233.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb233.Name = "rb233";
+            this.rb233.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb233.Size = new System.Drawing.Size(166, 21);
+            this.rb233.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb233.TabIndex = 26;
+            this.rb233.Text = "Política partidária";
+            this.rb233.ThemesEnabled = false;
+            // 
+            // rb232
+            // 
+            this.rb232.BeforeTouchSize = new System.Drawing.Size(205, 21);
+            this.rb232.DrawFocusRectangle = false;
+            this.rb232.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb232.Location = new System.Drawing.Point(3, 61);
+            this.rb232.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb232.Name = "rb232";
+            this.rb232.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb232.Size = new System.Drawing.Size(205, 21);
+            this.rb232.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb232.TabIndex = 25;
+            this.rb232.Text = "Artística e cultural (cinema, show)";
+            this.rb232.ThemesEnabled = false;
+            // 
+            // autoLabel23
+            // 
+            this.autoLabel23.AutoSize = false;
+            this.autoLabel23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel23.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel23.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel23.Name = "autoLabel23";
+            this.autoLabel23.Size = new System.Drawing.Size(261, 31);
+            this.autoLabel23.TabIndex = 20;
+            this.autoLabel23.Text = "23 - Qual é o tipo de atividade da qual você mais participa?";
+            // 
+            // rb231
+            // 
+            this.rb231.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb231.DrawFocusRectangle = false;
+            this.rb231.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb231.Location = new System.Drawing.Point(3, 34);
+            this.rb231.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb231.Name = "rb231";
+            this.rb231.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb231.Size = new System.Drawing.Size(166, 21);
+            this.rb231.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb231.TabIndex = 24;
+            this.rb231.Text = "Religiosa";
+            this.rb231.ThemesEnabled = false;
+            // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.rb205);
+            this.panel20.Controls.Add(this.rb204);
+            this.panel20.Controls.Add(this.rb203);
+            this.panel20.Controls.Add(this.rb202);
+            this.panel20.Controls.Add(this.rb201);
+            this.panel20.Controls.Add(this.autoLabel19);
+            this.panel20.Location = new System.Drawing.Point(410, 451);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(249, 170);
+            this.panel20.TabIndex = 42;
+            // 
+            // rb205
+            // 
+            this.rb205.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb205.DrawFocusRectangle = false;
+            this.rb205.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb205.Location = new System.Drawing.Point(3, 144);
+            this.rb205.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb205.Name = "rb205";
+            this.rb205.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb205.Size = new System.Drawing.Size(166, 21);
+            this.rb205.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb205.TabIndex = 33;
+            this.rb205.Text = "Mais de 10 salários mínimos";
+            this.rb205.ThemesEnabled = false;
+            // 
+            // rb204
+            // 
+            this.rb204.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb204.DrawFocusRectangle = false;
+            this.rb204.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb204.Location = new System.Drawing.Point(3, 117);
+            this.rb204.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb204.Name = "rb204";
+            this.rb204.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb204.Size = new System.Drawing.Size(166, 21);
+            this.rb204.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb204.TabIndex = 32;
+            this.rb204.Text = "De 6 a 10 salários mínimos";
+            this.rb204.ThemesEnabled = false;
+            // 
+            // rb203
+            // 
+            this.rb203.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb203.DrawFocusRectangle = false;
+            this.rb203.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb203.Location = new System.Drawing.Point(3, 90);
+            this.rb203.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb203.Name = "rb203";
+            this.rb203.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb203.Size = new System.Drawing.Size(166, 21);
+            this.rb203.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb203.TabIndex = 31;
+            this.rb203.Text = "De 3 a 6 salários mínimos";
+            this.rb203.ThemesEnabled = false;
+            // 
+            // rb202
+            // 
+            this.rb202.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb202.DrawFocusRectangle = false;
+            this.rb202.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb202.Location = new System.Drawing.Point(3, 63);
+            this.rb202.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb202.Name = "rb202";
+            this.rb202.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb202.Size = new System.Drawing.Size(166, 21);
+            this.rb202.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb202.TabIndex = 30;
+            this.rb202.Text = "De 1 a 3 salários mínimos";
+            this.rb202.ThemesEnabled = false;
+            // 
+            // rb201
+            // 
+            this.rb201.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb201.DrawFocusRectangle = false;
+            this.rb201.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb201.Location = new System.Drawing.Point(3, 36);
+            this.rb201.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb201.Name = "rb201";
+            this.rb201.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb201.Size = new System.Drawing.Size(166, 21);
+            this.rb201.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb201.TabIndex = 29;
+            this.rb201.Text = "Menos de 1 salário mínimo";
+            this.rb201.ThemesEnabled = false;
             // 
             // autoLabel19
             // 
@@ -2342,336 +2728,377 @@ namespace Matricula.View
             this.autoLabel19.TabIndex = 20;
             this.autoLabel19.Text = "20 - Qual é a renda mensal de sua família (todos que residem na casa)?";
             // 
-            // radioButtonAdv95
+            // panel19
             // 
-            this.radioButtonAdv95.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv95.DrawFocusRectangle = false;
-            this.radioButtonAdv95.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv95.Location = new System.Drawing.Point(3, 144);
-            this.radioButtonAdv95.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv95.Name = "radioButtonAdv95";
-            this.radioButtonAdv95.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv95.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv95.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv95.TabIndex = 33;
-            this.radioButtonAdv95.Text = "Mais de 10 salários mínimos";
-            this.radioButtonAdv95.ThemesEnabled = false;
+            this.panel19.Controls.Add(this.rb195);
+            this.panel19.Controls.Add(this.rb194);
+            this.panel19.Controls.Add(this.rb193);
+            this.panel19.Controls.Add(this.rb192);
+            this.panel19.Controls.Add(this.autoLabel18);
+            this.panel19.Controls.Add(this.rb191);
+            this.panel19.Location = new System.Drawing.Point(410, 236);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(249, 167);
+            this.panel19.TabIndex = 39;
             // 
-            // radioButtonAdv97
+            // rb195
             // 
-            this.radioButtonAdv97.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv97.DrawFocusRectangle = false;
-            this.radioButtonAdv97.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv97.Location = new System.Drawing.Point(3, 117);
-            this.radioButtonAdv97.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv97.Name = "radioButtonAdv97";
-            this.radioButtonAdv97.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv97.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv97.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv97.TabIndex = 32;
-            this.radioButtonAdv97.Text = "De 6 a 10 salários mínimos";
-            this.radioButtonAdv97.ThemesEnabled = false;
+            this.rb195.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb195.DrawFocusRectangle = false;
+            this.rb195.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb195.Location = new System.Drawing.Point(3, 144);
+            this.rb195.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb195.Name = "rb195";
+            this.rb195.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb195.Size = new System.Drawing.Size(166, 21);
+            this.rb195.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb195.TabIndex = 28;
+            this.rb195.Text = "Mais de 10 pessoas";
+            this.rb195.ThemesEnabled = false;
             // 
-            // radioButtonAdv98
+            // rb194
             // 
-            this.radioButtonAdv98.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv98.DrawFocusRectangle = false;
-            this.radioButtonAdv98.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv98.Location = new System.Drawing.Point(3, 90);
-            this.radioButtonAdv98.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv98.Name = "radioButtonAdv98";
-            this.radioButtonAdv98.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv98.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv98.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv98.TabIndex = 31;
-            this.radioButtonAdv98.Text = "De 3 a 6 salários mínimos";
-            this.radioButtonAdv98.ThemesEnabled = false;
+            this.rb194.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb194.DrawFocusRectangle = false;
+            this.rb194.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb194.Location = new System.Drawing.Point(3, 117);
+            this.rb194.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb194.Name = "rb194";
+            this.rb194.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb194.Size = new System.Drawing.Size(166, 21);
+            this.rb194.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb194.TabIndex = 27;
+            this.rb194.Text = "De 6 a 10 pessoas";
+            this.rb194.ThemesEnabled = false;
             // 
-            // radioButtonAdv99
+            // rb193
             // 
-            this.radioButtonAdv99.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv99.DrawFocusRectangle = false;
-            this.radioButtonAdv99.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv99.Location = new System.Drawing.Point(3, 63);
-            this.radioButtonAdv99.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv99.Name = "radioButtonAdv99";
-            this.radioButtonAdv99.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv99.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv99.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv99.TabIndex = 30;
-            this.radioButtonAdv99.Text = "De 1 a 3 salários mínimos";
-            this.radioButtonAdv99.ThemesEnabled = false;
+            this.rb193.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb193.DrawFocusRectangle = false;
+            this.rb193.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb193.Location = new System.Drawing.Point(3, 90);
+            this.rb193.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb193.Name = "rb193";
+            this.rb193.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb193.Size = new System.Drawing.Size(166, 21);
+            this.rb193.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb193.TabIndex = 26;
+            this.rb193.Text = "5 ou 6 pessoas";
+            this.rb193.ThemesEnabled = false;
             // 
-            // radioButtonAdv100
+            // rb192
             // 
-            this.radioButtonAdv100.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv100.DrawFocusRectangle = false;
-            this.radioButtonAdv100.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv100.Location = new System.Drawing.Point(3, 36);
-            this.radioButtonAdv100.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv100.Name = "radioButtonAdv100";
-            this.radioButtonAdv100.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv100.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv100.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv100.TabIndex = 29;
-            this.radioButtonAdv100.Text = "Menos de 1 salário mínimo";
-            this.radioButtonAdv100.ThemesEnabled = false;
+            this.rb192.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb192.DrawFocusRectangle = false;
+            this.rb192.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb192.Location = new System.Drawing.Point(3, 63);
+            this.rb192.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb192.Name = "rb192";
+            this.rb192.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb192.Size = new System.Drawing.Size(166, 21);
+            this.rb192.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb192.TabIndex = 25;
+            this.rb192.Text = "3 ou 4 pessoas";
+            this.rb192.ThemesEnabled = false;
             // 
-            // panel20
+            // autoLabel18
             // 
-            this.panel20.Controls.Add(this.radioButtonAdv101);
-            this.panel20.Controls.Add(this.radioButtonAdv102);
-            this.panel20.Controls.Add(this.radioButtonAdv103);
-            this.panel20.Controls.Add(this.radioButtonAdv104);
-            this.panel20.Controls.Add(this.radioButtonAdv105);
-            this.panel20.Controls.Add(this.autoLabel20);
-            this.panel20.Location = new System.Drawing.Point(836, 748);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(249, 167);
-            this.panel20.TabIndex = 37;
+            this.autoLabel18.AutoSize = false;
+            this.autoLabel18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel18.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel18.Location = new System.Drawing.Point(3, 2);
+            this.autoLabel18.Name = "autoLabel18";
+            this.autoLabel18.Size = new System.Drawing.Size(246, 31);
+            this.autoLabel18.TabIndex = 20;
+            this.autoLabel18.Text = "19 - Quantas pessoas compõem sua família?";
             // 
-            // radioButtonAdv101
+            // rb191
             // 
-            this.radioButtonAdv101.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv101.DrawFocusRectangle = false;
-            this.radioButtonAdv101.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv101.Location = new System.Drawing.Point(3, 144);
-            this.radioButtonAdv101.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv101.Name = "radioButtonAdv101";
-            this.radioButtonAdv101.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv101.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv101.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv101.TabIndex = 33;
-            this.radioButtonAdv101.Text = "Mais de 10 salários mínimos";
-            this.radioButtonAdv101.ThemesEnabled = false;
+            this.rb191.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb191.DrawFocusRectangle = false;
+            this.rb191.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb191.Location = new System.Drawing.Point(3, 36);
+            this.rb191.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb191.Name = "rb191";
+            this.rb191.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb191.Size = new System.Drawing.Size(166, 21);
+            this.rb191.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb191.TabIndex = 24;
+            this.rb191.Text = "1 ou 2 pessoas";
+            this.rb191.ThemesEnabled = false;
             // 
-            // radioButtonAdv102
+            // panel18
             // 
-            this.radioButtonAdv102.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv102.DrawFocusRectangle = false;
-            this.radioButtonAdv102.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv102.Location = new System.Drawing.Point(3, 117);
-            this.radioButtonAdv102.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv102.Name = "radioButtonAdv102";
-            this.radioButtonAdv102.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv102.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv102.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv102.TabIndex = 32;
-            this.radioButtonAdv102.Text = "De 6 a 10 salários mínimos";
-            this.radioButtonAdv102.ThemesEnabled = false;
+            this.panel18.Controls.Add(this.rb185);
+            this.panel18.Controls.Add(this.rb184);
+            this.panel18.Controls.Add(this.rb183);
+            this.panel18.Controls.Add(this.rb182);
+            this.panel18.Controls.Add(this.autoLabel17);
+            this.panel18.Controls.Add(this.rb181);
+            this.panel18.Location = new System.Drawing.Point(410, 9);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(249, 210);
+            this.panel18.TabIndex = 40;
             // 
-            // radioButtonAdv103
+            // rb185
             // 
-            this.radioButtonAdv103.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv103.DrawFocusRectangle = false;
-            this.radioButtonAdv103.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv103.Location = new System.Drawing.Point(3, 90);
-            this.radioButtonAdv103.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv103.Name = "radioButtonAdv103";
-            this.radioButtonAdv103.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv103.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv103.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv103.TabIndex = 31;
-            this.radioButtonAdv103.Text = "De 3 a 6 salários mínimos";
-            this.radioButtonAdv103.ThemesEnabled = false;
+            this.rb185.BeforeTouchSize = new System.Drawing.Size(235, 28);
+            this.rb185.DrawFocusRectangle = false;
+            this.rb185.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb185.Location = new System.Drawing.Point(3, 180);
+            this.rb185.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb185.Name = "rb185";
+            this.rb185.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb185.Size = new System.Drawing.Size(235, 28);
+            this.rb185.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb185.TabIndex = 29;
+            this.rb185.Text = "Trabalha, e é o responsável pelo sustento da família";
+            this.rb185.ThemesEnabled = false;
             // 
-            // radioButtonAdv104
+            // rb184
             // 
-            this.radioButtonAdv104.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv104.DrawFocusRectangle = false;
-            this.radioButtonAdv104.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv104.Location = new System.Drawing.Point(3, 63);
-            this.radioButtonAdv104.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv104.Name = "radioButtonAdv104";
-            this.radioButtonAdv104.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv104.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv104.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv104.TabIndex = 30;
-            this.radioButtonAdv104.Text = "De 1 a 3 salários mínimos";
-            this.radioButtonAdv104.ThemesEnabled = false;
+            this.rb184.BeforeTouchSize = new System.Drawing.Size(256, 42);
+            this.rb184.DrawFocusRectangle = false;
+            this.rb184.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb184.Location = new System.Drawing.Point(3, 132);
+            this.rb184.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb184.Name = "rb184";
+            this.rb184.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb184.Size = new System.Drawing.Size(256, 42);
+            this.rb184.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb184.TabIndex = 28;
+            this.rb184.Text = "Trabalha, e é o responsável pelo seu próprio sustento, e contribui parcialmente p" +
+    "ara o sustento de outras pessoas";
+            this.rb184.ThemesEnabled = false;
             // 
-            // radioButtonAdv105
+            // rb183
             // 
-            this.radioButtonAdv105.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv105.DrawFocusRectangle = false;
-            this.radioButtonAdv105.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv105.Location = new System.Drawing.Point(3, 36);
-            this.radioButtonAdv105.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv105.Name = "radioButtonAdv105";
-            this.radioButtonAdv105.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv105.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv105.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv105.TabIndex = 29;
-            this.radioButtonAdv105.Text = "Menos de 1 salário mínimo";
-            this.radioButtonAdv105.ThemesEnabled = false;
+            this.rb183.BeforeTouchSize = new System.Drawing.Size(262, 29);
+            this.rb183.DrawFocusRectangle = false;
+            this.rb183.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb183.Location = new System.Drawing.Point(3, 97);
+            this.rb183.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb183.Name = "rb183";
+            this.rb183.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb183.Size = new System.Drawing.Size(262, 29);
+            this.rb183.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb183.TabIndex = 27;
+            this.rb183.Text = "Trabalha, e é responsável pelo seu próprio sustento, não recebendo ajuda financei" +
+    "ra";
+            this.rb183.ThemesEnabled = false;
             // 
-            // autoLabel20
+            // rb182
             // 
-            this.autoLabel20.AutoSize = false;
-            this.autoLabel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel20.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel20.Location = new System.Drawing.Point(3, 2);
-            this.autoLabel20.Name = "autoLabel20";
-            this.autoLabel20.Size = new System.Drawing.Size(246, 31);
-            this.autoLabel20.TabIndex = 20;
-            this.autoLabel20.Text = "21 - Qual motivo o levou a escolher um curso da FATEC Itu?";
+            this.rb182.BeforeTouchSize = new System.Drawing.Size(235, 32);
+            this.rb182.DrawFocusRectangle = false;
+            this.rb182.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb182.Location = new System.Drawing.Point(3, 61);
+            this.rb182.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb182.Name = "rb182";
+            this.rb182.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb182.Size = new System.Drawing.Size(235, 32);
+            this.rb182.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb182.TabIndex = 25;
+            this.rb182.Text = "Trabalha, mas recebe ajuda financeira da família ou de outras pessoas";
+            this.rb182.ThemesEnabled = false;
             // 
-            // panel21
+            // autoLabel17
             // 
-            this.panel21.Controls.Add(this.radioButtonAdv106);
-            this.panel21.Controls.Add(this.radioButtonAdv107);
-            this.panel21.Controls.Add(this.radioButtonAdv108);
-            this.panel21.Controls.Add(this.radioButtonAdv109);
-            this.panel21.Controls.Add(this.radioButtonAdv110);
-            this.panel21.Controls.Add(this.autoLabel21);
-            this.panel21.Location = new System.Drawing.Point(543, 756);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(249, 149);
-            this.panel21.TabIndex = 38;
+            this.autoLabel17.AutoSize = false;
+            this.autoLabel17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel17.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel17.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel17.Name = "autoLabel17";
+            this.autoLabel17.Size = new System.Drawing.Size(256, 31);
+            this.autoLabel17.TabIndex = 20;
+            this.autoLabel17.Text = "18 - Qual a sua participação na vida econômica da sua famália?";
             // 
-            // radioButtonAdv106
+            // rb181
             // 
-            this.radioButtonAdv106.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv106.DrawFocusRectangle = false;
-            this.radioButtonAdv106.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv106.Location = new System.Drawing.Point(3, 129);
-            this.radioButtonAdv106.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv106.Name = "radioButtonAdv106";
-            this.radioButtonAdv106.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv106.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv106.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv106.TabIndex = 33;
-            this.radioButtonAdv106.Text = "Outros";
-            this.radioButtonAdv106.ThemesEnabled = false;
+            this.rb181.BeforeTouchSize = new System.Drawing.Size(256, 17);
+            this.rb181.DrawFocusRectangle = false;
+            this.rb181.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb181.Location = new System.Drawing.Point(3, 34);
+            this.rb181.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb181.Name = "rb181";
+            this.rb181.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb181.Size = new System.Drawing.Size(256, 17);
+            this.rb181.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb181.TabIndex = 24;
+            this.rb181.Text = "Financiado pela família ou por outras pessoas";
+            this.rb181.ThemesEnabled = false;
             // 
-            // radioButtonAdv107
+            // panel17
             // 
-            this.radioButtonAdv107.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv107.DrawFocusRectangle = false;
-            this.radioButtonAdv107.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv107.Location = new System.Drawing.Point(3, 102);
-            this.radioButtonAdv107.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv107.Name = "radioButtonAdv107";
-            this.radioButtonAdv107.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv107.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv107.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv107.TabIndex = 32;
-            this.radioButtonAdv107.Text = "Comércio";
-            this.radioButtonAdv107.ThemesEnabled = false;
+            this.panel17.Controls.Add(this.rb176);
+            this.panel17.Controls.Add(this.rb175);
+            this.panel17.Controls.Add(this.rb174);
+            this.panel17.Controls.Add(this.rb173);
+            this.panel17.Controls.Add(this.autoLabel16);
+            this.panel17.Controls.Add(this.rb171);
+            this.panel17.Controls.Add(this.rb172);
+            this.panel17.Location = new System.Drawing.Point(35, 457);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(249, 176);
+            this.panel17.TabIndex = 38;
             // 
-            // radioButtonAdv108
+            // rb176
             // 
-            this.radioButtonAdv108.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv108.DrawFocusRectangle = false;
-            this.radioButtonAdv108.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv108.Location = new System.Drawing.Point(3, 75);
-            this.radioButtonAdv108.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv108.Name = "radioButtonAdv108";
-            this.radioButtonAdv108.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv108.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv108.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv108.TabIndex = 31;
-            this.radioButtonAdv108.Text = "Indústrias";
-            this.radioButtonAdv108.ThemesEnabled = false;
+            this.rb176.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb176.DrawFocusRectangle = false;
+            this.rb176.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb176.Location = new System.Drawing.Point(0, 153);
+            this.rb176.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb176.Name = "rb176";
+            this.rb176.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb176.Size = new System.Drawing.Size(166, 21);
+            this.rb176.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb176.TabIndex = 28;
+            this.rb176.Text = "Mais de 10 salários mínimos";
+            this.rb176.ThemesEnabled = false;
             // 
-            // radioButtonAdv109
+            // rb175
             // 
-            this.radioButtonAdv109.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv109.DrawFocusRectangle = false;
-            this.radioButtonAdv109.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv109.Location = new System.Drawing.Point(3, 48);
-            this.radioButtonAdv109.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv109.Name = "radioButtonAdv109";
-            this.radioButtonAdv109.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv109.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv109.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv109.TabIndex = 30;
-            this.radioButtonAdv109.Text = "Educação";
-            this.radioButtonAdv109.ThemesEnabled = false;
+            this.rb175.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb175.DrawFocusRectangle = false;
+            this.rb175.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb175.Location = new System.Drawing.Point(0, 126);
+            this.rb175.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb175.Name = "rb175";
+            this.rb175.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb175.Size = new System.Drawing.Size(166, 21);
+            this.rb175.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb175.TabIndex = 27;
+            this.rb175.Text = "De 6 a 10 salários mínimos";
+            this.rb175.ThemesEnabled = false;
             // 
-            // radioButtonAdv110
+            // rb174
             // 
-            this.radioButtonAdv110.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv110.DrawFocusRectangle = false;
-            this.radioButtonAdv110.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv110.Location = new System.Drawing.Point(3, 21);
-            this.radioButtonAdv110.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv110.Name = "radioButtonAdv110";
-            this.radioButtonAdv110.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv110.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv110.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv110.TabIndex = 29;
-            this.radioButtonAdv110.Text = "Saúde";
-            this.radioButtonAdv110.ThemesEnabled = false;
+            this.rb174.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb174.DrawFocusRectangle = false;
+            this.rb174.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb174.Location = new System.Drawing.Point(0, 99);
+            this.rb174.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb174.Name = "rb174";
+            this.rb174.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb174.Size = new System.Drawing.Size(166, 21);
+            this.rb174.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb174.TabIndex = 26;
+            this.rb174.Text = "De 3 a 6 salários mínimos";
+            this.rb174.ThemesEnabled = false;
             // 
-            // autoLabel21
+            // rb173
             // 
-            this.autoLabel21.AutoSize = false;
-            this.autoLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel21.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel21.Location = new System.Drawing.Point(3, 2);
-            this.autoLabel21.Name = "autoLabel21";
-            this.autoLabel21.Size = new System.Drawing.Size(246, 13);
-            this.autoLabel21.TabIndex = 20;
-            this.autoLabel21.Text = "16 - Qual é o seu ramo de atividade?";
+            this.rb173.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb173.DrawFocusRectangle = false;
+            this.rb173.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb173.Location = new System.Drawing.Point(0, 72);
+            this.rb173.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb173.Name = "rb173";
+            this.rb173.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb173.Size = new System.Drawing.Size(166, 21);
+            this.rb173.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb173.TabIndex = 25;
+            this.rb173.Text = "De 1 a 3 salários mínimos";
+            this.rb173.ThemesEnabled = false;
+            // 
+            // autoLabel16
+            // 
+            this.autoLabel16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel16.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel16.Location = new System.Drawing.Point(0, 0);
+            this.autoLabel16.Name = "autoLabel16";
+            this.autoLabel16.Size = new System.Drawing.Size(205, 15);
+            this.autoLabel16.TabIndex = 20;
+            this.autoLabel16.Text = "17 - Qual a sua renda mensal?";
+            // 
+            // rb171
+            // 
+            this.rb171.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb171.DrawFocusRectangle = false;
+            this.rb171.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb171.Location = new System.Drawing.Point(0, 18);
+            this.rb171.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb171.Name = "rb171";
+            this.rb171.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb171.Size = new System.Drawing.Size(192, 21);
+            this.rb171.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb171.TabIndex = 23;
+            this.rb171.Text = "Não tenho";
+            this.rb171.ThemesEnabled = false;
+            // 
+            // rb172
+            // 
+            this.rb172.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb172.DrawFocusRectangle = false;
+            this.rb172.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb172.Location = new System.Drawing.Point(0, 45);
+            this.rb172.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb172.Name = "rb172";
+            this.rb172.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb172.Size = new System.Drawing.Size(166, 21);
+            this.rb172.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb172.TabIndex = 24;
+            this.rb172.Text = "Menos de 1 salário mínimo";
+            this.rb172.ThemesEnabled = false;
             // 
             // panel22
             // 
-            this.panel22.Controls.Add(this.radioButtonAdv112);
-            this.panel22.Controls.Add(this.radioButtonAdv113);
-            this.panel22.Controls.Add(this.radioButtonAdv114);
+            this.panel22.Controls.Add(this.rb225);
+            this.panel22.Controls.Add(this.rb224);
+            this.panel22.Controls.Add(this.rb223);
             this.panel22.Controls.Add(this.autoLabel22);
-            this.panel22.Controls.Add(this.radioButtonAdv115);
-            this.panel22.Controls.Add(this.radioButtonAdv116);
-            this.panel22.Location = new System.Drawing.Point(1091, 3);
+            this.panel22.Controls.Add(this.rb221);
+            this.panel22.Controls.Add(this.rb222);
+            this.panel22.Location = new System.Drawing.Point(744, 236);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(249, 161);
-            this.panel22.TabIndex = 35;
+            this.panel22.TabIndex = 36;
             // 
-            // radioButtonAdv112
+            // rb225
             // 
-            this.radioButtonAdv112.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv112.DrawFocusRectangle = false;
-            this.radioButtonAdv112.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv112.Location = new System.Drawing.Point(3, 126);
-            this.radioButtonAdv112.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv112.Name = "radioButtonAdv112";
-            this.radioButtonAdv112.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv112.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv112.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv112.TabIndex = 27;
-            this.radioButtonAdv112.Text = "Outras";
-            this.radioButtonAdv112.ThemesEnabled = false;
+            this.rb225.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb225.DrawFocusRectangle = false;
+            this.rb225.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb225.Location = new System.Drawing.Point(3, 126);
+            this.rb225.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb225.Name = "rb225";
+            this.rb225.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb225.Size = new System.Drawing.Size(166, 21);
+            this.rb225.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb225.TabIndex = 27;
+            this.rb225.Text = "Outras";
+            this.rb225.ThemesEnabled = false;
             // 
-            // radioButtonAdv113
+            // rb224
             // 
-            this.radioButtonAdv113.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv113.DrawFocusRectangle = false;
-            this.radioButtonAdv113.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv113.Location = new System.Drawing.Point(3, 99);
-            this.radioButtonAdv113.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv113.Name = "radioButtonAdv113";
-            this.radioButtonAdv113.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv113.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv113.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv113.TabIndex = 26;
-            this.radioButtonAdv113.Text = "Alugada";
-            this.radioButtonAdv113.ThemesEnabled = false;
+            this.rb224.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb224.DrawFocusRectangle = false;
+            this.rb224.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb224.Location = new System.Drawing.Point(3, 99);
+            this.rb224.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb224.Name = "rb224";
+            this.rb224.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb224.Size = new System.Drawing.Size(166, 21);
+            this.rb224.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb224.TabIndex = 26;
+            this.rb224.Text = "Alugada";
+            this.rb224.ThemesEnabled = false;
             // 
-            // radioButtonAdv114
+            // rb223
             // 
-            this.radioButtonAdv114.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv114.DrawFocusRectangle = false;
-            this.radioButtonAdv114.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv114.Location = new System.Drawing.Point(3, 72);
-            this.radioButtonAdv114.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv114.Name = "radioButtonAdv114";
-            this.radioButtonAdv114.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv114.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv114.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv114.TabIndex = 25;
-            this.radioButtonAdv114.Text = "Financiada";
-            this.radioButtonAdv114.ThemesEnabled = false;
+            this.rb223.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb223.DrawFocusRectangle = false;
+            this.rb223.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb223.Location = new System.Drawing.Point(3, 72);
+            this.rb223.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb223.Name = "rb223";
+            this.rb223.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb223.Size = new System.Drawing.Size(166, 21);
+            this.rb223.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb223.TabIndex = 25;
+            this.rb223.Text = "Financiada";
+            this.rb223.ThemesEnabled = false;
             // 
             // autoLabel22
             // 
@@ -2683,233 +3110,106 @@ namespace Matricula.View
             this.autoLabel22.TabIndex = 20;
             this.autoLabel22.Text = "22 - Qual é o tipo de sua moradia?";
             // 
-            // radioButtonAdv115
+            // rb221
             // 
-            this.radioButtonAdv115.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv115.DrawFocusRectangle = false;
-            this.radioButtonAdv115.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv115.Location = new System.Drawing.Point(3, 18);
-            this.radioButtonAdv115.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv115.Name = "radioButtonAdv115";
-            this.radioButtonAdv115.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv115.Size = new System.Drawing.Size(192, 21);
-            this.radioButtonAdv115.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv115.TabIndex = 23;
-            this.radioButtonAdv115.Text = "Própia";
-            this.radioButtonAdv115.ThemesEnabled = false;
+            this.rb221.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb221.DrawFocusRectangle = false;
+            this.rb221.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb221.Location = new System.Drawing.Point(3, 18);
+            this.rb221.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb221.Name = "rb221";
+            this.rb221.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb221.Size = new System.Drawing.Size(192, 21);
+            this.rb221.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb221.TabIndex = 23;
+            this.rb221.Text = "Própia";
+            this.rb221.ThemesEnabled = false;
             // 
-            // radioButtonAdv116
+            // rb222
             // 
-            this.radioButtonAdv116.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv116.DrawFocusRectangle = false;
-            this.radioButtonAdv116.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv116.Location = new System.Drawing.Point(3, 45);
-            this.radioButtonAdv116.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv116.Name = "radioButtonAdv116";
-            this.radioButtonAdv116.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv116.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv116.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv116.TabIndex = 24;
-            this.radioButtonAdv116.Text = "Cedida";
-            this.radioButtonAdv116.ThemesEnabled = false;
+            this.rb222.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb222.DrawFocusRectangle = false;
+            this.rb222.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb222.Location = new System.Drawing.Point(3, 45);
+            this.rb222.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb222.Name = "rb222";
+            this.rb222.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb222.Size = new System.Drawing.Size(166, 21);
+            this.rb222.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb222.TabIndex = 24;
+            this.rb222.Text = "Cedida";
+            this.rb222.ThemesEnabled = false;
             // 
-            // panel23
+            // sfTab1
             // 
-            this.panel23.Controls.Add(this.radioButtonAdv119);
-            this.panel23.Controls.Add(this.radioButtonAdv111);
-            this.panel23.Controls.Add(this.radioButtonAdv117);
-            this.panel23.Controls.Add(this.radioButtonAdv118);
-            this.panel23.Controls.Add(this.autoLabel23);
-            this.panel23.Controls.Add(this.radioButtonAdv120);
-            this.panel23.Location = new System.Drawing.Point(1091, 183);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(249, 180);
-            this.panel23.TabIndex = 36;
+            this.sfTab1.AttachedTo = this.tab1;
+            this.sfTab1.CustomRender = null;
+            this.sfTab1.MetroColorScheme = Syncfusion.Windows.Forms.MetroColorScheme.Managed;
+            this.sfTab1.MetroThumbSize = new System.Drawing.Size(0, 0);
+            metroColorTable1.ArrowChecked = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(149)))), ((int)(((byte)(152)))));
+            metroColorTable1.ArrowInActive = System.Drawing.Color.White;
+            metroColorTable1.ArrowNormal = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
+            metroColorTable1.ArrowNormalBackGround = System.Drawing.Color.Empty;
+            metroColorTable1.ArrowPushed = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(89)))), ((int)(((byte)(90)))));
+            metroColorTable1.ArrowPushedBackGround = System.Drawing.Color.Empty;
+            metroColorTable1.ScrollerBackground = System.Drawing.Color.White;
+            metroColorTable1.ThumbChecked = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(149)))), ((int)(((byte)(152)))));
+            metroColorTable1.ThumbInActive = System.Drawing.Color.White;
+            metroColorTable1.ThumbNormal = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
+            metroColorTable1.ThumbPushed = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(89)))), ((int)(((byte)(90)))));
+            metroColorTable1.ThumbPushedBorder = System.Drawing.Color.Empty;
+            this.sfTab1.ScrollMetroColorTable = metroColorTable1;
+            this.sfTab1.ShowMetroArrowButton = true;
+            this.sfTab1.SizeGripperVisibility = Syncfusion.Windows.Forms.SizeGripperVisibility.Auto;
+            this.sfTab1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawStyles.Metro;
             // 
-            // radioButtonAdv111
+            // sfTab2
             // 
-            this.radioButtonAdv111.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv111.DrawFocusRectangle = false;
-            this.radioButtonAdv111.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv111.Location = new System.Drawing.Point(3, 115);
-            this.radioButtonAdv111.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv111.Name = "radioButtonAdv111";
-            this.radioButtonAdv111.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv111.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv111.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv111.TabIndex = 27;
-            this.radioButtonAdv111.Text = "Esportiva";
-            this.radioButtonAdv111.ThemesEnabled = false;
+            this.sfTab2.AttachedTo = this.tab2;
+            this.sfTab2.CustomRender = null;
+            this.sfTab2.MetroColorScheme = Syncfusion.Windows.Forms.MetroColorScheme.Managed;
+            this.sfTab2.MetroThumbSize = new System.Drawing.Size(0, 0);
+            metroColorTable2.ArrowChecked = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(149)))), ((int)(((byte)(152)))));
+            metroColorTable2.ArrowInActive = System.Drawing.Color.White;
+            metroColorTable2.ArrowNormal = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
+            metroColorTable2.ArrowNormalBackGround = System.Drawing.Color.Empty;
+            metroColorTable2.ArrowPushed = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(89)))), ((int)(((byte)(90)))));
+            metroColorTable2.ArrowPushedBackGround = System.Drawing.Color.Empty;
+            metroColorTable2.ScrollerBackground = System.Drawing.Color.White;
+            metroColorTable2.ThumbChecked = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(149)))), ((int)(((byte)(152)))));
+            metroColorTable2.ThumbInActive = System.Drawing.Color.White;
+            metroColorTable2.ThumbNormal = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
+            metroColorTable2.ThumbPushed = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(89)))), ((int)(((byte)(90)))));
+            metroColorTable2.ThumbPushedBorder = System.Drawing.Color.Empty;
+            this.sfTab2.ScrollMetroColorTable = metroColorTable2;
+            this.sfTab2.ShowMetroArrowButton = true;
+            this.sfTab2.SizeGripperVisibility = Syncfusion.Windows.Forms.SizeGripperVisibility.Auto;
+            this.sfTab2.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawStyles.Metro;
             // 
-            // radioButtonAdv117
+            // btnEnviar
             // 
-            this.radioButtonAdv117.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv117.DrawFocusRectangle = false;
-            this.radioButtonAdv117.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv117.Location = new System.Drawing.Point(3, 88);
-            this.radioButtonAdv117.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv117.Name = "radioButtonAdv117";
-            this.radioButtonAdv117.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv117.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv117.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv117.TabIndex = 26;
-            this.radioButtonAdv117.Text = "Política partidária";
-            this.radioButtonAdv117.ThemesEnabled = false;
-            // 
-            // radioButtonAdv118
-            // 
-            this.radioButtonAdv118.BeforeTouchSize = new System.Drawing.Size(205, 21);
-            this.radioButtonAdv118.DrawFocusRectangle = false;
-            this.radioButtonAdv118.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv118.Location = new System.Drawing.Point(3, 61);
-            this.radioButtonAdv118.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv118.Name = "radioButtonAdv118";
-            this.radioButtonAdv118.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv118.Size = new System.Drawing.Size(205, 21);
-            this.radioButtonAdv118.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv118.TabIndex = 25;
-            this.radioButtonAdv118.Text = "Artística e cultural (cinema, show)";
-            this.radioButtonAdv118.ThemesEnabled = false;
-            // 
-            // autoLabel23
-            // 
-            this.autoLabel23.AutoSize = false;
-            this.autoLabel23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel23.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel23.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel23.Name = "autoLabel23";
-            this.autoLabel23.Size = new System.Drawing.Size(230, 31);
-            this.autoLabel23.TabIndex = 20;
-            this.autoLabel23.Text = "23 - Qual é o tipo de atividade da qual você mais participa?";
-            // 
-            // radioButtonAdv120
-            // 
-            this.radioButtonAdv120.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv120.DrawFocusRectangle = false;
-            this.radioButtonAdv120.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv120.Location = new System.Drawing.Point(3, 34);
-            this.radioButtonAdv120.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv120.Name = "radioButtonAdv120";
-            this.radioButtonAdv120.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv120.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv120.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv120.TabIndex = 24;
-            this.radioButtonAdv120.Text = "Religiosa";
-            this.radioButtonAdv120.ThemesEnabled = false;
-            // 
-            // radioButtonAdv119
-            // 
-            this.radioButtonAdv119.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv119.DrawFocusRectangle = false;
-            this.radioButtonAdv119.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv119.Location = new System.Drawing.Point(3, 142);
-            this.radioButtonAdv119.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv119.Name = "radioButtonAdv119";
-            this.radioButtonAdv119.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv119.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv119.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv119.TabIndex = 28;
-            this.radioButtonAdv119.Text = "Outros";
-            this.radioButtonAdv119.ThemesEnabled = false;
-            // 
-            // panel24
-            // 
-            this.panel24.Controls.Add(this.radioButtonAdv121);
-            this.panel24.Controls.Add(this.radioButtonAdv122);
-            this.panel24.Controls.Add(this.radioButtonAdv123);
-            this.panel24.Controls.Add(this.radioButtonAdv124);
-            this.panel24.Controls.Add(this.autoLabel24);
-            this.panel24.Controls.Add(this.radioButtonAdv125);
-            this.panel24.Location = new System.Drawing.Point(1091, 402);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(249, 180);
-            this.panel24.TabIndex = 37;
-            // 
-            // radioButtonAdv121
-            // 
-            this.radioButtonAdv121.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv121.DrawFocusRectangle = false;
-            this.radioButtonAdv121.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv121.Location = new System.Drawing.Point(3, 142);
-            this.radioButtonAdv121.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv121.Name = "radioButtonAdv121";
-            this.radioButtonAdv121.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv121.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv121.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv121.TabIndex = 28;
-            this.radioButtonAdv121.Text = "Outros";
-            this.radioButtonAdv121.ThemesEnabled = false;
-            // 
-            // radioButtonAdv122
-            // 
-            this.radioButtonAdv122.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv122.DrawFocusRectangle = false;
-            this.radioButtonAdv122.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv122.Location = new System.Drawing.Point(3, 115);
-            this.radioButtonAdv122.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv122.Name = "radioButtonAdv122";
-            this.radioButtonAdv122.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv122.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv122.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv122.TabIndex = 27;
-            this.radioButtonAdv122.Text = "Esportiva";
-            this.radioButtonAdv122.ThemesEnabled = false;
-            // 
-            // radioButtonAdv123
-            // 
-            this.radioButtonAdv123.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv123.DrawFocusRectangle = false;
-            this.radioButtonAdv123.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv123.Location = new System.Drawing.Point(3, 88);
-            this.radioButtonAdv123.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv123.Name = "radioButtonAdv123";
-            this.radioButtonAdv123.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv123.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv123.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv123.TabIndex = 26;
-            this.radioButtonAdv123.Text = "Política partidária";
-            this.radioButtonAdv123.ThemesEnabled = false;
-            // 
-            // radioButtonAdv124
-            // 
-            this.radioButtonAdv124.BeforeTouchSize = new System.Drawing.Size(205, 21);
-            this.radioButtonAdv124.DrawFocusRectangle = false;
-            this.radioButtonAdv124.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv124.Location = new System.Drawing.Point(3, 61);
-            this.radioButtonAdv124.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv124.Name = "radioButtonAdv124";
-            this.radioButtonAdv124.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv124.Size = new System.Drawing.Size(205, 21);
-            this.radioButtonAdv124.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv124.TabIndex = 25;
-            this.radioButtonAdv124.Text = "Artística e cultural (cinema, show)";
-            this.radioButtonAdv124.ThemesEnabled = false;
-            // 
-            // autoLabel24
-            // 
-            this.autoLabel24.AutoSize = false;
-            this.autoLabel24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel24.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel24.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel24.Name = "autoLabel24";
-            this.autoLabel24.Size = new System.Drawing.Size(230, 31);
-            this.autoLabel24.TabIndex = 20;
-            this.autoLabel24.Text = "23 - Qual é o tipo de atividade da qual você mais participa?";
-            // 
-            // radioButtonAdv125
-            // 
-            this.radioButtonAdv125.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv125.DrawFocusRectangle = false;
-            this.radioButtonAdv125.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.radioButtonAdv125.Location = new System.Drawing.Point(3, 34);
-            this.radioButtonAdv125.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv125.Name = "radioButtonAdv125";
-            this.radioButtonAdv125.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv125.Size = new System.Drawing.Size(166, 21);
-            this.radioButtonAdv125.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv125.TabIndex = 24;
-            this.radioButtonAdv125.Text = "Religiosa";
-            this.radioButtonAdv125.ThemesEnabled = false;
+            this.btnEnviar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEnviar.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.btnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnEnviar.BeforeTouchSize = new System.Drawing.Size(75, 23);
+            this.btnEnviar.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.None;
+            this.btnEnviar.ComboEditBackColor = System.Drawing.Color.Transparent;
+            this.btnEnviar.CustomManagedColor = System.Drawing.Color.Transparent;
+            this.btnEnviar.FlatAppearance.BorderSize = 0;
+            this.btnEnviar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnEnviar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(165)))), ((int)(((byte)(150)))));
+            this.btnEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnviar.ForeColor = System.Drawing.Color.White;
+            this.btnEnviar.IsBackStageButton = false;
+            this.btnEnviar.Location = new System.Drawing.Point(1252, 670);
+            this.btnEnviar.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(75, 23);
+            this.btnEnviar.TabIndex = 30;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.UseVisualStyle = false;
+            this.btnEnviar.UseVisualStyleBackColor = false;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // QuestionarioForm
             // 
@@ -2933,362 +3233,393 @@ namespace Matricula.View
             captionImage2.Size = new System.Drawing.Size(266, 28);
             this.CaptionImages.Add(captionImage1);
             this.CaptionImages.Add(captionImage2);
-            this.ClientSize = new System.Drawing.Size(1374, 722);
-            this.Controls.Add(this.tabControlAdv1);
+            this.ClientSize = new System.Drawing.Size(1366, 679);
+            this.Controls.Add(this.btnEnviar);
+            this.Controls.Add(this.tabControl);
             this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(177)))));
             this.Name = "QuestionarioForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.QuestionarioForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv1)).EndInit();
-            this.tabControlAdv1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabControl)).EndInit();
+            this.tabControl.ResumeLayout(false);
             this.tab1.ResumeLayout(false);
-            this.pnPrincipal.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv54)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv41)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv18)).EndInit();
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv48)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv52)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv49)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv50)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv53)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv30)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv46)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv56)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv57)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv38)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv12)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv7)).EndInit();
-            this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv55)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv58)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv59)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv60)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv61)).EndInit();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv63)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv64)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv65)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv66)).EndInit();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv62)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv67)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv68)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv69)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv70)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv71)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb136)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb135)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb134)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb133)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb131)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb132)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb124)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb123)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb121)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb122)).EndInit();
+            this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rb115)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb114)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb113)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb111)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb112)).EndInit();
+            this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rb105)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb104)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb102)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb103)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb101)).EndInit();
+            this.panel09.ResumeLayout(false);
+            this.panel09.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb096)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb095)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb092)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb093)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb091)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb094)).EndInit();
+            this.panel06.ResumeLayout(false);
+            this.panel06.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb068)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb069)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb067)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb063)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb064)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb062)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb066)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb061)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb065)).EndInit();
+            this.panel01.ResumeLayout(false);
+            this.panel01.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb013)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb014)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb012)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb016)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb011)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb015)).EndInit();
+            this.panel02.ResumeLayout(false);
+            this.panel02.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb023)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb024)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb022)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb021)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb025)).EndInit();
+            this.panel05.ResumeLayout(false);
+            this.panel05.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb058)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb059)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb057)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb053)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb054)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb052)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb056)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb051)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb055)).EndInit();
+            this.panel08.ResumeLayout(false);
+            this.panel08.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb083)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb082)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb081)).EndInit();
+            this.panel07.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rb072)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb073)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb071)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb074)).EndInit();
+            this.panel04.ResumeLayout(false);
+            this.panel04.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb043)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb044)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb042)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb041)).EndInit();
+            this.panel03.ResumeLayout(false);
+            this.panel03.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb033)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb034)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb032)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb031)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb035)).EndInit();
+            this.tab2.ResumeLayout(false);
+            this.panel26.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rb265)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb264)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb263)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb262)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb261)).EndInit();
+            this.panel25.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rb256)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb255)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb254)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb253)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb252)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb251)).EndInit();
+            this.panel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rb154)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb152)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb153)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb151)).EndInit();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv74)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv76)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv77)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv75)).EndInit();
-            this.panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv72)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv73)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv79)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv78)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb143)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb144)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb141)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb142)).EndInit();
             this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv80)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv81)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv82)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv83)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv84)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv85)).EndInit();
-            this.panel17.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv86)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv87)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv89)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv91)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv88)).EndInit();
-            this.panel18.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv90)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv92)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv93)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv94)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv96)).EndInit();
-            this.panel19.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv95)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv97)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv98)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv99)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv100)).EndInit();
-            this.panel20.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv101)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv102)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv103)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv104)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv105)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb165)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb164)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb163)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb162)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb161)).EndInit();
+            this.panel24.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rb245)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb244)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb243)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb242)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb241)).EndInit();
             this.panel21.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv106)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv107)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv108)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv109)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv110)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb215)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb214)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb213)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb212)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb211)).EndInit();
+            this.panel23.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rb235)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb234)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb233)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb232)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb231)).EndInit();
+            this.panel20.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rb205)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb204)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb203)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb202)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb201)).EndInit();
+            this.panel19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rb195)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb194)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb193)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb192)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb191)).EndInit();
+            this.panel18.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rb185)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb184)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb183)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb182)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb181)).EndInit();
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb176)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb175)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb174)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb173)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb171)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb172)).EndInit();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv112)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv113)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv114)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv115)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv116)).EndInit();
-            this.panel23.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv111)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv117)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv118)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv120)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv119)).EndInit();
-            this.panel24.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv121)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv122)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv123)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv124)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv125)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb225)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb224)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb223)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb221)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb222)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel1;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv2;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv1;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv3;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv4;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv5;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv6;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel4;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv18;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv19;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv20;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv21;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel3;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv12;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv13;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv14;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv15;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv16;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel2;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv7;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv8;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv9;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv10;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv11;
-        private Syncfusion.Windows.Forms.ScrollersFrame sfPrincipal;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private Syncfusion.Windows.Forms.Tools.TabControlAdv tabControlAdv1;
+        private Syncfusion.Windows.Forms.ScrollersFrame sfTab1;
+        private Syncfusion.Windows.Forms.Tools.TabControlAdv tabControl;
         private Syncfusion.Windows.Forms.Tools.TabPageAdv tab1;
-        private System.Windows.Forms.Panel panel5;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv23;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv22;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv17;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel6;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv25;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv26;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv27;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv28;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv29;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv30;
-        private System.Windows.Forms.Panel panel6;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv24;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv31;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv32;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv33;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv34;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv35;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv36;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv37;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv38;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel8;
-        private System.Windows.Forms.Panel panel10;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel5;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv39;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv40;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv41;
-        private System.Windows.Forms.Panel panel7;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel7;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv43;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv44;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv45;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv48;
-        private System.Windows.Forms.Panel panel9;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel9;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv49;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv50;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv51;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv53;
-        private System.Windows.Forms.Panel panel8;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel10;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv56;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv57;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv46;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv52;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv47;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv54;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv42;
-        private System.Windows.Forms.Panel pnPrincipal;
-        private System.Windows.Forms.Panel panel11;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv55;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv58;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel11;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv59;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv60;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv61;
-        private System.Windows.Forms.Panel panel12;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv63;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv64;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel12;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv65;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv66;
-        private System.Windows.Forms.Panel panel13;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv71;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv70;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv62;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv67;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel13;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv68;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv69;
-        private System.Windows.Forms.Panel panel14;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv75;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv74;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel14;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv76;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv77;
-        private System.Windows.Forms.Panel panel15;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv72;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv73;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel15;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv79;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv78;
-        private System.Windows.Forms.Panel panel16;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv80;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv81;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv82;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel16;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv83;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv84;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv85;
-        private System.Windows.Forms.Panel panel17;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv86;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv87;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv89;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel17;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv91;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv88;
-        private System.Windows.Forms.Panel panel18;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv90;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv92;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv93;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv94;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel18;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv96;
-        private System.Windows.Forms.Panel panel20;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv101;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv102;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv103;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv104;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv105;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel20;
-        private System.Windows.Forms.Panel panel19;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv95;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv97;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv98;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv99;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv100;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel19;
-        private System.Windows.Forms.Panel panel21;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv106;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv107;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv108;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv109;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv110;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel21;
-        private System.Windows.Forms.Panel panel23;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv119;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv111;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv117;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv118;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel23;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv120;
-        private System.Windows.Forms.Panel panel22;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv112;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv113;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv114;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel22;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv115;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv116;
+        private Syncfusion.Windows.Forms.Tools.TabPageAdv tab2;
         private System.Windows.Forms.Panel panel24;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv121;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv122;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv123;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv124;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb244;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb243;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb242;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb241;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel24;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv125;
+        private System.Windows.Forms.Panel panel23;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb235;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb234;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb233;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb232;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel23;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb231;
+        private System.Windows.Forms.Panel panel21;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb215;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb214;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb213;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb212;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb211;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel20;
+        private System.Windows.Forms.Panel panel20;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb205;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb204;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb203;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb202;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb201;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel19;
+        private System.Windows.Forms.Panel panel19;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb195;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb194;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb193;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb192;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel18;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb191;
+        private System.Windows.Forms.Panel panel18;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb185;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb184;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb183;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb182;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel17;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb181;
+        private System.Windows.Forms.Panel panel17;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb176;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb175;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb174;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb173;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel16;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb171;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb172;
+        private System.Windows.Forms.Panel panel22;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb225;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb224;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb223;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel22;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb221;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb222;
+        private System.Windows.Forms.Panel panel16;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb165;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb164;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb163;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb162;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb161;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel21;
+        private System.Windows.Forms.Panel panel15;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb154;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb152;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb153;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel15;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb151;
+        private System.Windows.Forms.Panel panel14;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb143;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb144;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel14;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb141;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb142;
+        private System.Windows.Forms.Panel panel25;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb256;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb255;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb254;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb253;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb252;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel25;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb251;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb245;
+        private System.Windows.Forms.Panel panel26;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb265;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb264;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb263;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb262;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel26;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb261;
+        private Syncfusion.Windows.Forms.ScrollersFrame sfTab2;
+        private System.Windows.Forms.Panel panel13;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb136;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb135;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb134;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb133;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel13;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb131;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb132;
+        private System.Windows.Forms.Panel panel12;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb124;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb123;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel12;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb121;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb122;
+        private System.Windows.Forms.Panel panel11;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb115;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb114;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb113;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel11;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb111;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb112;
+        private System.Windows.Forms.Panel panel10;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb105;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb104;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel5;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb102;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb103;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb101;
+        private System.Windows.Forms.Panel panel09;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb096;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb095;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel9;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb092;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb093;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb091;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb094;
+        private System.Windows.Forms.Panel panel06;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb068;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb069;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb067;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb063;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb064;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb062;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb066;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb061;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb065;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel8;
+        private System.Windows.Forms.Panel panel01;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel1;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb013;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb014;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb012;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb016;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb011;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb015;
+        private System.Windows.Forms.Panel panel02;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel2;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb023;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb024;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb022;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb021;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb025;
+        private System.Windows.Forms.Panel panel05;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb058;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb059;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb057;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel6;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb053;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb054;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb052;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb056;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb051;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb055;
+        private System.Windows.Forms.Panel panel08;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb083;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel10;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb082;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb081;
+        private System.Windows.Forms.Panel panel07;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel7;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb072;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb073;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb071;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb074;
+        private System.Windows.Forms.Panel panel04;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel4;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb043;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb044;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb042;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb041;
+        private System.Windows.Forms.Panel panel03;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel3;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb033;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb034;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb032;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb031;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb035;
+        private Syncfusion.Windows.Forms.ButtonAdv btnEnviar;
     }
 }

@@ -14,19 +14,20 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+//IMPORT BIBLIOTECA
+using Syncfusion.Windows.Forms.Tools;
+//IMPORT PROJETO
+using Matricula.Model;
+using Matricula.Controller;
 
 namespace Matricula.View
 {
     public partial class QuestionarioForm : Syncfusion.Windows.Forms.MetroForm
     {
+
         public QuestionarioForm()
         {
             InitializeComponent();
-        }
-
-        private void autoLabel1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void QuestionarioForm_Load(object sender, EventArgs e)
@@ -46,27 +47,72 @@ namespace Matricula.View
             colorTable.ThumbPushed = verdeEscuro;
             colorTable.ThumbPushedBorder = verdeClaro;
             
-            sfPrincipal.ScrollMetroColorTable = colorTable;
+            sfTab1.ScrollMetroColorTable = colorTable;
+            sfTab2.ScrollMetroColorTable = colorTable;
+
+            btnEnviar.ForeColor = Color.White;
+
+            MessageBoxApparence.getMessageBoxApparence();
         }
 
-        private void pnPrincipal_Paint(object sender, PaintEventArgs e)
+        private void btnEnviar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                QuestionarioModel qtModel = new QuestionarioModel();
+                QuestionarioController qtController = new QuestionarioController();
 
+                var panels1 = GetAll(tab1, typeof(Panel));
+
+                foreach(Panel pn in panels1)
+                {
+                    int tamPn = pn.Name.Length;
+                    int numPn = Convert.ToInt32(pn.Name[tamPn - 2].ToString() + pn.Name[tamPn - 1].ToString());
+                    //Identifica o checked rb do painel
+                    var checkedButton = pn.Controls.OfType<RadioButtonAdv>().FirstOrDefault(r => r.Checked);
+                    
+                    if (checkedButton == null)
+                    {
+                        MessageBoxAdv.Show(this, "Responda todas as perguntas!", "Erro");
+                        return;
+                    }
+                    //Adiciona de acordo com o numero do painel
+                    //o ultimo número do nome do rb checado
+                    qtModel.Respostas[numPn-1] = checkedButton.Name[checkedButton.Name.Length - 1];
+                }
+
+                var panels2 = GetAll(tab2, typeof(Panel));
+
+                foreach (Panel pn in panels2)
+                {
+                    int tamPn = pn.Name.Length;
+                    int numPn = Convert.ToInt32(pn.Name[tamPn - 2].ToString() + pn.Name[tamPn - 1].ToString());
+
+                    var checkedButton = pn.Controls.OfType<RadioButtonAdv>().FirstOrDefault(r => r.Checked);
+                    
+                    if (checkedButton == null)
+                    {
+                        MessageBoxAdv.Show(this, "Responda todas as perguntas!", "Erro");
+                        return;
+                    }
+                    
+                    qtModel.Respostas[numPn-1] = checkedButton.Name[checkedButton.Name.Length - 1];
+                }
+
+                qtController.inserir(qtModel);
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex);
+            }
         }
 
-        private void radioButtonAdv1_CheckChanged(object sender, EventArgs e)
+        public IEnumerable<Control> GetAll(Control control, Type type)
         {
+            var controls = control.Controls.Cast<Control>();
 
-        }
-
-        private void radioButtonAdv86_CheckChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
+            return controls.SelectMany(ctrl => GetAll(ctrl, type)).Concat(controls).Where(c => c.GetType() == type);
         }
     }
 }

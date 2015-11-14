@@ -86,9 +86,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\Conexao.cs" />
+    <Compile Include="Controller\QuestionarioController.cs" />
     <Compile Include="Controller\TelefonesController.cs" />
     <Compile Include="Controller\MatriculaController.cs" />
     <Compile Include="Model\MatriculaModel.cs" />
+    <Compile Include="Model\QuestionarioModel.cs" />
     <Compile Include="View\MatriculaForm.cs">
       <SubType>Form</SubType>
     </Compile>
