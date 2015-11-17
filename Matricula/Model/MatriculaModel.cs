@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Matricula.Model
 {
-    class MatriculaModel
+    public class MatriculaModel
     {
         private string nome, nascimento, nascionalidade, naturalidade, estadoCivil, estado, religiao, tpSanguineo, rh,
                        nomePai, nomeMae, email, cep, endreco, numero, complemento, bairro, municipio, cpf, emissaoCpf, rg, emissaoRg,

@@ -77,7 +77,6 @@ namespace Matricula
             Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor gridColumnDescriptor39 = new Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor();
             Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor gridColumnDescriptor40 = new Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor();
             Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor gridColumnDescriptor41 = new Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor();
-            Syncfusion.Windows.Forms.MetroColorTable metroColorTable1 = new Syncfusion.Windows.Forms.MetroColorTable();
             Syncfusion.Windows.Forms.CaptionImage captionImage1 = new Syncfusion.Windows.Forms.CaptionImage();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             Syncfusion.Windows.Forms.CaptionImage captionImage2 = new Syncfusion.Windows.Forms.CaptionImage();
@@ -105,21 +104,21 @@ namespace Matricula
             this.lblAluno = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.txtAluno = new Syncfusion.Windows.Forms.Tools.MaskedEditBox();
             this.dgConsultas = new Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl();
-            this.matriculasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bsMatriculas = new System.Windows.Forms.BindingSource(this.components);
             this.dSMatricula = new Matricula.DSMatricula();
-            this.matriculasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.matriculasTableAdapter1 = new Matricula.DSMatriculaTableAdapters.MatriculasTableAdapter();
             this.btnNovo = new Syncfusion.Windows.Forms.ButtonAdv();
             this.btnAlterar = new Syncfusion.Windows.Forms.ButtonAdv();
             this.btnExcluir = new Syncfusion.Windows.Forms.ButtonAdv();
             this.btnPesquisa = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.sfGrid = new Syncfusion.Windows.Forms.ScrollersFrame(this.components);
+            this.bsLogins = new System.Windows.Forms.BindingSource(this.components);
+            this.loginsTableAdapter = new Matricula.DSMatriculaTableAdapters.LoginsTableAdapter();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtAluno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgConsultas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.matriculasBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsMatriculas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSMatricula)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.matriculasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsLogins)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -324,7 +323,7 @@ namespace Matricula
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgConsultas.BackColor = System.Drawing.SystemColors.Window;
-            this.dgConsultas.DataSource = this.matriculasBindingSource1;
+            this.dgConsultas.DataSource = this.bsMatriculas;
             this.dgConsultas.FreezeCaption = false;
             this.dgConsultas.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Metro;
             this.dgConsultas.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Metro;
@@ -589,10 +588,10 @@ namespace Matricula
             this.dgConsultas.TableControlCurrentCellStartEditing += new Syncfusion.Windows.Forms.Grid.Grouping.GridTableControlCancelEventHandler(this.dgConsultas_TableControlCurrentCellStartEditing);
             this.dgConsultas.TableControlCurrentCellActivating += new Syncfusion.Windows.Forms.Grid.Grouping.GridTableControlCurrentCellActivatingEventHandler(this.dgConsultas_TableControlCurrentCellActivating);
             // 
-            // matriculasBindingSource1
+            // bsMatriculas
             // 
-            this.matriculasBindingSource1.DataMember = "Matriculas";
-            this.matriculasBindingSource1.DataSource = this.dSMatricula;
+            this.bsMatriculas.DataMember = "Matriculas";
+            this.bsMatriculas.DataSource = this.dSMatricula;
             // 
             // dSMatricula
             // 
@@ -626,6 +625,7 @@ namespace Matricula
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyle = false;
             this.btnNovo.UseVisualStyleBackColor = false;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnAlterar
             // 
@@ -650,6 +650,7 @@ namespace Matricula
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyle = false;
             this.btnAlterar.UseVisualStyleBackColor = false;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnExcluir
             // 
@@ -670,6 +671,7 @@ namespace Matricula
             this.btnExcluir.TabIndex = 12;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyle = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnPesquisa
             // 
@@ -696,27 +698,14 @@ namespace Matricula
             this.btnPesquisa.Visible = false;
             this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
             // 
-            // sfGrid
+            // bsLogins
             // 
-            this.sfGrid.CustomRender = null;
-            this.sfGrid.MetroColorScheme = Syncfusion.Windows.Forms.MetroColorScheme.Managed;
-            this.sfGrid.MetroThumbSize = new System.Drawing.Size(0, 0);
-            metroColorTable1.ArrowChecked = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(149)))), ((int)(((byte)(152)))));
-            metroColorTable1.ArrowInActive = System.Drawing.Color.White;
-            metroColorTable1.ArrowNormal = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
-            metroColorTable1.ArrowNormalBackGround = System.Drawing.Color.Empty;
-            metroColorTable1.ArrowPushed = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(89)))), ((int)(((byte)(90)))));
-            metroColorTable1.ArrowPushedBackGround = System.Drawing.Color.Empty;
-            metroColorTable1.ScrollerBackground = System.Drawing.Color.White;
-            metroColorTable1.ThumbChecked = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(149)))), ((int)(((byte)(152)))));
-            metroColorTable1.ThumbInActive = System.Drawing.Color.White;
-            metroColorTable1.ThumbNormal = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
-            metroColorTable1.ThumbPushed = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(89)))), ((int)(((byte)(90)))));
-            metroColorTable1.ThumbPushedBorder = System.Drawing.Color.Empty;
-            this.sfGrid.ScrollMetroColorTable = metroColorTable1;
-            this.sfGrid.ShowMetroArrowButton = true;
-            this.sfGrid.SizeGripperVisibility = Syncfusion.Windows.Forms.SizeGripperVisibility.Auto;
-            this.sfGrid.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawStyles.Metro;
+            this.bsLogins.DataMember = "Logins";
+            this.bsLogins.DataSource = this.dSMatricula;
+            // 
+            // loginsTableAdapter
+            // 
+            this.loginsTableAdapter.ClearBeforeFill = true;
             // 
             // MainForm
             // 
@@ -763,9 +752,9 @@ namespace Matricula
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtAluno)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgConsultas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.matriculasBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsMatriculas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSMatricula)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.matriculasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsLogins)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -797,15 +786,15 @@ namespace Matricula
         private System.Windows.Forms.ToolStripMenuItem escolaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cidadeToolStripMenuItem;
         private Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl dgConsultas;
-        private System.Windows.Forms.BindingSource matriculasBindingSource;
         private DSMatricula dSMatricula;
-        private System.Windows.Forms.BindingSource matriculasBindingSource1;
+        private System.Windows.Forms.BindingSource bsMatriculas;
         private DSMatriculaTableAdapters.MatriculasTableAdapter matriculasTableAdapter1;
         private Syncfusion.Windows.Forms.ButtonAdv btnNovo;
         private Syncfusion.Windows.Forms.ButtonAdv btnAlterar;
         private Syncfusion.Windows.Forms.ButtonAdv btnExcluir;
         private Syncfusion.Windows.Forms.ButtonAdv btnPesquisa;
-        private Syncfusion.Windows.Forms.ScrollersFrame sfGrid;
+        private System.Windows.Forms.BindingSource bsLogins;
+        private DSMatriculaTableAdapters.LoginsTableAdapter loginsTableAdapter;
 
 
 

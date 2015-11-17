@@ -1397,14 +1397,14 @@ namespace Matricula
             // cbTurno
             // 
             this.cbTurno.BackColor = System.Drawing.Color.White;
-            this.cbTurno.BeforeTouchSize = new System.Drawing.Size(194, 21);
+            this.cbTurno.BeforeTouchSize = new System.Drawing.Size(194, 19);
             this.cbTurno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTurno.Location = new System.Drawing.Point(345, 193);
             this.cbTurno.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbTurno.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbTurno.Name = "cbTurno";
-            this.cbTurno.Size = new System.Drawing.Size(194, 21);
+            this.cbTurno.Size = new System.Drawing.Size(194, 19);
             this.cbTurno.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbTurno.TabIndex = 7;
             this.cbTurno.Click += new System.EventHandler(this.cbTurno_Click);
@@ -1422,7 +1422,7 @@ namespace Matricula
             // cbCurso
             // 
             this.cbCurso.BackColor = System.Drawing.Color.White;
-            this.cbCurso.BeforeTouchSize = new System.Drawing.Size(327, 21);
+            this.cbCurso.BeforeTouchSize = new System.Drawing.Size(327, 19);
             this.cbCurso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCurso.Items.AddRange(new object[] {
@@ -1442,7 +1442,7 @@ namespace Matricula
             this.cbCurso.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbCurso.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbCurso.Name = "cbCurso";
-            this.cbCurso.Size = new System.Drawing.Size(327, 21);
+            this.cbCurso.Size = new System.Drawing.Size(327, 19);
             this.cbCurso.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbCurso.TabIndex = 6;
             // 
@@ -1511,7 +1511,7 @@ namespace Matricula
             // cbEstadoEscola
             // 
             this.cbEstadoEscola.BackColor = System.Drawing.Color.White;
-            this.cbEstadoEscola.BeforeTouchSize = new System.Drawing.Size(84, 21);
+            this.cbEstadoEscola.BeforeTouchSize = new System.Drawing.Size(84, 19);
             this.cbEstadoEscola.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEstadoEscola.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEstadoEscola.Items.AddRange(new object[] {
@@ -1575,7 +1575,7 @@ namespace Matricula
             this.cbEstadoEscola.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbEstadoEscola.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbEstadoEscola.Name = "cbEstadoEscola";
-            this.cbEstadoEscola.Size = new System.Drawing.Size(84, 21);
+            this.cbEstadoEscola.Size = new System.Drawing.Size(84, 19);
             this.cbEstadoEscola.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbEstadoEscola.TabIndex = 2;
             // 
@@ -1719,6 +1719,7 @@ namespace Matricula
             this.ShowMaximizeBox = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.MatriculaForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabControlAdv1)).EndInit();
             this.tabControlAdv1.ResumeLayout(false);
             this.tabPessoal.ResumeLayout(false);

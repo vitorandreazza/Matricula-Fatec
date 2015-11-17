@@ -27,12 +27,11 @@ namespace Matricula
 {
     public partial class MainForm : Syncfusion.Windows.Forms.MetroForm
     {
-        MatriculaController Pesquisa = new MatriculaController();
+        private MatriculaController matriculaController = new MatriculaController();
+
         public MainForm()
         {
             InitializeComponent();
-            Color verdeClaro = Color.FromArgb(0, 192, 177);
-            Color verdeEscuro = Color.FromArgb(0, 163, 150);
             //this.dgConsultas.TableControl.HScrollBehavior = Syncfusion.Windows.Forms.Grid.GridScrollbarMode.Shared;
             //MetroColorTable colorTable = new MetroColorTable();
 
@@ -50,10 +49,16 @@ namespace Matricula
             //this.sfGrid.VisualStyle = ScrollBarCustomDrawStyles.Metro;
             //this.sfGrid.AttachedTo = this.dgConsultas.TableControl;
             //this.sfGrid.ScrollMetroColorTable = colorTable;
+        }
 
+        private void GridStyle()
+        {
+            Color verdeClaro = Color.FromArgb(0, 192, 177);
+            Color verdeEscuro = Color.FromArgb(0, 163, 150);
             this.dgConsultas.TableDescriptor.TableOptions.ListBoxSelectionMode = SelectionMode.One;
             this.dgConsultas.TableDescriptor.TableOptions.SelectionBackColor = verdeClaro;
             this.dgConsultas.GridVisualStyles = GridVisualStyles.Metro;
+
             GridMetroColors theme = new GridMetroColors();
             theme.HeaderBottomBorderColor.GetBrightness();
             theme.HeaderBottomBorderColor = verdeClaro;
@@ -65,13 +70,12 @@ namespace Matricula
             theme.ComboboxColor.PressedBackColor = verdeEscuro;
             theme.ComboboxColor.PresedBorderColor = verdeEscuro;
             this.dgConsultas.SetMetroStyle(theme);
-
         }
 
         private void todosAlunosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //dgConsultas.ClearSelection();
-            dgConsultas.DataSource = Pesquisa.PesquisaTodosAlunos().Tables[0];
+            bsMatriculas.DataSource = matriculaController.PesquisaTodosAlunos().Tables[0];
+            dgConsultas.DataSource = bsMatriculas;
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -81,7 +85,8 @@ namespace Matricula
 
         private void nomeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dgConsultas.DataSource = null;
+            bsMatriculas.DataSource = null;
+            dgConsultas.DataSource = bsMatriculas;
             txtAluno.Visible = true;
             lblAluno.Text = "Nome";
             btnPesquisa.Visible = true;
@@ -90,7 +95,8 @@ namespace Matricula
 
         private void cPFToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dgConsultas.DataSource = null;
+            bsMatriculas.DataSource = null;
+            dgConsultas.DataSource = bsMatriculas;
             txtAluno.Visible = true;
             lblAluno.Text = "CPF";
             btnPesquisa.Visible = true;
@@ -99,79 +105,85 @@ namespace Matricula
 
         private void loginsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dgConsultas.DataSource = Pesquisa.login().Tables[0];
-            
-        }
-
-        private void dgConsultas_DataError(object sender, DataGridViewDataErrorEventArgs e)
-        {
-            return;
+            LoginController pesLogin = new LoginController();
+            //bsLogins.DataSource = null;
+            bsLogins.DataSource = pesLogin.pesLogins().Tables[0];
+            dgConsultas.DataSource = bsLogins;
         }
 
         private void aDSToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            dgConsultas.DataSource = Pesquisa.PesquisaCurso("Análise e Desenvolvimento de Sistemas", null).Tables[0];
+            bsMatriculas.DataSource = matriculaController.PesquisaCurso("Análise e Desenvolvimento de Sistemas", null).Tables[0];
+            dgConsultas.DataSource = bsMatriculas;
         }
 
         private void eventosToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            dgConsultas.DataSource = Pesquisa.PesquisaCurso("Eventos", null).Tables[0];
+            bsMatriculas.DataSource = matriculaController.PesquisaCurso("Eventos", null).Tables[0];
+            dgConsultas.DataSource = bsMatriculas;
         }
 
         private void mecatrônicaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            dgConsultas.DataSource = Pesquisa.PesquisaCurso("Mecatrônica Industrial", null).Tables[0];
+            bsMatriculas.DataSource = matriculaController.PesquisaCurso("Mecatrônica Industrial", null).Tables[0];
+            dgConsultas.DataSource = bsMatriculas;
         }
 
         private void gestãoEmpresarialToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            dgConsultas.DataSource = Pesquisa.PesquisaCurso("Gestão Empresarial(EAD)", null).Tables[0];
+            bsMatriculas.DataSource = matriculaController.PesquisaCurso("Gestão Empresarial(EAD)", null).Tables[0];
+            dgConsultas.DataSource = bsMatriculas;
         }
 
         private void manhãToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            dgConsultas.DataSource = Pesquisa.PesquisaCurso("Gestão da Tecnologia da Informação", "Noite").Tables[0];
+            dgConsultas.DataSource = matriculaController.PesquisaCurso("Gestão da Tecnologia da Informação", "Noite").Tables[0];
         }
 
         private void noiteToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            dgConsultas.DataSource = Pesquisa.PesquisaCurso("Gestão da Tecnologia da Informação", "Noite").Tables[0];
+            bsMatriculas.DataSource = matriculaController.PesquisaCurso("Gestão da Tecnologia da Informação", "Noite").Tables[0];
+            dgConsultas.DataSource = bsMatriculas;
         }
 
         private void religiãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dgConsultas.DataSource = null;
+            bsMatriculas.DataSource = null;
+            dgConsultas.DataSource = bsMatriculas;
             txtAluno.Visible = true;
             lblAluno.Text = "Religião";
             btnPesquisa.Visible = true;
             lblAluno.Visible = true;
-            MessageBoxAdv.Show(this, "Informe a religião do aluno abaixo!", "Alerta", MessageBoxButtons.OK);
         }
 
         private void escolaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dgConsultas.DataSource = null;
+            bsMatriculas.DataSource = null;
+            dgConsultas.DataSource = bsMatriculas;
             txtAluno.Visible = true;
             lblAluno.Text = "Escola";
             btnPesquisa.Visible = true;
             lblAluno.Visible = true;
-            MessageBoxAdv.Show(this, "Informe a escola do aluno abaixo!", "Alerta", MessageBoxButtons.OK);
         }
 
         private void cidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dgConsultas.DataSource = null;
+            bsMatriculas.DataSource = null;
+            dgConsultas.DataSource = bsMatriculas;
             txtAluno.Visible = true;
             lblAluno.Text = "Cidade";
             btnPesquisa.Visible = true;
             lblAluno.Visible = true;
-            MessageBoxAdv.Show(this, "Informe a cidade do aluno abaixo!", "Alerta", MessageBoxButtons.OK);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dSMatricula.Logins' table. You can move, or remove it, as needed.
+            this.loginsTableAdapter.Fill(this.dSMatricula.Logins);
             // TODO: This line of code loads data into the 'dSMatricula.Matriculas' table. You can move, or remove it, as needed.
             this.matriculasTableAdapter1.Fill(this.dSMatricula.Matriculas);
+            GridStyle();
+            MessageBoxApparence.getMessageBoxApparence();
         }
 
         private void dgConsultas_TableControlCurrentCellStartEditing(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridTableControlCancelEventArgs e)
@@ -201,37 +213,109 @@ namespace Matricula
 
         private void btnPesquisa_Click(object sender, EventArgs e)
         {
-            MatriculaModel Mat = new MatriculaModel();
+            string Mat = txtAluno.Text.Replace(".", "").Replace("-", "");
 
             if (lblAluno.Text.Equals("CPF"))
             {
-                Mat.Cpf = txtAluno.Text;
-                dgConsultas.DataSource = Pesquisa.PesquisaAluno(Mat, "CPF").Tables[0];
+                bsMatriculas.DataSource = matriculaController.PesquisaAluno(Mat, "cpf").Tables[0];
             }
             else if (lblAluno.Text.Equals("Nome"))
             {
-                Mat.Nome = txtAluno.Text;
-                dgConsultas.DataSource = Pesquisa.PesquisaAluno(Mat, "Nome").Tables[0];
+                bsMatriculas.DataSource = matriculaController.PesquisaAluno(Mat, "nome").Tables[0];
             }
             else if (lblAluno.Text.Equals("Religião"))
             {
-                Mat.Religiao = txtAluno.Text;
-                dgConsultas.DataSource = Pesquisa.PesquisaAluno(Mat, "Religiao").Tables[0];
+                bsMatriculas.DataSource = matriculaController.PesquisaAluno(Mat, "religiao").Tables[0];
             }
             else if (lblAluno.Text.Equals("Cidade"))
             {
-                Mat.Municipio = txtAluno.Text;
-                dgConsultas.DataSource = Pesquisa.PesquisaAluno(Mat, "Cidade").Tables[0];
+                bsMatriculas.DataSource = matriculaController.PesquisaAluno(Mat, "cidade").Tables[0];
             }
             else if (lblAluno.Text.Equals("Escola"))
             {
-                Mat.Escola = txtAluno.Text;
-                dgConsultas.DataSource = Pesquisa.PesquisaAluno(Mat, "Escola").Tables[0];
+                bsMatriculas.DataSource = matriculaController.PesquisaAluno(Mat, "escola").Tables[0];
             }
+            dgConsultas.DataSource = bsMatriculas;
             txtAluno.Clear();
             lblAluno.Visible = false;
             txtAluno.Visible = false;
             btnPesquisa.Visible = false;
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (MessageBoxAdv.Show(this, "Deseja realmente excluir a matrícula?", "Exclusão", MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                return;
+            }
+            try
+            {
+                int cod = Convert.ToInt32(dgConsultas.Table.SelectedRecords[0].Record["codigo"]);
+                matriculaController.deletarMatricula(cod);
+                bsMatriculas.DataSource = matriculaController.PesquisaTodosAlunos().Tables[0];
+                dgConsultas.DataSource = bsMatriculas;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex);
+            }
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            new MatriculaForm().ShowDialog();
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            int cod = Convert.ToInt32(dgConsultas.Table.SelectedRecords[0].Record["codigo"]);
+            DataTable dt = new DataTable();
+            dt = matriculaController.pesquisarAlunoEsp(cod).Tables[0];
+
+            MatriculaModel matricula = new MatriculaModel();
+            matricula.Nome = dt.Rows[0]["nome"].ToString();
+            matricula.Nascimento = dt.Rows[0]["dtNasc"].ToString();
+            matricula.Sexo = Convert.ToChar(dt.Rows[0]["sexo"]);
+            matricula.Nacionalidade = dt.Rows[0]["nacionalidade"].ToString();
+            matricula.Naturalidade = dt.Rows[0]["naturalidade"].ToString();
+            matricula.EstadoCivil = dt.Rows[0]["estadoCivil"].ToString();
+            matricula.Estado = dt.Rows[0]["estado"].ToString();
+            matricula.Religiao = dt.Rows[0]["religiao"].ToString();
+            matricula.TpSanguineo = dt.Rows[0]["tipoSanguineo"].ToString();
+            matricula.Rh = dt.Rows[0]["rh"].ToString();
+            matricula.NomePai = dt.Rows[0]["nomePai"].ToString();
+            matricula.NomeMae = dt.Rows[0]["nomeMae"].ToString();
+            matricula.Email = dt.Rows[0]["email"].ToString();
+            matricula.Cep = dt.Rows[0]["cep"].ToString();
+            matricula.Endreco = dt.Rows[0]["endereco"].ToString();
+            matricula.Numero = dt.Rows[0]["numero"].ToString();
+            matricula.Complemento = dt.Rows[0]["complemento"].ToString();
+            matricula.Bairro = dt.Rows[0]["bairro"].ToString();
+            matricula.Municipio = dt.Rows[0]["municipio"].ToString();
+            matricula.Cpf = dt.Rows[0]["cpf"].ToString();
+            matricula.EmissaoCpf = dt.Rows[0]["dataEmissaoCpf"].ToString();
+            matricula.Rg = dt.Rows[0]["rg"].ToString();
+            matricula.EmissaoRg = dt.Rows[0]["dataEmissaoRg"].ToString();
+            matricula.Titulo = dt.Rows[0]["tituloEleitor"].ToString();
+            matricula.SecaoTitulo = dt.Rows[0]["secao"].ToString();
+            matricula.ZonaTitulo = dt.Rows[0]["zona"].ToString();
+            matricula.Escola = dt.Rows[0]["escola"].ToString();
+            matricula.CidadeEscola = dt.Rows[0]["cidadeEscola"].ToString();
+            matricula.EstadoEscola = dt.Rows[0]["estadoEscola"].ToString();
+            matricula.ConclusaoEscola = dt.Rows[0]["anoConclusao"].ToString();
+            matricula.Classificacao = dt.Rows[0]["classificacao"].ToString();
+            matricula.Pontuacao = dt.Rows[0]["pontuacao"].ToString();
+            matricula.Curso = dt.Rows[0]["curso"].ToString();
+            matricula.Turno = dt.Rows[0]["turno"].ToString();
+            matricula.Foto = (byte[]) dt.Rows[0]["foto"];
+            matricula.ExpedidoRG = dt.Rows[0]["expedidoRG"].ToString();
+            matricula.Cor = dt.Rows[0]["cor"].ToString();
+            matricula.ReservaMilitar = dt.Rows[0]["reservaMilitar"].ToString();
+            matricula.DataMilitar = dt.Rows[0]["dataMilitar"].ToString();
+            matricula.ExpedidoMilitar = dt.Rows[0]["expedidoMilitar"].ToString();
+
+            MatriculaForm mf = new MatriculaForm(matricula);
+            mf.ShowDialog();
         }
     }     
 }

@@ -7,8 +7,6 @@ C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.Mat
 C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.LoginForm.resources
 C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.Properties.Resources.resources
 C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.csproj.GenerateResource.Cache
-C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\Matricula.mdf
-C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\Matricula_log.ldf
 C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.exe
 C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\Matricula.pdb
 C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\Matricula.exe
@@ -32,3 +30,7 @@ C:\Users\Vitor\Downloads\MatriculaFATEC\Matricula\AForge.Video.DirectShow.dll
 C:\Users\Vitor\Downloads\MatriculaFATEC\Matricula\AForge.Video.dll
 C:\Users\Vitor\Downloads\MatriculaFATEC\Matricula\DBMatricula.mdf
 C:\Users\Vitor\Downloads\MatriculaFATEC\Matricula\DBMatricula_log.ldf
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\DBMatricula.mdf
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\DBMatricula_log.ldf
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\RdlCompile.cache
+C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\obj\Debug\RdlCompile.compiled

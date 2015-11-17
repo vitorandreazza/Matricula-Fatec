@@ -106,7 +106,7 @@ namespace Matricula.Controller
             try
             {
                 conn.Open();
-                string consulta = "select * from TodosAlunos order by TodosAlunos.nome ASC;"; //view
+                string consulta = "SELECT * FROM Matriculas ORDER BY Matriculas.codigo ASC;"; //view
                 SqlDataAdapter da = new SqlDataAdapter(consulta, conn);
                 da.Fill(dt);
             }
@@ -125,77 +125,17 @@ namespace Matricula.Controller
             return dt;
         }
         //Consulta aluno
-        public DataSet PesquisaAluno(MatriculaModel mat, string tipo)
+        public DataSet PesquisaAluno(string mat, string tipo)
         {
             DataSet dt = new DataSet();
             try
             {
 
                 conn.Open();
-                if (tipo.Equals("Nome"))
-                {
-                    string consulta = "select Matriculas.*, Celulares.celular,Fixos.telefone from Matriculas LEFT join Celulares ON(Matriculas.codigo= Celulares.codMatricula) LEFT join Fixos ON(Matriculas.codigo = Fixos.codMatricula) where Matriculas.nome like '" + mat.Nome + "%' order by Matriculas.nome ASC";
-                    SqlCommand cons = new SqlCommand(consulta, conn);
-                    //cons.Parameters.AddWithValue("@nome", mat.Nome);
-                    SqlDataAdapter da = new SqlDataAdapter(cons);
-                    da.Fill(dt);
-                }
-                else if (tipo.Equals("CPF"))
-                {
-                    string consulta = "select Matriculas.*, Celulares.celular,Fixos.telefone from Matriculas LEFT join Celulares ON(Matriculas.codigo= Celulares.codMatricula) LEFT join Fixos ON(Matriculas.codigo = Fixos.codMatricula) where Matriculas.cpf = @cpf order by Matriculas.nome ASC";
-                    SqlCommand cons = new SqlCommand(consulta, conn);
-                    cons.Parameters.AddWithValue("@cpf", mat.Cpf);
-                    SqlDataAdapter da = new SqlDataAdapter(cons);
-                    da.Fill(dt);
-                }
-                else if (tipo.Equals("Cidade"))
-                {
-                    string consulta = "select Matriculas.*, Celulares.celular,Fixos.telefone from Matriculas LEFT join Celulares ON(Matriculas.codigo= Celulares.codMatricula) LEFT join Fixos ON(Matriculas.codigo = Fixos.codMatricula) where Matriculas.municipio = @cid order by Matriculas.nome ASC";
-                    SqlCommand cons = new SqlCommand(consulta, conn);
-                    cons.Parameters.AddWithValue("@cid", mat.Municipio);
-                    SqlDataAdapter da = new SqlDataAdapter(cons);
-                    da.Fill(dt);
-                }
-                else if (tipo.Equals("Escola"))
-                {
-                    string consulta = "select Matriculas.*, Celulares.celular,Fixos.telefone from Matriculas LEFT join Celulares ON(Matriculas.codigo= Celulares.codMatricula) LEFT join Fixos ON(Matriculas.codigo = Fixos.codMatricula) where Matriculas.escola like '" + mat.Escola + "%' order by Matriculas.nome ASC";
-                    SqlCommand cons = new SqlCommand(consulta, conn);
-                    //cons.Parameters.AddWithValue("@escola", mat.Escola);
-                    SqlDataAdapter da = new SqlDataAdapter(cons);
-                    da.Fill(dt);
-                }
-                else if (tipo.Equals("Religiao"))
-                {
-                    string consulta = "select Matriculas.*, Celulares.celular,Fixos.telefone from Matriculas LEFT join Celulares ON(Matriculas.codigo= Celulares.codMatricula) LEFT join Fixos ON(Matriculas.codigo = Fixos.codMatricula) where Matriculas.religiao like '" + mat.Religiao + "%' order by Matriculas.nome ASC";
-                    SqlCommand cons = new SqlCommand(consulta, conn);
-                    // cons.Parameters.AddWithValue("@religiao", mat.Religiao);
-                    SqlDataAdapter da = new SqlDataAdapter(cons);
-                    da.Fill(dt);
-                }
-            }
-            catch (SqlException sqlEx)
-            {
-                MessageBox.Show("SQL Erro: " + sqlEx);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro: " + ex);
-            }
-            finally
-            {
-                conn.Close();
-            }
-            return dt;
-        }
-
-        public DataSet login()
-        {
-            DataSet dt = new DataSet();
-            try
-            {
-                conn.Open();
-                string consulta = "select * from logins";
-                SqlDataAdapter da = new SqlDataAdapter(consulta, conn);
+                string consulta = "SELECT * FROM Matriculas WHERE Matriculas."+tipo+" like @param + '%' ORDER BY Matriculas.codigo ASC";
+                SqlCommand cons = new SqlCommand(consulta, conn);
+                cons.Parameters.AddWithValue("@param", mat);
+                SqlDataAdapter da = new SqlDataAdapter(cons);
                 da.Fill(dt);
             }
             catch (SqlException sqlEx)
@@ -212,16 +152,17 @@ namespace Matricula.Controller
             }
             return dt;
         }
+
         // Pesquisa por curso
         public DataSet PesquisaCurso(string Curso, string Turno)
         {
             DataSet dt = new DataSet();
             try
             {
+                conn.Open();
                 if (Curso != "Gestão da Tecnologia da Informação")
                 {
-                    conn.Open();
-                    string consulta = "select Matriculas.*, Celulares.celular,Fixos.telefone from Matriculas LEFT join Celulares ON(Matriculas.codigo= Celulares.codMatricula) LEFT join Fixos ON(Matriculas.codigo = Fixos.codMatricula) where Matriculas.curso= @curso order by Matriculas.nome ASC";
+                    string consulta = "SELECT * FROM Matriculas WHERE Matriculas.curso= @curso ORDER BY Matriculas.codigo ASC";
                     SqlCommand cons = new SqlCommand(consulta, conn);
                     cons.Parameters.AddWithValue("@curso", Curso);
                     SqlDataAdapter da = new SqlDataAdapter(cons);
@@ -229,7 +170,7 @@ namespace Matricula.Controller
                 }
                 else if (Curso.Equals("Gestão da Tecnologia da Informação"))
                 {
-                    string consulta = "select Matriculas.*, Celulares.celular,Fixos.telefone from Matriculas LEFT join Celulares ON(Matriculas.codigo= Celulares.codMatricula) LEFT join Fixos ON(Matriculas.codigo = Fixos.codMatricula) where Matriculas.curso= @curso and Matriculas.turno = @turno order by Matriculas.nome ASC";
+                    string consulta = "SELECT * FROM Matriculas WHERE Matriculas.curso = @curso AND Matriculas.turno = @turno ORDER BY Matriculas.codigo ASC";
                     SqlCommand cons = new SqlCommand(consulta, conn);
                     cons.Parameters.AddWithValue("@curso", Curso);
                     cons.Parameters.AddWithValue("@turno", Turno);
@@ -244,6 +185,55 @@ namespace Matricula.Controller
             catch (Exception ex)
             {
                 MessageBox.Show("Erro: " + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+
+        public void deletarMatricula(int cod)
+        {
+            try
+            {
+                string deletar = "DELETE FROM Matriculas WHERE codigo= @cod;"
+                + "DELETE FROM Celulares WHERE codMatricula = @cod2;"
+                + "DELETE FROM Fixos WHERE codMatricula = @cod3;";
+
+                SqlCommand del = new SqlCommand(deletar, conn);
+                del.Parameters.AddWithValue("@cod", cod);
+                del.Parameters.AddWithValue("@cod2", cod);
+                del.Parameters.AddWithValue("@cod3", cod);
+                conn.Open();
+                del.ExecuteNonQuery();
+            }
+            catch (SqlException sqlEx)
+            {
+                MessageBox.Show("SQL Erro: " + sqlEx);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public DataSet pesquisarAlunoEsp(int codigo)
+        {
+            DataSet dt = new DataSet();
+            try
+            {
+                string select = "SELECT * FROM Matriculas WHERE Matriculas.codigo = @codigo";
+
+                SqlCommand pes = new SqlCommand(select, conn);
+                pes.Parameters.AddWithValue("@codigo", codigo);
+                conn.Open();
+                SqlDataAdapter da = new SqlDataAdapter(pes);
+                da.Fill(dt);
+            }
+            catch (SqlException sqlEx)
+            {
+                MessageBox.Show("SQL Erro: " + sqlEx);
             }
             finally
             {
