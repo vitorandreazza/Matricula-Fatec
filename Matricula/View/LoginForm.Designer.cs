@@ -38,102 +38,117 @@ namespace Matricula
             this.components = new System.ComponentModel.Container();
             Syncfusion.Windows.Forms.CaptionImage captionImage1 = new Syncfusion.Windows.Forms.CaptionImage();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
-            this.radioButtonAdv1 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.radioButtonAdv2 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel1 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.textBoxExt1 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.textBoxExt2 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-            this.autoLabel2 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxExt1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxExt2)).BeginInit();
+            this.rbAdm = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rbAluno = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.lblLogin = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.txtLogin = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.txtSenha = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.lblSenha = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.btnEntrar = new Syncfusion.Windows.Forms.ButtonAdv();
+            ((System.ComponentModel.ISupportInitialize)(this.rbAdm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rbAluno)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSenha)).BeginInit();
             this.SuspendLayout();
             // 
-            // radioButtonAdv1
+            // rbAdm
             // 
-            this.radioButtonAdv1.BeforeTouchSize = new System.Drawing.Size(97, 21);
-            this.radioButtonAdv1.DrawFocusRectangle = false;
-            this.radioButtonAdv1.Location = new System.Drawing.Point(12, 29);
-            this.radioButtonAdv1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv1.Name = "radioButtonAdv1";
-            this.radioButtonAdv1.Size = new System.Drawing.Size(97, 21);
-            this.radioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv1.TabIndex = 0;
-            this.radioButtonAdv1.TabStop = false;
-            this.radioButtonAdv1.Text = "Administrador";
-            this.radioButtonAdv1.ThemesEnabled = false;
+            this.rbAdm.BeforeTouchSize = new System.Drawing.Size(97, 21);
+            this.rbAdm.DrawFocusRectangle = false;
+            this.rbAdm.Location = new System.Drawing.Point(12, 29);
+            this.rbAdm.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rbAdm.Name = "rbAdm";
+            this.rbAdm.Size = new System.Drawing.Size(97, 21);
+            this.rbAdm.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rbAdm.TabIndex = 0;
+            this.rbAdm.TabStop = false;
+            this.rbAdm.Text = "Administrador";
+            this.rbAdm.ThemesEnabled = false;
+            this.rbAdm.CheckChanged += new System.EventHandler(this.rbAdm_CheckChanged);
             // 
-            // radioButtonAdv2
+            // rbAluno
             // 
-            this.radioButtonAdv2.BeforeTouchSize = new System.Drawing.Size(53, 21);
-            this.radioButtonAdv2.Checked = true;
-            this.radioButtonAdv2.DrawFocusRectangle = false;
-            this.radioButtonAdv2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.radioButtonAdv2.Location = new System.Drawing.Point(158, 29);
-            this.radioButtonAdv2.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.radioButtonAdv2.Name = "radioButtonAdv2";
-            this.radioButtonAdv2.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.radioButtonAdv2.Size = new System.Drawing.Size(53, 21);
-            this.radioButtonAdv2.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.radioButtonAdv2.TabIndex = 1;
-            this.radioButtonAdv2.Text = "Aluno";
-            this.radioButtonAdv2.ThemesEnabled = false;
+            this.rbAluno.BeforeTouchSize = new System.Drawing.Size(53, 21);
+            this.rbAluno.Checked = true;
+            this.rbAluno.DrawFocusRectangle = false;
+            this.rbAluno.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.rbAluno.Location = new System.Drawing.Point(158, 29);
+            this.rbAluno.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rbAluno.Name = "rbAluno";
+            this.rbAluno.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rbAluno.Size = new System.Drawing.Size(53, 21);
+            this.rbAluno.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rbAluno.TabIndex = 1;
+            this.rbAluno.Text = "Aluno";
+            this.rbAluno.ThemesEnabled = false;
+            this.rbAluno.CheckChanged += new System.EventHandler(this.rbAluno_CheckChanged);
             // 
-            // autoLabel1
+            // lblLogin
             // 
-            this.autoLabel1.Location = new System.Drawing.Point(12, 69);
-            this.autoLabel1.Name = "autoLabel1";
-            this.autoLabel1.Size = new System.Drawing.Size(33, 13);
-            this.autoLabel1.TabIndex = 2;
-            this.autoLabel1.Text = "Login";
+            this.lblLogin.Location = new System.Drawing.Point(12, 69);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(33, 13);
+            this.lblLogin.TabIndex = 2;
+            this.lblLogin.Text = "Login";
             // 
-            // textBoxExt1
+            // txtLogin
             // 
-            this.textBoxExt1.BeforeTouchSize = new System.Drawing.Size(526, 20);
-            this.textBoxExt1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxExt1.Location = new System.Drawing.Point(12, 85);
-            this.textBoxExt1.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.textBoxExt1.Name = "textBoxExt1";
-            this.textBoxExt1.Size = new System.Drawing.Size(220, 20);
-            this.textBoxExt1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.textBoxExt1.TabIndex = 3;
+            this.txtLogin.BeforeTouchSize = new System.Drawing.Size(220, 20);
+            this.txtLogin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLogin.Enabled = false;
+            this.txtLogin.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.txtLogin.Location = new System.Drawing.Point(12, 85);
+            this.txtLogin.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.Size = new System.Drawing.Size(220, 20);
+            this.txtLogin.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.txtLogin.TabIndex = 3;
             // 
-            // textBoxExt2
+            // txtSenha
             // 
-            this.textBoxExt2.BeforeTouchSize = new System.Drawing.Size(526, 20);
-            this.textBoxExt2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxExt2.Location = new System.Drawing.Point(12, 135);
-            this.textBoxExt2.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            this.textBoxExt2.Name = "textBoxExt2";
-            this.textBoxExt2.PasswordChar = '*';
-            this.textBoxExt2.Size = new System.Drawing.Size(220, 20);
-            this.textBoxExt2.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
-            this.textBoxExt2.TabIndex = 5;
+            this.txtSenha.BeforeTouchSize = new System.Drawing.Size(220, 20);
+            this.txtSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSenha.Enabled = false;
+            this.txtSenha.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.txtSenha.Location = new System.Drawing.Point(12, 135);
+            this.txtSenha.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(220, 20);
+            this.txtSenha.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.txtSenha.TabIndex = 5;
             // 
-            // autoLabel2
+            // lblSenha
             // 
-            this.autoLabel2.Location = new System.Drawing.Point(12, 119);
-            this.autoLabel2.Name = "autoLabel2";
-            this.autoLabel2.Size = new System.Drawing.Size(38, 13);
-            this.autoLabel2.TabIndex = 4;
-            this.autoLabel2.Text = "Senha";
+            this.lblSenha.Location = new System.Drawing.Point(12, 119);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(38, 13);
+            this.lblSenha.TabIndex = 4;
+            this.lblSenha.Text = "Senha";
             // 
-            // buttonAdv1
+            // btnEntrar
             // 
-            this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.buttonAdv1.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.buttonAdv1.ForeColor = System.Drawing.Color.White;
-            this.buttonAdv1.IsBackStageButton = false;
-            this.buttonAdv1.Location = new System.Drawing.Point(80, 191);
-            this.buttonAdv1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(177)))));
-            this.buttonAdv1.Name = "buttonAdv1";
-            this.buttonAdv1.Size = new System.Drawing.Size(75, 23);
-            this.buttonAdv1.TabIndex = 6;
-            this.buttonAdv1.Text = "Entrar";
-            this.buttonAdv1.UseVisualStyle = true;
+            this.btnEntrar.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnEntrar.BeforeTouchSize = new System.Drawing.Size(75, 23);
+            this.btnEntrar.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.None;
+            this.btnEntrar.ComboEditBackColor = System.Drawing.Color.Transparent;
+            this.btnEntrar.CustomManagedColor = System.Drawing.Color.Transparent;
+            this.btnEntrar.FlatAppearance.BorderSize = 0;
+            this.btnEntrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnEntrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(165)))), ((int)(((byte)(150)))));
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntrar.ForeColor = System.Drawing.Color.White;
+            this.btnEntrar.IsBackStageButton = false;
+            this.btnEntrar.Location = new System.Drawing.Point(90, 191);
+            this.btnEntrar.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(75, 23);
+            this.btnEntrar.TabIndex = 7;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyle = false;
+            this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // LoginForm
             // 
@@ -154,23 +169,23 @@ namespace Matricula
             captionImage1.Size = new System.Drawing.Size(47, 25);
             this.CaptionImages.Add(captionImage1);
             this.ClientSize = new System.Drawing.Size(244, 226);
-            this.Controls.Add(this.buttonAdv1);
-            this.Controls.Add(this.textBoxExt2);
-            this.Controls.Add(this.autoLabel2);
-            this.Controls.Add(this.textBoxExt1);
-            this.Controls.Add(this.autoLabel1);
-            this.Controls.Add(this.radioButtonAdv2);
-            this.Controls.Add(this.radioButtonAdv1);
+            this.Controls.Add(this.btnEntrar);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.lblSenha);
+            this.Controls.Add(this.txtLogin);
+            this.Controls.Add(this.lblLogin);
+            this.Controls.Add(this.rbAluno);
+            this.Controls.Add(this.rbAdm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(177)))));
             this.Name = "LoginForm";
             this.ShowIcon = false;
             this.ShowMaximizeBox = false;
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radioButtonAdv2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxExt1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBoxExt2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rbAdm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rbAluno)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSenha)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,12 +193,12 @@ namespace Matricula
 
         #endregion
 
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv1;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv radioButtonAdv2;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel1;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt1;
-        private Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt2;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel2;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv1;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rbAdm;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rbAluno;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel lblLogin;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtLogin;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtSenha;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel lblSenha;
+        private Syncfusion.Windows.Forms.ButtonAdv btnEntrar;
     }
 }

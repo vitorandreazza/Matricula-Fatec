@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 //Imports projeto
 using Matricula.Model;
+using System.Data;
 
 namespace Matricula.Controller
 {
@@ -17,17 +18,17 @@ namespace Matricula.Controller
         public void inserir(MatriculaModel matricula)
         {
             string insertMatricula = "INSERT INTO Matriculas" +
-            "(nome, dtNasc, sexo, nacionalidade, naturalidade, estadoCivil, estado, religiao," +
+            "(nome, dtNasc, sexo, nacionalidade, naturalidade, cor, estadoCivil, estado, religiao," +
             "tipoSanguineo, rh, nomePai, nomeMae, email, cep, endereco, numero, complemento," +
-            "bairro, municipio, cpf, dataEmissaoCpf, rg, dataEmissaoRg, tituloEleitor, secao, zona, escola," +
+            "bairro, municipio, cpf, dataEmissaoCpf, rg, dataEmissaoRg, expedidoRG, reservaMilitar, expedidoMilitar, dataMilitar, tituloEleitor, secao, zona, escola," +
             "cidadeEscola, estadoEscola, anoConclusao, classificacao, pontuacao, curso, turno, foto)" +
             "VALUES" +
-            "(@nome, @dtNasc, @sexo, @nacionalidade, @naturalidade, @estadoCivil, @estado, @religiao," +
+            "(@nome, @dtNasc, @sexo, @nacionalidade, @naturalidade, @Cor,@estadoCivil, @estado, @religiao," +
             "@tipoSanguineo, @rh, @nomePai, @nomeMae, @email, @cep, @endereco, @numero, @complemento," +
-            "@bairro, @municipio, @cpf, @dataEmissaoCpf, @rg, @dataEmissaoRg, @tituloEleitor, @secao, @zona, @escola," +
+            "@bairro, @municipio, @cpf, @dataEmissaoCpf, @rg, @dataEmissaoRg, @ExpedidoRg, @reservista, @ExpReservista, @dataReservista, @tituloEleitor, @secao, @zona, @escola," +
             "@cidadeEscola, @estadoEscola, @anoConclusao, @classificacao, @pontuacao, @curso, @turno, @foto); SELECT SCOPE_IDENTITY()";
             //SELECT SCOPE_IDENTITY() -> Retorna o último valor de identidade inserido em uma coluna de identidade no mesmo escopo
-            
+
             try
             {
                 SqlCommand cmdInsertMatricula = new SqlCommand(insertMatricula, conn);
@@ -55,6 +56,7 @@ namespace Matricula.Controller
                 cmdInsertMatricula.Parameters.AddWithValue("@dataEmissaoCpf", matricula.EmissaoCpf);
                 cmdInsertMatricula.Parameters.AddWithValue("@rg", matricula.Rg);
                 cmdInsertMatricula.Parameters.AddWithValue("@dataEmissaoRg", matricula.EmissaoRg);
+                cmdInsertMatricula.Parameters.AddWithValue("@ExpedidoRg", matricula.ExpedidoRG);
                 cmdInsertMatricula.Parameters.AddWithValue("@tituloEleitor", matricula.Titulo);
                 cmdInsertMatricula.Parameters.AddWithValue("@secao", matricula.SecaoTitulo);
                 cmdInsertMatricula.Parameters.AddWithValue("@zona", matricula.ZonaTitulo);
@@ -67,16 +69,19 @@ namespace Matricula.Controller
                 cmdInsertMatricula.Parameters.AddWithValue("@curso", matricula.Curso);
                 cmdInsertMatricula.Parameters.AddWithValue("@turno", matricula.Turno);
                 cmdInsertMatricula.Parameters.AddWithValue("@foto", matricula.Foto == null ? new byte[0] : matricula.Foto);
-                
+                cmdInsertMatricula.Parameters.AddWithValue("@Cor", matricula.Cor);
+                cmdInsertMatricula.Parameters.AddWithValue("@reservista", matricula.ReservaMilitar);
+                cmdInsertMatricula.Parameters.AddWithValue("@dataReservista", matricula.DataMilitar);
+                cmdInsertMatricula.Parameters.AddWithValue("@ExpReservista", matricula.ExpedidoMilitar);
                 conn.Open();
                 //Armazena a ultima chave primaria inserida
                 matricula.CodMatricula = Convert.ToInt32(cmdInsertMatricula.ExecuteScalar());
             }
-            catch(SqlException sqlEx)
+            catch (SqlException sqlEx)
             {
                 MessageBox.Show("SQL Erro: " + sqlEx);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Erro: " + ex);
             }
@@ -86,11 +91,165 @@ namespace Matricula.Controller
                 {
                     conn.Close();
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show("Error: " + ex);
                 }
             }
+        }
+
+        //consultas
+
+        public DataSet PesquisaTodosAlunos()
+        {
+            DataSet dt = new DataSet();
+            try
+            {
+                conn.Open();
+                string consulta = "select * from TodosAlunos order by TodosAlunos.nome ASC;"; //view
+                SqlDataAdapter da = new SqlDataAdapter(consulta, conn);
+                da.Fill(dt);
+            }
+            catch (SqlException sqlEx)
+            {
+                MessageBox.Show("SQL Erro: " + sqlEx);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+        //Consulta aluno
+        public DataSet PesquisaAluno(MatriculaModel mat, string tipo)
+        {
+            DataSet dt = new DataSet();
+            try
+            {
+
+                conn.Open();
+                if (tipo.Equals("Nome"))
+                {
+                    string consulta = "select Matriculas.*, Celulares.celular,Fixos.telefone from Matriculas LEFT join Celulares ON(Matriculas.codigo= Celulares.codMatricula) LEFT join Fixos ON(Matriculas.codigo = Fixos.codMatricula) where Matriculas.nome like '" + mat.Nome + "%' order by Matriculas.nome ASC";
+                    SqlCommand cons = new SqlCommand(consulta, conn);
+                    //cons.Parameters.AddWithValue("@nome", mat.Nome);
+                    SqlDataAdapter da = new SqlDataAdapter(cons);
+                    da.Fill(dt);
+                }
+                else if (tipo.Equals("CPF"))
+                {
+                    string consulta = "select Matriculas.*, Celulares.celular,Fixos.telefone from Matriculas LEFT join Celulares ON(Matriculas.codigo= Celulares.codMatricula) LEFT join Fixos ON(Matriculas.codigo = Fixos.codMatricula) where Matriculas.cpf = @cpf order by Matriculas.nome ASC";
+                    SqlCommand cons = new SqlCommand(consulta, conn);
+                    cons.Parameters.AddWithValue("@cpf", mat.Cpf);
+                    SqlDataAdapter da = new SqlDataAdapter(cons);
+                    da.Fill(dt);
+                }
+                else if (tipo.Equals("Cidade"))
+                {
+                    string consulta = "select Matriculas.*, Celulares.celular,Fixos.telefone from Matriculas LEFT join Celulares ON(Matriculas.codigo= Celulares.codMatricula) LEFT join Fixos ON(Matriculas.codigo = Fixos.codMatricula) where Matriculas.municipio = @cid order by Matriculas.nome ASC";
+                    SqlCommand cons = new SqlCommand(consulta, conn);
+                    cons.Parameters.AddWithValue("@cid", mat.Municipio);
+                    SqlDataAdapter da = new SqlDataAdapter(cons);
+                    da.Fill(dt);
+                }
+                else if (tipo.Equals("Escola"))
+                {
+                    string consulta = "select Matriculas.*, Celulares.celular,Fixos.telefone from Matriculas LEFT join Celulares ON(Matriculas.codigo= Celulares.codMatricula) LEFT join Fixos ON(Matriculas.codigo = Fixos.codMatricula) where Matriculas.escola like '" + mat.Escola + "%' order by Matriculas.nome ASC";
+                    SqlCommand cons = new SqlCommand(consulta, conn);
+                    //cons.Parameters.AddWithValue("@escola", mat.Escola);
+                    SqlDataAdapter da = new SqlDataAdapter(cons);
+                    da.Fill(dt);
+                }
+                else if (tipo.Equals("Religiao"))
+                {
+                    string consulta = "select Matriculas.*, Celulares.celular,Fixos.telefone from Matriculas LEFT join Celulares ON(Matriculas.codigo= Celulares.codMatricula) LEFT join Fixos ON(Matriculas.codigo = Fixos.codMatricula) where Matriculas.religiao like '" + mat.Religiao + "%' order by Matriculas.nome ASC";
+                    SqlCommand cons = new SqlCommand(consulta, conn);
+                    // cons.Parameters.AddWithValue("@religiao", mat.Religiao);
+                    SqlDataAdapter da = new SqlDataAdapter(cons);
+                    da.Fill(dt);
+                }
+            }
+            catch (SqlException sqlEx)
+            {
+                MessageBox.Show("SQL Erro: " + sqlEx);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+
+        public DataSet login()
+        {
+            DataSet dt = new DataSet();
+            try
+            {
+                conn.Open();
+                string consulta = "select * from logins";
+                SqlDataAdapter da = new SqlDataAdapter(consulta, conn);
+                da.Fill(dt);
+            }
+            catch (SqlException sqlEx)
+            {
+                MessageBox.Show("SQL Erro: " + sqlEx);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+        // Pesquisa por curso
+        public DataSet PesquisaCurso(string Curso, string Turno)
+        {
+            DataSet dt = new DataSet();
+            try
+            {
+                if (Curso != "Gestão da Tecnologia da Informação")
+                {
+                    conn.Open();
+                    string consulta = "select Matriculas.*, Celulares.celular,Fixos.telefone from Matriculas LEFT join Celulares ON(Matriculas.codigo= Celulares.codMatricula) LEFT join Fixos ON(Matriculas.codigo = Fixos.codMatricula) where Matriculas.curso= @curso order by Matriculas.nome ASC";
+                    SqlCommand cons = new SqlCommand(consulta, conn);
+                    cons.Parameters.AddWithValue("@curso", Curso);
+                    SqlDataAdapter da = new SqlDataAdapter(cons);
+                    da.Fill(dt);
+                }
+                else if (Curso.Equals("Gestão da Tecnologia da Informação"))
+                {
+                    string consulta = "select Matriculas.*, Celulares.celular,Fixos.telefone from Matriculas LEFT join Celulares ON(Matriculas.codigo= Celulares.codMatricula) LEFT join Fixos ON(Matriculas.codigo = Fixos.codMatricula) where Matriculas.curso= @curso and Matriculas.turno = @turno order by Matriculas.nome ASC";
+                    SqlCommand cons = new SqlCommand(consulta, conn);
+                    cons.Parameters.AddWithValue("@curso", Curso);
+                    cons.Parameters.AddWithValue("@turno", Turno);
+                    SqlDataAdapter da = new SqlDataAdapter(cons);
+                    da.Fill(dt);
+                }
+            }
+            catch (SqlException sqlEx)
+            {
+                MessageBox.Show("SQL Erro: " + sqlEx);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
         }
     }
 }

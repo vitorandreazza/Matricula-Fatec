@@ -22,7 +22,7 @@ namespace Matricula.Controller
         {
             try
             {
-                string strConn = Matricula.Properties.Settings.Default.ConnMatricula;
+                string strConn = Matricula.Properties.Settings.Default.DBMatriculaConnectionString;
                 conn = new SqlConnection(strConn);
             }
             catch(SqlException sqlEx)

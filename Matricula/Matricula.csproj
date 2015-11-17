@@ -86,17 +86,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\Conexao.cs" />
+    <Compile Include="Controller\LoginController.cs" />
     <Compile Include="Controller\QuestionarioController.cs" />
     <Compile Include="Controller\TelefonesController.cs" />
     <Compile Include="Controller\MatriculaController.cs" />
+    <Compile Include="DSMatricula.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMatricula.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model\LoginModel.cs" />
     <Compile Include="Model\MatriculaModel.cs" />
     <Compile Include="Model\QuestionarioModel.cs" />
-    <Compile Include="View\MatriculaForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\MatriculaForm.Designer.cs">
-      <DependentUpon>MatriculaForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +110,12 @@
     <Compile Include="View\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\MatriculaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MatriculaForm.Designer.cs">
+      <DependentUpon>MatriculaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\ValidaCpf.cs" />
@@ -119,14 +126,14 @@
     <Compile Include="View\QuestionarioForm.Designer.cs">
       <DependentUpon>QuestionarioForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\MatriculaForm.resx">
       <DependentUpon>MatriculaForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -140,6 +147,17 @@
     <EmbeddedResource Include="View\QuestionarioForm.resx">
       <DependentUpon>QuestionarioForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DSMatricula.xsc">
+      <DependentUpon>DSMatricula.xsd</DependentUpon>
+    </None>
+    <None Include="DSMatricula.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMatricula.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSMatricula.xss">
+      <DependentUpon>DSMatricula.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -171,12 +189,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Matricula.mdf">
+    <Content Include="DBMatricula.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Matricula_log.ldf">
+    <Content Include="DBMatricula_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Matricula.mdf</DependentUpon>
+      <DependentUpon>DBMatricula.mdf</DependentUpon>
     </Content>
     <Content Include="Recursos\AForge.Video.DirectShow.dll" />
     <Content Include="Recursos\AForge.Video.dll" />

@@ -26,11 +26,11 @@ namespace Matricula.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\Matricula.mdf;Integr" +
-            "ated Security=True;Connect Timeout=30")]
-        public string ConnMatricula {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\DBMatricula.mdf;Inte" +
+            "grated Security=True")]
+        public string DBMatriculaConnectionString {
             get {
-                return ((string)(this["ConnMatricula"]));
+                return ((string)(this["DBMatriculaConnectionString"]));
             }
         }
     }

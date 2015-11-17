@@ -128,6 +128,11 @@ namespace Matricula
                 matricula.Curso = cbCurso.Text;
                 matricula.Turno = cbTurno.Text;
                 matricula.Foto = imgArray;
+                matricula.ExpedidoRG = txtExpedidoRg.Text;
+                matricula.Cor = txtCor.Text;
+                matricula.ReservaMilitar = txtMilitar.Text;
+                matricula.DataMilitar = formatarData(txtDataMilitar.Text);
+                matricula.ExpedidoMilitar = txtExpMilitar.Text;
 
                 matriculaController.inserir(matricula);
                 
@@ -348,6 +353,35 @@ namespace Matricula
             g.DrawImage(source, 0, 0, area, GraphicsUnit.Pixel);
 
             return bmp;
+        }
+
+        private void cbTurno_Click(object sender, EventArgs e)
+        {
+            if (cbCurso.Text.Equals("Análise e Desenvolvimento de Sistemas"))
+            {
+                cbTurno.Items.Clear();
+                cbTurno.Items.Add("Tarde");
+            }
+            else if (cbCurso.Text.Equals("Eventos"))
+            {
+                cbTurno.Items.Clear();
+                cbTurno.Items.Add("Manhã");
+            }
+            else if (cbCurso.Text.Equals("Gestão da Tecnologia da Informação"))
+            {
+                cbTurno.Items.Clear();
+                cbTurno.Items.Add("Manhã");
+                cbTurno.Items.Add("Noite");
+            }
+            else if (cbCurso.Text.Equals("Mecatrônica Industrial"))
+            {
+                cbTurno.Items.Clear();
+                cbTurno.Items.Add("Manhã");
+            }
+            else if (cbCurso.Text.Equals("Gestão Empresarial(EAD)"))
+            {
+                cbTurno.Items.Clear();
+            }
         }
 
         //private void MatriculaForm_Load(object sender, EventArgs e)

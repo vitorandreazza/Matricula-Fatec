@@ -93,6 +93,12 @@ namespace Matricula
             this.autoLabel17 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.autoLabel16 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.tabDocumentos = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.txtMilitar = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.txtDataMilitar = new Syncfusion.Windows.Forms.Tools.MaskedEditBox();
+            this.txtExpMilitar = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.lblExpMilitar = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.lblDataMilitar = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.lblMilitar = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.mtxtEmissaoRg = new Syncfusion.Windows.Forms.Tools.MaskedEditBox();
             this.mtxtEmissaoCpf = new Syncfusion.Windows.Forms.Tools.MaskedEditBox();
             this.txtTitulo = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
@@ -155,6 +161,9 @@ namespace Matricula
             ((System.ComponentModel.ISupportInitialize)(this.txtNumero)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEndereco)).BeginInit();
             this.tabDocumentos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMilitar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDataMilitar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtExpMilitar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mtxtEmissaoRg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mtxtEmissaoCpf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTitulo)).BeginInit();
@@ -1033,6 +1042,12 @@ namespace Matricula
             // 
             // tabDocumentos
             // 
+            this.tabDocumentos.Controls.Add(this.txtMilitar);
+            this.tabDocumentos.Controls.Add(this.txtDataMilitar);
+            this.tabDocumentos.Controls.Add(this.txtExpMilitar);
+            this.tabDocumentos.Controls.Add(this.lblExpMilitar);
+            this.tabDocumentos.Controls.Add(this.lblDataMilitar);
+            this.tabDocumentos.Controls.Add(this.lblMilitar);
             this.tabDocumentos.Controls.Add(this.mtxtEmissaoRg);
             this.tabDocumentos.Controls.Add(this.mtxtEmissaoCpf);
             this.tabDocumentos.Controls.Add(this.txtTitulo);
@@ -1059,6 +1074,77 @@ namespace Matricula
             this.tabDocumentos.TabIndex = 3;
             this.tabDocumentos.Text = "Documentos";
             this.tabDocumentos.ThemesEnabled = false;
+            // 
+            // txtMilitar
+            // 
+            this.txtMilitar.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtMilitar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMilitar.Location = new System.Drawing.Point(12, 184);
+            this.txtMilitar.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtMilitar.Name = "txtMilitar";
+            this.txtMilitar.Size = new System.Drawing.Size(222, 20);
+            this.txtMilitar.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.txtMilitar.TabIndex = 31;
+            // 
+            // txtDataMilitar
+            // 
+            this.txtDataMilitar.BackColor = System.Drawing.Color.White;
+            this.txtDataMilitar.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtDataMilitar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtDataMilitar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDataMilitar.DecimalSeparator = '.';
+            this.txtDataMilitar.Location = new System.Drawing.Point(240, 184);
+            this.txtDataMilitar.Mask = "##/##/####";
+            this.txtDataMilitar.MaxLength = 10;
+            this.txtDataMilitar.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtDataMilitar.Name = "txtDataMilitar";
+            this.txtDataMilitar.PassivePromptCharacterInt = 95;
+            this.txtDataMilitar.PositionAt = Syncfusion.Windows.Forms.Tools.SpecialCursorPosition.FirstMaskPosition;
+            this.txtDataMilitar.PromptCharacterInt = 95;
+            this.txtDataMilitar.Size = new System.Drawing.Size(168, 20);
+            this.txtDataMilitar.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.txtDataMilitar.TabIndex = 30;
+            // 
+            // txtExpMilitar
+            // 
+            this.txtExpMilitar.BeforeTouchSize = new System.Drawing.Size(526, 20);
+            this.txtExpMilitar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtExpMilitar.Location = new System.Drawing.Point(414, 184);
+            this.txtExpMilitar.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtExpMilitar.Name = "txtExpMilitar";
+            this.txtExpMilitar.Size = new System.Drawing.Size(137, 20);
+            this.txtExpMilitar.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.txtExpMilitar.TabIndex = 26;
+            // 
+            // lblExpMilitar
+            // 
+            this.lblExpMilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExpMilitar.ForeColor = System.Drawing.Color.DimGray;
+            this.lblExpMilitar.Location = new System.Drawing.Point(414, 166);
+            this.lblExpMilitar.Name = "lblExpMilitar";
+            this.lblExpMilitar.Size = new System.Drawing.Size(92, 15);
+            this.lblExpMilitar.TabIndex = 29;
+            this.lblExpMilitar.Text = "Expedido por";
+            // 
+            // lblDataMilitar
+            // 
+            this.lblDataMilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataMilitar.ForeColor = System.Drawing.Color.DimGray;
+            this.lblDataMilitar.Location = new System.Drawing.Point(240, 166);
+            this.lblDataMilitar.Name = "lblDataMilitar";
+            this.lblDataMilitar.Size = new System.Drawing.Size(96, 15);
+            this.lblDataMilitar.TabIndex = 28;
+            this.lblDataMilitar.Text = "Data Emissão";
+            // 
+            // lblMilitar
+            // 
+            this.lblMilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMilitar.ForeColor = System.Drawing.Color.DimGray;
+            this.lblMilitar.Location = new System.Drawing.Point(12, 166);
+            this.lblMilitar.Name = "lblMilitar";
+            this.lblMilitar.Size = new System.Drawing.Size(104, 15);
+            this.lblMilitar.TabIndex = 27;
+            this.lblMilitar.Text = "Reserva Militar";
             // 
             // mtxtEmissaoRg
             // 
@@ -1311,25 +1397,17 @@ namespace Matricula
             // cbTurno
             // 
             this.cbTurno.BackColor = System.Drawing.Color.White;
-            this.cbTurno.BeforeTouchSize = new System.Drawing.Size(194, 19);
+            this.cbTurno.BeforeTouchSize = new System.Drawing.Size(194, 21);
             this.cbTurno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTurno.Items.AddRange(new object[] {
-            "",
-            "Manhã",
-            "Tarde",
-            "Noturno"});
-            this.cbTurno.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbTurno, ""));
-            this.cbTurno.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbTurno, "Manhã"));
-            this.cbTurno.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbTurno, "Tarde"));
-            this.cbTurno.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbTurno, "Noturno"));
             this.cbTurno.Location = new System.Drawing.Point(345, 193);
             this.cbTurno.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbTurno.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbTurno.Name = "cbTurno";
-            this.cbTurno.Size = new System.Drawing.Size(194, 19);
+            this.cbTurno.Size = new System.Drawing.Size(194, 21);
             this.cbTurno.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbTurno.TabIndex = 7;
+            this.cbTurno.Click += new System.EventHandler(this.cbTurno_Click);
             // 
             // autoLabel39
             // 
@@ -1344,7 +1422,7 @@ namespace Matricula
             // cbCurso
             // 
             this.cbCurso.BackColor = System.Drawing.Color.White;
-            this.cbCurso.BeforeTouchSize = new System.Drawing.Size(327, 19);
+            this.cbCurso.BeforeTouchSize = new System.Drawing.Size(327, 21);
             this.cbCurso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCurso.Items.AddRange(new object[] {
@@ -1364,7 +1442,7 @@ namespace Matricula
             this.cbCurso.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbCurso.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbCurso.Name = "cbCurso";
-            this.cbCurso.Size = new System.Drawing.Size(327, 19);
+            this.cbCurso.Size = new System.Drawing.Size(327, 21);
             this.cbCurso.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbCurso.TabIndex = 6;
             // 
@@ -1433,7 +1511,7 @@ namespace Matricula
             // cbEstadoEscola
             // 
             this.cbEstadoEscola.BackColor = System.Drawing.Color.White;
-            this.cbEstadoEscola.BeforeTouchSize = new System.Drawing.Size(84, 19);
+            this.cbEstadoEscola.BeforeTouchSize = new System.Drawing.Size(84, 21);
             this.cbEstadoEscola.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEstadoEscola.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEstadoEscola.Items.AddRange(new object[] {
@@ -1497,7 +1575,7 @@ namespace Matricula
             this.cbEstadoEscola.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbEstadoEscola.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbEstadoEscola.Name = "cbEstadoEscola";
-            this.cbEstadoEscola.Size = new System.Drawing.Size(84, 19);
+            this.cbEstadoEscola.Size = new System.Drawing.Size(84, 21);
             this.cbEstadoEscola.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbEstadoEscola.TabIndex = 2;
             // 
@@ -1670,6 +1748,9 @@ namespace Matricula
             ((System.ComponentModel.ISupportInitialize)(this.txtEndereco)).EndInit();
             this.tabDocumentos.ResumeLayout(false);
             this.tabDocumentos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMilitar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDataMilitar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtExpMilitar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mtxtEmissaoRg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mtxtEmissaoCpf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTitulo)).EndInit();
@@ -1785,6 +1866,12 @@ namespace Matricula
         private Syncfusion.Windows.Forms.Tools.MaskedEditBox mtxtEmissaoRg;
         private Syncfusion.Windows.Forms.Tools.MaskedEditBox mtxtEmissaoCpf;
         private Syncfusion.Windows.Forms.Tools.MaskedEditBox mtxtConclusaoEscola;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtMilitar;
+        private Syncfusion.Windows.Forms.Tools.MaskedEditBox txtDataMilitar;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtExpMilitar;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel lblExpMilitar;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel lblDataMilitar;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel lblMilitar;
 
 
     }

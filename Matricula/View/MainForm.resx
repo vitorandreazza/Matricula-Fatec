@@ -117,11 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="matriculasBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>101, 56</value>
+  </metadata>
+  <metadata name="dSMatricula.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>657, 17</value>
+  </metadata>
+  <metadata name="matriculasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>291, 17</value>
+  </metadata>
+  <metadata name="matriculasTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>294, 56</value>
+  </metadata>
+  <metadata name="sfGrid.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>51</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="captionImage1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIgAAACUCAYAAABIrmGyAAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABS
-        CAABFVgAADqXAAAXb9daH5AAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAf6SURBVHhe7ZZBjtw2FER9nhwh
+        CAABFVgAADqXAAAXb9daH5AAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAf6SURBVHhe7ZZBjtw2FER9nhwh
         21wxF/EFEgNGNlkY2WQVIBfwwvHSQQKny2gGGk2RVFV/sSnpF/AGmA+KVOs/kXrz5t3br0lShRYX/Pzp
         42a+//CezpHEwZ57DXa9DC0uwEJbk4Lsz9Z+DBEEDU9B5kHpxxBBFDkwNgXZF7UfbA4ZWrzzlBtKqkwl
         iHq8pCD7oh4vYbs5Ld7AAlsTekMJRe0Hm8OCFm9stRUJvaGE8rR+0OKNFGQuphJEOe+QFGRfntoPVlTO
@@ -162,7 +183,7 @@
   <data name="captionImage2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEoAAAAcCAYAAADGBymbAAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABS
-        CAABFVgAADqXAAAXb9daH5AAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAcrSURBVGhD7ZhpaGNVFMfHBXdx
+        CAABFVgAADqXAAAXb9daH5AAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAcrSURBVGhD7ZhpaGNVFMfHBXdx
         QcXduqHiAgqKggoqgqCiiIggKH4SRVEURBHng+gncRDRLwOCIuLgwEj36Zp9a5ZmadO0aaaddpruaaZt
         0qZpGv//572Pm5eXsctYR5mB332Te865973zzjn3vO7ZY60vn2YTcFhfX48AXrdC/Bxb41jVgv9XOOCh
         owYnbIajcNRo1YJbhM6+2n04QC51tkQxVzDqnBJwwEP3Kg7Ii99e4K9BAPxetdg2eDHms2ItuXfqDGt9

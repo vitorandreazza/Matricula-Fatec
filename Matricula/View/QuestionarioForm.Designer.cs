@@ -418,7 +418,7 @@ namespace Matricula.View
             this.tabControl.Location = new System.Drawing.Point(5, 3);
             this.tabControl.Name = "tabControl";
             this.tabControl.Size = new System.Drawing.Size(1357, 690);
-            this.tabControl.TabIndex = 29;
+            this.tabControl.TabIndex = 0;
             this.tabControl.TabPanelBackColor = System.Drawing.Color.WhiteSmoke;
             this.tabControl.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererMetro);
             // 
@@ -461,7 +461,7 @@ namespace Matricula.View
             this.panel13.Location = new System.Drawing.Point(1026, 349);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(287, 175);
-            this.panel13.TabIndex = 48;
+            this.panel13.TabIndex = 12;
             // 
             // rb136
             // 
@@ -474,7 +474,7 @@ namespace Matricula.View
             this.rb136.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb136.Size = new System.Drawing.Size(155, 21);
             this.rb136.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb136.TabIndex = 28;
+            this.rb136.TabIndex = 5;
             this.rb136.Text = "Aposentado";
             this.rb136.ThemesEnabled = false;
             // 
@@ -489,7 +489,7 @@ namespace Matricula.View
             this.rb135.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb135.Size = new System.Drawing.Size(155, 21);
             this.rb135.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb135.TabIndex = 27;
+            this.rb135.TabIndex = 4;
             this.rb135.Text = "Trabalhador autônomo";
             this.rb135.ThemesEnabled = false;
             // 
@@ -504,7 +504,7 @@ namespace Matricula.View
             this.rb134.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb134.Size = new System.Drawing.Size(155, 21);
             this.rb134.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb134.TabIndex = 26;
+            this.rb134.TabIndex = 3;
             this.rb134.Text = "Servidor público";
             this.rb134.ThemesEnabled = false;
             // 
@@ -519,7 +519,7 @@ namespace Matricula.View
             this.rb133.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb133.Size = new System.Drawing.Size(267, 21);
             this.rb133.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb133.TabIndex = 25;
+            this.rb133.TabIndex = 2;
             this.rb133.Text = "Contratado com carteira de trabalho assinada";
             this.rb133.ThemesEnabled = false;
             // 
@@ -544,7 +544,7 @@ namespace Matricula.View
             this.rb131.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb131.Size = new System.Drawing.Size(192, 21);
             this.rb131.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb131.TabIndex = 23;
+            this.rb131.TabIndex = 0;
             this.rb131.Text = "Estudante";
             this.rb131.ThemesEnabled = false;
             // 
@@ -559,7 +559,7 @@ namespace Matricula.View
             this.rb132.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb132.Size = new System.Drawing.Size(145, 21);
             this.rb132.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb132.TabIndex = 24;
+            this.rb132.TabIndex = 1;
             this.rb132.Text = "Desempregado";
             this.rb132.ThemesEnabled = false;
             // 
@@ -573,7 +573,7 @@ namespace Matricula.View
             this.panel12.Location = new System.Drawing.Point(1026, 199);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(287, 126);
-            this.panel12.TabIndex = 47;
+            this.panel12.TabIndex = 11;
             // 
             // rb124
             // 
@@ -586,7 +586,7 @@ namespace Matricula.View
             this.rb124.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb124.Size = new System.Drawing.Size(155, 21);
             this.rb124.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb124.TabIndex = 26;
+            this.rb124.TabIndex = 3;
             this.rb124.Text = "Sim, mas já conclui";
             this.rb124.ThemesEnabled = false;
             // 
@@ -601,7 +601,7 @@ namespace Matricula.View
             this.rb123.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb123.Size = new System.Drawing.Size(145, 21);
             this.rb123.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb123.TabIndex = 25;
+            this.rb123.TabIndex = 2;
             this.rb123.Text = "Sim, estou cursando";
             this.rb123.ThemesEnabled = false;
             // 
@@ -626,7 +626,7 @@ namespace Matricula.View
             this.rb121.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb121.Size = new System.Drawing.Size(192, 21);
             this.rb121.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb121.TabIndex = 23;
+            this.rb121.TabIndex = 0;
             this.rb121.Text = "Não";
             this.rb121.ThemesEnabled = false;
             // 
@@ -641,7 +641,7 @@ namespace Matricula.View
             this.rb122.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb122.Size = new System.Drawing.Size(145, 21);
             this.rb122.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb122.TabIndex = 24;
+            this.rb122.TabIndex = 1;
             this.rb122.Text = "Sim, mas abandonei";
             this.rb122.ThemesEnabled = false;
             // 
@@ -656,7 +656,7 @@ namespace Matricula.View
             this.panel11.Location = new System.Drawing.Point(1026, 15);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(287, 161);
-            this.panel11.TabIndex = 46;
+            this.panel11.TabIndex = 10;
             // 
             // rb115
             // 
@@ -669,7 +669,7 @@ namespace Matricula.View
             this.rb115.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb115.Size = new System.Drawing.Size(155, 21);
             this.rb115.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb115.TabIndex = 27;
+            this.rb115.TabIndex = 4;
             this.rb115.Text = "Mais de três vezes";
             this.rb115.ThemesEnabled = false;
             // 
@@ -684,7 +684,7 @@ namespace Matricula.View
             this.rb114.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb114.Size = new System.Drawing.Size(155, 21);
             this.rb114.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb114.TabIndex = 26;
+            this.rb114.TabIndex = 3;
             this.rb114.Text = "Três vezes";
             this.rb114.ThemesEnabled = false;
             // 
@@ -699,7 +699,7 @@ namespace Matricula.View
             this.rb113.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb113.Size = new System.Drawing.Size(145, 21);
             this.rb113.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb113.TabIndex = 25;
+            this.rb113.TabIndex = 2;
             this.rb113.Text = "Duas vezes";
             this.rb113.ThemesEnabled = false;
             // 
@@ -726,7 +726,7 @@ namespace Matricula.View
             this.rb111.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb111.Size = new System.Drawing.Size(192, 21);
             this.rb111.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb111.TabIndex = 23;
+            this.rb111.TabIndex = 0;
             this.rb111.Text = "Nenhuma";
             this.rb111.ThemesEnabled = false;
             // 
@@ -741,7 +741,7 @@ namespace Matricula.View
             this.rb112.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb112.Size = new System.Drawing.Size(145, 21);
             this.rb112.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb112.TabIndex = 24;
+            this.rb112.TabIndex = 1;
             this.rb112.Text = "Uma vez";
             this.rb112.ThemesEnabled = false;
             // 
@@ -756,7 +756,7 @@ namespace Matricula.View
             this.panel10.Location = new System.Drawing.Point(649, 440);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(287, 163);
-            this.panel10.TabIndex = 45;
+            this.panel10.TabIndex = 9;
             // 
             // rb105
             // 
@@ -769,7 +769,7 @@ namespace Matricula.View
             this.rb105.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb105.Size = new System.Drawing.Size(155, 21);
             this.rb105.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb105.TabIndex = 26;
+            this.rb105.TabIndex = 4;
             this.rb105.Text = "Sim, por mais de um ano";
             this.rb105.ThemesEnabled = false;
             // 
@@ -784,7 +784,7 @@ namespace Matricula.View
             this.rb104.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb104.Size = new System.Drawing.Size(145, 21);
             this.rb104.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb104.TabIndex = 25;
+            this.rb104.TabIndex = 3;
             this.rb104.Text = "Sim, por um ano";
             this.rb104.ThemesEnabled = false;
             // 
@@ -810,7 +810,7 @@ namespace Matricula.View
             this.rb102.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb102.Size = new System.Drawing.Size(192, 21);
             this.rb102.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb102.TabIndex = 23;
+            this.rb102.TabIndex = 1;
             this.rb102.Text = "Sim, menos de um semestre";
             this.rb102.ThemesEnabled = false;
             // 
@@ -825,7 +825,7 @@ namespace Matricula.View
             this.rb103.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb103.Size = new System.Drawing.Size(145, 21);
             this.rb103.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb103.TabIndex = 24;
+            this.rb103.TabIndex = 2;
             this.rb103.Text = "Sim, um semestre";
             this.rb103.ThemesEnabled = false;
             // 
@@ -840,7 +840,7 @@ namespace Matricula.View
             this.rb101.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb101.Size = new System.Drawing.Size(192, 21);
             this.rb101.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb101.TabIndex = 22;
+            this.rb101.TabIndex = 0;
             this.rb101.Text = "Não";
             this.rb101.ThemesEnabled = false;
             // 
@@ -856,7 +856,7 @@ namespace Matricula.View
             this.panel09.Location = new System.Drawing.Point(649, 259);
             this.panel09.Name = "panel09";
             this.panel09.Size = new System.Drawing.Size(269, 175);
-            this.panel09.TabIndex = 44;
+            this.panel09.TabIndex = 8;
             // 
             // rb096
             // 
@@ -869,7 +869,7 @@ namespace Matricula.View
             this.rb096.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb096.Size = new System.Drawing.Size(245, 21);
             this.rb096.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb096.TabIndex = 21;
+            this.rb096.TabIndex = 5;
             this.rb096.Text = "Maior parte dos anos em escola conveniada";
             this.rb096.ThemesEnabled = false;
             // 
@@ -884,7 +884,7 @@ namespace Matricula.View
             this.rb095.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb095.Size = new System.Drawing.Size(235, 21);
             this.rb095.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb095.TabIndex = 20;
+            this.rb095.TabIndex = 4;
             this.rb095.Text = "Somente em escola conveniada";
             this.rb095.ThemesEnabled = false;
             // 
@@ -909,7 +909,7 @@ namespace Matricula.View
             this.rb092.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb092.Size = new System.Drawing.Size(226, 21);
             this.rb092.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb092.TabIndex = 17;
+            this.rb092.TabIndex = 1;
             this.rb092.Text = "Maior parte dos anos em escola pública";
             this.rb092.ThemesEnabled = false;
             // 
@@ -924,7 +924,7 @@ namespace Matricula.View
             this.rb093.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb093.Size = new System.Drawing.Size(197, 21);
             this.rb093.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb093.TabIndex = 18;
+            this.rb093.TabIndex = 2;
             this.rb093.Text = "Somente em escola particular";
             this.rb093.ThemesEnabled = false;
             // 
@@ -939,7 +939,7 @@ namespace Matricula.View
             this.rb091.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb091.Size = new System.Drawing.Size(176, 21);
             this.rb091.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb091.TabIndex = 16;
+            this.rb091.TabIndex = 0;
             this.rb091.Text = "Somente em escola pública";
             this.rb091.ThemesEnabled = false;
             // 
@@ -954,7 +954,7 @@ namespace Matricula.View
             this.rb094.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb094.Size = new System.Drawing.Size(235, 21);
             this.rb094.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb094.TabIndex = 19;
+            this.rb094.TabIndex = 3;
             this.rb094.Text = "Maior parte dos anos em escola particular";
             this.rb094.ThemesEnabled = false;
             // 
@@ -973,7 +973,7 @@ namespace Matricula.View
             this.panel06.Location = new System.Drawing.Point(319, 321);
             this.panel06.Name = "panel06";
             this.panel06.Size = new System.Drawing.Size(248, 255);
-            this.panel06.TabIndex = 42;
+            this.panel06.TabIndex = 5;
             // 
             // rb068
             // 
@@ -986,7 +986,7 @@ namespace Matricula.View
             this.rb068.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb068.Size = new System.Drawing.Size(181, 21);
             this.rb068.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb068.TabIndex = 19;
+            this.rb068.TabIndex = 7;
             this.rb068.Text = "Pós-graduação";
             this.rb068.ThemesEnabled = false;
             // 
@@ -1001,7 +1001,7 @@ namespace Matricula.View
             this.rb069.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb069.Size = new System.Drawing.Size(181, 21);
             this.rb069.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb069.TabIndex = 18;
+            this.rb069.TabIndex = 8;
             this.rb069.Text = "Não sei";
             this.rb069.ThemesEnabled = false;
             // 
@@ -1016,7 +1016,7 @@ namespace Matricula.View
             this.rb067.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb067.Size = new System.Drawing.Size(181, 21);
             this.rb067.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb067.TabIndex = 17;
+            this.rb067.TabIndex = 6;
             this.rb067.Text = "Ensino Superior - completo";
             this.rb067.ThemesEnabled = false;
             // 
@@ -1031,7 +1031,7 @@ namespace Matricula.View
             this.rb063.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb063.Size = new System.Drawing.Size(192, 21);
             this.rb063.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb063.TabIndex = 13;
+            this.rb063.TabIndex = 2;
             this.rb063.Text = "Ensino Fundamental - completo";
             this.rb063.ThemesEnabled = false;
             // 
@@ -1046,7 +1046,7 @@ namespace Matricula.View
             this.rb064.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb064.Size = new System.Drawing.Size(158, 21);
             this.rb064.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb064.TabIndex = 14;
+            this.rb064.TabIndex = 3;
             this.rb064.Text = "Ensino Médio - incompleto";
             this.rb064.ThemesEnabled = false;
             // 
@@ -1061,7 +1061,7 @@ namespace Matricula.View
             this.rb062.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb062.Size = new System.Drawing.Size(194, 21);
             this.rb062.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb062.TabIndex = 12;
+            this.rb062.TabIndex = 1;
             this.rb062.Text = "Ensino Fundamental - incompleto";
             this.rb062.ThemesEnabled = false;
             // 
@@ -1076,7 +1076,7 @@ namespace Matricula.View
             this.rb066.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb066.Size = new System.Drawing.Size(181, 21);
             this.rb066.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb066.TabIndex = 15;
+            this.rb066.TabIndex = 5;
             this.rb066.Text = "Ensino Superior - incompleto";
             this.rb066.ThemesEnabled = false;
             // 
@@ -1091,7 +1091,7 @@ namespace Matricula.View
             this.rb061.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb061.Size = new System.Drawing.Size(145, 21);
             this.rb061.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb061.TabIndex = 11;
+            this.rb061.TabIndex = 0;
             this.rb061.Text = "Não estudou";
             this.rb061.ThemesEnabled = false;
             // 
@@ -1106,7 +1106,7 @@ namespace Matricula.View
             this.rb065.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb065.Size = new System.Drawing.Size(181, 21);
             this.rb065.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb065.TabIndex = 16;
+            this.rb065.TabIndex = 4;
             this.rb065.Text = "Ensino Médio - completo";
             this.rb065.ThemesEnabled = false;
             // 
@@ -1132,7 +1132,7 @@ namespace Matricula.View
             this.panel01.Location = new System.Drawing.Point(44, 13);
             this.panel01.Name = "panel01";
             this.panel01.Size = new System.Drawing.Size(200, 174);
-            this.panel01.TabIndex = 36;
+            this.panel01.TabIndex = 0;
             // 
             // autoLabel1
             // 
@@ -1155,7 +1155,7 @@ namespace Matricula.View
             this.rb013.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb013.Size = new System.Drawing.Size(145, 21);
             this.rb013.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb013.TabIndex = 4;
+            this.rb013.TabIndex = 2;
             this.rb013.Text = "Entre 26 a 30 anos";
             this.rb013.ThemesEnabled = false;
             // 
@@ -1170,7 +1170,7 @@ namespace Matricula.View
             this.rb014.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb014.Size = new System.Drawing.Size(145, 21);
             this.rb014.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb014.TabIndex = 5;
+            this.rb014.TabIndex = 3;
             this.rb014.Text = "Entre 31 a 35 anos";
             this.rb014.ThemesEnabled = false;
             // 
@@ -1185,7 +1185,7 @@ namespace Matricula.View
             this.rb012.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb012.Size = new System.Drawing.Size(145, 21);
             this.rb012.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb012.TabIndex = 3;
+            this.rb012.TabIndex = 1;
             this.rb012.Text = "Entre 18 a 25 anos";
             this.rb012.ThemesEnabled = false;
             // 
@@ -1200,7 +1200,7 @@ namespace Matricula.View
             this.rb016.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb016.Size = new System.Drawing.Size(145, 21);
             this.rb016.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb016.TabIndex = 6;
+            this.rb016.TabIndex = 5;
             this.rb016.Text = "Maior que 40 anos";
             this.rb016.ThemesEnabled = false;
             // 
@@ -1215,7 +1215,7 @@ namespace Matricula.View
             this.rb011.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb011.Size = new System.Drawing.Size(145, 21);
             this.rb011.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb011.TabIndex = 2;
+            this.rb011.TabIndex = 0;
             this.rb011.Text = "Menor que 18 anos";
             this.rb011.ThemesEnabled = false;
             // 
@@ -1230,7 +1230,7 @@ namespace Matricula.View
             this.rb015.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb015.Size = new System.Drawing.Size(145, 21);
             this.rb015.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb015.TabIndex = 7;
+            this.rb015.TabIndex = 4;
             this.rb015.Text = "Entre 36 a 40 anos";
             this.rb015.ThemesEnabled = false;
             // 
@@ -1245,7 +1245,7 @@ namespace Matricula.View
             this.panel02.Location = new System.Drawing.Point(44, 199);
             this.panel02.Name = "panel02";
             this.panel02.Size = new System.Drawing.Size(200, 144);
-            this.panel02.TabIndex = 37;
+            this.panel02.TabIndex = 1;
             // 
             // autoLabel2
             // 
@@ -1268,7 +1268,7 @@ namespace Matricula.View
             this.rb023.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb023.Size = new System.Drawing.Size(145, 21);
             this.rb023.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb023.TabIndex = 11;
+            this.rb023.TabIndex = 2;
             this.rb023.Text = "Evangélica";
             this.rb023.ThemesEnabled = false;
             // 
@@ -1283,7 +1283,7 @@ namespace Matricula.View
             this.rb024.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb024.Size = new System.Drawing.Size(145, 21);
             this.rb024.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb024.TabIndex = 12;
+            this.rb024.TabIndex = 3;
             this.rb024.Text = "Outras";
             this.rb024.ThemesEnabled = false;
             // 
@@ -1298,7 +1298,7 @@ namespace Matricula.View
             this.rb022.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb022.Size = new System.Drawing.Size(145, 21);
             this.rb022.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb022.TabIndex = 10;
+            this.rb022.TabIndex = 1;
             this.rb022.Text = "Espírita";
             this.rb022.ThemesEnabled = false;
             // 
@@ -1313,7 +1313,7 @@ namespace Matricula.View
             this.rb021.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb021.Size = new System.Drawing.Size(145, 21);
             this.rb021.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb021.TabIndex = 9;
+            this.rb021.TabIndex = 0;
             this.rb021.Text = "Católica";
             this.rb021.ThemesEnabled = false;
             // 
@@ -1328,7 +1328,7 @@ namespace Matricula.View
             this.rb025.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb025.Size = new System.Drawing.Size(145, 21);
             this.rb025.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb025.TabIndex = 13;
+            this.rb025.TabIndex = 4;
             this.rb025.Text = "Nenhuma";
             this.rb025.ThemesEnabled = false;
             // 
@@ -1347,7 +1347,7 @@ namespace Matricula.View
             this.panel05.Location = new System.Drawing.Point(319, 15);
             this.panel05.Name = "panel05";
             this.panel05.Size = new System.Drawing.Size(240, 261);
-            this.panel05.TabIndex = 40;
+            this.panel05.TabIndex = 4;
             // 
             // rb058
             // 
@@ -1360,7 +1360,7 @@ namespace Matricula.View
             this.rb058.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb058.Size = new System.Drawing.Size(181, 21);
             this.rb058.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb058.TabIndex = 10;
+            this.rb058.TabIndex = 7;
             this.rb058.Text = "Pós-graduação";
             this.rb058.ThemesEnabled = false;
             // 
@@ -1375,7 +1375,7 @@ namespace Matricula.View
             this.rb059.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb059.Size = new System.Drawing.Size(181, 21);
             this.rb059.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb059.TabIndex = 9;
+            this.rb059.TabIndex = 8;
             this.rb059.Text = "Não sei";
             this.rb059.ThemesEnabled = false;
             // 
@@ -1390,7 +1390,7 @@ namespace Matricula.View
             this.rb057.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb057.Size = new System.Drawing.Size(181, 21);
             this.rb057.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb057.TabIndex = 8;
+            this.rb057.TabIndex = 6;
             this.rb057.Text = "Ensino Superior - completo";
             this.rb057.ThemesEnabled = false;
             // 
@@ -1415,7 +1415,7 @@ namespace Matricula.View
             this.rb053.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb053.Size = new System.Drawing.Size(192, 21);
             this.rb053.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb053.TabIndex = 4;
+            this.rb053.TabIndex = 2;
             this.rb053.Text = "Ensino Fundamental - completo";
             this.rb053.ThemesEnabled = false;
             // 
@@ -1430,7 +1430,7 @@ namespace Matricula.View
             this.rb054.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb054.Size = new System.Drawing.Size(158, 21);
             this.rb054.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb054.TabIndex = 5;
+            this.rb054.TabIndex = 3;
             this.rb054.Text = "Ensino Médio - incompleto";
             this.rb054.ThemesEnabled = false;
             // 
@@ -1445,7 +1445,7 @@ namespace Matricula.View
             this.rb052.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb052.Size = new System.Drawing.Size(194, 21);
             this.rb052.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb052.TabIndex = 3;
+            this.rb052.TabIndex = 1;
             this.rb052.Text = "Ensino Fundamental - incompleto";
             this.rb052.ThemesEnabled = false;
             // 
@@ -1460,7 +1460,7 @@ namespace Matricula.View
             this.rb056.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb056.Size = new System.Drawing.Size(181, 21);
             this.rb056.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb056.TabIndex = 6;
+            this.rb056.TabIndex = 5;
             this.rb056.Text = "Ensino Superior - incompleto";
             this.rb056.ThemesEnabled = false;
             // 
@@ -1475,7 +1475,7 @@ namespace Matricula.View
             this.rb051.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb051.Size = new System.Drawing.Size(145, 21);
             this.rb051.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb051.TabIndex = 2;
+            this.rb051.TabIndex = 0;
             this.rb051.Text = "Não estudou";
             this.rb051.ThemesEnabled = false;
             // 
@@ -1490,7 +1490,7 @@ namespace Matricula.View
             this.rb055.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb055.Size = new System.Drawing.Size(181, 21);
             this.rb055.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb055.TabIndex = 7;
+            this.rb055.TabIndex = 4;
             this.rb055.Text = "Ensino Médio - completo";
             this.rb055.ThemesEnabled = false;
             // 
@@ -1503,7 +1503,7 @@ namespace Matricula.View
             this.panel08.Location = new System.Drawing.Point(649, 157);
             this.panel08.Name = "panel08";
             this.panel08.Size = new System.Drawing.Size(200, 96);
-            this.panel08.TabIndex = 43;
+            this.panel08.TabIndex = 7;
             // 
             // rb083
             // 
@@ -1516,7 +1516,7 @@ namespace Matricula.View
             this.rb083.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb083.Size = new System.Drawing.Size(176, 21);
             this.rb083.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb083.TabIndex = 11;
+            this.rb083.TabIndex = 2;
             this.rb083.Text = "Ensino Superior - completo";
             this.rb083.ThemesEnabled = false;
             // 
@@ -1541,7 +1541,7 @@ namespace Matricula.View
             this.rb082.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb082.Size = new System.Drawing.Size(176, 21);
             this.rb082.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb082.TabIndex = 10;
+            this.rb082.TabIndex = 1;
             this.rb082.Text = "Ensino Superior - incompleto";
             this.rb082.ThemesEnabled = false;
             // 
@@ -1556,7 +1556,7 @@ namespace Matricula.View
             this.rb081.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb081.Size = new System.Drawing.Size(184, 21);
             this.rb081.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb081.TabIndex = 9;
+            this.rb081.TabIndex = 0;
             this.rb081.Text = "Ensino Médio - completo";
             this.rb081.ThemesEnabled = false;
             // 
@@ -1570,7 +1570,7 @@ namespace Matricula.View
             this.panel07.Location = new System.Drawing.Point(649, 15);
             this.panel07.Name = "panel07";
             this.panel07.Size = new System.Drawing.Size(311, 137);
-            this.panel07.TabIndex = 41;
+            this.panel07.TabIndex = 6;
             // 
             // autoLabel7
             // 
@@ -1595,7 +1595,7 @@ namespace Matricula.View
             this.rb072.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb072.Size = new System.Drawing.Size(145, 21);
             this.rb072.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb072.TabIndex = 4;
+            this.rb072.TabIndex = 1;
             this.rb072.Text = "1";
             this.rb072.ThemesEnabled = false;
             // 
@@ -1610,7 +1610,7 @@ namespace Matricula.View
             this.rb073.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb073.Size = new System.Drawing.Size(145, 21);
             this.rb073.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb073.TabIndex = 5;
+            this.rb073.TabIndex = 2;
             this.rb073.Text = "2";
             this.rb073.ThemesEnabled = false;
             // 
@@ -1625,7 +1625,7 @@ namespace Matricula.View
             this.rb071.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb071.Size = new System.Drawing.Size(145, 21);
             this.rb071.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb071.TabIndex = 3;
+            this.rb071.TabIndex = 0;
             this.rb071.Text = "0";
             this.rb071.ThemesEnabled = false;
             // 
@@ -1640,7 +1640,7 @@ namespace Matricula.View
             this.rb074.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb074.Size = new System.Drawing.Size(145, 21);
             this.rb074.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb074.TabIndex = 7;
+            this.rb074.TabIndex = 3;
             this.rb074.Text = "3 ou mais";
             this.rb074.ThemesEnabled = false;
             // 
@@ -1654,7 +1654,7 @@ namespace Matricula.View
             this.panel04.Location = new System.Drawing.Point(44, 519);
             this.panel04.Name = "panel04";
             this.panel04.Size = new System.Drawing.Size(200, 117);
-            this.panel04.TabIndex = 39;
+            this.panel04.TabIndex = 3;
             // 
             // autoLabel4
             // 
@@ -1677,7 +1677,7 @@ namespace Matricula.View
             this.rb043.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb043.Size = new System.Drawing.Size(192, 21);
             this.rb043.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb043.TabIndex = 23;
+            this.rb043.TabIndex = 2;
             this.rb043.Text = "Separado/divorciado/desquitado";
             this.rb043.ThemesEnabled = false;
             // 
@@ -1692,7 +1692,7 @@ namespace Matricula.View
             this.rb044.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb044.Size = new System.Drawing.Size(145, 21);
             this.rb044.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb044.TabIndex = 24;
+            this.rb044.TabIndex = 3;
             this.rb044.Text = "Viúvo";
             this.rb044.ThemesEnabled = false;
             // 
@@ -1707,7 +1707,7 @@ namespace Matricula.View
             this.rb042.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb042.Size = new System.Drawing.Size(192, 21);
             this.rb042.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb042.TabIndex = 22;
+            this.rb042.TabIndex = 1;
             this.rb042.Text = "Casado/moracom o companheiro";
             this.rb042.ThemesEnabled = false;
             // 
@@ -1722,7 +1722,7 @@ namespace Matricula.View
             this.rb041.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb041.Size = new System.Drawing.Size(145, 21);
             this.rb041.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb041.TabIndex = 21;
+            this.rb041.TabIndex = 0;
             this.rb041.Text = "Solteiro";
             this.rb041.ThemesEnabled = false;
             // 
@@ -1737,7 +1737,7 @@ namespace Matricula.View
             this.panel03.Location = new System.Drawing.Point(44, 358);
             this.panel03.Name = "panel03";
             this.panel03.Size = new System.Drawing.Size(200, 144);
-            this.panel03.TabIndex = 38;
+            this.panel03.TabIndex = 2;
             // 
             // autoLabel3
             // 
@@ -1760,7 +1760,7 @@ namespace Matricula.View
             this.rb033.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb033.Size = new System.Drawing.Size(145, 21);
             this.rb033.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb033.TabIndex = 17;
+            this.rb033.TabIndex = 2;
             this.rb033.Text = "Preto";
             this.rb033.ThemesEnabled = false;
             // 
@@ -1775,7 +1775,7 @@ namespace Matricula.View
             this.rb034.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb034.Size = new System.Drawing.Size(145, 21);
             this.rb034.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb034.TabIndex = 18;
+            this.rb034.TabIndex = 3;
             this.rb034.Text = "Amarelo";
             this.rb034.ThemesEnabled = false;
             // 
@@ -1790,7 +1790,7 @@ namespace Matricula.View
             this.rb032.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb032.Size = new System.Drawing.Size(145, 21);
             this.rb032.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb032.TabIndex = 16;
+            this.rb032.TabIndex = 1;
             this.rb032.Text = "Pardo";
             this.rb032.ThemesEnabled = false;
             // 
@@ -1805,7 +1805,7 @@ namespace Matricula.View
             this.rb031.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb031.Size = new System.Drawing.Size(145, 21);
             this.rb031.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb031.TabIndex = 15;
+            this.rb031.TabIndex = 0;
             this.rb031.Text = "Branco";
             this.rb031.ThemesEnabled = false;
             // 
@@ -1820,7 +1820,7 @@ namespace Matricula.View
             this.rb035.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb035.Size = new System.Drawing.Size(145, 21);
             this.rb035.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb035.TabIndex = 19;
+            this.rb035.TabIndex = 4;
             this.rb035.Text = "Indígena";
             this.rb035.ThemesEnabled = false;
             // 
@@ -1862,7 +1862,7 @@ namespace Matricula.View
             this.panel26.Location = new System.Drawing.Point(1076, 451);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(273, 180);
-            this.panel26.TabIndex = 42;
+            this.panel26.TabIndex = 12;
             // 
             // rb265
             // 
@@ -1962,7 +1962,7 @@ namespace Matricula.View
             this.panel25.Location = new System.Drawing.Point(1076, 236);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(263, 198);
-            this.panel25.TabIndex = 37;
+            this.panel25.TabIndex = 11;
             // 
             // rb256
             // 
@@ -2076,7 +2076,7 @@ namespace Matricula.View
             this.panel15.Location = new System.Drawing.Point(28, 148);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(287, 137);
-            this.panel15.TabIndex = 47;
+            this.panel15.TabIndex = 1;
             // 
             // rb154
             // 
@@ -2160,7 +2160,7 @@ namespace Matricula.View
             this.panel14.Location = new System.Drawing.Point(28, 9);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(287, 124);
-            this.panel14.TabIndex = 46;
+            this.panel14.TabIndex = 0;
             // 
             // rb143
             // 
@@ -2243,7 +2243,7 @@ namespace Matricula.View
             this.panel16.Location = new System.Drawing.Point(35, 297);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(249, 149);
-            this.panel16.TabIndex = 45;
+            this.panel16.TabIndex = 2;
             // 
             // rb165
             // 
@@ -2342,7 +2342,7 @@ namespace Matricula.View
             this.panel24.Location = new System.Drawing.Point(1076, 9);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(249, 192);
-            this.panel24.TabIndex = 43;
+            this.panel24.TabIndex = 10;
             // 
             // rb245
             // 
@@ -2442,7 +2442,7 @@ namespace Matricula.View
             this.panel21.Location = new System.Drawing.Point(741, 9);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(264, 167);
-            this.panel21.TabIndex = 44;
+            this.panel21.TabIndex = 7;
             // 
             // rb215
             // 
@@ -2541,7 +2541,7 @@ namespace Matricula.View
             this.panel23.Location = new System.Drawing.Point(741, 451);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(264, 180);
-            this.panel23.TabIndex = 41;
+            this.panel23.TabIndex = 9;
             // 
             // rb235
             // 
@@ -2640,7 +2640,7 @@ namespace Matricula.View
             this.panel20.Location = new System.Drawing.Point(410, 451);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(249, 170);
-            this.panel20.TabIndex = 42;
+            this.panel20.TabIndex = 6;
             // 
             // rb205
             // 
@@ -2739,7 +2739,7 @@ namespace Matricula.View
             this.panel19.Location = new System.Drawing.Point(410, 236);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(249, 167);
-            this.panel19.TabIndex = 39;
+            this.panel19.TabIndex = 5;
             // 
             // rb195
             // 
@@ -2838,7 +2838,7 @@ namespace Matricula.View
             this.panel18.Location = new System.Drawing.Point(410, 9);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(249, 210);
-            this.panel18.TabIndex = 40;
+            this.panel18.TabIndex = 4;
             // 
             // rb185
             // 
@@ -2940,7 +2940,7 @@ namespace Matricula.View
             this.panel17.Location = new System.Drawing.Point(35, 457);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(249, 176);
-            this.panel17.TabIndex = 38;
+            this.panel17.TabIndex = 3;
             // 
             // rb176
             // 
@@ -3053,7 +3053,7 @@ namespace Matricula.View
             this.panel22.Location = new System.Drawing.Point(744, 236);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(249, 161);
-            this.panel22.TabIndex = 36;
+            this.panel22.TabIndex = 8;
             // 
             // rb225
             // 
