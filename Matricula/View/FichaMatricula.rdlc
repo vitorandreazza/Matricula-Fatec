@@ -48,8 +48,7 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Label>classificacao</Label>
-                <Value>=Last(Fields!classificacao.Value,"dtsMatricula")</Value>
+                <Value>=Parameters!classificacao.Value</Value>
                 <Style>
                   <FontSize>11pt</FontSize>
                   <TextDecoration>Underline</TextDecoration>
@@ -62,8 +61,7 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Label>Pontuacao</Label>
-                <Value>=Last(Fields!pontuacao.Value, "dtsMatricula")</Value>
+                <Value>=Parameters!pontuacao.Value</Value>
                 <Style>
                   <FontSize>11pt</FontSize>
                   <TextDecoration>Underline</TextDecoration>
@@ -76,8 +74,7 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Label>nome</Label>
-                <Value>=Last(Fields!nome.Value, "dtsMatricula")</Value>
+                <Value>=Parameters!nome.Value</Value>
                 <Style>
                   <FontSize>11pt</FontSize>
                   <TextDecoration>Underline</TextDecoration>
@@ -90,8 +87,8 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Label>rg</Label>
-                <Value>=Format(Int(Last(Fields!rg.Value, "dtsMatricula")),"00\.000\.000\-0")</Value>
+                <Label>@rg</Label>
+                <Value>=Format(Int(Parameters!rg.Value),"00\.000\.000\-0")</Value>
                 <Style>
                   <FontSize>11pt</FontSize>
                   <TextDecoration>Underline</TextDecoration>
@@ -104,8 +101,7 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Label>rua</Label>
-                <Value>=Last(Fields!endereco.Value, "dtsMatricula")</Value>
+                <Value>=Parameters!endereco.Value</Value>
                 <Style>
                   <FontSize>11pt</FontSize>
                   <TextDecoration>Underline</TextDecoration>
@@ -118,8 +114,7 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Label>numero</Label>
-                <Value>=Last(Fields!numero.Value, "dtsMatricula")</Value>
+                <Value>=Parameters!numero.Value</Value>
                 <Style>
                   <FontSize>11pt</FontSize>
                   <TextDecoration>Underline</TextDecoration>
@@ -132,8 +127,7 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Label>bairro</Label>
-                <Value>=Last(Fields!bairro.Value, "dtsMatricula")</Value>
+                <Value>=Parameters!bairro.Value</Value>
                 <Style>
                   <FontSize>11pt</FontSize>
                   <TextDecoration>Underline</TextDecoration>
@@ -146,8 +140,7 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Label>cidade</Label>
-                <Value>=Last(Fields!municipio.Value, "dtsMatricula")</Value>
+                <Value>=Parameters!cidade.Value</Value>
                 <Style>
                   <FontSize>11pt</FontSize>
                   <TextDecoration>Underline</TextDecoration>
@@ -160,8 +153,8 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Label>cep</Label>
-                <Value>=Format(Int(Last(Fields!cep.Value, "dtsMatricula")),"00\.000\-000")</Value>
+                <Label>@cep</Label>
+                <Value>=Format(Int(Parameters!cep.Value),"00\.000\-000")</Value>
                 <Style>
                   <FontSize>11pt</FontSize>
                   <TextDecoration>Underline</TextDecoration>
@@ -174,11 +167,10 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Label>Fone</Label>
-                <Value>=Format(Int(Last(Fields!telefone.Value, "dtsFone")),"\(00\)0000\-0000")</Value>
+                <Label>@fone</Label>
+                <Value>=Format(Int(Parameters!fone.Value),"\(00\)0000\-0000")</Value>
                 <Style>
                   <FontSize>11pt</FontSize>
-                  <TextDecoration>Underline</TextDecoration>
                 </Style>
               </TextRun>
               <TextRun>
@@ -188,8 +180,7 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Label>curso</Label>
-                <Value>=Last(Fields!curso.Value, "dtsMatricula")</Value>
+                <Value>=Parameters!curso.Value</Value>
                 <Style>
                   <FontSize>11pt</FontSize>
                   <TextDecoration>Underline</TextDecoration>
@@ -202,8 +193,7 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Label>turno</Label>
-                <Value>=Last(Fields!turno.Value, "dtsMatricula")</Value>
+                <Value>=Parameters!turno.Value</Value>
                 <Style>
                   <FontSize>11pt</FontSize>
                   <TextDecoration>Underline</TextDecoration>
@@ -224,7 +214,7 @@
         </Paragraphs>
         <Top>2.59912cm</Top>
         <Height>2.76958cm</Height>
-        <Width>17.20766cm</Width>
+        <Width>16.91662cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -369,7 +359,7 @@
         </Paragraphs>
         <Top>5.36869cm</Top>
         <Height>4.52466cm</Height>
-        <Width>17.20766cm</Width>
+        <Width>16.91662cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -543,7 +533,7 @@
         </ReportItems>
         <KeepTogether>true</KeepTogether>
         <Top>9.89336cm</Top>
-        <Left>0.26141cm</Left>
+        <Left>0.3175cm</Left>
         <Height>6.27472cm</Height>
         <Width>16.65521cm</Width>
         <ZIndex>3</ZIndex>
@@ -704,13 +694,13 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>224.23958mm</Height>
+    <Height>205.18958mm</Height>
     <Style />
   </Body>
-  <Width>210mm</Width>
+  <Width>170.57709mm</Width>
   <Page>
     <PageHeader>
-      <Height>3.29916cm</Height>
+      <Height>2.54069cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -718,8 +708,7 @@
           <Source>Embedded</Source>
           <Value>relatoriologo</Value>
           <Sizing>FitProportional</Sizing>
-          <Top>0.58208cm</Top>
-          <Left>1.34938cm</Left>
+          <Left>0.71438cm</Left>
           <Height>2.54069cm</Height>
           <Width>15.30807cm</Width>
           <Style>
@@ -737,10 +726,10 @@
     </PageHeader>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
-    <LeftMargin>2cm</LeftMargin>
-    <RightMargin>2cm</RightMargin>
-    <TopMargin>2cm</TopMargin>
-    <BottomMargin>2cm</BottomMargin>
+    <LeftMargin>1.8cm</LeftMargin>
+    <RightMargin>1.8cm</RightMargin>
+    <TopMargin>1.8cm</TopMargin>
+    <BottomMargin>1.8cm</BottomMargin>
     <ColumnSpacing>0.13cm</ColumnSpacing>
     <Style />
   </Page>
@@ -761,220 +750,77 @@
       <rd:DataSourceID>68a89578-dd29-42ab-98f1-65886de69bcf</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="dtsMatricula">
-      <Query>
-        <DataSourceName>DBMatriculaDataSet</DataSourceName>
-        <CommandText>/* Local Query */</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="codigo">
-          <DataField>codigo</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="nome">
-          <DataField>nome</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="dtNasc">
-          <DataField>dtNasc</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="sexo">
-          <DataField>sexo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="nacionalidade">
-          <DataField>nacionalidade</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="naturalidade">
-          <DataField>naturalidade</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="cor">
-          <DataField>cor</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="estadoCivil">
-          <DataField>estadoCivil</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="estado">
-          <DataField>estado</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="religiao">
-          <DataField>religiao</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="tipoSanguineo">
-          <DataField>tipoSanguineo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="rh">
-          <DataField>rh</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="nomePai">
-          <DataField>nomePai</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="nomeMae">
-          <DataField>nomeMae</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="email">
-          <DataField>email</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="cep">
-          <DataField>cep</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="endereco">
-          <DataField>endereco</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="numero">
-          <DataField>numero</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="complemento">
-          <DataField>complemento</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="bairro">
-          <DataField>bairro</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="municipio">
-          <DataField>municipio</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="cpf">
-          <DataField>cpf</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="dataEmissaoCpf">
-          <DataField>dataEmissaoCpf</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="rg">
-          <DataField>rg</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="dataEmissaoRg">
-          <DataField>dataEmissaoRg</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="expedidoRG">
-          <DataField>expedidoRG</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="reservaMilitar">
-          <DataField>reservaMilitar</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="expedidoMilitar">
-          <DataField>expedidoMilitar</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="dataMilitar">
-          <DataField>dataMilitar</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="tituloEleitor">
-          <DataField>tituloEleitor</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="secao">
-          <DataField>secao</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="zona">
-          <DataField>zona</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="escola">
-          <DataField>escola</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="cidadeEscola">
-          <DataField>cidadeEscola</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="estadoEscola">
-          <DataField>estadoEscola</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="anoConclusao">
-          <DataField>anoConclusao</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="classificacao">
-          <DataField>classificacao</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="pontuacao">
-          <DataField>pontuacao</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="curso">
-          <DataField>curso</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="turno">
-          <DataField>turno</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="foto">
-          <DataField>foto</DataField>
-          <rd:TypeName>System.Byte[]</rd:TypeName>
-        </Field>
-      </Fields>
-      <rd:DataSetInfo>
-        <rd:DataSetName>DBMatriculaDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Amanda\Desktop\Nova pasta (2)\MatriculaFATEC-master\Matricula\DBMatriculaDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>Matriculas</rd:TableName>
-        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
-        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>MatriculasTableAdapter</rd:TableAdapterName>
-      </rd:DataSetInfo>
-    </DataSet>
-    <DataSet Name="dtsFone">
-      <Query>
-        <DataSourceName>DBMatriculaDataSet</DataSourceName>
-        <CommandText>/* Local Query */</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="codTelefone">
-          <DataField>codTelefone</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="telefone">
-          <DataField>telefone</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="codMatricula">
-          <DataField>codMatricula</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-      </Fields>
-      <rd:DataSetInfo>
-        <rd:DataSetName>DBMatriculaDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Amanda\Desktop\Nova pasta (2)\MatriculaFATEC-master\Matricula\DBMatriculaDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>Fixos</rd:TableName>
-        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
-        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>FixosTableAdapter</rd:TableAdapterName>
-      </rd:DataSetInfo>
-    </DataSet>
-  </DataSets>
   <ReportParameters>
-    <ReportParameter Name="Nome">
+    <ReportParameter Name="nome">
       <DataType>String</DataType>
       <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="classificacao">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="pontuacao">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="rg">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="endereco">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="cidade">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="cep">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="fone">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="curso">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="turno">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="bairro">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="numero">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
   </ReportParameters>

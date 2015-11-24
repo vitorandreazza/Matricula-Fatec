@@ -99,8 +99,11 @@ namespace Matricula
             this.religiãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.escolaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loginsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.imprimirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.GraficosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cPFToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.códigoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblAluno = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.txtAluno = new Syncfusion.Windows.Forms.Tools.MaskedEditBox();
             this.dgConsultas = new Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl();
@@ -125,7 +128,9 @@ namespace Matricula
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consultasToolStripMenuItem,
-            this.imprimirToolStripMenuItem});
+            this.GraficosToolStripMenuItem,
+            this.relatóriosToolStripMenuItem,
+            this.cadastrarLoginToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(598, 24);
@@ -135,8 +140,7 @@ namespace Matricula
             // consultasToolStripMenuItem
             // 
             this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.matriculasToolStripMenuItem,
-            this.loginsToolStripMenuItem});
+            this.matriculasToolStripMenuItem});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.consultasToolStripMenuItem.Text = "Consultas";
@@ -276,18 +280,42 @@ namespace Matricula
             this.cidadeToolStripMenuItem.Text = "Cidade";
             this.cidadeToolStripMenuItem.Click += new System.EventHandler(this.cidadeToolStripMenuItem_Click);
             // 
-            // loginsToolStripMenuItem
+            // GraficosToolStripMenuItem
             // 
-            this.loginsToolStripMenuItem.Name = "loginsToolStripMenuItem";
-            this.loginsToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
-            this.loginsToolStripMenuItem.Text = "Logins";
-            this.loginsToolStripMenuItem.Click += new System.EventHandler(this.loginsToolStripMenuItem_Click);
+            this.GraficosToolStripMenuItem.Name = "GraficosToolStripMenuItem";
+            this.GraficosToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.GraficosToolStripMenuItem.Text = "Gráficos";
+            this.GraficosToolStripMenuItem.Click += new System.EventHandler(this.GraficosToolStripMenuItem_Click);
             // 
-            // imprimirToolStripMenuItem
+            // relatóriosToolStripMenuItem
             // 
-            this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
-            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.imprimirToolStripMenuItem.Text = "Imprimir";
+            this.relatóriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cPFToolStripMenuItem1,
+            this.códigoToolStripMenuItem});
+            this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.relatóriosToolStripMenuItem.Text = "Relatórios";
+            // 
+            // cPFToolStripMenuItem1
+            // 
+            this.cPFToolStripMenuItem1.Name = "cPFToolStripMenuItem1";
+            this.cPFToolStripMenuItem1.Size = new System.Drawing.Size(113, 22);
+            this.cPFToolStripMenuItem1.Text = "CPF";
+            this.cPFToolStripMenuItem1.Click += new System.EventHandler(this.cPFToolStripMenuItem1_Click);
+            // 
+            // códigoToolStripMenuItem
+            // 
+            this.códigoToolStripMenuItem.Name = "códigoToolStripMenuItem";
+            this.códigoToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.códigoToolStripMenuItem.Text = "Código";
+            this.códigoToolStripMenuItem.Click += new System.EventHandler(this.códigoToolStripMenuItem_Click);
+            // 
+            // cadastrarLoginToolStripMenuItem
+            // 
+            this.cadastrarLoginToolStripMenuItem.Name = "cadastrarLoginToolStripMenuItem";
+            this.cadastrarLoginToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
+            this.cadastrarLoginToolStripMenuItem.Text = "Cadastrar Login";
+            this.cadastrarLoginToolStripMenuItem.Click += new System.EventHandler(this.cadastrarLoginToolStripMenuItem_Click);
             // 
             // lblAluno
             // 
@@ -316,6 +344,7 @@ namespace Matricula
             this.txtAluno.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
             this.txtAluno.TabIndex = 8;
             this.txtAluno.Visible = false;
+            this.txtAluno.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAluno_KeyDown);
             // 
             // dgConsultas
             // 
@@ -587,6 +616,7 @@ namespace Matricula
             this.dgConsultas.QueryCellStyleInfo += new Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventHandler(this.dgConsultas_QueryCellStyleInfo);
             this.dgConsultas.TableControlCurrentCellStartEditing += new Syncfusion.Windows.Forms.Grid.Grouping.GridTableControlCancelEventHandler(this.dgConsultas_TableControlCurrentCellStartEditing);
             this.dgConsultas.TableControlCurrentCellActivating += new Syncfusion.Windows.Forms.Grid.Grouping.GridTableControlCurrentCellActivatingEventHandler(this.dgConsultas_TableControlCurrentCellActivating);
+            this.dgConsultas.TableControlCellClick += new Syncfusion.Windows.Forms.Grid.Grouping.GridTableControlCellClickEventHandler(this.dgConsultas_TableControlCellClick);
             // 
             // bsMatriculas
             // 
@@ -746,6 +776,7 @@ namespace Matricula
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Activated += new System.EventHandler(this.MainForm_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -767,8 +798,7 @@ namespace Matricula
         private System.Windows.Forms.ToolStripMenuItem matriculasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem todosAlunosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alunoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loginsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem imprimirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem GraficosToolStripMenuItem;
         private Syncfusion.Windows.Forms.Tools.AutoLabel lblAluno;
         private System.Windows.Forms.ToolStripMenuItem nomeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cPFToolStripMenuItem;
@@ -795,6 +825,10 @@ namespace Matricula
         private Syncfusion.Windows.Forms.ButtonAdv btnPesquisa;
         private System.Windows.Forms.BindingSource bsLogins;
         private DSMatriculaTableAdapters.LoginsTableAdapter loginsTableAdapter;
+        private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cPFToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem códigoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarLoginToolStripMenuItem;
 
 
 

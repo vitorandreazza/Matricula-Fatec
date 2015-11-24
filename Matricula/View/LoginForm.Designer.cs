@@ -93,7 +93,7 @@ namespace Matricula
             // 
             // txtLogin
             // 
-            this.txtLogin.BeforeTouchSize = new System.Drawing.Size(220, 20);
+            this.txtLogin.BeforeTouchSize = new System.Drawing.Size(526, 20);
             this.txtLogin.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLogin.Enabled = false;
             this.txtLogin.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
@@ -106,7 +106,7 @@ namespace Matricula
             // 
             // txtSenha
             // 
-            this.txtSenha.BeforeTouchSize = new System.Drawing.Size(220, 20);
+            this.txtSenha.BeforeTouchSize = new System.Drawing.Size(526, 20);
             this.txtSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSenha.Enabled = false;
             this.txtSenha.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
@@ -117,6 +117,7 @@ namespace Matricula
             this.txtSenha.Size = new System.Drawing.Size(220, 20);
             this.txtSenha.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
             this.txtSenha.TabIndex = 5;
+            this.txtSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSenha_KeyDown);
             // 
             // lblSenha
             // 

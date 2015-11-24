@@ -23,6 +23,8 @@ using Matricula.View;
 using Matricula.Controller;
 
 
+
+
 namespace Matricula
 {
     public partial class MainForm : Syncfusion.Windows.Forms.MetroForm
@@ -229,11 +231,21 @@ namespace Matricula
             }
             else if (lblAluno.Text.Equals("Cidade"))
             {
-                bsMatriculas.DataSource = matriculaController.PesquisaAluno(Mat, "cidade").Tables[0];
+                bsMatriculas.DataSource = matriculaController.PesquisaAluno(Mat, "municipio").Tables[0];
             }
             else if (lblAluno.Text.Equals("Escola"))
             {
                 bsMatriculas.DataSource = matriculaController.PesquisaAluno(Mat, "escola").Tables[0];
+            }
+            else if (lblAluno.Text.Equals("Rcpf"))
+            {
+                RelatorioForm r = new RelatorioForm(Mat, 0, true);
+                r.Show();
+            }
+            else if(lblAluno.Text.Equals("Rcodigo"))
+            {
+                RelatorioForm r = new RelatorioForm(null,Convert.ToInt32(Mat), true);
+                r.Show();
             }
             dgConsultas.DataSource = bsMatriculas;
             txtAluno.Clear();
@@ -252,8 +264,7 @@ namespace Matricula
             {
                 int cod = Convert.ToInt32(dgConsultas.Table.SelectedRecords[0].Record["codigo"]);
                 matriculaController.deletarMatricula(cod);
-                bsMatriculas.DataSource = matriculaController.PesquisaTodosAlunos().Tables[0];
-                dgConsultas.DataSource = bsMatriculas;
+                atualizarGrid();
             }
             catch (Exception ex)
             {
@@ -261,61 +272,126 @@ namespace Matricula
             }
         }
 
+        private void atualizarGrid()
+        {
+            bsMatriculas.DataSource = matriculaController.PesquisaTodosAlunos().Tables[0];
+            dgConsultas.DataSource = bsMatriculas;
+        }
+
         private void btnNovo_Click(object sender, EventArgs e)
         {
-            new MatriculaForm().ShowDialog();
+            new MatriculaForm(true).ShowDialog();
+            return;
         }
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            int cod = Convert.ToInt32(dgConsultas.Table.SelectedRecords[0].Record["codigo"]);
-            DataTable dt = new DataTable();
-            dt = matriculaController.pesquisarAlunoEsp(cod).Tables[0];
+            try
+            {
+                int cod = Convert.ToInt32(dgConsultas.Table.SelectedRecords[0].Record["codigo"]);
+                DataTable dt = new DataTable();
+                dt = matriculaController.pesquisarAlunoEsp(cod).Tables[0];
 
-            MatriculaModel matricula = new MatriculaModel();
-            matricula.Nome = dt.Rows[0]["nome"].ToString();
-            matricula.Nascimento = dt.Rows[0]["dtNasc"].ToString();
-            matricula.Sexo = Convert.ToChar(dt.Rows[0]["sexo"]);
-            matricula.Nacionalidade = dt.Rows[0]["nacionalidade"].ToString();
-            matricula.Naturalidade = dt.Rows[0]["naturalidade"].ToString();
-            matricula.EstadoCivil = dt.Rows[0]["estadoCivil"].ToString();
-            matricula.Estado = dt.Rows[0]["estado"].ToString();
-            matricula.Religiao = dt.Rows[0]["religiao"].ToString();
-            matricula.TpSanguineo = dt.Rows[0]["tipoSanguineo"].ToString();
-            matricula.Rh = dt.Rows[0]["rh"].ToString();
-            matricula.NomePai = dt.Rows[0]["nomePai"].ToString();
-            matricula.NomeMae = dt.Rows[0]["nomeMae"].ToString();
-            matricula.Email = dt.Rows[0]["email"].ToString();
-            matricula.Cep = dt.Rows[0]["cep"].ToString();
-            matricula.Endreco = dt.Rows[0]["endereco"].ToString();
-            matricula.Numero = dt.Rows[0]["numero"].ToString();
-            matricula.Complemento = dt.Rows[0]["complemento"].ToString();
-            matricula.Bairro = dt.Rows[0]["bairro"].ToString();
-            matricula.Municipio = dt.Rows[0]["municipio"].ToString();
-            matricula.Cpf = dt.Rows[0]["cpf"].ToString();
-            matricula.EmissaoCpf = dt.Rows[0]["dataEmissaoCpf"].ToString();
-            matricula.Rg = dt.Rows[0]["rg"].ToString();
-            matricula.EmissaoRg = dt.Rows[0]["dataEmissaoRg"].ToString();
-            matricula.Titulo = dt.Rows[0]["tituloEleitor"].ToString();
-            matricula.SecaoTitulo = dt.Rows[0]["secao"].ToString();
-            matricula.ZonaTitulo = dt.Rows[0]["zona"].ToString();
-            matricula.Escola = dt.Rows[0]["escola"].ToString();
-            matricula.CidadeEscola = dt.Rows[0]["cidadeEscola"].ToString();
-            matricula.EstadoEscola = dt.Rows[0]["estadoEscola"].ToString();
-            matricula.ConclusaoEscola = dt.Rows[0]["anoConclusao"].ToString();
-            matricula.Classificacao = dt.Rows[0]["classificacao"].ToString();
-            matricula.Pontuacao = dt.Rows[0]["pontuacao"].ToString();
-            matricula.Curso = dt.Rows[0]["curso"].ToString();
-            matricula.Turno = dt.Rows[0]["turno"].ToString();
-            matricula.Foto = (byte[]) dt.Rows[0]["foto"];
-            matricula.ExpedidoRG = dt.Rows[0]["expedidoRG"].ToString();
-            matricula.Cor = dt.Rows[0]["cor"].ToString();
-            matricula.ReservaMilitar = dt.Rows[0]["reservaMilitar"].ToString();
-            matricula.DataMilitar = dt.Rows[0]["dataMilitar"].ToString();
-            matricula.ExpedidoMilitar = dt.Rows[0]["expedidoMilitar"].ToString();
+                MatriculaModel matricula = new MatriculaModel();
+                matricula.Nome = dt.Rows[0]["nome"].ToString();
+                matricula.Nascimento = dt.Rows[0]["dtNasc"].ToString();
+                matricula.Sexo = Convert.ToChar(dt.Rows[0]["sexo"]);
+                matricula.Nacionalidade = dt.Rows[0]["nacionalidade"].ToString();
+                matricula.Naturalidade = dt.Rows[0]["naturalidade"].ToString();
+                matricula.EstadoCivil = dt.Rows[0]["estadoCivil"].ToString();
+                matricula.Estado = dt.Rows[0]["estado"].ToString();
+                matricula.Religiao = dt.Rows[0]["religiao"].ToString();
+                matricula.TpSanguineo = dt.Rows[0]["tipoSanguineo"].ToString();
+                matricula.Rh = dt.Rows[0]["rh"].ToString();
+                matricula.NomePai = dt.Rows[0]["nomePai"].ToString();
+                matricula.NomeMae = dt.Rows[0]["nomeMae"].ToString();
+                matricula.Email = dt.Rows[0]["email"].ToString();
+                matricula.Cep = dt.Rows[0]["cep"].ToString();
+                matricula.Endreco = dt.Rows[0]["endereco"].ToString();
+                matricula.Numero = dt.Rows[0]["numero"].ToString();
+                matricula.Complemento = dt.Rows[0]["complemento"].ToString();
+                matricula.Bairro = dt.Rows[0]["bairro"].ToString();
+                matricula.Municipio = dt.Rows[0]["municipio"].ToString();
+                matricula.Cpf = dt.Rows[0]["cpf"].ToString();
+                matricula.EmissaoCpf = dt.Rows[0]["dataEmissaoCpf"].ToString();
+                matricula.Rg = dt.Rows[0]["rg"].ToString();
+                matricula.EmissaoRg = dt.Rows[0]["dataEmissaoRg"].ToString();
+                matricula.Titulo = dt.Rows[0]["tituloEleitor"].ToString();
+                matricula.SecaoTitulo = dt.Rows[0]["secao"].ToString();
+                matricula.ZonaTitulo = dt.Rows[0]["zona"].ToString();
+                matricula.Escola = dt.Rows[0]["escola"].ToString();
+                matricula.CidadeEscola = dt.Rows[0]["cidadeEscola"].ToString();
+                matricula.EstadoEscola = dt.Rows[0]["estadoEscola"].ToString();
+                matricula.ConclusaoEscola = dt.Rows[0]["anoConclusao"].ToString();
+                matricula.Classificacao = dt.Rows[0]["classificacao"].ToString();
+                matricula.Pontuacao = dt.Rows[0]["pontuacao"].ToString();
+                matricula.Curso = dt.Rows[0]["curso"].ToString();
+                matricula.Turno = dt.Rows[0]["turno"].ToString();
+                matricula.Foto = (byte[]) dt.Rows[0]["foto"];
+                matricula.ExpedidoRG = dt.Rows[0]["expedidoRG"].ToString();
+                matricula.Cor = dt.Rows[0]["cor"].ToString();
+                matricula.ReservaMilitar = dt.Rows[0]["reservaMilitar"].ToString();
+                matricula.DataMilitar = dt.Rows[0]["dataMilitar"].ToString();
+                matricula.ExpedidoMilitar = dt.Rows[0]["expedidoMilitar"].ToString();
+                MatriculaForm mat = new MatriculaForm(cod,matricula);
+                mat.Show();
+                
+            }
+            catch
+            {
+                MessageBoxAdv.Show("Não foi possível alterar!");
+            }
 
-            MatriculaForm mf = new MatriculaForm(matricula);
-            mf.ShowDialog();
+        }
+
+        private void dgConsultas_TableControlCellClick(object sender, Syncfusion.Windows.Forms.Grid.Grouping.GridTableControlCellClickEventArgs e)
+        {
+            
+        }
+
+        private void loginsToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+                        
+        }
+
+        private void GraficosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GraficoForm gr = new GraficoForm();
+            gr.ShowDialog();
+        }
+
+        private void cPFToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            txtAluno.Visible = true;
+            btnPesquisa.Visible = true;
+            txtAluno.Clear();
+            lblAluno.Text = "Rcpf";
+        }
+
+        private void códigoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtAluno.Visible = true;
+            btnPesquisa.Visible = true;
+            txtAluno.Clear();
+            lblAluno.Text = "Rcodigo";
+        }
+
+        private void cadastrarLoginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new CadastroLoginForm().Show();
+        }
+
+        private void txtAluno_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                btnPesquisa_Click(btnPesquisa, new EventArgs());
+            }
+        }
+
+        private void MainForm_Activated(object sender, EventArgs e)
+        {
+            atualizarGrid();
         }
     }     
 }

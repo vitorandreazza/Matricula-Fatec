@@ -16,6 +16,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
 using System.Drawing.Text;
+using Microsoft.Reporting.WinForms;
 //Imports bibliotecas
 using Syncfusion.Windows.Forms;
 using Syncfusion.Windows.Forms.Tools;
@@ -32,18 +33,24 @@ namespace Matricula
     {
         private MatriculaController matriculaController = new MatriculaController();
         private TelefonesController telefoneController = new TelefonesController();
-        private bool alteracao = false;
 
-        private int countC = 0, countR = 0;
+        private int countC = 0, countR = 0, codigo;
         private MaskedEditBox[] mtxtRArray = new MaskedEditBox[3], mtxtCArray = new MaskedEditBox[3];
         private VideoCaptureDevice videoDevice;
+        bool alterar=false, novo=false;
 
         public MatriculaForm()
         {
             InitializeComponent();
         }
 
-        public MatriculaForm(MatriculaModel matriculaAlterar)
+        public MatriculaForm(bool novo)
+        {
+            InitializeComponent();
+            this.novo = novo;
+        }
+
+        public MatriculaForm(int codigo, MatriculaModel matriculaAlterar)
         {
             InitializeComponent();
 
@@ -55,40 +62,48 @@ namespace Matricula
             cbEstadoCivil.SelectedIndex = cbEstadoCivil.FindStringExact(matriculaAlterar.EstadoCivil);
             cbEstado.SelectedIndex = cbEstado.FindStringExact(matriculaAlterar.Estado);
             cbReligiao.SelectedIndex = cbReligiao.FindStringExact(matriculaAlterar.Religiao);
-            //terminar
-            //matriculaAlterar.TpSanguineo = cbSanguineo.Text;
-            //matriculaAlterar.Rh = cbRH.Text;
-            //matriculaAlterar.NomePai = txtNomePai.Text;
-            //matriculaAlterar.NomeMae = txtNomeMae.Text;
-            //matriculaAlterar.Email = txtEmail.Text;
-            //matriculaAlterar.Cep = replaceAll(mtxtCep.Text);
-            //matriculaAlterar.Endreco = txtEndereco.Text;
-            //matriculaAlterar.Numero = txtNumero.Text;
-            //matriculaAlterar.Complemento = txtComplemento.Text;
-            //matriculaAlterar.Bairro = txtBairro.Text;
-            //matriculaAlterar.Municipio = txtMunicipio.Text;
-            //matriculaAlterar.Cpf = replaceAll(mtxtCpf.Text);
-            //matriculaAlterar.EmissaoCpf = formatarData(mtxtEmissaoCpf.Text);
-            //matriculaAlterar.Rg = replaceAll(mtxtRg.Text);
-            //matriculaAlterar.EmissaoRg = formatarData(mtxtEmissaoRg.Text);
-            //matriculaAlterar.Titulo = txtTitulo.Text;
-            //matriculaAlterar.SecaoTitulo = txtSecaoTitulo.Text;
-            //matriculaAlterar.ZonaTitulo = txtZonaTitulo.Text;
-            //matriculaAlterar.Escola = txtEscola.Text;
-            //matriculaAlterar.CidadeEscola = txtCidadeEscola.Text;
-            //matriculaAlterar.EstadoEscola = cbEstadoEscola.Text;
-            //matriculaAlterar.ConclusaoEscola = replaceAll(mtxtConclusaoEscola.Text) == "" ? "" : formatarData("01/01/" + mtxtConclusaoEscola.Text);
-            //matriculaAlterar.Classificacao = txtClassificacao.Text;
-            //matriculaAlterar.Pontuacao = txtPontuacao.Text;
-            //matriculaAlterar.Curso = cbCurso.Text;
-            //matriculaAlterar.Turno = cbTurno.Text;
-            ////matriculaAlterar.Foto = imgArray;
-            //matriculaAlterar.ExpedidoRG = txtExpedidoRg.Text;
-            //matriculaAlterar.Cor = txtCor.Text;
-            //matriculaAlterar.ReservaMilitar = txtMilitar.Text;
-            //matriculaAlterar.DataMilitar = formatarData(txtDataMilitar.Text);
-            //matriculaAlterar.ExpedidoMilitar = txtExpMilitar.Text;
+            cbSanguineo.SelectedIndex=cbSanguineo.FindStringExact(matriculaAlterar.TpSanguineo);
+            cbRH.SelectedIndex = cbRH.FindStringExact(matriculaAlterar.Rh);
+            txtNomePai.Text = matriculaAlterar.NomePai;
+            txtNomeMae.Text = matriculaAlterar.NomeMae;
+            txtEmail.Text = matriculaAlterar.Email;
+            mtxtCep.Text = matriculaAlterar.Cep;
+            txtEndereco.Text = matriculaAlterar.Endreco;
+            txtNumero.Text = matriculaAlterar.Numero;
+            txtComplemento.Text = matriculaAlterar.Complemento;
+            txtBairro.Text = matriculaAlterar.Bairro;
+            txtMunicipio.Text = matriculaAlterar.Municipio;
+            mtxtCpf.Text = matriculaAlterar.Cpf;
+            mtxtEmissaoCpf.Text = matriculaAlterar.EmissaoCpf;
+            mtxtRg.Text = matriculaAlterar.Rg;
+            mtxtEmissaoRg.Text = matriculaAlterar.EmissaoRg;
+            txtTitulo.Text = matriculaAlterar.Titulo;
+            txtSecaoTitulo.Text = matriculaAlterar.SecaoTitulo;
+            txtZonaTitulo.Text = matriculaAlterar.ZonaTitulo;
+            txtEscola.Text = matriculaAlterar.Escola;
+            txtCidadeEscola.Text = matriculaAlterar.CidadeEscola;
+            cbEstadoEscola.SelectedIndex = cbEstadoEscola.FindStringExact(matriculaAlterar.EstadoEscola);
+            mtxtConclusaoEscola.Text = matriculaAlterar.ConclusaoEscola;
+            txtClassificacao.Text = matriculaAlterar.Classificacao;
+            txtPontuacao.Text = matriculaAlterar.Pontuacao;
+            cbCurso.SelectedIndex = cbCurso.FindStringExact(matriculaAlterar.Curso);
+            cbTurno.SelectedIndex = cbTurno.FindStringExact(matriculaAlterar.Turno);
+            txtExpedidoRg.Text = matriculaAlterar.ExpedidoRG;
+            txtCor.Text = matriculaAlterar.Cor;
+            txtMilitar.Text = matriculaAlterar.ReservaMilitar;
+            txtDataMilitar.Text = matriculaAlterar.DataMilitar;
+            txtExpMilitar.Text = matriculaAlterar.ExpedidoMilitar;
+            if(matriculaAlterar.Foto.Length > 0) 
+            {
+                MemoryStream ms = new MemoryStream(matriculaAlterar.Foto);
+                Image foto1 = Image.FromStream(ms);
+                ptFotoPes.Image = foto1;
+           }
+            this.codigo = codigo;
+            alterar = true;
         }
+
+
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
@@ -99,12 +114,7 @@ namespace Matricula
                 MessageBoxAdv.Show(this, "O CPF é inválido", "Erro");
                 return;
             }
-            //terminar
-            if(alteracao)
-            {
-
-            }
-
+ 
             if (MessageBoxAdv.Show(this, "Deseja realmente confirmar a matrícula?", "Confirmação", MessageBoxButtons.YesNo) == DialogResult.No)
             {
                 return;
@@ -135,49 +145,60 @@ namespace Matricula
                 {
                     matricula.Sexo = 'F';
                 }
-
-                matricula.Nome = txtNome.Text;
-                matricula.Nascimento = formatarData(mtxtNascimento.Text);
-                matricula.Nacionalidade = txtNacionalidade.Text;
-                matricula.Naturalidade = txtNaturalidade.Text;
-                matricula.EstadoCivil = cbEstadoCivil.Text;
-                matricula.Estado = cbEstado.Text;
-                matricula.Religiao = cbReligiao.Text;
-                matricula.TpSanguineo = cbSanguineo.Text;
-                matricula.Rh = cbRH.Text;
-                matricula.NomePai = txtNomePai.Text;
-                matricula.NomeMae = txtNomeMae.Text;
-                matricula.Email = txtEmail.Text;
-                matricula.Cep = replaceAll(mtxtCep.Text);
-                matricula.Endreco = txtEndereco.Text;
-                matricula.Numero = txtNumero.Text;
-                matricula.Complemento = txtComplemento.Text;
-                matricula.Bairro = txtBairro.Text;
-                matricula.Municipio = txtMunicipio.Text;
-                matricula.Cpf = replaceAll(mtxtCpf.Text);
-                matricula.EmissaoCpf = formatarData(mtxtEmissaoCpf.Text);
-                matricula.Rg = replaceAll(mtxtRg.Text);
-                matricula.EmissaoRg = formatarData(mtxtEmissaoRg.Text);
-                matricula.Titulo = txtTitulo.Text;
-                matricula.SecaoTitulo = txtSecaoTitulo.Text;
-                matricula.ZonaTitulo = txtZonaTitulo.Text;
-                matricula.Escola = txtEscola.Text;
-                matricula.CidadeEscola = txtCidadeEscola.Text;
-                matricula.EstadoEscola = cbEstadoEscola.Text;
-                matricula.ConclusaoEscola = replaceAll(mtxtConclusaoEscola.Text) == "" ? "" : formatarData("01/01/" + mtxtConclusaoEscola.Text);
-                matricula.Classificacao = txtClassificacao.Text;
-                matricula.Pontuacao = txtPontuacao.Text;
-                matricula.Curso = cbCurso.Text;
-                matricula.Turno = cbTurno.Text;
-                matricula.Foto = imgArray;
-                matricula.ExpedidoRG = txtExpedidoRg.Text;
-                matricula.Cor = txtCor.Text;
-                matricula.ReservaMilitar = txtMilitar.Text;
-                matricula.DataMilitar = formatarData(txtDataMilitar.Text);
-                matricula.ExpedidoMilitar = txtExpMilitar.Text;
-
-                matriculaController.inserir(matricula);
-                
+    
+                    matricula.Nome = txtNome.Text;
+                    if(mtxtNascimento.Text != null)
+                    matricula.Nascimento = formatarData(mtxtNascimento.Text);
+                    matricula.Nacionalidade = txtNacionalidade.Text;
+                    matricula.Naturalidade = txtNaturalidade.Text;
+                    matricula.EstadoCivil = cbEstadoCivil.Text;
+                    matricula.Estado = cbEstado.Text;
+                    matricula.Religiao = cbReligiao.Text;
+                    matricula.TpSanguineo = cbSanguineo.Text;
+                    matricula.Rh = cbRH.Text;
+                    matricula.NomePai = txtNomePai.Text;
+                    matricula.NomeMae = txtNomeMae.Text;
+                    matricula.Email = txtEmail.Text;
+                    matricula.Cep = replaceAll(mtxtCep.Text);
+                    matricula.Endreco = txtEndereco.Text;
+                    matricula.Numero = txtNumero.Text;
+                    matricula.Complemento = txtComplemento.Text;
+                    matricula.Bairro = txtBairro.Text;
+                    matricula.Municipio = txtMunicipio.Text;
+                    matricula.Cpf = replaceAll(mtxtCpf.Text);
+                    if (mtxtEmissaoCpf.Text != null)
+                    matricula.EmissaoCpf = formatarData(mtxtEmissaoCpf.Text);
+                    matricula.Rg = replaceAll(mtxtRg.Text);
+                    if (mtxtEmissaoRg.Text != null)
+                    matricula.EmissaoRg = formatarData(mtxtEmissaoRg.Text);
+                    matricula.Titulo = txtTitulo.Text;
+                    matricula.SecaoTitulo = txtSecaoTitulo.Text;
+                    matricula.ZonaTitulo = txtZonaTitulo.Text;
+                    matricula.Escola = txtEscola.Text;
+                    matricula.CidadeEscola = txtCidadeEscola.Text;
+                    matricula.EstadoEscola = cbEstadoEscola.Text;
+                    matricula.ConclusaoEscola = mtxtConclusaoEscola.Text;
+                    matricula.Classificacao = txtClassificacao.Text;
+                    matricula.Pontuacao = txtPontuacao.Text;
+                    matricula.Curso = cbCurso.Text;
+                    matricula.Turno = cbTurno.Text;
+                    matricula.Foto = imgArray;
+                    matricula.ExpedidoRG = txtExpedidoRg.Text;
+                    matricula.Cor = txtCor.Text;
+                    matricula.ReservaMilitar = txtMilitar.Text;
+                    if (txtDataMilitar.Text != null)
+                    matricula.DataMilitar = formatarData(txtDataMilitar.Text);
+                    matricula.ExpedidoMilitar = txtExpMilitar.Text;
+    
+                    if(alterar)
+                    {
+                        matriculaController.alterarMatricula(codigo, matricula);
+                    }
+                    else
+                    {
+                        matriculaController.inserir(matricula);
+                    }
+                    
                 //Faz os inserts de acordo com a quantidade de telefones informados
                 if (replaceAll(mtxtRArray[0].Text) != "")
                 {
@@ -196,11 +217,32 @@ namespace Matricula
                         telefoneController.inserirCelular(celular, matricula.CodMatricula);
                     }    
                 }
+
+                if(alterar == false && novo == false)
+                {
+                    int codigo = matricula.CodMatricula;
+                    relatorio(codigo,null);
+
+                }
+                else
+                {
+                    this.Close();
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error:" + ex);
             }
+
+        }
+
+        private void relatorio(int codigo, string cpf)
+        {
+            string fixo = replaceAll(mtxtRArray[0].Text);
+            string celular = replaceAll(mtxtCArray[0].Text);
+            this.Hide();
+            RelatorioForm r = new RelatorioForm(null,codigo, false);
+            r.ShowDialog();
         }
 
         private string formatarData(string data)
@@ -226,9 +268,9 @@ namespace Matricula
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            if (MessageBoxAdv.Show(this, "Deseja realmente cancelar a matrícula?", "Cancelamento", MessageBoxButtons.YesNo) == DialogResult.No)
+            if (MessageBoxAdv.Show(this, "Deseja realmente cancelar a matrícula?", "Cancelamento", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                return;
+                Application.Exit();
             }
         }
 
@@ -322,7 +364,7 @@ namespace Matricula
                     }
 
                     //Encontra a menor resolução de foto disponivel que seja >= 120p de altura
-                    int snapMenor = videoDevice.SnapshotCapabilities[0].FrameSize.Height;
+                    int snapMenor = videoDevice.VideoCapabilities[0].FrameSize.Height;
                     int snapIndice = 0;
                     for (int i = 0; i < videoDevice.SnapshotCapabilities.Length; i++)
                     {
@@ -339,7 +381,7 @@ namespace Matricula
                     //define a resolução do video
                     videoDevice.VideoResolution = videoDevice.VideoCapabilities[videoIndice];
                     //define a resolução da foto
-                    videoDevice.SnapshotResolution = videoDevice.SnapshotCapabilities[snapIndice];
+                    videoDevice.SnapshotResolution = videoDevice.VideoCapabilities[snapIndice];
                     //atualiza os frames no picturebox
                     videoDevice.NewFrame += (s, en) => ptFotoPes.Image = (Bitmap)en.Frame.Clone();
                     videoDevice.Start();
@@ -397,7 +439,18 @@ namespace Matricula
             return bmp;
         }
 
-        private void cbTurno_Click(object sender, EventArgs e)
+        private void MatriculaForm_Load(object sender, EventArgs e)
+        {
+            //Aparencia do messagebox            
+            MessageBoxApparence.getMessageBoxApparence();
+            //Coloca os primeiros textbox de telefone
+            btnMaisR_Click(btnMaisR, new EventArgs());
+            btnMainC_Click(btnMainC, new EventArgs());
+
+            
+        }
+
+        private void cbCurso_SelectedValueChanged(object sender, EventArgs e)
         {
             if (cbCurso.Text.Equals("Análise e Desenvolvimento de Sistemas"))
             {
@@ -426,45 +479,17 @@ namespace Matricula
             }
         }
 
-        private void MatriculaForm_Load(object sender, EventArgs e)
+        private void MatriculaForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Aparencia do messagebox            
-            MessageBoxApparence.getMessageBoxApparence();
-            //Coloca os primeiros textbox de telefone
-            btnMaisR_Click(btnMaisR, new EventArgs());
-            btnMainC_Click(btnMainC, new EventArgs());
-
-            
+            if (alterar == false && novo == false)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                //Form main = Application.OpenForms["MainForm"];
+                //main.
+            }
         }
-
-        //private void MatriculaForm_Load(object sender, EventArgs e)
-        //{
-        //    PrivateFontCollection privateFonts = new PrivateFontCollection();
-        //    privateFonts.AddFontFile(@"C:\Users\Vitor\Documents\GitHub\MatriculaFATEC\Matricula\Recursos\Font\Nexa.ttf");
-
-        //    List<Control> allControls = GetAllControls(this);
-        //    allControls.ForEach(k => k.Font = new Font(privateFonts.Families[0], 8.25f, FontStyle.Bold));
-            
-        //    //autoLabel2.Font = new Font(privateFonts.Families[0], 9f);
-        //}
-
-        //private List<Control> GetAllControls(Control container, List<Control> list)
-        //{
-        //    foreach (Control c in container.Controls)
-        //    {
-
-        //        if (c.Controls.Count > 0)
-        //            list = GetAllControls(c, list);
-        //        else
-        //            list.Add(c);
-        //    }
-
-        //    return list;
-        //}
-
-        //private List<Control> GetAllControls(Control container)
-        //{
-        //    return GetAllControls(container, new List<Control>());
-        //}
     }
 }

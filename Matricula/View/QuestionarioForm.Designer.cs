@@ -2911,7 +2911,7 @@ namespace Matricula.View
             this.autoLabel17.Name = "autoLabel17";
             this.autoLabel17.Size = new System.Drawing.Size(256, 31);
             this.autoLabel17.TabIndex = 20;
-            this.autoLabel17.Text = "18 - Qual a sua participação na vida econômica da sua famália?";
+            this.autoLabel17.Text = "18 - Qual a sua participação na vida econômica da sua família?";
             // 
             // rb181
             // 
@@ -3241,6 +3241,7 @@ namespace Matricula.View
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.QuestionarioForm_FormClosing);
             this.Load += new System.EventHandler(this.QuestionarioForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabControl)).EndInit();
             this.tabControl.ResumeLayout(false);

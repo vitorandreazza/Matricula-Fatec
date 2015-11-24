@@ -74,5 +74,29 @@ namespace Matricula.Controller
             return dt;
         }
 
+        public void cadastrarLogin(LoginModel login)
+        {
+            try
+            {
+                conn.Open();
+                string consulta = "INSERT INTO Logins(Login,Senha) VALUES (@login,@senha)";
+                SqlCommand novo = new SqlCommand(consulta, conn);
+                novo.Parameters.AddWithValue("@login", login.Login);
+                novo.Parameters.AddWithValue("@senha", login.Senha);
+                novo.ExecuteNonQuery();
+            }
+            catch (SqlException sqlEx)
+            {
+                MessageBox.Show("SQL Erro: " + sqlEx);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }

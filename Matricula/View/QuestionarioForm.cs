@@ -106,6 +106,9 @@ namespace Matricula.View
             {
                 MessageBox.Show("Erro: " + ex);
             }
+
+            MessageBoxAdv.Show(this, "Matrícula efetuada, obrigado!", "Matrícula", MessageBoxButtons.OK);
+            Application.Exit();
         }
 
         public IEnumerable<Control> GetAll(Control control, Type type)
@@ -113,6 +116,11 @@ namespace Matricula.View
             var controls = control.Controls.Cast<Control>();
 
             return controls.SelectMany(ctrl => GetAll(ctrl, type)).Concat(controls).Where(c => c.GetType() == type);
+        }
+
+        private void QuestionarioForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

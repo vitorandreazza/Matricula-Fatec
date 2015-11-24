@@ -78,5 +78,13 @@ namespace Matricula
                 MessageBox.Show("Error:" + ex);
             }   
         }
+
+        private void txtSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                btnEntrar_Click(btnEntrar, new EventArgs());
+            }
+        }
     }
 }
