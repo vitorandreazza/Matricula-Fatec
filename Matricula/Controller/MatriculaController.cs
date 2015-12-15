@@ -22,18 +22,17 @@ namespace Matricula.Controller
             "(nome, dtNasc, sexo, nacionalidade, naturalidade, cor, estadoCivil, estado, religiao," +
             "tipoSanguineo, rh, nomePai, nomeMae, email, cep, endereco, numero, complemento," +
             "bairro, municipio, cpf, dataEmissaoCpf, rg, dataEmissaoRg, expedidoRG, reservaMilitar, expedidoMilitar, dataMilitar, tituloEleitor, secao, zona, escola," +
-            "cidadeEscola, estadoEscola, anoConclusao, classificacao, pontuacao, curso, turno, foto)" +
+            "cidadeEscola, estadoEscola, anoConclusao, classificacao, pontuacao, curso, turno, foto, dataMatricula)" +
             "VALUES" +
             "(@nome, @dtNasc, @sexo, @nacionalidade, @naturalidade, @Cor,@estadoCivil, @estado, @religiao," +
             "@tipoSanguineo, @rh, @nomePai, @nomeMae, @email, @cep, @endereco, @numero, @complemento," +
             "@bairro, @municipio, @cpf, @dataEmissaoCpf, @rg, @dataEmissaoRg, @ExpedidoRg, @reservista, @ExpReservista, @dataReservista, @tituloEleitor, @secao, @zona, @escola," +
-            "@cidadeEscola, @estadoEscola, @anoConclusao, @classificacao, @pontuacao, @curso, @turno, @foto); SELECT SCOPE_IDENTITY()";
+            "@cidadeEscola, @estadoEscola, @anoConclusao, @classificacao, @pontuacao, @curso, @turno, @foto, @dataMatricula); SELECT SCOPE_IDENTITY()";
             //SELECT SCOPE_IDENTITY() -> Retorna o último valor de identidade inserido em uma coluna de identidade no mesmo escopo
 
             try
             {
                 SqlCommand cmdInsertMatricula = new SqlCommand(insertMatricula, conn);
-
                 cmdInsertMatricula.Parameters.AddWithValue("@nome", matricula.Nome);
                 cmdInsertMatricula.Parameters.AddWithValue("@dtNasc", matricula.Nascimento);
                 cmdInsertMatricula.Parameters.AddWithValue("@sexo", matricula.Sexo);
@@ -74,6 +73,7 @@ namespace Matricula.Controller
                 cmdInsertMatricula.Parameters.AddWithValue("@reservista", matricula.ReservaMilitar);
                 cmdInsertMatricula.Parameters.AddWithValue("@dataReservista", matricula.DataMilitar);
                 cmdInsertMatricula.Parameters.AddWithValue("@ExpReservista", matricula.ExpedidoMilitar);
+                cmdInsertMatricula.Parameters.AddWithValue("@dataMatricula", matricula.DataMatricula);
                 conn.Open();
                 //Armazena a ultima chave primaria inserida
                 matricula.CodMatricula = Convert.ToInt32(cmdInsertMatricula.ExecuteScalar());
@@ -389,7 +389,7 @@ namespace Matricula.Controller
                         listaDados.Add(new ReportParameter("dataNasc", Convert.ToDateTime(reader["dtNasc"].ToString()).ToString("dd/MM/yyyy")));
                         if (reader["sexo"].ToString() == "M") { listaDados.Add(new ReportParameter("sexo", "Masculino")); }
                         else if (reader["sexo"].ToString() == "F") { listaDados.Add(new ReportParameter("sexo", "Feminino")); }
-                        listaDados.Add(new ReportParameter("estadoCivil", reader["nome"].ToString()));
+                        listaDados.Add(new ReportParameter("estadoCivil", reader["estadoCivil"].ToString()));
                         listaDados.Add(new ReportParameter("naturalidade", reader["naturalidade"].ToString()));
                         listaDados.Add(new ReportParameter("estado", reader["estado"].ToString()));
                         listaDados.Add(new ReportParameter("nacionalidade", reader["nacionalidade"].ToString()));

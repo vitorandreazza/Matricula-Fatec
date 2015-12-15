@@ -35,51 +35,24 @@ namespace Matricula
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             Syncfusion.Windows.Forms.Chart.ChartSeries chartSeries1 = new Syncfusion.Windows.Forms.Chart.ChartSeries();
             Syncfusion.Windows.Forms.Chart.ChartCustomShapeInfo chartCustomShapeInfo1 = new Syncfusion.Windows.Forms.Chart.ChartCustomShapeInfo();
             Syncfusion.Windows.Forms.Chart.ChartLineInfo chartLineInfo1 = new Syncfusion.Windows.Forms.Chart.ChartLineInfo();
             Syncfusion.Windows.Forms.CaptionImage captionImage1 = new Syncfusion.Windows.Forms.CaptionImage();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GraficoForm));
             Syncfusion.Windows.Forms.CaptionImage captionImage2 = new Syncfusion.Windows.Forms.CaptionImage();
-            this.btnExibir = new Syncfusion.Windows.Forms.ButtonAdv();
             this.cbQuestao = new Syncfusion.Windows.Forms.Tools.ComboBoxAdv();
             this.lblQuest = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.chartQuest = new Syncfusion.Windows.Forms.Chart.ChartControl();
             ((System.ComponentModel.ISupportInitialize)(this.cbQuestao)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnExibir
-            // 
-            this.btnExibir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExibir.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.btnExibir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
-            this.btnExibir.BeforeTouchSize = new System.Drawing.Size(75, 23);
-            this.btnExibir.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.None;
-            this.btnExibir.ComboEditBackColor = System.Drawing.Color.Transparent;
-            this.btnExibir.CustomManagedColor = System.Drawing.Color.Transparent;
-            this.btnExibir.FlatAppearance.BorderSize = 0;
-            this.btnExibir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
-            this.btnExibir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(165)))), ((int)(((byte)(150)))));
-            this.btnExibir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExibir.ForeColor = System.Drawing.Color.White;
-            this.btnExibir.IsBackStageButton = false;
-            this.btnExibir.Location = new System.Drawing.Point(595, 34);
-            this.btnExibir.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(177)))));
-            this.btnExibir.Name = "btnExibir";
-            this.btnExibir.Size = new System.Drawing.Size(75, 23);
-            this.btnExibir.TabIndex = 0;
-            this.btnExibir.Text = "Exibir";
-            this.btnExibir.UseVisualStyle = false;
-            this.btnExibir.UseVisualStyleBackColor = false;
-            this.btnExibir.Click += new System.EventHandler(this.btnContinuar_Click);
-            // 
             // cbQuestao
             // 
             this.cbQuestao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbQuestao.BackColor = System.Drawing.Color.White;
-            this.cbQuestao.BeforeTouchSize = new System.Drawing.Size(554, 21);
+            this.cbQuestao.BeforeTouchSize = new System.Drawing.Size(612, 21);
             this.cbQuestao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbQuestao.FlatBorderColor = System.Drawing.SystemColors.ControlDark;
             this.cbQuestao.FlatStyle = Syncfusion.Windows.Forms.Tools.ComboFlatStyle.Flat;
@@ -92,7 +65,7 @@ namespace Matricula
             "4 - Qual o seu estado civil?",
             "5 - Qual a escolaridade do seu pai?",
             "6 - Qual a escolaridade da sua mãe?",
-            "7 - Quantos idiomas além do Português você domina?",
+            "7 - Quantos idiomas além do português você domina?",
             "8 - Qual a sua escolaridade?",
             "9 - Em que tipo de escola você estudou?",
             "10 - Você frequentou cursinho preparatório para ingressar na FATEC Itu?",
@@ -120,7 +93,7 @@ namespace Matricula
             this.cbQuestao.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbQuestao, "4 - Qual o seu estado civil?"));
             this.cbQuestao.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbQuestao, "5 - Qual a escolaridade do seu pai?"));
             this.cbQuestao.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbQuestao, "6 - Qual a escolaridade da sua mãe?"));
-            this.cbQuestao.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbQuestao, "7 - Quantos idiomas além do Português você domina?"));
+            this.cbQuestao.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbQuestao, "7 - Quantos idiomas além do português você domina?"));
             this.cbQuestao.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbQuestao, "8 - Qual a sua escolaridade?"));
             this.cbQuestao.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbQuestao, "9 - Em que tipo de escola você estudou?"));
             this.cbQuestao.ItemsImageIndexes.Add(new Syncfusion.Windows.Forms.Tools.ComboBoxAdv.ImageIndexItem(this.cbQuestao, "10 - Você frequentou cursinho preparatório para ingressar na FATEC Itu?"));
@@ -146,10 +119,10 @@ namespace Matricula
             this.cbQuestao.MetroBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.cbQuestao.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.cbQuestao.Name = "cbQuestao";
-            this.cbQuestao.Size = new System.Drawing.Size(554, 21);
+            this.cbQuestao.Size = new System.Drawing.Size(612, 21);
             this.cbQuestao.Style = Syncfusion.Windows.Forms.VisualStyle.Metro;
             this.cbQuestao.TabIndex = 12;
-            this.cbQuestao.Text = "1 - Qual a sua idade?";
+            this.cbQuestao.SelectedIndexChanged += new System.EventHandler(this.cbQuestao_SelectedIndexChanged);
             // 
             // lblQuest
             // 
@@ -241,7 +214,6 @@ namespace Matricula
             this.Controls.Add(this.chartQuest);
             this.Controls.Add(this.cbQuestao);
             this.Controls.Add(this.lblQuest);
-            this.Controls.Add(this.btnExibir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -260,7 +232,6 @@ namespace Matricula
 
         #endregion
 
-        private Syncfusion.Windows.Forms.ButtonAdv btnExibir;
         private Syncfusion.Windows.Forms.Tools.ComboBoxAdv cbQuestao;
         private Syncfusion.Windows.Forms.Tools.AutoLabel lblQuest;
         private Syncfusion.Windows.Forms.Chart.ChartControl chartQuest;

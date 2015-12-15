@@ -95,10 +95,10 @@
                   </TextRun>
                   <TextRun>
                     <Label>data</Label>
-                    <Value>=DateString</Value>
+                    <Value>=Today()</Value>
                     <Style>
                       <FontSize>11pt</FontSize>
-                      <Format>dd/MM/yyyy</Format>
+                      <Format>d</Format>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -469,7 +469,7 @@
             <Style />
           </Paragraph>
         </Paragraphs>
-        <Top>3.30812cm</Top>
+        <Top>3.33458cm</Top>
         <Height>1.07625cm</Height>
         <Width>4.90771cm</Width>
         <ZIndex>7</ZIndex>
@@ -524,9 +524,9 @@
             <Style />
           </Paragraph>
         </Paragraphs>
-        <Top>3.30812cm</Top>
+        <Top>3.33458cm</Top>
         <Left>8.02979cm</Left>
-        <Height>1.10271cm</Height>
+        <Height>0.67938cm</Height>
         <Width>2.5cm</Width>
         <ZIndex>8</ZIndex>
         <Style>

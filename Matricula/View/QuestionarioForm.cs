@@ -79,6 +79,7 @@ namespace Matricula.View
                     //Adiciona de acordo com o numero do painel
                     //o ultimo número do nome do rb checado
                     qtModel.Respostas[numPn-1] = checkedButton.Name[checkedButton.Name.Length - 1];
+                   
                 }
 
                 var panels2 = GetAll(tab2, typeof(Panel));
@@ -98,8 +99,8 @@ namespace Matricula.View
                     
                     qtModel.Respostas[numPn-1] = checkedButton.Name[checkedButton.Name.Length - 1];
                 }
-
-                qtController.inserir(qtModel);
+                string dissertativa = txtQuest27.Text;
+                qtController.inserir(qtModel,dissertativa);
 
             }
             catch(Exception ex)

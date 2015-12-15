@@ -14,14 +14,14 @@ namespace Matricula.Controller
     {
         private SqlConnection conn = new Conexao().Conn;
 
-        public void inserir(QuestionarioModel qt) //int matriculaId)
+        public void inserir(QuestionarioModel qt, string dissertativa) //int matriculaId)
         {
             string inserirQuestionario = "INSERT INTO Questionarios"+
             "(q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19,"+
-            "q20, q21, q22, q23, q24, q25, q26)"+
+            "q20, q21, q22, q23, q24, q25, q26,q27)"+
             "VALUES"+
             "(@q1, @q2, @q3, @q4, @q5, @q6, @q7, @q8, @q9, @q10, @q11, @q12, @q13, @q14, @q15, @q16,"+
-            "@q17, @q18, @q19, @q20, @q21, @q22, @q23, @q24, @q25, @q26)";
+            "@q17, @q18, @q19, @q20, @q21, @q22, @q23, @q24, @q25, @q26,@q27)";
 
             try
             {
@@ -30,6 +30,7 @@ namespace Matricula.Controller
                 {
                     cmdInsertQuestionario.Parameters.AddWithValue("@q"+(i+1), qt.Respostas[i]);
                 }
+                cmdInsertQuestionario.Parameters.AddWithValue("@q27", dissertativa);
                 //cmdInsertQuestionario.Parameters.AddWithValue("@q1", qt.Respostas[0]);
                 //cmdInsertQuestionario.Parameters.AddWithValue("@q2", qt.Respostas[1]);
                 //cmdInsertQuestionario.Parameters.AddWithValue("@q3", qt.Respostas[2]);

@@ -11,11 +11,16 @@ namespace Matricula.Model
         private string nome, nascimento, nascionalidade, naturalidade, estadoCivil, estado, religiao, tpSanguineo, rh,
                        nomePai, nomeMae, email, cep, endreco, numero, complemento, bairro, municipio, cpf, emissaoCpf, rg, emissaoRg,
                        titulo, secaoTitulo, zonaTitulo, escola, cidadeEscola, estadoEscola, conclusaoEscola, classificacao, pontuacao,
-                       curso, turno, expedidoRG, reservaMilitar, expedidoMilitar, dataMilitar, cor;
+                       curso, turno, expedidoRG, reservaMilitar, expedidoMilitar, dataMilitar, cor, dataMatricula;
         private int codMatricula;
         private char sexo;
         private byte[] foto;
 
+        public string DataMatricula
+        {
+            get { return dataMatricula; }
+            set { dataMatricula = value; }
+        }
 
         public string Cor
         {

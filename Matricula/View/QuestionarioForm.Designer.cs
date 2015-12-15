@@ -43,6 +43,12 @@ namespace Matricula.View
             Syncfusion.Windows.Forms.CaptionImage captionImage2 = new Syncfusion.Windows.Forms.CaptionImage();
             this.tabControl = new Syncfusion.Windows.Forms.Tools.TabControlAdv();
             this.tab1 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.rb143 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb144 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel14 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb141 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb142 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.panel13 = new System.Windows.Forms.Panel();
             this.rb136 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.rb135 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
@@ -141,6 +147,9 @@ namespace Matricula.View
             this.rb031 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.rb035 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.tab2 = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtQuest27 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.autoLabel27 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.panel26 = new System.Windows.Forms.Panel();
             this.rb265 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.rb264 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
@@ -148,6 +157,20 @@ namespace Matricula.View
             this.rb262 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.autoLabel26 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.rb261 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.rb195 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb194 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb193 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb192 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel18 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb191 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.rb165 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb164 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb163 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb162 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb161 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel21 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.panel25 = new System.Windows.Forms.Panel();
             this.rb256 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.rb255 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
@@ -162,19 +185,6 @@ namespace Matricula.View
             this.rb153 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.autoLabel15 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.rb151 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.rb143 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rb144 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel14 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.rb141 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rb142 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.rb165 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rb164 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rb163 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rb162 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rb161 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel21 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.panel24 = new System.Windows.Forms.Panel();
             this.rb245 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.rb244 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
@@ -189,6 +199,13 @@ namespace Matricula.View
             this.rb212 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.rb211 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.autoLabel20 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.rb185 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb184 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb183 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.rb182 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
+            this.autoLabel17 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.rb181 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.panel23 = new System.Windows.Forms.Panel();
             this.rb235 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.rb234 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
@@ -203,20 +220,6 @@ namespace Matricula.View
             this.rb202 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.rb201 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.autoLabel19 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.rb195 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rb194 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rb193 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rb192 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel18 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.rb191 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.rb185 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rb184 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rb183 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.rb182 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
-            this.autoLabel17 = new Syncfusion.Windows.Forms.Tools.AutoLabel();
-            this.rb181 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.panel17 = new System.Windows.Forms.Panel();
             this.rb176 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
             this.rb175 = new Syncfusion.Windows.Forms.Tools.RadioButtonAdv();
@@ -238,6 +241,11 @@ namespace Matricula.View
             ((System.ComponentModel.ISupportInitialize)(this.tabControl)).BeginInit();
             this.tabControl.SuspendLayout();
             this.tab1.SuspendLayout();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb143)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb144)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb141)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb142)).BeginInit();
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rb136)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb135)).BeginInit();
@@ -323,12 +331,26 @@ namespace Matricula.View
             ((System.ComponentModel.ISupportInitialize)(this.rb031)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb035)).BeginInit();
             this.tab2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtQuest27)).BeginInit();
             this.panel26.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rb265)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb264)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb263)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb262)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb261)).BeginInit();
+            this.panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb195)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb194)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb193)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb192)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb191)).BeginInit();
+            this.panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb165)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb164)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb163)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb162)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb161)).BeginInit();
             this.panel25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rb256)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb255)).BeginInit();
@@ -341,17 +363,6 @@ namespace Matricula.View
             ((System.ComponentModel.ISupportInitialize)(this.rb152)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb153)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb151)).BeginInit();
-            this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rb143)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb144)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb141)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb142)).BeginInit();
-            this.panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rb165)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb164)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb163)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb162)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb161)).BeginInit();
             this.panel24.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rb245)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb244)).BeginInit();
@@ -364,6 +375,12 @@ namespace Matricula.View
             ((System.ComponentModel.ISupportInitialize)(this.rb213)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb212)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb211)).BeginInit();
+            this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb185)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb184)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb183)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb182)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb181)).BeginInit();
             this.panel23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rb235)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb234)).BeginInit();
@@ -376,18 +393,6 @@ namespace Matricula.View
             ((System.ComponentModel.ISupportInitialize)(this.rb203)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb202)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb201)).BeginInit();
-            this.panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rb195)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb194)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb193)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb192)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb191)).BeginInit();
-            this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rb185)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb184)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb183)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb182)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb181)).BeginInit();
             this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rb176)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb175)).BeginInit();
@@ -425,6 +430,7 @@ namespace Matricula.View
             // tab1
             // 
             this.tab1.AutoScroll = true;
+            this.tab1.Controls.Add(this.panel14);
             this.tab1.Controls.Add(this.panel13);
             this.tab1.Controls.Add(this.panel12);
             this.tab1.Controls.Add(this.panel11);
@@ -446,8 +452,91 @@ namespace Matricula.View
             this.tab1.Size = new System.Drawing.Size(1357, 669);
             this.tab1.TabForeColor = System.Drawing.Color.Gray;
             this.tab1.TabIndex = 1;
-            this.tab1.Text = "1 -- 13";
+            this.tab1.Text = "1 -- 14";
             this.tab1.ThemesEnabled = false;
+            // 
+            // panel14
+            // 
+            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel14.Controls.Add(this.rb143);
+            this.panel14.Controls.Add(this.rb144);
+            this.panel14.Controls.Add(this.autoLabel14);
+            this.panel14.Controls.Add(this.rb141);
+            this.panel14.Controls.Add(this.rb142);
+            this.panel14.Location = new System.Drawing.Point(1026, 495);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(287, 124);
+            this.panel14.TabIndex = 13;
+            // 
+            // rb143
+            // 
+            this.rb143.BeforeTouchSize = new System.Drawing.Size(292, 21);
+            this.rb143.DrawFocusRectangle = false;
+            this.rb143.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb143.Location = new System.Drawing.Point(0, 72);
+            this.rb143.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb143.Name = "rb143";
+            this.rb143.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb143.Size = new System.Drawing.Size(292, 21);
+            this.rb143.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb143.TabIndex = 29;
+            this.rb143.Text = "Sim, em tempo integral (40 horas semanais)";
+            this.rb143.ThemesEnabled = false;
+            // 
+            // rb144
+            // 
+            this.rb144.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb144.DrawFocusRectangle = false;
+            this.rb144.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb144.Location = new System.Drawing.Point(0, 99);
+            this.rb144.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb144.Name = "rb144";
+            this.rb144.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb144.Size = new System.Drawing.Size(192, 21);
+            this.rb144.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb144.TabIndex = 26;
+            this.rb144.Text = "Sim, trabalho eventualmente";
+            this.rb144.ThemesEnabled = false;
+            // 
+            // autoLabel14
+            // 
+            this.autoLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel14.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel14.Location = new System.Drawing.Point(0, 0);
+            this.autoLabel14.Name = "autoLabel14";
+            this.autoLabel14.Size = new System.Drawing.Size(266, 15);
+            this.autoLabel14.TabIndex = 20;
+            this.autoLabel14.Text = "14 - Você exerce atividade remunerada?";
+            // 
+            // rb141
+            // 
+            this.rb141.BeforeTouchSize = new System.Drawing.Size(192, 21);
+            this.rb141.DrawFocusRectangle = false;
+            this.rb141.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb141.Location = new System.Drawing.Point(0, 18);
+            this.rb141.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb141.Name = "rb141";
+            this.rb141.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb141.Size = new System.Drawing.Size(192, 21);
+            this.rb141.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb141.TabIndex = 23;
+            this.rb141.Text = "Não";
+            this.rb141.ThemesEnabled = false;
+            // 
+            // rb142
+            // 
+            this.rb142.BeforeTouchSize = new System.Drawing.Size(267, 21);
+            this.rb142.DrawFocusRectangle = false;
+            this.rb142.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb142.Location = new System.Drawing.Point(0, 45);
+            this.rb142.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb142.Name = "rb142";
+            this.rb142.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb142.Size = new System.Drawing.Size(267, 21);
+            this.rb142.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb142.TabIndex = 24;
+            this.rb142.Text = "Sim, em tempo parcial (até 30 horas semanais)";
+            this.rb142.ThemesEnabled = false;
             // 
             // panel13
             // 
@@ -458,7 +547,7 @@ namespace Matricula.View
             this.panel13.Controls.Add(this.autoLabel13);
             this.panel13.Controls.Add(this.rb131);
             this.panel13.Controls.Add(this.rb132);
-            this.panel13.Location = new System.Drawing.Point(1026, 349);
+            this.panel13.Location = new System.Drawing.Point(1026, 315);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(287, 175);
             this.panel13.TabIndex = 12;
@@ -570,7 +659,7 @@ namespace Matricula.View
             this.panel12.Controls.Add(this.autoLabel12);
             this.panel12.Controls.Add(this.rb121);
             this.panel12.Controls.Add(this.rb122);
-            this.panel12.Location = new System.Drawing.Point(1026, 199);
+            this.panel12.Location = new System.Drawing.Point(1026, 183);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(287, 126);
             this.panel12.TabIndex = 11;
@@ -1580,23 +1669,23 @@ namespace Matricula.View
             this.autoLabel7.Gap = 5;
             this.autoLabel7.Location = new System.Drawing.Point(3, 0);
             this.autoLabel7.Name = "autoLabel7";
-            this.autoLabel7.Size = new System.Drawing.Size(284, 31);
+            this.autoLabel7.Size = new System.Drawing.Size(284, 30);
             this.autoLabel7.TabIndex = 0;
-            this.autoLabel7.Text = "7 - Quantos idiomas além do Português você domina?";
+            this.autoLabel7.Text = "7 - Quantos idiomas além do português você domina?";
             // 
             // rb072
             // 
             this.rb072.BeforeTouchSize = new System.Drawing.Size(145, 21);
             this.rb072.DrawFocusRectangle = false;
             this.rb072.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb072.Location = new System.Drawing.Point(3, 61);
+            this.rb072.Location = new System.Drawing.Point(0, 60);
             this.rb072.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.rb072.Name = "rb072";
             this.rb072.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb072.Size = new System.Drawing.Size(145, 21);
             this.rb072.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
             this.rb072.TabIndex = 1;
-            this.rb072.Text = "1";
+            this.rb072.Text = "Um idioma";
             this.rb072.ThemesEnabled = false;
             // 
             // rb073
@@ -1604,14 +1693,14 @@ namespace Matricula.View
             this.rb073.BeforeTouchSize = new System.Drawing.Size(145, 21);
             this.rb073.DrawFocusRectangle = false;
             this.rb073.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb073.Location = new System.Drawing.Point(3, 88);
+            this.rb073.Location = new System.Drawing.Point(0, 87);
             this.rb073.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.rb073.Name = "rb073";
             this.rb073.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb073.Size = new System.Drawing.Size(145, 21);
             this.rb073.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
             this.rb073.TabIndex = 2;
-            this.rb073.Text = "2";
+            this.rb073.Text = "Dois idiomas";
             this.rb073.ThemesEnabled = false;
             // 
             // rb071
@@ -1619,14 +1708,14 @@ namespace Matricula.View
             this.rb071.BeforeTouchSize = new System.Drawing.Size(145, 21);
             this.rb071.DrawFocusRectangle = false;
             this.rb071.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb071.Location = new System.Drawing.Point(3, 34);
+            this.rb071.Location = new System.Drawing.Point(0, 33);
             this.rb071.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.rb071.Name = "rb071";
             this.rb071.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb071.Size = new System.Drawing.Size(145, 21);
             this.rb071.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
             this.rb071.TabIndex = 0;
-            this.rb071.Text = "0";
+            this.rb071.Text = "Nenhum";
             this.rb071.ThemesEnabled = false;
             // 
             // rb074
@@ -1634,14 +1723,14 @@ namespace Matricula.View
             this.rb074.BeforeTouchSize = new System.Drawing.Size(145, 21);
             this.rb074.DrawFocusRectangle = false;
             this.rb074.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb074.Location = new System.Drawing.Point(3, 115);
+            this.rb074.Location = new System.Drawing.Point(0, 113);
             this.rb074.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.rb074.Name = "rb074";
             this.rb074.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
             this.rb074.Size = new System.Drawing.Size(145, 21);
             this.rb074.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
             this.rb074.TabIndex = 3;
-            this.rb074.Text = "3 ou mais";
+            this.rb074.Text = "Três idiomas ou mais";
             this.rb074.ThemesEnabled = false;
             // 
             // panel04
@@ -1761,7 +1850,7 @@ namespace Matricula.View
             this.rb033.Size = new System.Drawing.Size(145, 21);
             this.rb033.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
             this.rb033.TabIndex = 2;
-            this.rb033.Text = "Preto";
+            this.rb033.Text = "Negro";
             this.rb033.ThemesEnabled = false;
             // 
             // rb034
@@ -1827,17 +1916,17 @@ namespace Matricula.View
             // tab2
             // 
             this.tab2.AutoScroll = true;
+            this.tab2.Controls.Add(this.panel1);
             this.tab2.Controls.Add(this.panel26);
+            this.tab2.Controls.Add(this.panel19);
+            this.tab2.Controls.Add(this.panel16);
             this.tab2.Controls.Add(this.panel25);
             this.tab2.Controls.Add(this.panel15);
-            this.tab2.Controls.Add(this.panel14);
-            this.tab2.Controls.Add(this.panel16);
             this.tab2.Controls.Add(this.panel24);
             this.tab2.Controls.Add(this.panel21);
+            this.tab2.Controls.Add(this.panel18);
             this.tab2.Controls.Add(this.panel23);
             this.tab2.Controls.Add(this.panel20);
-            this.tab2.Controls.Add(this.panel19);
-            this.tab2.Controls.Add(this.panel18);
             this.tab2.Controls.Add(this.panel17);
             this.tab2.Controls.Add(this.panel22);
             this.tab2.Image = null;
@@ -1848,8 +1937,41 @@ namespace Matricula.View
             this.tab2.Size = new System.Drawing.Size(1357, 669);
             this.tab2.TabForeColor = System.Drawing.Color.Gray;
             this.tab2.TabIndex = 2;
-            this.tab2.Text = "14 -- 26";
+            this.tab2.Text = "15 -- 27";
             this.tab2.ThemesEnabled = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.txtQuest27);
+            this.panel1.Controls.Add(this.autoLabel27);
+            this.panel1.Location = new System.Drawing.Point(1059, 395);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(273, 205);
+            this.panel1.TabIndex = 16;
+            // 
+            // txtQuest27
+            // 
+            this.txtQuest27.BeforeTouchSize = new System.Drawing.Size(270, 135);
+            this.txtQuest27.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtQuest27.Location = new System.Drawing.Point(3, 67);
+            this.txtQuest27.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtQuest27.Multiline = true;
+            this.txtQuest27.Name = "txtQuest27";
+            this.txtQuest27.Size = new System.Drawing.Size(270, 135);
+            this.txtQuest27.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Default;
+            this.txtQuest27.TabIndex = 21;
+            // 
+            // autoLabel27
+            // 
+            this.autoLabel27.AutoSize = false;
+            this.autoLabel27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel27.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel27.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel27.Name = "autoLabel27";
+            this.autoLabel27.Size = new System.Drawing.Size(270, 64);
+            this.autoLabel27.TabIndex = 20;
+            this.autoLabel27.Text = "27- Escreva em poucas palavras qual a sua expectativa em relação ao ingresso na F" +
+    "atec Itu? E em relação ao Curso que escolheu?";
             // 
             // panel26
             // 
@@ -1859,10 +1981,10 @@ namespace Matricula.View
             this.panel26.Controls.Add(this.rb262);
             this.panel26.Controls.Add(this.autoLabel26);
             this.panel26.Controls.Add(this.rb261);
-            this.panel26.Location = new System.Drawing.Point(1076, 451);
+            this.panel26.Location = new System.Drawing.Point(1059, 209);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(273, 180);
-            this.panel26.TabIndex = 12;
+            this.panel26.TabIndex = 15;
             // 
             // rb265
             // 
@@ -1950,6 +2072,204 @@ namespace Matricula.View
             this.rb261.Text = "Jornais/Internet";
             this.rb261.ThemesEnabled = false;
             // 
+            // panel19
+            // 
+            this.panel19.Controls.Add(this.rb195);
+            this.panel19.Controls.Add(this.rb194);
+            this.panel19.Controls.Add(this.rb193);
+            this.panel19.Controls.Add(this.rb192);
+            this.panel19.Controls.Add(this.autoLabel18);
+            this.panel19.Controls.Add(this.rb191);
+            this.panel19.Location = new System.Drawing.Point(395, 3);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(249, 167);
+            this.panel19.TabIndex = 14;
+            // 
+            // rb195
+            // 
+            this.rb195.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb195.DrawFocusRectangle = false;
+            this.rb195.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb195.Location = new System.Drawing.Point(3, 144);
+            this.rb195.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb195.Name = "rb195";
+            this.rb195.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb195.Size = new System.Drawing.Size(166, 21);
+            this.rb195.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb195.TabIndex = 28;
+            this.rb195.Text = "Mais de 10 pessoas";
+            this.rb195.ThemesEnabled = false;
+            // 
+            // rb194
+            // 
+            this.rb194.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb194.DrawFocusRectangle = false;
+            this.rb194.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb194.Location = new System.Drawing.Point(3, 117);
+            this.rb194.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb194.Name = "rb194";
+            this.rb194.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb194.Size = new System.Drawing.Size(166, 21);
+            this.rb194.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb194.TabIndex = 27;
+            this.rb194.Text = "De 6 a 10 pessoas";
+            this.rb194.ThemesEnabled = false;
+            // 
+            // rb193
+            // 
+            this.rb193.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb193.DrawFocusRectangle = false;
+            this.rb193.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb193.Location = new System.Drawing.Point(3, 90);
+            this.rb193.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb193.Name = "rb193";
+            this.rb193.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb193.Size = new System.Drawing.Size(166, 21);
+            this.rb193.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb193.TabIndex = 26;
+            this.rb193.Text = "5 ou 6 pessoas";
+            this.rb193.ThemesEnabled = false;
+            // 
+            // rb192
+            // 
+            this.rb192.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb192.DrawFocusRectangle = false;
+            this.rb192.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb192.Location = new System.Drawing.Point(3, 63);
+            this.rb192.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb192.Name = "rb192";
+            this.rb192.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb192.Size = new System.Drawing.Size(166, 21);
+            this.rb192.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb192.TabIndex = 25;
+            this.rb192.Text = "3 ou 4 pessoas";
+            this.rb192.ThemesEnabled = false;
+            // 
+            // autoLabel18
+            // 
+            this.autoLabel18.AutoSize = false;
+            this.autoLabel18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel18.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel18.Location = new System.Drawing.Point(3, 2);
+            this.autoLabel18.Name = "autoLabel18";
+            this.autoLabel18.Size = new System.Drawing.Size(246, 31);
+            this.autoLabel18.TabIndex = 20;
+            this.autoLabel18.Text = "18 - Quantas pessoas compõem sua família?";
+            // 
+            // rb191
+            // 
+            this.rb191.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb191.DrawFocusRectangle = false;
+            this.rb191.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb191.Location = new System.Drawing.Point(3, 36);
+            this.rb191.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb191.Name = "rb191";
+            this.rb191.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb191.Size = new System.Drawing.Size(166, 21);
+            this.rb191.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb191.TabIndex = 24;
+            this.rb191.Text = "1 ou 2 pessoas";
+            this.rb191.ThemesEnabled = false;
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.rb165);
+            this.panel16.Controls.Add(this.rb164);
+            this.panel16.Controls.Add(this.rb163);
+            this.panel16.Controls.Add(this.rb162);
+            this.panel16.Controls.Add(this.rb161);
+            this.panel16.Controls.Add(this.autoLabel21);
+            this.panel16.Location = new System.Drawing.Point(395, 506);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(249, 127);
+            this.panel16.TabIndex = 13;
+            // 
+            // rb165
+            // 
+            this.rb165.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb165.DrawFocusRectangle = false;
+            this.rb165.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb165.Location = new System.Drawing.Point(0, 102);
+            this.rb165.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb165.Name = "rb165";
+            this.rb165.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb165.Size = new System.Drawing.Size(166, 21);
+            this.rb165.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb165.TabIndex = 33;
+            this.rb165.Text = "Outros";
+            this.rb165.ThemesEnabled = false;
+            // 
+            // rb164
+            // 
+            this.rb164.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb164.DrawFocusRectangle = false;
+            this.rb164.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb164.Location = new System.Drawing.Point(0, 79);
+            this.rb164.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb164.Name = "rb164";
+            this.rb164.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb164.Size = new System.Drawing.Size(166, 21);
+            this.rb164.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb164.TabIndex = 32;
+            this.rb164.Text = "Comércio";
+            this.rb164.ThemesEnabled = false;
+            // 
+            // rb163
+            // 
+            this.rb163.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb163.DrawFocusRectangle = false;
+            this.rb163.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb163.Location = new System.Drawing.Point(0, 57);
+            this.rb163.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb163.Name = "rb163";
+            this.rb163.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb163.Size = new System.Drawing.Size(166, 21);
+            this.rb163.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb163.TabIndex = 31;
+            this.rb163.Text = "Indústrias";
+            this.rb163.ThemesEnabled = false;
+            // 
+            // rb162
+            // 
+            this.rb162.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb162.DrawFocusRectangle = false;
+            this.rb162.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb162.Location = new System.Drawing.Point(0, 37);
+            this.rb162.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb162.Name = "rb162";
+            this.rb162.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb162.Size = new System.Drawing.Size(166, 21);
+            this.rb162.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb162.TabIndex = 30;
+            this.rb162.Text = "Educação";
+            this.rb162.ThemesEnabled = false;
+            // 
+            // rb161
+            // 
+            this.rb161.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb161.DrawFocusRectangle = false;
+            this.rb161.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb161.Location = new System.Drawing.Point(0, 16);
+            this.rb161.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb161.Name = "rb161";
+            this.rb161.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb161.Size = new System.Drawing.Size(166, 21);
+            this.rb161.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb161.TabIndex = 29;
+            this.rb161.Text = "Saúde";
+            this.rb161.ThemesEnabled = false;
+            // 
+            // autoLabel21
+            // 
+            this.autoLabel21.AutoSize = false;
+            this.autoLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel21.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel21.Location = new System.Drawing.Point(0, 0);
+            this.autoLabel21.Name = "autoLabel21";
+            this.autoLabel21.Size = new System.Drawing.Size(246, 13);
+            this.autoLabel21.TabIndex = 20;
+            this.autoLabel21.Text = "21 - Qual é o seu ramo de atividade?";
+            // 
             // panel25
             // 
             this.panel25.Controls.Add(this.rb256);
@@ -1959,7 +2279,7 @@ namespace Matricula.View
             this.panel25.Controls.Add(this.rb252);
             this.panel25.Controls.Add(this.autoLabel25);
             this.panel25.Controls.Add(this.rb251);
-            this.panel25.Location = new System.Drawing.Point(1076, 236);
+            this.panel25.Location = new System.Drawing.Point(1059, 5);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(263, 198);
             this.panel25.TabIndex = 11;
@@ -2044,7 +2364,7 @@ namespace Matricula.View
             this.autoLabel25.AutoSize = false;
             this.autoLabel25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.autoLabel25.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel25.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel25.Location = new System.Drawing.Point(3, 1);
             this.autoLabel25.Name = "autoLabel25";
             this.autoLabel25.Size = new System.Drawing.Size(275, 31);
             this.autoLabel25.TabIndex = 20;
@@ -2073,7 +2393,7 @@ namespace Matricula.View
             this.panel15.Controls.Add(this.rb153);
             this.panel15.Controls.Add(this.autoLabel15);
             this.panel15.Controls.Add(this.rb151);
-            this.panel15.Location = new System.Drawing.Point(28, 148);
+            this.panel15.Location = new System.Drawing.Point(29, 13);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(287, 137);
             this.panel15.TabIndex = 1;
@@ -2149,188 +2469,6 @@ namespace Matricula.View
             this.rb151.Text = "Não";
             this.rb151.ThemesEnabled = false;
             // 
-            // panel14
-            // 
-            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel14.Controls.Add(this.rb143);
-            this.panel14.Controls.Add(this.rb144);
-            this.panel14.Controls.Add(this.autoLabel14);
-            this.panel14.Controls.Add(this.rb141);
-            this.panel14.Controls.Add(this.rb142);
-            this.panel14.Location = new System.Drawing.Point(28, 9);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(287, 124);
-            this.panel14.TabIndex = 0;
-            // 
-            // rb143
-            // 
-            this.rb143.BeforeTouchSize = new System.Drawing.Size(292, 21);
-            this.rb143.DrawFocusRectangle = false;
-            this.rb143.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb143.Location = new System.Drawing.Point(0, 72);
-            this.rb143.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb143.Name = "rb143";
-            this.rb143.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb143.Size = new System.Drawing.Size(292, 21);
-            this.rb143.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb143.TabIndex = 29;
-            this.rb143.Text = "Sim, em tempo integral (mais de 30 horas semanais)";
-            this.rb143.ThemesEnabled = false;
-            // 
-            // rb144
-            // 
-            this.rb144.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.rb144.DrawFocusRectangle = false;
-            this.rb144.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb144.Location = new System.Drawing.Point(0, 99);
-            this.rb144.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb144.Name = "rb144";
-            this.rb144.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb144.Size = new System.Drawing.Size(192, 21);
-            this.rb144.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb144.TabIndex = 26;
-            this.rb144.Text = "Sim, trabalho eventualmente";
-            this.rb144.ThemesEnabled = false;
-            // 
-            // autoLabel14
-            // 
-            this.autoLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel14.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel14.Location = new System.Drawing.Point(0, 0);
-            this.autoLabel14.Name = "autoLabel14";
-            this.autoLabel14.Size = new System.Drawing.Size(266, 15);
-            this.autoLabel14.TabIndex = 20;
-            this.autoLabel14.Text = "14 - Você exerce atividade remunerada?";
-            // 
-            // rb141
-            // 
-            this.rb141.BeforeTouchSize = new System.Drawing.Size(192, 21);
-            this.rb141.DrawFocusRectangle = false;
-            this.rb141.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb141.Location = new System.Drawing.Point(0, 18);
-            this.rb141.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb141.Name = "rb141";
-            this.rb141.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb141.Size = new System.Drawing.Size(192, 21);
-            this.rb141.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb141.TabIndex = 23;
-            this.rb141.Text = "Não";
-            this.rb141.ThemesEnabled = false;
-            // 
-            // rb142
-            // 
-            this.rb142.BeforeTouchSize = new System.Drawing.Size(267, 21);
-            this.rb142.DrawFocusRectangle = false;
-            this.rb142.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb142.Location = new System.Drawing.Point(0, 45);
-            this.rb142.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb142.Name = "rb142";
-            this.rb142.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb142.Size = new System.Drawing.Size(267, 21);
-            this.rb142.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb142.TabIndex = 24;
-            this.rb142.Text = "Sim, em tempo parcial (até 30 horas semanais)";
-            this.rb142.ThemesEnabled = false;
-            // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.rb165);
-            this.panel16.Controls.Add(this.rb164);
-            this.panel16.Controls.Add(this.rb163);
-            this.panel16.Controls.Add(this.rb162);
-            this.panel16.Controls.Add(this.rb161);
-            this.panel16.Controls.Add(this.autoLabel21);
-            this.panel16.Location = new System.Drawing.Point(35, 297);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(249, 149);
-            this.panel16.TabIndex = 2;
-            // 
-            // rb165
-            // 
-            this.rb165.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.rb165.DrawFocusRectangle = false;
-            this.rb165.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb165.Location = new System.Drawing.Point(0, 129);
-            this.rb165.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb165.Name = "rb165";
-            this.rb165.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb165.Size = new System.Drawing.Size(166, 21);
-            this.rb165.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb165.TabIndex = 33;
-            this.rb165.Text = "Outros";
-            this.rb165.ThemesEnabled = false;
-            // 
-            // rb164
-            // 
-            this.rb164.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.rb164.DrawFocusRectangle = false;
-            this.rb164.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb164.Location = new System.Drawing.Point(0, 102);
-            this.rb164.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb164.Name = "rb164";
-            this.rb164.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb164.Size = new System.Drawing.Size(166, 21);
-            this.rb164.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb164.TabIndex = 32;
-            this.rb164.Text = "Comércio";
-            this.rb164.ThemesEnabled = false;
-            // 
-            // rb163
-            // 
-            this.rb163.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.rb163.DrawFocusRectangle = false;
-            this.rb163.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb163.Location = new System.Drawing.Point(0, 75);
-            this.rb163.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb163.Name = "rb163";
-            this.rb163.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb163.Size = new System.Drawing.Size(166, 21);
-            this.rb163.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb163.TabIndex = 31;
-            this.rb163.Text = "Indústrias";
-            this.rb163.ThemesEnabled = false;
-            // 
-            // rb162
-            // 
-            this.rb162.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.rb162.DrawFocusRectangle = false;
-            this.rb162.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb162.Location = new System.Drawing.Point(0, 48);
-            this.rb162.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb162.Name = "rb162";
-            this.rb162.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb162.Size = new System.Drawing.Size(166, 21);
-            this.rb162.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb162.TabIndex = 30;
-            this.rb162.Text = "Educação";
-            this.rb162.ThemesEnabled = false;
-            // 
-            // rb161
-            // 
-            this.rb161.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.rb161.DrawFocusRectangle = false;
-            this.rb161.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb161.Location = new System.Drawing.Point(0, 21);
-            this.rb161.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb161.Name = "rb161";
-            this.rb161.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb161.Size = new System.Drawing.Size(166, 21);
-            this.rb161.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb161.TabIndex = 29;
-            this.rb161.Text = "Saúde";
-            this.rb161.ThemesEnabled = false;
-            // 
-            // autoLabel21
-            // 
-            this.autoLabel21.AutoSize = false;
-            this.autoLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel21.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel21.Location = new System.Drawing.Point(0, 0);
-            this.autoLabel21.Name = "autoLabel21";
-            this.autoLabel21.Size = new System.Drawing.Size(246, 13);
-            this.autoLabel21.TabIndex = 20;
-            this.autoLabel21.Text = "16 - Qual é o seu ramo de atividade?";
-            // 
             // panel24
             // 
             this.panel24.Controls.Add(this.rb245);
@@ -2339,9 +2477,9 @@ namespace Matricula.View
             this.panel24.Controls.Add(this.rb242);
             this.panel24.Controls.Add(this.rb241);
             this.panel24.Controls.Add(this.autoLabel24);
-            this.panel24.Location = new System.Drawing.Point(1076, 9);
+            this.panel24.Location = new System.Drawing.Point(741, 373);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(249, 192);
+            this.panel24.Size = new System.Drawing.Size(249, 174);
             this.panel24.TabIndex = 10;
             // 
             // rb245
@@ -2439,7 +2577,7 @@ namespace Matricula.View
             this.panel21.Controls.Add(this.rb212);
             this.panel21.Controls.Add(this.rb211);
             this.panel21.Controls.Add(this.autoLabel20);
-            this.panel21.Location = new System.Drawing.Point(741, 9);
+            this.panel21.Location = new System.Drawing.Point(395, 337);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(264, 167);
             this.panel21.TabIndex = 7;
@@ -2456,22 +2594,22 @@ namespace Matricula.View
             this.rb215.Size = new System.Drawing.Size(166, 21);
             this.rb215.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
             this.rb215.TabIndex = 33;
-            this.rb215.Text = "Mais de 10 salários mínimos";
+            this.rb215.Text = "Ser faculdade pública";
             this.rb215.ThemesEnabled = false;
             // 
             // rb214
             // 
-            this.rb214.BeforeTouchSize = new System.Drawing.Size(166, 21);
+            this.rb214.BeforeTouchSize = new System.Drawing.Size(221, 21);
             this.rb214.DrawFocusRectangle = false;
             this.rb214.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.rb214.Location = new System.Drawing.Point(3, 117);
             this.rb214.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
             this.rb214.Name = "rb214";
             this.rb214.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb214.Size = new System.Drawing.Size(166, 21);
+            this.rb214.Size = new System.Drawing.Size(221, 21);
             this.rb214.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
             this.rb214.TabIndex = 32;
-            this.rb214.Text = "De 6 a 10 salários mínimos";
+            this.rb214.Text = "Preparação para o vestivular";
             this.rb214.ThemesEnabled = false;
             // 
             // rb213
@@ -2486,7 +2624,7 @@ namespace Matricula.View
             this.rb213.Size = new System.Drawing.Size(166, 21);
             this.rb213.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
             this.rb213.TabIndex = 31;
-            this.rb213.Text = "De 3 a 6 salários mínimos";
+            this.rb213.Text = "Melhoria salarial";
             this.rb213.ThemesEnabled = false;
             // 
             // rb212
@@ -2501,7 +2639,7 @@ namespace Matricula.View
             this.rb212.Size = new System.Drawing.Size(166, 21);
             this.rb212.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
             this.rb212.TabIndex = 30;
-            this.rb212.Text = "De 1 a 3 salários mínimos";
+            this.rb212.Text = "Exigência do serviço";
             this.rb212.ThemesEnabled = false;
             // 
             // rb211
@@ -2516,7 +2654,7 @@ namespace Matricula.View
             this.rb211.Size = new System.Drawing.Size(166, 21);
             this.rb211.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
             this.rb211.TabIndex = 29;
-            this.rb211.Text = "Menos de 1 salário mínimo";
+            this.rb211.Text = "Qualificação Profissional";
             this.rb211.ThemesEnabled = false;
             // 
             // autoLabel20
@@ -2528,7 +2666,108 @@ namespace Matricula.View
             this.autoLabel20.Name = "autoLabel20";
             this.autoLabel20.Size = new System.Drawing.Size(266, 31);
             this.autoLabel20.TabIndex = 20;
-            this.autoLabel20.Text = "21 - Qual motivo o levou a escolher um curso da FATEC Itu?";
+            this.autoLabel20.Text = "20 - Qual motivo o levou a escolher um curso da FATEC Itu?";
+            // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.rb185);
+            this.panel18.Controls.Add(this.rb184);
+            this.panel18.Controls.Add(this.rb183);
+            this.panel18.Controls.Add(this.rb182);
+            this.panel18.Controls.Add(this.autoLabel17);
+            this.panel18.Controls.Add(this.rb181);
+            this.panel18.Location = new System.Drawing.Point(29, 390);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(249, 210);
+            this.panel18.TabIndex = 4;
+            // 
+            // rb185
+            // 
+            this.rb185.BeforeTouchSize = new System.Drawing.Size(235, 28);
+            this.rb185.DrawFocusRectangle = false;
+            this.rb185.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb185.Location = new System.Drawing.Point(3, 180);
+            this.rb185.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb185.Name = "rb185";
+            this.rb185.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb185.Size = new System.Drawing.Size(235, 28);
+            this.rb185.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb185.TabIndex = 29;
+            this.rb185.Text = "Trabalha, e é o responsável pelo sustento da família";
+            this.rb185.ThemesEnabled = false;
+            // 
+            // rb184
+            // 
+            this.rb184.BeforeTouchSize = new System.Drawing.Size(256, 42);
+            this.rb184.DrawFocusRectangle = false;
+            this.rb184.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb184.Location = new System.Drawing.Point(3, 132);
+            this.rb184.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb184.Name = "rb184";
+            this.rb184.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb184.Size = new System.Drawing.Size(256, 42);
+            this.rb184.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb184.TabIndex = 28;
+            this.rb184.Text = "Trabalha, e é o responsável pelo seu próprio sustento, e contribui parcialmente p" +
+    "ara o sustento de outras pessoas";
+            this.rb184.ThemesEnabled = false;
+            // 
+            // rb183
+            // 
+            this.rb183.BeforeTouchSize = new System.Drawing.Size(262, 29);
+            this.rb183.DrawFocusRectangle = false;
+            this.rb183.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb183.Location = new System.Drawing.Point(3, 97);
+            this.rb183.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb183.Name = "rb183";
+            this.rb183.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb183.Size = new System.Drawing.Size(262, 29);
+            this.rb183.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb183.TabIndex = 27;
+            this.rb183.Text = "Trabalha, e é responsável pelo seu próprio sustento, não recebendo ajuda financei" +
+    "ra";
+            this.rb183.ThemesEnabled = false;
+            // 
+            // rb182
+            // 
+            this.rb182.BeforeTouchSize = new System.Drawing.Size(235, 32);
+            this.rb182.DrawFocusRectangle = false;
+            this.rb182.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb182.Location = new System.Drawing.Point(3, 61);
+            this.rb182.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb182.Name = "rb182";
+            this.rb182.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb182.Size = new System.Drawing.Size(235, 32);
+            this.rb182.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb182.TabIndex = 25;
+            this.rb182.Text = "Trabalha, mas recebe ajuda financeira da família ou de outras pessoas";
+            this.rb182.ThemesEnabled = false;
+            // 
+            // autoLabel17
+            // 
+            this.autoLabel17.AutoSize = false;
+            this.autoLabel17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.autoLabel17.ForeColor = System.Drawing.Color.DimGray;
+            this.autoLabel17.Location = new System.Drawing.Point(3, 0);
+            this.autoLabel17.Name = "autoLabel17";
+            this.autoLabel17.Size = new System.Drawing.Size(256, 31);
+            this.autoLabel17.TabIndex = 20;
+            this.autoLabel17.Text = "17 - Qual a sua participação na vida econômica da sua família?";
+            // 
+            // rb181
+            // 
+            this.rb181.BeforeTouchSize = new System.Drawing.Size(256, 17);
+            this.rb181.DrawFocusRectangle = false;
+            this.rb181.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.rb181.Location = new System.Drawing.Point(3, 34);
+            this.rb181.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
+            this.rb181.Name = "rb181";
+            this.rb181.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
+            this.rb181.Size = new System.Drawing.Size(256, 17);
+            this.rb181.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
+            this.rb181.TabIndex = 24;
+            this.rb181.Text = "Financiado pela família ou por outras pessoas";
+            this.rb181.ThemesEnabled = false;
             // 
             // panel23
             // 
@@ -2538,9 +2777,9 @@ namespace Matricula.View
             this.panel23.Controls.Add(this.rb232);
             this.panel23.Controls.Add(this.autoLabel23);
             this.panel23.Controls.Add(this.rb231);
-            this.panel23.Location = new System.Drawing.Point(741, 451);
+            this.panel23.Location = new System.Drawing.Point(741, 180);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(264, 180);
+            this.panel23.Size = new System.Drawing.Size(264, 168);
             this.panel23.TabIndex = 9;
             // 
             // rb235
@@ -2637,9 +2876,9 @@ namespace Matricula.View
             this.panel20.Controls.Add(this.rb202);
             this.panel20.Controls.Add(this.rb201);
             this.panel20.Controls.Add(this.autoLabel19);
-            this.panel20.Location = new System.Drawing.Point(410, 451);
+            this.panel20.Location = new System.Drawing.Point(395, 170);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(249, 170);
+            this.panel20.Size = new System.Drawing.Size(249, 165);
             this.panel20.TabIndex = 6;
             // 
             // rb205
@@ -2726,207 +2965,7 @@ namespace Matricula.View
             this.autoLabel19.Name = "autoLabel19";
             this.autoLabel19.Size = new System.Drawing.Size(246, 31);
             this.autoLabel19.TabIndex = 20;
-            this.autoLabel19.Text = "20 - Qual é a renda mensal de sua família (todos que residem na casa)?";
-            // 
-            // panel19
-            // 
-            this.panel19.Controls.Add(this.rb195);
-            this.panel19.Controls.Add(this.rb194);
-            this.panel19.Controls.Add(this.rb193);
-            this.panel19.Controls.Add(this.rb192);
-            this.panel19.Controls.Add(this.autoLabel18);
-            this.panel19.Controls.Add(this.rb191);
-            this.panel19.Location = new System.Drawing.Point(410, 236);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(249, 167);
-            this.panel19.TabIndex = 5;
-            // 
-            // rb195
-            // 
-            this.rb195.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.rb195.DrawFocusRectangle = false;
-            this.rb195.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb195.Location = new System.Drawing.Point(3, 144);
-            this.rb195.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb195.Name = "rb195";
-            this.rb195.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb195.Size = new System.Drawing.Size(166, 21);
-            this.rb195.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb195.TabIndex = 28;
-            this.rb195.Text = "Mais de 10 pessoas";
-            this.rb195.ThemesEnabled = false;
-            // 
-            // rb194
-            // 
-            this.rb194.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.rb194.DrawFocusRectangle = false;
-            this.rb194.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb194.Location = new System.Drawing.Point(3, 117);
-            this.rb194.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb194.Name = "rb194";
-            this.rb194.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb194.Size = new System.Drawing.Size(166, 21);
-            this.rb194.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb194.TabIndex = 27;
-            this.rb194.Text = "De 6 a 10 pessoas";
-            this.rb194.ThemesEnabled = false;
-            // 
-            // rb193
-            // 
-            this.rb193.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.rb193.DrawFocusRectangle = false;
-            this.rb193.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb193.Location = new System.Drawing.Point(3, 90);
-            this.rb193.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb193.Name = "rb193";
-            this.rb193.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb193.Size = new System.Drawing.Size(166, 21);
-            this.rb193.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb193.TabIndex = 26;
-            this.rb193.Text = "5 ou 6 pessoas";
-            this.rb193.ThemesEnabled = false;
-            // 
-            // rb192
-            // 
-            this.rb192.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.rb192.DrawFocusRectangle = false;
-            this.rb192.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb192.Location = new System.Drawing.Point(3, 63);
-            this.rb192.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb192.Name = "rb192";
-            this.rb192.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb192.Size = new System.Drawing.Size(166, 21);
-            this.rb192.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb192.TabIndex = 25;
-            this.rb192.Text = "3 ou 4 pessoas";
-            this.rb192.ThemesEnabled = false;
-            // 
-            // autoLabel18
-            // 
-            this.autoLabel18.AutoSize = false;
-            this.autoLabel18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel18.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel18.Location = new System.Drawing.Point(3, 2);
-            this.autoLabel18.Name = "autoLabel18";
-            this.autoLabel18.Size = new System.Drawing.Size(246, 31);
-            this.autoLabel18.TabIndex = 20;
-            this.autoLabel18.Text = "19 - Quantas pessoas compõem sua família?";
-            // 
-            // rb191
-            // 
-            this.rb191.BeforeTouchSize = new System.Drawing.Size(166, 21);
-            this.rb191.DrawFocusRectangle = false;
-            this.rb191.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb191.Location = new System.Drawing.Point(3, 36);
-            this.rb191.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb191.Name = "rb191";
-            this.rb191.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb191.Size = new System.Drawing.Size(166, 21);
-            this.rb191.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb191.TabIndex = 24;
-            this.rb191.Text = "1 ou 2 pessoas";
-            this.rb191.ThemesEnabled = false;
-            // 
-            // panel18
-            // 
-            this.panel18.Controls.Add(this.rb185);
-            this.panel18.Controls.Add(this.rb184);
-            this.panel18.Controls.Add(this.rb183);
-            this.panel18.Controls.Add(this.rb182);
-            this.panel18.Controls.Add(this.autoLabel17);
-            this.panel18.Controls.Add(this.rb181);
-            this.panel18.Location = new System.Drawing.Point(410, 9);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(249, 210);
-            this.panel18.TabIndex = 4;
-            // 
-            // rb185
-            // 
-            this.rb185.BeforeTouchSize = new System.Drawing.Size(235, 28);
-            this.rb185.DrawFocusRectangle = false;
-            this.rb185.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb185.Location = new System.Drawing.Point(3, 180);
-            this.rb185.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb185.Name = "rb185";
-            this.rb185.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb185.Size = new System.Drawing.Size(235, 28);
-            this.rb185.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb185.TabIndex = 29;
-            this.rb185.Text = "Trabalha, e é o responsável pelo sustento da família";
-            this.rb185.ThemesEnabled = false;
-            // 
-            // rb184
-            // 
-            this.rb184.BeforeTouchSize = new System.Drawing.Size(256, 42);
-            this.rb184.DrawFocusRectangle = false;
-            this.rb184.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb184.Location = new System.Drawing.Point(3, 132);
-            this.rb184.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb184.Name = "rb184";
-            this.rb184.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb184.Size = new System.Drawing.Size(256, 42);
-            this.rb184.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb184.TabIndex = 28;
-            this.rb184.Text = "Trabalha, e é o responsável pelo seu próprio sustento, e contribui parcialmente p" +
-    "ara o sustento de outras pessoas";
-            this.rb184.ThemesEnabled = false;
-            // 
-            // rb183
-            // 
-            this.rb183.BeforeTouchSize = new System.Drawing.Size(262, 29);
-            this.rb183.DrawFocusRectangle = false;
-            this.rb183.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb183.Location = new System.Drawing.Point(3, 97);
-            this.rb183.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb183.Name = "rb183";
-            this.rb183.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb183.Size = new System.Drawing.Size(262, 29);
-            this.rb183.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb183.TabIndex = 27;
-            this.rb183.Text = "Trabalha, e é responsável pelo seu próprio sustento, não recebendo ajuda financei" +
-    "ra";
-            this.rb183.ThemesEnabled = false;
-            // 
-            // rb182
-            // 
-            this.rb182.BeforeTouchSize = new System.Drawing.Size(235, 32);
-            this.rb182.DrawFocusRectangle = false;
-            this.rb182.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb182.Location = new System.Drawing.Point(3, 61);
-            this.rb182.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb182.Name = "rb182";
-            this.rb182.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb182.Size = new System.Drawing.Size(235, 32);
-            this.rb182.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb182.TabIndex = 25;
-            this.rb182.Text = "Trabalha, mas recebe ajuda financeira da família ou de outras pessoas";
-            this.rb182.ThemesEnabled = false;
-            // 
-            // autoLabel17
-            // 
-            this.autoLabel17.AutoSize = false;
-            this.autoLabel17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.autoLabel17.ForeColor = System.Drawing.Color.DimGray;
-            this.autoLabel17.Location = new System.Drawing.Point(3, 0);
-            this.autoLabel17.Name = "autoLabel17";
-            this.autoLabel17.Size = new System.Drawing.Size(256, 31);
-            this.autoLabel17.TabIndex = 20;
-            this.autoLabel17.Text = "18 - Qual a sua participação na vida econômica da sua família?";
-            // 
-            // rb181
-            // 
-            this.rb181.BeforeTouchSize = new System.Drawing.Size(256, 17);
-            this.rb181.DrawFocusRectangle = false;
-            this.rb181.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.rb181.Location = new System.Drawing.Point(3, 34);
-            this.rb181.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(163)))), ((int)(((byte)(150)))));
-            this.rb181.Name = "rb181";
-            this.rb181.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Silver;
-            this.rb181.Size = new System.Drawing.Size(256, 17);
-            this.rb181.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
-            this.rb181.TabIndex = 24;
-            this.rb181.Text = "Financiado pela família ou por outras pessoas";
-            this.rb181.ThemesEnabled = false;
+            this.autoLabel19.Text = "19 - Qual é a renda mensal de sua família (todos que residem na casa)?";
             // 
             // panel17
             // 
@@ -2937,7 +2976,7 @@ namespace Matricula.View
             this.panel17.Controls.Add(this.autoLabel16);
             this.panel17.Controls.Add(this.rb171);
             this.panel17.Controls.Add(this.rb172);
-            this.panel17.Location = new System.Drawing.Point(35, 457);
+            this.panel17.Location = new System.Drawing.Point(29, 179);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(249, 176);
             this.panel17.TabIndex = 3;
@@ -3010,7 +3049,7 @@ namespace Matricula.View
             this.autoLabel16.Name = "autoLabel16";
             this.autoLabel16.Size = new System.Drawing.Size(205, 15);
             this.autoLabel16.TabIndex = 20;
-            this.autoLabel16.Text = "17 - Qual a sua renda mensal?";
+            this.autoLabel16.Text = "16 - Qual a sua renda mensal?";
             // 
             // rb171
             // 
@@ -3050,9 +3089,9 @@ namespace Matricula.View
             this.panel22.Controls.Add(this.autoLabel22);
             this.panel22.Controls.Add(this.rb221);
             this.panel22.Controls.Add(this.rb222);
-            this.panel22.Location = new System.Drawing.Point(744, 236);
+            this.panel22.Location = new System.Drawing.Point(741, 3);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(249, 161);
+            this.panel22.Size = new System.Drawing.Size(249, 143);
             this.panel22.TabIndex = 8;
             // 
             // rb225
@@ -3122,7 +3161,7 @@ namespace Matricula.View
             this.rb221.Size = new System.Drawing.Size(192, 21);
             this.rb221.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Metro;
             this.rb221.TabIndex = 23;
-            this.rb221.Text = "Própia";
+            this.rb221.Text = "Própria";
             this.rb221.ThemesEnabled = false;
             // 
             // rb222
@@ -3246,6 +3285,12 @@ namespace Matricula.View
             ((System.ComponentModel.ISupportInitialize)(this.tabControl)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.tab1.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rb143)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb144)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb141)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb142)).EndInit();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rb136)).EndInit();
@@ -3341,12 +3386,27 @@ namespace Matricula.View
             ((System.ComponentModel.ISupportInitialize)(this.rb031)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb035)).EndInit();
             this.tab2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtQuest27)).EndInit();
             this.panel26.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rb265)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb264)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb263)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb262)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb261)).EndInit();
+            this.panel19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rb195)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb194)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb193)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb192)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb191)).EndInit();
+            this.panel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rb165)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb164)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb163)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb162)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb161)).EndInit();
             this.panel25.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rb256)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb255)).EndInit();
@@ -3359,18 +3419,6 @@ namespace Matricula.View
             ((System.ComponentModel.ISupportInitialize)(this.rb152)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb153)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb151)).EndInit();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rb143)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb144)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb141)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb142)).EndInit();
-            this.panel16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.rb165)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb164)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb163)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb162)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb161)).EndInit();
             this.panel24.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rb245)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb244)).EndInit();
@@ -3383,6 +3431,12 @@ namespace Matricula.View
             ((System.ComponentModel.ISupportInitialize)(this.rb213)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb212)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb211)).EndInit();
+            this.panel18.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rb185)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb184)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb183)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb182)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rb181)).EndInit();
             this.panel23.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rb235)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb234)).EndInit();
@@ -3395,18 +3449,6 @@ namespace Matricula.View
             ((System.ComponentModel.ISupportInitialize)(this.rb203)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb202)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rb201)).EndInit();
-            this.panel19.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.rb195)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb194)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb193)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb192)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb191)).EndInit();
-            this.panel18.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.rb185)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb184)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb183)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb182)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rb181)).EndInit();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rb176)).EndInit();
@@ -3459,13 +3501,6 @@ namespace Matricula.View
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb202;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb201;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel19;
-        private System.Windows.Forms.Panel panel19;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb195;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb194;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb193;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb192;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel18;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb191;
         private System.Windows.Forms.Panel panel18;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb185;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb184;
@@ -3488,25 +3523,12 @@ namespace Matricula.View
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel22;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb221;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb222;
-        private System.Windows.Forms.Panel panel16;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb165;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb164;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb163;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb162;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb161;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel21;
         private System.Windows.Forms.Panel panel15;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb154;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb152;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb153;
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel15;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb151;
-        private System.Windows.Forms.Panel panel14;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb143;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb144;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel14;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb141;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb142;
         private System.Windows.Forms.Panel panel25;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb256;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb255;
@@ -3516,13 +3538,6 @@ namespace Matricula.View
         private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel25;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb251;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb245;
-        private System.Windows.Forms.Panel panel26;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb265;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb264;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb263;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb262;
-        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel26;
-        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb261;
         private Syncfusion.Windows.Forms.ScrollersFrame sfTab2;
         private System.Windows.Forms.Panel panel13;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb136;
@@ -3622,5 +3637,35 @@ namespace Matricula.View
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb031;
         private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb035;
         private Syncfusion.Windows.Forms.ButtonAdv btnEnviar;
+        private System.Windows.Forms.Panel panel16;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb165;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb164;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb163;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb162;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb161;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel21;
+        private System.Windows.Forms.Panel panel19;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb195;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb194;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb193;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb192;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel18;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb191;
+        private System.Windows.Forms.Panel panel14;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb143;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb144;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel14;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb141;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb142;
+        private System.Windows.Forms.Panel panel1;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtQuest27;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel27;
+        private System.Windows.Forms.Panel panel26;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb265;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb264;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb263;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb262;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel autoLabel26;
+        private Syncfusion.Windows.Forms.Tools.RadioButtonAdv rb261;
     }
 }

@@ -37,7 +37,8 @@ namespace Matricula
         private int countC = 0, countR = 0, codigo;
         private MaskedEditBox[] mtxtRArray = new MaskedEditBox[3], mtxtCArray = new MaskedEditBox[3];
         private VideoCaptureDevice videoDevice;
-        bool alterar=false, novo=false;
+        private bool alterar=false, novo=false;
+        private string[] cel, tel;
 
         public MatriculaForm()
         {
@@ -50,7 +51,7 @@ namespace Matricula
             this.novo = novo;
         }
 
-        public MatriculaForm(int codigo, MatriculaModel matriculaAlterar)
+        public MatriculaForm(int codigo, MatriculaModel matriculaAlterar,string[] cel, string[] tel)
         {
             InitializeComponent();
 
@@ -99,11 +100,15 @@ namespace Matricula
                 Image foto1 = Image.FromStream(ms);
                 ptFotoPes.Image = foto1;
            }
+            this.cel = cel;
+            this.tel = tel;
             this.codigo = codigo;
             alterar = true;
+            foreach(string cel1 in this.cel)
+            {
+                Console.WriteLine(cel1+"\n");
+            }
         }
-
-
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
@@ -131,6 +136,8 @@ namespace Matricula
                 ptFotoPes.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
                 //transferir o stream para o array de bytes
                 imgArray = stream.ToArray();
+                //Salva a imagem no diretorio
+                ptFotoPes.Image.Save("c:\\fotos\\" + txtNome + ".png", System.Drawing.Imaging.ImageFormat.Png);
             }
             
             try
@@ -188,14 +195,15 @@ namespace Matricula
                     matricula.ReservaMilitar = txtMilitar.Text;
                     if (txtDataMilitar.Text != null)
                     matricula.DataMilitar = formatarData(txtDataMilitar.Text);
-                    matricula.ExpedidoMilitar = txtExpMilitar.Text;
-    
+                    matricula.ExpedidoMilitar = txtExpMilitar.Text;    
+
                     if(alterar)
                     {
                         matriculaController.alterarMatricula(codigo, matricula);
                     }
                     else
                     {
+                        matricula.DataMatricula = DateTime.Today.ToString("yyyy-MM-dd");
                         matriculaController.inserir(matricula);
                     }
                     
@@ -217,7 +225,8 @@ namespace Matricula
                         telefoneController.inserirCelular(celular, matricula.CodMatricula);
                     }    
                 }
-
+                
+                
                 if(alterar == false && novo == false)
                 {
                     int codigo = matricula.CodMatricula;
@@ -270,7 +279,15 @@ namespace Matricula
         {
             if (MessageBoxAdv.Show(this, "Deseja realmente cancelar a matrícula?", "Cancelamento", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                Application.Exit();
+                if(novo || alterar)
+                {
+                    this.Close();
+                }
+                else
+                {
+                    Application.Exit();
+                } 
+
             }
         }
 
@@ -412,6 +429,7 @@ namespace Matricula
 
             Bitmap imagemCortada = CortaImagem(source, area);
             ptFotoPes.Image = imagemCortada;
+            //imagemCortada.Save("c:\\fotos\\" + txtNome + ".png", System.Drawing.Imaging.ImageFormat.Png);
             //Libera a webcam
             if(videoDevice != null)
             {
@@ -444,10 +462,25 @@ namespace Matricula
             //Aparencia do messagebox            
             MessageBoxApparence.getMessageBoxApparence();
             //Coloca os primeiros textbox de telefone
-            btnMaisR_Click(btnMaisR, new EventArgs());
-            btnMainC_Click(btnMainC, new EventArgs());
+            if(alterar)
+            {
+                for (int i = 0; i < tel.Count(); i++)
+                    btnMaisR_Click(btnMaisR, new EventArgs());
 
+                for (int i = 0; i < cel.Count(); i++)
+                    btnMainC_Click(btnMainC, new EventArgs());
+
+                for (int i = 0; i < tel.Count(); i++ )
+                    mtxtRArray[i].Text = tel[i];
             
+                for (int i = 0; i < cel.Count(); i++)
+                    mtxtCArray[i].Text = cel[i];
+            }
+            else
+            {
+                btnMaisR_Click(btnMaisR, new EventArgs());
+                btnMainC_Click(btnMainC, new EventArgs());
+            }
         }
 
         private void cbCurso_SelectedValueChanged(object sender, EventArgs e)

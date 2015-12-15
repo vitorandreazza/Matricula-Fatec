@@ -171,6 +171,7 @@
                 <Value>=Format(Int(Parameters!fone.Value),"\(00\)0000\-0000")</Value>
                 <Style>
                   <FontSize>11pt</FontSize>
+                  <TextDecoration>Underline</TextDecoration>
                 </Style>
               </TextRun>
               <TextRun>

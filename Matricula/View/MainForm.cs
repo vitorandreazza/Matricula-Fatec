@@ -100,6 +100,7 @@ namespace Matricula
             bsMatriculas.DataSource = null;
             dgConsultas.DataSource = bsMatriculas;
             txtAluno.Visible = true;
+            txtAluno.Mask = "###.###.###-##";
             lblAluno.Text = "CPF";
             btnPesquisa.Visible = true;
             lblAluno.Visible = true;
@@ -251,6 +252,7 @@ namespace Matricula
             txtAluno.Clear();
             lblAluno.Visible = false;
             txtAluno.Visible = false;
+            txtAluno.Mask = "";
             btnPesquisa.Visible = false;
         }
 
@@ -333,13 +335,31 @@ namespace Matricula
                 matricula.ReservaMilitar = dt.Rows[0]["reservaMilitar"].ToString();
                 matricula.DataMilitar = dt.Rows[0]["dataMilitar"].ToString();
                 matricula.ExpedidoMilitar = dt.Rows[0]["expedidoMilitar"].ToString();
-                MatriculaForm mat = new MatriculaForm(cod,matricula);
-                mat.Show();
+
+                DataTable dtTelefone = new DataTable();
+                DataTable dtCelular = new DataTable();
+                dtTelefone = new TelefonesController().pesquisarTelefone(cod).Tables[0];
+                dtCelular = new TelefonesController().pesquisarCelular(cod).Tables[0];
                 
+                int telCount = dtTelefone.Rows.Count, celCount = dtCelular.Rows.Count;
+                string[] tel = new string[telCount], cel = new string[celCount];
+   
+                for (int i = 0; i < telCount; i++ )
+                {
+                    tel[i] = dtTelefone.Rows[i]["telefone"].ToString();
+                }
+
+                for (int i = 0; i < celCount; i++)
+                {
+                    cel[i] = dtCelular.Rows[i]["celular"].ToString();
+                }
+
+                MatriculaForm mat = new MatriculaForm(cod, matricula, cel, tel);
+                mat.Show();
             }
-            catch
+            catch(Exception ex)
             {
-                MessageBoxAdv.Show("Não foi possível alterar!");
+                MessageBoxAdv.Show(""+ex);
             }
 
         }
@@ -357,23 +377,7 @@ namespace Matricula
         private void GraficosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             GraficoForm gr = new GraficoForm();
-            gr.ShowDialog();
-        }
-
-        private void cPFToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            txtAluno.Visible = true;
-            btnPesquisa.Visible = true;
-            txtAluno.Clear();
-            lblAluno.Text = "Rcpf";
-        }
-
-        private void códigoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            txtAluno.Visible = true;
-            btnPesquisa.Visible = true;
-            txtAluno.Clear();
-            lblAluno.Text = "Rcodigo";
+            gr.Show();
         }
 
         private void cadastrarLoginToolStripMenuItem_Click(object sender, EventArgs e)
@@ -392,6 +396,28 @@ namespace Matricula
         private void MainForm_Activated(object sender, EventArgs e)
         {
             atualizarGrid();
+        }
+
+        private void cPFToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            txtAluno.Visible = true;
+            txtAluno.Mask = "###.###.###-##";
+            btnPesquisa.Visible = true;
+            txtAluno.Clear();
+            lblAluno.Text = "Rcpf";
+        }
+
+        private void códigoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            txtAluno.Visible = true;
+            btnPesquisa.Visible = true;
+            txtAluno.Clear();
+            lblAluno.Text = "Rcodigo";
+        }
+
+        private void questionárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new QuestionarioForm().Show();
         }
     }     
 }
